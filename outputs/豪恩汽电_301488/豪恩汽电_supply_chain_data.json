@@ -1,0 +1,150 @@
+{
+  "company_code": "301488",
+  "company_name": "豪恩汽电",
+  "analysis_date": "2026-06-09",
+  "nodes": [
+    {
+      "id": "target_301488",
+      "name": "豪恩汽电\n301488",
+      "category": "target",
+      "business": "车载摄像头/雷达模组，市占率<3%",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "舜宇光学",
+      "category": "competitor",
+      "business": "车载镜头龙头，35%+市占率",
+      "symbolSize": 60
+    },
+    {
+      "id": "comp_1",
+      "name": "欧菲光",
+      "category": "competitor",
+      "business": "摄像头模组",
+      "symbolSize": 50
+    },
+    {
+      "id": "comp_2",
+      "name": "联创电子",
+      "category": "competitor",
+      "business": "车载光学镜头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_0",
+      "name": "索尼Sony",
+      "category": "upstream",
+      "business": "CMOS图像传感器",
+      "symbolSize": 55
+    },
+    {
+      "id": "up_1",
+      "name": "豪威OmniVision",
+      "category": "upstream",
+      "business": "车规级CMOS芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "up_2",
+      "name": "思特威SmartSens",
+      "category": "upstream",
+      "business": "国产CMOS传感器",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_3",
+      "name": "Mobileye",
+      "category": "upstream",
+      "business": "ADAS芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "up_4",
+      "name": "地平线",
+      "category": "upstream",
+      "business": "国产智驾芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_5",
+      "name": "PCB供应商",
+      "category": "upstream",
+      "business": "电路板",
+      "symbolSize": 35
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪",
+      "category": "downstream",
+      "business": "新能源车",
+      "symbolSize": 60
+    },
+    {
+      "id": "down_1",
+      "name": "理想汽车",
+      "category": "downstream",
+      "business": "智能电动车",
+      "symbolSize": 55
+    },
+    {
+      "id": "down_2",
+      "name": "蔚来汽车",
+      "category": "downstream",
+      "business": "高端电动车",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "小鹏汽车",
+      "category": "downstream",
+      "business": "智能驾驶",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "吉利汽车",
+      "category": "downstream",
+      "business": "传统车企电动化",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "长城汽车",
+      "category": "downstream",
+      "business": "SUV智能化",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_6",
+      "name": "广汽集团",
+      "category": "downstream",
+      "business": "合资+自主双线",
+      "symbolSize": 45
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_301488", "relation": "supply"},
+    {"source": "up_1", "target": "target_301488", "relation": "supply"},
+    {"source": "up_2", "target": "target_301488", "relation": "supply"},
+    {"source": "up_3", "target": "target_301488", "relation": "supply"},
+    {"source": "up_4", "target": "target_301488", "relation": "supply"},
+    {"source": "up_5", "target": "target_301488", "relation": "supply"},
+    {"source": "target_301488", "target": "down_0", "relation": "customer"},
+    {"source": "target_301488", "target": "down_1", "relation": "customer"},
+    {"source": "target_301488", "target": "down_2", "relation": "customer"},
+    {"source": "target_301488", "target": "down_3", "relation": "customer"},
+    {"source": "target_301488", "target": "down_4", "relation": "customer"},
+    {"source": "target_301488", "target": "down_5", "relation": "customer"},
+    {"source": "target_301488", "target": "down_6", "relation": "customer"},
+    {"source": "comp_0", "target": "target_301488", "relation": "compete"},
+    {"source": "comp_1", "target": "target_301488", "relation": "compete"},
+    {"source": "comp_2", "target": "target_301488", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

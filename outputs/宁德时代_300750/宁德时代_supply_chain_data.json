@@ -1,0 +1,214 @@
+{
+  "company_code": "300750",
+  "company_name": "宁德时代",
+  "analysis_date": "2026-06-09",
+  "nodes": [
+    {
+      "id": "target_300750",
+      "name": "宁德时代\n300750",
+      "category": "target",
+      "business": "动力电池龙头，45.54%市占率",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "比亚迪弗迪",
+      "category": "competitor",
+      "business": "刀片电池",
+      "symbolSize": 50
+    },
+    {
+      "id": "comp_1",
+      "name": "LG新能源",
+      "category": "competitor",
+      "business": "三元锂电池",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中创新航",
+      "category": "competitor",
+      "business": "动力电池",
+      "symbolSize": 35
+    },
+    {
+      "id": "up_0",
+      "name": "天齐锂业\n002466",
+      "category": "upstream",
+      "business": "锂资源",
+      "symbolSize": 55
+    },
+    {
+      "id": "up_1",
+      "name": "恩捷股份\n002812",
+      "category": "upstream",
+      "business": "隔膜",
+      "symbolSize": 50
+    },
+    {
+      "id": "up_2",
+      "name": "天赐材料\n002709",
+      "category": "upstream",
+      "business": "电解液",
+      "symbolSize": 50
+    },
+    {
+      "id": "up_3",
+      "name": "德方纳米\n300769",
+      "category": "upstream",
+      "business": "正极材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_4",
+      "name": "赣锋锂业\n002460",
+      "category": "upstream",
+      "business": "锂资源",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_5",
+      "name": "璞泰来",
+      "category": "upstream",
+      "business": "负极材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "特斯拉",
+      "category": "downstream",
+      "business": "纯电动汽车",
+      "symbolSize": 60
+    },
+    {
+      "id": "down_1",
+      "name": "理想汽车",
+      "category": "downstream",
+      "business": "增程式电动",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "小鹏汽车",
+      "category": "downstream",
+      "business": "智能电动",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_3",
+      "name": "蔚来汽车",
+      "category": "downstream",
+      "business": "高端电动",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_4",
+      "name": "大众/宝马",
+      "category": "downstream",
+      "business": "国际车企",
+      "symbolSize": 55
+    },
+    {
+      "id": "down_5",
+      "name": "储能系统",
+      "category": "downstream",
+      "business": "电网储能",
+      "symbolSize": 40
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_0",
+      "target": "target_300750",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300750",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300750",
+      "relation": "compete"
+    },
+    {
+      "source": "up_0",
+      "target": "target_300750",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300750",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300750",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300750",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300750",
+      "relation": "supply"
+    },
+    {
+      "source": "up_5",
+      "target": "target_300750",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300750",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300750",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300750",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300750",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300750",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300750",
+      "target": "down_5",
+      "relation": "customer"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

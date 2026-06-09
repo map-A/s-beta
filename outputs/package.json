@@ -1,0 +1,27 @@
+{
+  "name": "20260609",
+  "version": "1.0.0",
+  "description": "``` 20260609/ ├── index.html              # 主页面（自动加载） ├── companies.json          # 公司元数据（新增公司只需修改这个文件） ├── README.md              # 本文件 │ ├── 天齐锂业_002466/ │   ├── 天齐锂业_Serenity卡点分析.md │   ├── 天齐锂业_供应链分析.md │   └── 天齐锂业_supply_chain_data.json │ ├── 宁德时代_300750/ │   ├── 宁德时代_Serenity卡点分析.md │   ├── 宁德时代_供应链分析.md │   └── 宁德时代_supply_chain_data.json │ └── ... (其他6家公司) ```",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "echarts": "^6.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.8.1",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
+}

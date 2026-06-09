@@ -1,0 +1,202 @@
+{
+  "company_code": "300913",
+  "company_name": "兆龙互连",
+  "analysis_date": "2026-06-09",
+  "nodes": [
+    {
+      "id": "target_300913",
+      "name": "兆龙互连\n300913",
+      "category": "target",
+      "business": "数据中心高速互连系统，DAC铜缆、AOC光模块",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中航光电",
+      "category": "competitor",
+      "business": "连接器及线缆组件龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "comp_1",
+      "name": "立讯精密",
+      "category": "competitor",
+      "business": "消费电子+通信连接器，规模优势",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "意华股份",
+      "category": "competitor",
+      "business": "通信连接器，5G受益",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铜材供应商",
+      "category": "upstream",
+      "business": "高纯度铜材、电解铜原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光芯片厂商",
+      "category": "upstream",
+      "business": "激光器芯片、光电转换芯片(AOC用)",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高速连接器厂商",
+      "category": "upstream",
+      "business": "QSFP、OSFP等标准接口连接器",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB供应商",
+      "category": "upstream",
+      "business": "印制电路板材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "信号处理芯片厂商",
+      "category": "upstream",
+      "business": "高速信号调理芯片、驱动芯片",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "浪潮信息",
+      "category": "downstream",
+      "business": "AI服务器、数据中心服务器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华为技术",
+      "category": "downstream",
+      "business": "服务器、交换机、数据中心设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新华三(H3C)",
+      "category": "downstream",
+      "business": "交换机、数据中心网络设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "阿里云",
+      "category": "downstream",
+      "business": "云计算数据中心基础设施",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "腾讯云",
+      "category": "downstream",
+      "business": "云计算数据中心",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "字节跳动",
+      "category": "downstream",
+      "business": "AI训练集群、推荐算法数据中心",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_0",
+      "target": "target_300913",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300913",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300913",
+      "relation": "compete"
+    },
+    {
+      "source": "up_0",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_5",
+      "relation": "customer"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

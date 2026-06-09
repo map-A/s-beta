@@ -1,0 +1,62 @@
+.modal-content-large {
+  max-width: 1200px;
+  max-height: 90vh;
+  height: 90vh; /* 添加固定高度 */
+}
+
+.chart-container {
+  width: 100%;
+  height: 600px;
+  min-height: 600px; /* 确保最小高度 */
+}
+
+.error-message {
+  text-align: center;
+  padding: 50px;
+  color: #e53e3e;
+  font-size: 16px;
+}
+
+/* 网络图样式增强 */
+.network-legend {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.legend-dot.upstream {
+  background: #91cc75;
+}
+
+.legend-dot.competitor {
+  background: #5470c6;
+}
+
+.legend-dot.target {
+  background: #ee6666;
+}
+
+.legend-dot.downstream {
+  background: #fac858;
+}
+
+.legend-label {
+  font-size: 13px;
+  color: #4a5568;
+}

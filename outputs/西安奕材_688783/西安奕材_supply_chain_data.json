@@ -1,0 +1,326 @@
+{
+  "company_code": "688783",
+  "company_name": "西安奕材",
+  "analysis_date": "2026-06-09",
+  "nodes": [
+    {
+      "id": "target_688783",
+      "name": "西安奕材\n688783",
+      "category": "target",
+      "business": "12英寸硅片、外延片",
+      "symbolSize": 90,
+      "label": {
+        "show": true
+      }
+    },
+    {
+      "id": "upstream_gcl_poly",
+      "name": "协鑫集团\nGCL-Poly",
+      "category": "upstream",
+      "business": "多晶硅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_daqo",
+      "name": "大全新能源\nDaqo",
+      "category": "upstream",
+      "business": "多晶硅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_amat",
+      "name": "应用材料\nApplied Materials",
+      "category": "upstream",
+      "business": "半导体设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_tel",
+      "name": "东京电子\nTokyo Electron",
+      "category": "upstream",
+      "business": "半导体设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_linde",
+      "name": "林德集团\nLinde",
+      "category": "upstream",
+      "business": "特种气体",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_chemicals",
+      "name": "化学品供应商\nSpecialty Chemicals",
+      "category": "upstream",
+      "business": "电子级化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "downstream_smic",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "晶圆代工",
+      "symbolSize": 50
+    },
+    {
+      "id": "downstream_huahong",
+      "name": "华虹半导体\nHuahong",
+      "category": "downstream",
+      "business": "晶圆代工",
+      "symbolSize": 50
+    },
+    {
+      "id": "downstream_huarun",
+      "name": "华润微\n688396",
+      "category": "downstream",
+      "business": "功率半导体、代工",
+      "symbolSize": 50
+    },
+    {
+      "id": "downstream_ymtc",
+      "name": "长江存储\nYMTC",
+      "category": "downstream",
+      "business": "3D NAND存储",
+      "symbolSize": 50
+    },
+    {
+      "id": "downstream_cxmt",
+      "name": "长鑫存储\nCXMT",
+      "category": "downstream",
+      "business": "DRAM存储",
+      "symbolSize": 50
+    },
+    {
+      "id": "competitor_zhonghuan",
+      "name": "中环股份\n002129",
+      "category": "competitor",
+      "business": "硅片、光伏硅片",
+      "symbolSize": 45
+    },
+    {
+      "id": "competitor_hushi",
+      "name": "沪硅产业\n688126",
+      "category": "competitor",
+      "business": "12英寸硅片",
+      "symbolSize": 45
+    },
+    {
+      "id": "competitor_liangwei",
+      "name": "立昂微\n300603",
+      "category": "competitor",
+      "business": "8英寸、12英寸硅片",
+      "symbolSize": 45
+    },
+    {
+      "id": "competitor_shinetsu",
+      "name": "信越化学\nShin-Etsu",
+      "category": "competitor",
+      "business": "全球硅片龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "competitor_sumco",
+      "name": "胜高\nSUMCO",
+      "category": "competitor",
+      "business": "全球硅片龙头",
+      "symbolSize": 45
+    }
+  ],
+  "edges": [
+    {
+      "source": "upstream_gcl_poly",
+      "target": "target_688783",
+      "relation": "supply",
+      "label": {
+        "show": true,
+        "formatter": "多晶硅供应"
+      }
+    },
+    {
+      "source": "upstream_daqo",
+      "target": "target_688783",
+      "relation": "supply",
+      "label": {
+        "show": true,
+        "formatter": "多晶硅供应"
+      }
+    },
+    {
+      "source": "upstream_amat",
+      "target": "target_688783",
+      "relation": "supply",
+      "label": {
+        "show": true,
+        "formatter": "设备供应"
+      }
+    },
+    {
+      "source": "upstream_tel",
+      "target": "target_688783",
+      "relation": "supply",
+      "label": {
+        "show": true,
+        "formatter": "设备供应"
+      }
+    },
+    {
+      "source": "upstream_linde",
+      "target": "target_688783",
+      "relation": "supply",
+      "label": {
+        "show": true,
+        "formatter": "气体供应"
+      }
+    },
+    {
+      "source": "upstream_chemicals",
+      "target": "target_688783",
+      "relation": "supply",
+      "label": {
+        "show": true,
+        "formatter": "化学品供应"
+      }
+    },
+    {
+      "source": "target_688783",
+      "target": "downstream_smic",
+      "relation": "customer",
+      "label": {
+        "show": true,
+        "formatter": "硅片供应"
+      }
+    },
+    {
+      "source": "target_688783",
+      "target": "downstream_huahong",
+      "relation": "customer",
+      "label": {
+        "show": true,
+        "formatter": "硅片供应"
+      }
+    },
+    {
+      "source": "target_688783",
+      "target": "downstream_huarun",
+      "relation": "customer",
+      "label": {
+        "show": true,
+        "formatter": "硅片供应"
+      }
+    },
+    {
+      "source": "target_688783",
+      "target": "downstream_ymtc",
+      "relation": "customer",
+      "label": {
+        "show": true,
+        "formatter": "硅片供应"
+      }
+    },
+    {
+      "source": "target_688783",
+      "target": "downstream_cxmt",
+      "relation": "customer",
+      "label": {
+        "show": true,
+        "formatter": "硅片供应"
+      }
+    },
+    {
+      "source": "target_688783",
+      "target": "competitor_zhonghuan",
+      "relation": "compete",
+      "label": {
+        "show": true,
+        "formatter": "竞争"
+      }
+    },
+    {
+      "source": "competitor_zhonghuan",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "target_688783",
+      "target": "competitor_hushi",
+      "relation": "compete",
+      "label": {
+        "show": true,
+        "formatter": "竞争"
+      }
+    },
+    {
+      "source": "competitor_hushi",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "target_688783",
+      "target": "competitor_liangwei",
+      "relation": "compete",
+      "label": {
+        "show": true,
+        "formatter": "竞争"
+      }
+    },
+    {
+      "source": "competitor_liangwei",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "target_688783",
+      "target": "competitor_shinetsu",
+      "relation": "compete",
+      "label": {
+        "show": true,
+        "formatter": "竞争"
+      }
+    },
+    {
+      "source": "competitor_shinetsu",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "target_688783",
+      "target": "competitor_sumco",
+      "relation": "compete",
+      "label": {
+        "show": true,
+        "formatter": "竞争"
+      }
+    },
+    {
+      "source": "competitor_sumco",
+      "target": "target_688783",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "target",
+      "itemStyle": {
+        "color": "#ff6b6b"
+      }
+    },
+    {
+      "name": "upstream",
+      "itemStyle": {
+        "color": "#4ecdc4"
+      }
+    },
+    {
+      "name": "downstream",
+      "itemStyle": {
+        "color": "#45b7d1"
+      }
+    },
+    {
+      "name": "competitor",
+      "itemStyle": {
+        "color": "#f9ca24"
+      }
+    }
+  ]
+}

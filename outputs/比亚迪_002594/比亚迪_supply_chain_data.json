@@ -1,0 +1,260 @@
+{
+  "company_code": "002594",
+  "company_name": "比亚迪",
+  "analysis_date": "2026-06-09",
+  "nodes": [
+    {
+      "id": "target_002594",
+      "name": "比亚迪\n002594",
+      "category": "target",
+      "business": "新能源汽车+动力电池垂直整合",
+      "symbolSize": 80
+    },
+    {
+      "id": "competitor_0",
+      "name": "特斯拉中国",
+      "category": "competitor",
+      "business": "纯电动汽车，智能驾驶",
+      "symbolSize": 50
+    },
+    {
+      "id": "competitor_1",
+      "name": "理想汽车",
+      "category": "competitor",
+      "business": "增程式电动SUV",
+      "symbolSize": 40
+    },
+    {
+      "id": "competitor_2",
+      "name": "小鹏汽车",
+      "category": "competitor",
+      "business": "智能电动汽车",
+      "symbolSize": 35
+    },
+    {
+      "id": "competitor_3",
+      "name": "蔚来汽车",
+      "category": "competitor",
+      "business": "高端纯电，换电模式",
+      "symbolSize": 35
+    },
+    {
+      "id": "competitor_4",
+      "name": "吉利汽车",
+      "category": "competitor",
+      "business": "传统车企转型",
+      "symbolSize": 35
+    },
+    {
+      "id": "upstream_0",
+      "name": "宁德时代\n300750",
+      "category": "upstream",
+      "business": "动力电池（三元锂外采）",
+      "symbolSize": 60
+    },
+    {
+      "id": "upstream_1",
+      "name": "天齐锂业\n002466",
+      "category": "upstream",
+      "business": "锂资源",
+      "symbolSize": 45
+    },
+    {
+      "id": "upstream_2",
+      "name": "恩捷股份\n002812",
+      "category": "upstream",
+      "business": "锂电池隔膜",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_3",
+      "name": "天赐材料\n002709",
+      "category": "upstream",
+      "business": "电解液",
+      "symbolSize": 40
+    },
+    {
+      "id": "upstream_4",
+      "name": "德方纳米\n300769",
+      "category": "upstream",
+      "business": "磷酸铁锂正极",
+      "symbolSize": 35
+    },
+    {
+      "id": "upstream_5",
+      "name": "英飞凌",
+      "category": "upstream",
+      "business": "IGBT功率半导体",
+      "symbolSize": 35
+    },
+    {
+      "id": "upstream_6",
+      "name": "地平线",
+      "category": "upstream",
+      "business": "智能驾驶芯片",
+      "symbolSize": 30
+    },
+    {
+      "id": "upstream_7",
+      "name": "博世",
+      "category": "upstream",
+      "business": "底盘系统",
+      "symbolSize": 30
+    },
+    {
+      "id": "downstream_0",
+      "name": "个人消费者",
+      "category": "downstream",
+      "business": "家用轿车、SUV",
+      "symbolSize": 50
+    },
+    {
+      "id": "downstream_1",
+      "name": "滴滴出行",
+      "category": "downstream",
+      "business": "网约车平台",
+      "symbolSize": 40
+    },
+    {
+      "id": "downstream_2",
+      "name": "出租车公司",
+      "category": "downstream",
+      "business": "出租车运营",
+      "symbolSize": 35
+    },
+    {
+      "id": "downstream_3",
+      "name": "欧洲经销商",
+      "category": "downstream",
+      "business": "海外出口",
+      "symbolSize": 40
+    },
+    {
+      "id": "downstream_4",
+      "name": "东南亚经销商",
+      "category": "downstream",
+      "business": "泰国、新加坡等",
+      "symbolSize": 35
+    }
+  ],
+  "edges": [
+    {
+      "source": "competitor_0",
+      "target": "target_002594",
+      "relation": "compete"
+    },
+    {
+      "source": "competitor_1",
+      "target": "target_002594",
+      "relation": "compete"
+    },
+    {
+      "source": "competitor_2",
+      "target": "target_002594",
+      "relation": "compete"
+    },
+    {
+      "source": "competitor_3",
+      "target": "target_002594",
+      "relation": "compete"
+    },
+    {
+      "source": "competitor_4",
+      "target": "target_002594",
+      "relation": "compete"
+    },
+    {
+      "source": "upstream_0",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_1",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_2",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_3",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_4",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_5",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_6",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_7",
+      "target": "target_002594",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002594",
+      "target": "downstream_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002594",
+      "target": "downstream_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002594",
+      "target": "downstream_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002594",
+      "target": "downstream_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002594",
+      "target": "downstream_4",
+      "relation": "customer"
+    },
+    {
+      "source": "upstream_1",
+      "target": "upstream_0",
+      "relation": "supply"
+    },
+    {
+      "source": "upstream_1",
+      "target": "upstream_4",
+      "relation": "supply"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

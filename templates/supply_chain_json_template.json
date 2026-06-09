@@ -1,0 +1,207 @@
+{
+  "company_code": "{{股票代码}}",
+  "company_name": "{{公司名称}}",
+  "analysis_date": "{{YYYY-MM-DD}}",
+  "nodes": [
+    {
+      "id": "target_{{股票代码}}",
+      "name": "{{公司名称}}\n{{股票代码}}",
+      "category": "target",
+      "business": "{{主营业务描述}}",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "{{竞品公司1名称}}",
+      "category": "competitor",
+      "business": "{{竞品业务描述}}",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "{{竞品公司2名称}}",
+      "category": "competitor",
+      "business": "{{竞品业务描述}}",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "{{竞品公司3名称}}",
+      "category": "competitor",
+      "business": "{{竞品业务描述}}",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "{{上游供应商1名称}}",
+      "category": "upstream",
+      "business": "{{供应商业务描述}}",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "{{上游供应商2名称}}",
+      "category": "upstream",
+      "business": "{{供应商业务描述}}",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "{{上游供应商3名称}}",
+      "category": "upstream",
+      "business": "{{供应商业务描述}}",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "{{上游供应商4名称}}",
+      "category": "upstream",
+      "business": "{{供应商业务描述}}",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "{{下游客户1名称}}",
+      "category": "downstream",
+      "business": "{{客户业务描述}}",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "{{下游客户2名称}}",
+      "category": "downstream",
+      "business": "{{客户业务描述}}",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "{{下游客户3名称}}",
+      "category": "downstream",
+      "business": "{{客户业务描述}}",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "{{下游客户4名称}}",
+      "category": "downstream",
+      "business": "{{客户业务描述}}",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_{{股票代码}}",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_{{股票代码}}",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_{{股票代码}}",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_{{股票代码}}",
+      "relation": "supply"
+    },
+    {
+      "source": "target_{{股票代码}}",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_{{股票代码}}",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_{{股票代码}}",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_{{股票代码}}",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_{{股票代码}}",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_{{股票代码}}",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_{{股票代码}}",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ],
+  "_template_notes": {
+    "required_fields": [
+      "company_code: 6位股票代码",
+      "company_name: 公司中文名称",
+      "analysis_date: 格式YYYY-MM-DD"
+    ],
+    "node_requirements": {
+      "minimum_counts": {
+        "upstream": 4,
+        "competitor": 3,
+        "downstream": 4,
+        "target": 1
+      },
+      "symbolSize_standards": {
+        "target": 90,
+        "downstream": 50,
+        "competitor": 45,
+        "upstream": 40
+      },
+      "id_conventions": {
+        "target": "target_{{股票代码}}",
+        "upstream": "up_0, up_1, up_2, ...",
+        "competitor": "comp_0, comp_1, comp_2, ...",
+        "downstream": "down_0, down_1, down_2, ..."
+      },
+      "category_values": [
+        "target",
+        "upstream",
+        "competitor",
+        "downstream"
+      ]
+    },
+    "edge_requirements": {
+      "relation_types": {
+        "supply": "上游 → 目标公司",
+        "customer": "目标公司 → 下游",
+        "compete": "竞品 ↔ 目标公司"
+      }
+    },
+    "output_path": "outputs/YYYYMMDD/{{公司名称}}_{{股票代码}}/{{公司名称}}_supply_chain_data.json"
+  }
+}

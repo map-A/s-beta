@@ -1,0 +1,202 @@
+{
+  "company_code": "688205",
+  "company_name": "德科立",
+  "analysis_date": "2026-06-09",
+  "nodes": [
+    {
+      "id": "target_688205",
+      "name": "德科立\n688205",
+      "category": "target",
+      "business": "光模块、EDFA光放大器、DWDM设备",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中际旭创",
+      "category": "competitor",
+      "business": "高速光模块龙头(800G/1.6T)",
+      "symbolSize": 50
+    },
+    {
+      "id": "comp_1",
+      "name": "新易盛",
+      "category": "competitor",
+      "business": "光模块、光器件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "光迅科技",
+      "category": "competitor",
+      "business": "光电子器件、光模块",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "源杰科技",
+      "category": "upstream",
+      "business": "DFB/EML激光器芯片、探测器芯片",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "长光华芯",
+      "category": "upstream",
+      "business": "半导体激光器芯片",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "博通(Broadcom)",
+      "category": "upstream",
+      "business": "高速光模块DSP芯片(垄断地位)",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "天孚通信",
+      "category": "upstream",
+      "business": "光纤连接器、陶瓷插芯、光隔离器",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "博创科技",
+      "category": "upstream",
+      "business": "PLC分路器、AWG、光开关",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "华为",
+      "category": "downstream",
+      "business": "5G设备、数据中心网络设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中兴通讯",
+      "category": "downstream",
+      "business": "通信系统、光传输设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "阿里云",
+      "category": "downstream",
+      "business": "数据中心、云计算服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "腾讯云",
+      "category": "downstream",
+      "business": "数据中心、云计算服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "中国移动",
+      "category": "downstream",
+      "business": "5G网络建设、数据中心",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "中国电信",
+      "category": "downstream",
+      "business": "固网宽带、数据中心",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp_0",
+      "target": "target_688205",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688205",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688205",
+      "relation": "compete"
+    },
+    {
+      "source": "up_0",
+      "target": "target_688205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688205",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688205",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688205",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688205",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688205",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688205",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688205",
+      "target": "down_5",
+      "relation": "customer"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}
