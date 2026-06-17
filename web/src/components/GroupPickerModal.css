@@ -1,0 +1,233 @@
+/* ── Group Picker Modal ── */
+
+.gpm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(30, 25, 20, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: gpm-fade-in 0.2s ease;
+}
+
+@keyframes gpm-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.gpm-modal {
+  background: rgba(255, 252, 245, 0.98);
+  border: 1px solid rgba(120, 90, 50, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  width: 380px;
+  max-width: 90vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  animation: gpm-slide-up 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  overflow: hidden;
+}
+
+@keyframes gpm-slide-up {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ── Header ── */
+
+.gpm-header {
+  padding: 20px 24px 14px;
+  border-bottom: 1px solid rgba(120, 90, 50, 0.1);
+}
+
+.gpm-header h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+  color: #2d2520;
+  letter-spacing: 2px;
+}
+
+.gpm-company {
+  font-size: 13px;
+  color: #8b7355;
+  font-weight: 500;
+}
+
+/* ── Body ── */
+
+.gpm-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 16px;
+}
+
+.gpm-body::-webkit-scrollbar {
+  width: 4px;
+}
+
+.gpm-body::-webkit-scrollbar-thumb {
+  background: rgba(120, 90, 50, 0.15);
+  border-radius: 2px;
+}
+
+/* ── Group list ── */
+
+.gpm-group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.gpm-group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border: 1.5px solid transparent;
+}
+
+.gpm-group-item:hover {
+  background: rgba(120, 90, 50, 0.05);
+}
+
+.gpm-group-item.selected {
+  background: rgba(139, 115, 85, 0.08);
+  border-color: rgba(139, 115, 85, 0.25);
+}
+
+.gpm-radio {
+  font-size: 16px;
+  color: #8b7355;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.gpm-group-item.selected .gpm-radio {
+  color: #5a3a1a;
+}
+
+.gpm-group-name {
+  flex: 1;
+  font-size: 14px;
+  color: #3d3228;
+  font-weight: 500;
+}
+
+.gpm-group-count {
+  font-size: 11px;
+  color: #a09080;
+  background: rgba(120, 90, 50, 0.08);
+  padding: 2px 8px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+/* ── New group button ── */
+
+.gpm-new-group-btn {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: 1.5px dashed rgba(120, 90, 50, 0.2);
+  border-radius: 8px;
+  background: transparent;
+  color: #8b7355;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 1px;
+}
+
+.gpm-new-group-btn:hover {
+  border-color: rgba(139, 115, 85, 0.4);
+  background: rgba(139, 115, 85, 0.04);
+}
+
+/* ── New group form ── */
+
+.gpm-new-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gpm-new-input {
+  padding: 12px 14px;
+  border: 1.5px solid rgba(120, 90, 50, 0.2);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #3d3228;
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.gpm-new-input:focus {
+  border-color: #8b4513;
+}
+
+.gpm-back-btn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  border: none;
+  background: none;
+  color: #8b7355;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s;
+}
+
+.gpm-back-btn:hover {
+  background: rgba(120, 90, 50, 0.06);
+}
+
+/* ── Footer ── */
+
+.gpm-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 14px 20px;
+  border-top: 1px solid rgba(120, 90, 50, 0.1);
+}
+
+.gpm-cancel {
+  padding: 9px 20px;
+  border: 1.5px solid rgba(120, 90, 50, 0.2);
+  border-radius: 8px;
+  background: transparent;
+  color: #6b5b4b;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.gpm-cancel:hover {
+  background: rgba(120, 90, 50, 0.05);
+}
+
+.gpm-confirm {
+  padding: 9px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #5a4a3a;
+  color: #f5f0e8;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 1px;
+}
+
+.gpm-confirm:hover {
+  background: #3d3228;
+}

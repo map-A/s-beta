@@ -1,71 +1,51 @@
-# A股供应链「卡点」分析系统
+# A股供应链「卡点」分析 — 数据目录
 
-## 📂 文件结构
+本目录存放公司分析数据，前端项目位于 `../web/`。
+
+## 📂 目录结构
 
 ```
-20260609/
-├── index.html              # 主页面（自动加载）
-├── companies.json          # 公司元数据（新增公司只需修改这个文件）
-├── README.md              # 本文件
+outputs/
+├── companies.json              # 自动生成（由 web/scripts/generate-companies.js）
 │
-├── 天齐锂业_002466/
-│   ├── 天齐锂业_Serenity卡点分析.md
-│   ├── 天齐锂业_供应链分析.md
-│   └── 天齐锂业_supply_chain_data.json
+├── 移远通信_603236/
+│   ├── meta.json               # 公司元数据（rating/class/summary/position）
+│   ├── 移远通信_Serenity卡点分析.md
+│   ├── 移远通信_供应链分析.md
+│   └── 移远通信_supply_chain_data.json
 │
-├── 宁德时代_300750/
-│   ├── 宁德时代_Serenity卡点分析.md
-│   ├── 宁德时代_供应链分析.md
-│   └── 宁德时代_supply_chain_data.json
-│
-└── ... (其他6家公司)
+└── ... (更多公司)
 ```
-
-## 🚀 使用方法
-
-### 1. 启动本地服务器
-
-由于浏览器的CORS限制，需要启动本地服务器：
-
-```bash
-cd outputs/20260609
-python3 -m http.server 8000
-```
-
-### 2. 打开浏览器
-
-访问：http://localhost:8000
 
 ## ➕ 新增公司
 
-只需修改 `companies.json`，添加新条目：
+1. 创建目录 `outputs/{公司名}_{6位股票代码}/`
+2. 生成 3 个分析文件：
+   - `{公司名}_Serenity卡点分析.md`
+   - `{公司名}_供应链分析.md`
+   - `{公司名}_supply_chain_data.json`
+3. 创建 `meta.json`：
+   ```json
+   {
+     "code": "股票代码",
+     "name": "公司名称",
+     "rating": "⭐⭐⭐⭐⭐",
+     "class": "strong",
+     "summary": "一句话投资总结",
+     "position": "建议仓位"
+   }
+   ```
 
-```json
-{
-  "code": "股票代码",
-  "name": "公司名称",
-  "rating": "⭐⭐⭐⭐⭐",
-  "class": "strong",  
-  "summary": "一句话总结",
-  "position": "仓位建议"
-}
+`class` 可选值：`strong`、`medium`、`weak`、`avoid`
+
+4. 运行 `cd ../web && npm run dev` — 自动识别新公司
+
+## 📊 查看数据
+
+前端项目位于 `../web/`，启动后自动加载本目录数据。
+
+```bash
+cd ../web
+npm install
+npm run dev
 ```
-
-class可选值：`strong`, `medium`, `weak`, `avoid`
-
-然后生成对应的3个文件到 `公司名_代码/` 目录即可。
-
-## 📊 技术架构
-
-- **零冗余**: 删除了所有静态HTML网络图
-- **动态加载**: index.html从JSON动态渲染
-- **按需渲染**: 点击"网络图"按钮时才加载ECharts
-- **易维护**: 新增公司只需改1个JSON文件
-
-## 🎯 投资建议
-
-**核心持仓（10-18%）**: 天齐锂业 + 宁德时代  
-**10倍篮子（2-3%）**: 长进光子  
-**卫星仓位（1-2%）**: 兆龙互连  
-**观察等待**: 鼎龙股份  
-**规避**: 天能股份、德科立、比亚迪

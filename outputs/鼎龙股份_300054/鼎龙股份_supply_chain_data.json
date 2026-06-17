@@ -1,523 +1,199 @@
 {
-  "company": {
-    "name": "鼎龙股份",
-    "code": "300054",
-    "industry": "半导体材料",
-    "mainProducts": "CMP抛光垫、柔性OLED材料、激光打印耗材",
-    "marketCap": "360亿元",
-    "layer": "L2",
-    "position": "关键材料层"
-  },
+  "company_code": "300054",
+  "company_name": "鼎龙股份",
+  "analysis_date": "2026-06-15",
   "nodes": [
     {
-      "id": "dinglong",
-      "name": "鼎龙股份",
-      "type": "target",
-      "layer": "L2",
-      "category": 0,
-      "symbolSize": 80,
-      "value": 360,
-      "label": {
-        "show": true
-      },
-      "itemStyle": {
-        "color": "#FF6B6B"
-      }
+      "id": "target_300054",
+      "name": "鼎龙股份\n300054",
+      "category": "target",
+      "business": "CMP抛光垫/液/清洗液+显示材料+光刻胶，中国唯一CMP全链条自主可控",
+      "symbolSize": 90
     },
     {
-      "id": "polyurethane",
-      "name": "聚氨酯材料供应商",
-      "type": "upstream",
-      "layer": "L1",
-      "category": 1,
-      "symbolSize": 50,
-      "value": 100
+      "id": "comp_0",
+      "name": "DuPont\n杜邦",
+      "category": "competitor",
+      "business": "全球CMP抛光垫龙头，IC1000系列全球市占80%+",
+      "symbolSize": 45
     },
     {
-      "id": "isocyanate",
-      "name": "异氰酸酯供应商",
-      "type": "upstream",
-      "layer": "L1",
-      "category": 1,
-      "symbolSize": 45,
-      "value": 80
+      "id": "comp_1",
+      "name": "Cabot Micro\nCCMP",
+      "category": "competitor",
+      "business": "全球CMP材料第二大，抛光液/垫/清洗液全面布局",
+      "symbolSize": 45
     },
     {
-      "id": "additives",
-      "name": "特种添加剂供应商",
-      "type": "upstream",
-      "layer": "L1",
-      "category": 1,
-      "symbolSize": 40,
-      "value": 60
+      "id": "comp_2",
+      "name": "安集科技\n688019",
+      "category": "competitor",
+      "business": "CMP抛光液国内龙头，与鼎龙互补（液vs垫）",
+      "symbolSize": 45
     },
     {
-      "id": "ethanolamine",
-      "name": "乙醇胺类供应商",
-      "type": "upstream",
-      "layer": "L1",
-      "category": 1,
-      "symbolSize": 35,
-      "value": 50
+      "id": "comp_3",
+      "name": "上海新阳\n300236",
+      "category": "competitor",
+      "business": "半导体化学品，CMP相关材料布局中",
+      "symbolSize": 45
     },
     {
-      "id": "chemicals",
-      "name": "精细化工原料商",
-      "type": "upstream",
-      "layer": "L1",
-      "category": 1,
-      "symbolSize": 35,
-      "value": 50
+      "id": "up_0",
+      "name": "聚氨酯原料\n供应商",
+      "category": "upstream",
+      "business": "CMP抛光垫核心基材（聚氨酯预聚体、发泡剂）",
+      "symbolSize": 40
     },
     {
-      "id": "smic",
-      "name": "中芯国际",
-      "type": "downstream",
-      "layer": "L3",
-      "category": 2,
-      "symbolSize": 70,
-      "value": 500,
-      "label": {
-        "show": true
-      }
+      "id": "up_1",
+      "name": "氧化铈磨料\n供应商",
+      "category": "upstream",
+      "business": "CMP抛光液核心稀土磨料成分",
+      "symbolSize": 40
     },
     {
-      "id": "ymtc",
+      "id": "up_2",
+      "name": "特种化学品\n供应商",
+      "category": "upstream",
+      "business": "表面活性剂、pH调节剂、分散剂等CMP辅助化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "高纯试剂\n供应商",
+      "category": "upstream",
+      "business": "高纯度酸碱试剂，用于CMP清洗液生产",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "国内晶圆代工龙头，14nm-28nm+逻辑芯片代工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
       "name": "长江存储",
-      "type": "downstream",
-      "layer": "L3",
-      "category": 2,
-      "symbolSize": 65,
-      "value": 400
+      "category": "downstream",
+      "business": "国内3D NAND存储芯片龙头",
+      "symbolSize": 50
     },
     {
-      "id": "hhgrace",
-      "name": "华虹半导体",
-      "type": "downstream",
-      "layer": "L3",
-      "category": 2,
-      "symbolSize": 55,
-      "value": 300
+      "id": "down_2",
+      "name": "华虹半导体\n688347",
+      "category": "downstream",
+      "business": "国内特色工艺晶圆代工，功率器件/嵌入式存储",
+      "symbolSize": 50
     },
     {
-      "id": "crmicro",
-      "name": "华润微电子",
-      "type": "downstream",
-      "layer": "L3",
-      "category": 2,
-      "symbolSize": 50,
-      "value": 250
-    },
-    {
-      "id": "silan",
-      "name": "士兰微",
-      "type": "downstream",
-      "layer": "L3",
-      "category": 2,
-      "symbolSize": 45,
-      "value": 200
-    },
-    {
-      "id": "boe",
-      "name": "京东方",
-      "type": "downstream",
-      "layer": "L3",
-      "category": 2,
-      "symbolSize": 60,
-      "value": 350
-    },
-    {
-      "id": "dupont",
-      "name": "DuPont",
-      "type": "competitor",
-      "layer": "L2",
-      "category": 3,
-      "symbolSize": 75,
-      "value": 800,
-      "label": {
-        "show": true
-      },
-      "itemStyle": {
-        "color": "#FFA500"
-      }
-    },
-    {
-      "id": "entegris",
-      "name": "Entegris",
-      "type": "competitor",
-      "layer": "L2",
-      "category": 3,
-      "symbolSize": 70,
-      "value": 700,
-      "label": {
-        "show": true
-      },
-      "itemStyle": {
-        "color": "#FFA500"
-      }
-    },
-    {
-      "id": "toray",
-      "name": "东丽Toray",
-      "type": "competitor",
-      "layer": "L2",
-      "category": 3,
-      "symbolSize": 50,
-      "value": 300
-    },
-    {
-      "id": "twi",
-      "name": "台湾三方化学",
-      "type": "competitor",
-      "layer": "L2",
-      "category": 3,
-      "symbolSize": 45,
-      "value": 200
-    },
-    {
-      "id": "skc",
-      "name": "SKC/IVT",
-      "type": "competitor",
-      "layer": "L2",
-      "category": 3,
-      "symbolSize": 45,
-      "value": 200
-    },
-    {
-      "id": "hisilicon",
-      "name": "海思半导体",
-      "type": "terminal",
-      "layer": "L4",
-      "category": 4,
-      "symbolSize": 50,
-      "value": 300
-    },
-    {
-      "id": "gigadevice",
-      "name": "兆易创新",
-      "type": "terminal",
-      "layer": "L4",
-      "category": 4,
-      "symbolSize": 40,
-      "value": 150
-    },
-    {
-      "id": "huawei",
-      "name": "华为",
-      "type": "enduser",
-      "layer": "L5",
-      "category": 5,
-      "symbolSize": 60,
-      "value": 1000
-    },
-    {
-      "id": "xiaomi",
-      "name": "小米",
-      "type": "enduser",
-      "layer": "L5",
-      "category": 5,
-      "symbolSize": 50,
-      "value": 500
-    },
-    {
-      "id": "byd",
-      "name": "比亚迪",
-      "type": "enduser",
-      "layer": "L5",
-      "category": 5,
-      "symbolSize": 55,
-      "value": 600
+      "id": "down_3",
+      "name": "长鑫存储",
+      "category": "downstream",
+      "business": "国内DRAM存储芯片厂商",
+      "symbolSize": 50
     }
   ],
-  "links": [
+  "edges": [
     {
-      "source": "polyurethane",
-      "target": "dinglong",
-      "value": 5,
-      "label": "聚氨酯树脂",
-      "lineStyle": {
-        "width": 3,
-        "curveness": 0.2
-      }
+      "source": "up_0",
+      "target": "target_300054",
+      "relation": "supply"
     },
     {
-      "source": "isocyanate",
-      "target": "dinglong",
-      "value": 4,
-      "label": "TDI/MDI",
-      "lineStyle": {
-        "width": 2.5,
-        "curveness": 0.2
-      }
+      "source": "up_1",
+      "target": "target_300054",
+      "relation": "supply"
     },
     {
-      "source": "additives",
-      "target": "dinglong",
-      "value": 3,
-      "label": "发泡剂/催化剂",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2
-      }
+      "source": "up_2",
+      "target": "target_300054",
+      "relation": "supply"
     },
     {
-      "source": "ethanolamine",
-      "target": "dinglong",
-      "value": 2,
-      "label": "乙醇胺",
-      "lineStyle": {
-        "width": 1.5,
-        "curveness": 0.2
-      }
+      "source": "up_3",
+      "target": "target_300054",
+      "relation": "supply"
     },
     {
-      "source": "chemicals",
-      "target": "dinglong",
-      "value": 2,
-      "label": "精细化工原料",
-      "lineStyle": {
-        "width": 1.5,
-        "curveness": 0.2
-      }
+      "source": "target_300054",
+      "target": "down_0",
+      "relation": "customer"
     },
     {
-      "source": "dinglong",
-      "target": "smic",
-      "value": 5,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 4,
-        "curveness": 0.2,
-        "color": "#4CAF50"
-      }
+      "source": "target_300054",
+      "target": "down_1",
+      "relation": "customer"
     },
     {
-      "source": "dinglong",
-      "target": "ymtc",
-      "value": 4,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 3,
-        "curveness": 0.2,
-        "color": "#4CAF50"
-      }
+      "source": "target_300054",
+      "target": "down_2",
+      "relation": "customer"
     },
     {
-      "source": "dinglong",
-      "target": "hhgrace",
-      "value": 3,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 2.5,
-        "curveness": 0.2,
-        "color": "#4CAF50"
-      }
+      "source": "target_300054",
+      "target": "down_3",
+      "relation": "customer"
     },
     {
-      "source": "dinglong",
-      "target": "crmicro",
-      "value": 3,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2,
-        "color": "#4CAF50"
-      }
+      "source": "comp_0",
+      "target": "target_300054",
+      "relation": "compete"
     },
     {
-      "source": "dinglong",
-      "target": "silan",
-      "value": 2,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2,
-        "color": "#4CAF50"
-      }
+      "source": "comp_1",
+      "target": "target_300054",
+      "relation": "compete"
     },
     {
-      "source": "dinglong",
-      "target": "boe",
-      "value": 3,
-      "label": "OLED材料",
-      "lineStyle": {
-        "width": 2.5,
-        "curveness": 0.2,
-        "color": "#2196F3"
-      }
+      "source": "comp_2",
+      "target": "target_300054",
+      "relation": "compete"
     },
     {
-      "source": "dupont",
-      "target": "smic",
-      "value": 5,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 3,
-        "curveness": -0.3,
-        "type": "dashed",
-        "color": "#999"
-      }
-    },
-    {
-      "source": "entegris",
-      "target": "smic",
-      "value": 4,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 2.5,
-        "curveness": -0.3,
-        "type": "dashed",
-        "color": "#999"
-      }
-    },
-    {
-      "source": "dupont",
-      "target": "ymtc",
-      "value": 5,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 2.5,
-        "curveness": -0.3,
-        "type": "dashed",
-        "color": "#999"
-      }
-    },
-    {
-      "source": "entegris",
-      "target": "ymtc",
-      "value": 4,
-      "label": "CMP抛光垫",
-      "lineStyle": {
-        "width": 2,
-        "curveness": -0.3,
-        "type": "dashed",
-        "color": "#999"
-      }
-    },
-    {
-      "source": "smic",
-      "target": "hisilicon",
-      "value": 5,
-      "label": "晶圆代工",
-      "lineStyle": {
-        "width": 3,
-        "curveness": 0.2
-      }
-    },
-    {
-      "source": "ymtc",
-      "target": "gigadevice",
-      "value": 3,
-      "label": "存储芯片",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2
-      }
-    },
-    {
-      "source": "hisilicon",
-      "target": "huawei",
-      "value": 5,
-      "label": "芯片供应",
-      "lineStyle": {
-        "width": 3,
-        "curveness": 0.2
-      }
-    },
-    {
-      "source": "smic",
-      "target": "xiaomi",
-      "value": 3,
-      "label": "芯片供应",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2
-      }
-    },
-    {
-      "source": "crmicro",
-      "target": "byd",
-      "value": 4,
-      "label": "功率芯片",
-      "lineStyle": {
-        "width": 2.5,
-        "curveness": 0.2
-      }
-    },
-    {
-      "source": "boe",
-      "target": "huawei",
-      "value": 3,
-      "label": "OLED屏幕",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2
-      }
-    },
-    {
-      "source": "boe",
-      "target": "xiaomi",
-      "value": 3,
-      "label": "OLED屏幕",
-      "lineStyle": {
-        "width": 2,
-        "curveness": 0.2
-      }
+      "source": "comp_3",
+      "target": "target_300054",
+      "relation": "compete"
     }
   ],
   "categories": [
     {
-      "name": "鼎龙股份",
-      "itemStyle": {
-        "color": "#FF6B6B"
-      }
+      "name": "upstream",
+      "label": "上游供应商"
     },
     {
-      "name": "上游供应商",
-      "itemStyle": {
-        "color": "#95E1D3"
-      }
+      "name": "competitor",
+      "label": "竞品公司"
     },
     {
-      "name": "下游客户",
-      "itemStyle": {
-        "color": "#4CAF50"
-      }
+      "name": "target",
+      "label": "目标公司"
     },
     {
-      "name": "竞争对手",
-      "itemStyle": {
-        "color": "#FFA500"
-      }
-    },
-    {
-      "name": "芯片设计",
-      "itemStyle": {
-        "color": "#2196F3"
-      }
-    },
-    {
-      "name": "终端客户",
-      "itemStyle": {
-        "color": "#9C27B0"
-      }
+      "name": "downstream",
+      "label": "下游客户"
     }
   ],
-  "metadata": {
-    "generatedDate": "2026-06-09",
-    "company": "鼎龙股份（300054）",
-    "marketCap": "360亿元",
-    "globalMarketShare": "2-3%",
-    "chinaMarketShare": "10-15%",
-    "mainProduct": "CMP抛光垫",
-    "keyInsight": "L2关键材料层，国产替代挑战者（非垄断者）",
-    "serenityScore": "2.5/4 - 弱卡点",
-    "dataSource": [
-      "鼎龙股份2025年年报",
-      "Valuates Reports - CMP Pads Market 2025-2031",
-      "Forbes - Brothers Become Billionaires (2026年5月)",
-      "韭研公社 - 国金电子研报",
-      "Entegris投资者关系公告"
-    ]
+  "_template_notes": {
+    "required_fields": [
+      "company_code: 6位股票代码",
+      "company_name: 公司中文名称",
+      "analysis_date: 格式YYYY-MM-DD"
+    ],
+    "node_requirements": {
+      "minimum_counts": {
+        "upstream": 4,
+        "competitor": 3,
+        "downstream": 4,
+        "target": 1
+      },
+      "symbolSize_standards": {
+        "target": 90,
+        "downstream": 50,
+        "competitor": 45,
+        "upstream": 40
+      }
+    }
   }
 }

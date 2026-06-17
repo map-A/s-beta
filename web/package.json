@@ -1,0 +1,24 @@
+{
+  "name": "stock-beta-web",
+  "version": "1.0.0",
+  "description": "A股供应链「卡点」分析前端展示系统",
+  "type": "module",
+  "scripts": {
+    "sync-data": "node scripts/generate-companies.js",
+    "dev": "node scripts/generate-companies.js && vite",
+    "build": "node scripts/generate-companies.js && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "echarts": "^6.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "recharts": "^3.8.1",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.0.16"
+  }
+}

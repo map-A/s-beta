@@ -8,3 +8,19 @@ wheels/
 
 # Virtual environments
 .venv
+outputs/
+# Frontend build output
+web/dist/
+web/node_modules/
+
+# Rust build artifacts
+f10info/target/
+
+# ClickHouse local data
+data/clickhouse/
+
+# F10 temp data
+/tmp/f10_data_*.json
+
+# OS files
+.DS_Store

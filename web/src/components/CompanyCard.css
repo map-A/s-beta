@@ -1,0 +1,278 @@
+/* ══════════════════════════════════════════════
+   水墨风格 CompanyCard
+   ══════════════════════════════════════════════ */
+
+.ink-card {
+  position: relative;
+  background: rgba(255,253,248,0.92);
+  border-radius: 4px;
+  padding: 24px 22px 20px;
+  border: 1px solid rgba(100,80,50,0.12);
+  box-shadow:
+    0 1px 3px rgba(80,60,30,0.06),
+    0 6px 20px rgba(80,60,30,0.04);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+
+.ink-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 15% 10%, rgba(160,140,100,0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 85% 90%, rgba(120,100,70,0.05) 0%, transparent 45%);
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+.ink-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 4px 12px rgba(80,60,30,0.1),
+    0 12px 32px rgba(80,60,30,0.08);
+}
+
+/* ── Class-colored ink edge (left) ── */
+
+.ink-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12%;
+  bottom: 12%;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
+  opacity: 0.7;
+}
+
+.ink-card-strong::after { background: #3a7d5c; }
+.ink-card-medium::after { background: #b8860b; }
+.ink-card-weak::after   { background: #a0522d; }
+.ink-card-avoid::after  { background: #8b3a3a; }
+
+/* ── Ink wash corner decorations ── */
+
+.ink-wash-tl,
+.ink-wash-br {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.035;
+}
+
+.ink-wash-tl {
+  top: -10px;
+  left: -10px;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(ellipse at 30% 30%, #2d2520 0%, transparent 70%);
+  border-radius: 50% 30% 50% 30%;
+}
+
+.ink-wash-br {
+  bottom: -15px;
+  right: -10px;
+  width: 110px;
+  height: 80px;
+  background: radial-gradient(ellipse at 70% 70%, #2d2520 0%, transparent 70%);
+  border-radius: 30% 50% 30% 50%;
+}
+
+/* ── Head: name + fav button ── */
+
+.ink-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.ink-card-title-area {
+  flex: 1;
+  min-width: 0;
+}
+
+.ink-card-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2d2520;
+  letter-spacing: 1px;
+  line-height: 1.3;
+}
+
+.ink-card-code {
+  font-size: 12px;
+  color: #a09080;
+  margin-top: 2px;
+  font-family: 'Courier New', 'Menlo', monospace;
+  letter-spacing: 1px;
+}
+
+/* ── Favorite button (印章风格) ── */
+
+.ink-card-fav {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  border: 2px solid rgba(180,50,30,0.2);
+  background: transparent;
+  color: #c0b0a0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ink-card-fav:hover {
+  border-color: rgba(180,50,30,0.45);
+  color: #b43020;
+  transform: scale(1.08);
+}
+
+.ink-card-fav.active {
+  background: rgba(180,50,30,0.08);
+  border-color: rgba(180,50,30,0.5);
+  color: #b43020;
+}
+
+.ink-card-fav.ink-ripple {
+  animation: fav-stamp 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes fav-stamp {
+  0%   { transform: scale(1.4) rotate(-8deg); }
+  50%  { transform: scale(0.9) rotate(2deg); }
+  100% { transform: scale(1) rotate(0); }
+}
+
+/* ── Rating ── */
+
+.ink-card-rating {
+  font-size: 22px;
+  margin: 8px 0 10px;
+  letter-spacing: 3px;
+}
+
+/* ── Ink divider (brush stroke) ── */
+
+.ink-divider {
+  height: 2px;
+  margin: 12px 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(100,80,50,0.1) 8%,
+    rgba(100,80,50,0.2) 20%,
+    rgba(100,80,50,0.25) 40%,
+    rgba(100,80,50,0.18) 65%,
+    rgba(100,80,50,0.08) 85%,
+    transparent 100%
+  );
+  border-radius: 1px;
+}
+
+/* ── Summary ── */
+
+.ink-card-summary {
+  font-size: 14px;
+  color: #5a5040;
+  line-height: 1.75;
+  margin: 8px 0 14px;
+  min-height: 48px;
+}
+
+/* ── Position ── */
+
+.ink-card-position {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 8px 12px;
+  background: rgba(120,100,70,0.04);
+  border-radius: 4px;
+  border: 1px solid rgba(120,100,70,0.06);
+}
+
+.ink-pos-label {
+  font-size: 12px;
+  color: #a09080;
+  letter-spacing: 2px;
+}
+
+.ink-pos-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: #3d3228;
+}
+
+/* ── Action buttons ── */
+
+.ink-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.ink-btn {
+  flex: 1;
+  padding: 9px 10px;
+  border: 1px solid rgba(100,80,50,0.15);
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  background: transparent;
+  color: #5a4a3a;
+  letter-spacing: 1px;
+}
+
+.ink-btn:hover {
+  background: rgba(100,80,50,0.06);
+  border-color: rgba(100,80,50,0.3);
+  transform: translateY(-1px);
+}
+
+.ink-btn-primary {
+  background: #3d3228;
+  color: #f5f0e8;
+  border-color: #3d3228;
+}
+
+.ink-btn-primary:hover {
+  background: #5a4a3a;
+  border-color: #5a4a3a;
+}
+
+/* ── Fly animation (card → sidebar) ── */
+
+.ink-card-fly {
+  animation: card-fly 0.5s ease forwards;
+}
+
+@keyframes card-fly {
+  0%   { opacity: 1; transform: scale(1); }
+  40%  { opacity: 0.8; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 480px) {
+  .ink-card {
+    padding: 18px 16px 16px;
+  }
+  .ink-card-name {
+    font-size: 18px;
+  }
+  .ink-card-summary {
+    font-size: 13px;
+  }
+}

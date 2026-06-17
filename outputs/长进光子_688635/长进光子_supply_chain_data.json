@@ -1,130 +1,94 @@
 {
   "company_code": "688635",
   "company_name": "长进光子",
-  "analysis_date": "2026-06-09",
+  "analysis_date": "2026-06-16",
   "nodes": [
     {
       "id": "target_688635",
       "name": "长进光子\n688635",
       "category": "target",
-      "business": "稀土掺杂光纤，光纤激光器核心材料",
+      "business": "稀土掺杂光纤（掺铒/镱/铥光纤）、传能光纤、功能增强型特种光纤的研发与生产",
       "symbolSize": 90
     },
     {
       "id": "comp_0",
-      "name": "nLight",
+      "name": "Nufern\n(Coherent子公司)",
       "category": "competitor",
-      "business": "高功率掺镱光纤，美国垂直整合巨头",
-      "symbolSize": 50
+      "business": "全球稀土掺杂光纤龙头，全系列掺铒/镱/铥光纤产品",
+      "symbolSize": 45
     },
     {
       "id": "comp_1",
-      "name": "长飞光纤",
+      "name": "iXblue/Exail",
       "category": "competitor",
-      "business": "光纤光缆+特种光纤",
+      "business": "法国特种光纤企业，掺稀土光纤和光纤陀螺仪用光纤",
       "symbolSize": 45
     },
     {
       "id": "comp_2",
-      "name": "Coherent",
+      "name": "Fibercore",
       "category": "competitor",
-      "business": "光学材料+激光器全产业链",
+      "business": "英国老牌掺杂光纤制造商，光纤传感和通信领域",
       "symbolSize": 45
     },
     {
       "id": "up_0",
-      "name": "中国稀土集团",
+      "name": "安徽盛基",
       "category": "upstream",
-      "business": "镱、铒、铥等稀土氧化物",
+      "business": "石英基管/预制棒材料供应（占采购23.28%）",
       "symbolSize": 40
     },
     {
       "id": "up_1",
-      "name": "北方稀土",
+      "name": "湖北吉佳力",
       "category": "upstream",
-      "business": "稀土氧化物、高纯稀土材料",
+      "business": "光纤制造配套设备和材料（占采购23.86%）",
       "symbolSize": 40
     },
     {
       "id": "up_2",
-      "name": "厦门钨业",
+      "name": "长飞石英",
       "category": "upstream",
-      "business": "高纯稀土化合物",
+      "business": "高纯石英材料，长飞光纤关联公司（占采购17.61%）",
       "symbolSize": 40
     },
     {
       "id": "up_3",
-      "name": "长飞光纤",
+      "name": "湖南稀土院",
       "category": "upstream",
-      "business": "光纤预制棒供应",
-      "symbolSize": 40
-    },
-    {
-      "id": "up_4",
-      "name": "康宁(进口)",
-      "category": "upstream",
-      "business": "高端光纤预制棒",
+      "business": "稀土元素（铒、镱、铥等）原料供应（占采购7.12%）",
       "symbolSize": 40
     },
     {
       "id": "down_0",
-      "name": "锐科激光",
+      "name": "创鑫激光\n688190",
       "category": "downstream",
-      "business": "国内最大光纤激光器供应商",
+      "business": "国内光纤激光器龙头之一，采购掺稀土光纤制造激光器（占营收18.59%）",
       "symbolSize": 50
     },
     {
       "id": "down_1",
-      "name": "创鑫激光",
+      "name": "锐科激光\n300747",
       "category": "downstream",
-      "business": "光纤激光器第二梯队",
+      "business": "国内光纤激光器龙头，采购掺镱光纤用于高功率激光器（占营收14.99%）",
       "symbolSize": 50
     },
     {
       "id": "down_2",
-      "name": "华为技术",
+      "name": "杰普特\n688025",
       "category": "downstream",
-      "business": "光通信设备，EDFA光放大器",
+      "business": "激光及光通信设备，持股9.96%的战略股东+客户，合作AI数据中心光纤（占营收9.58%）",
       "symbolSize": 50
     },
     {
       "id": "down_3",
-      "name": "中兴通讯",
+      "name": "光通信/\n国防军工",
       "category": "downstream",
-      "business": "光通信设备，5G基础设施",
-      "symbolSize": 50
-    },
-    {
-      "id": "down_4",
-      "name": "国防军工单位",
-      "category": "downstream",
-      "business": "激光雷达、激光武器、光纤传感",
-      "symbolSize": 50
-    },
-    {
-      "id": "down_5",
-      "name": "杰普特",
-      "category": "downstream",
-      "business": "激光器件+激光设备",
+      "business": "EDFA光放大器制造商、400G光传输网、抗辐照光纤用于卫星航天（含客户A/客户B）",
       "symbolSize": 50
     }
   ],
   "edges": [
-    {
-      "source": "comp_0",
-      "target": "target_688635",
-      "relation": "compete"
-    },
-    {
-      "source": "comp_1",
-      "target": "target_688635",
-      "relation": "compete"
-    },
-    {
-      "source": "comp_2",
-      "target": "target_688635",
-      "relation": "compete"
-    },
     {
       "source": "up_0",
       "target": "target_688635",
@@ -142,11 +106,6 @@
     },
     {
       "source": "up_3",
-      "target": "target_688635",
-      "relation": "supply"
-    },
-    {
-      "source": "up_4",
       "target": "target_688635",
       "relation": "supply"
     },
@@ -171,14 +130,19 @@
       "relation": "customer"
     },
     {
-      "source": "target_688635",
-      "target": "down_4",
-      "relation": "customer"
+      "source": "comp_0",
+      "target": "target_688635",
+      "relation": "compete"
     },
     {
-      "source": "target_688635",
-      "target": "down_5",
-      "relation": "customer"
+      "source": "comp_1",
+      "target": "target_688635",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688635",
+      "relation": "compete"
     }
   ],
   "categories": [
