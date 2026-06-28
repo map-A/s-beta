@@ -1,0 +1,110 @@
+{
+  "company_code": "688041",
+  "company_name": "海光信息",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688041",
+      "name": "海光信息\n688041",
+      "category": "target",
+      "business": "国产x86 CPU+类CUDA DCU设计，国内唯一同时量产的厂商，2025年营收143.8亿/净利58.3亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华为鲲鹏",
+      "category": "competitor",
+      "business": "ARM架构服务器CPU+昇腾AI芯片，生态最成熟的国产方案，未独立上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "龙芯中科",
+      "category": "competitor",
+      "business": "688047，自研LoongArch架构CPU，全栈自主可控，信创领域竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "摩尔线程",
+      "category": "competitor",
+      "business": "688795，国产GPU/DCU设计，兼容CUDA生态，AI算力竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "晶圆代工",
+      "category": "upstream",
+      "business": "芯片制造服务（台积电/中芯国际），先进制程依赖度高",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "EDA工具商",
+      "category": "upstream",
+      "business": "芯片设计必需的EDA软件（Synopsys/Cadence/华大九天）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "IP授权/AMD",
+      "category": "upstream",
+      "business": "x86指令集授权，通过AMD合资架构获得，是核心知识产权资产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "封装测试厂",
+      "category": "upstream",
+      "business": "芯片封装测试服务（长电科技/通富微电等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "服务器整机厂",
+      "category": "downstream",
+      "business": "浪潮/新华三/中科曙光等，将海光CPU/DCU集成到服务器中（客户一占56.68%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电信运营商",
+      "category": "downstream",
+      "business": "中国移动/联通/电信，采购信创服务器和AI算力设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "互联网/云厂商",
+      "category": "downstream",
+      "business": "阿里/腾讯/百度/字节，AI训练推理算力和云计算基础设施",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "金融/政府信创",
+      "category": "downstream",
+      "business": "银行/保险/证券+政府/央企，信创国产替代采购",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_688041", "relation": "supply"},
+    {"source": "up_1", "target": "target_688041", "relation": "supply"},
+    {"source": "up_2", "target": "target_688041", "relation": "supply"},
+    {"source": "up_3", "target": "target_688041", "relation": "supply"},
+    {"source": "target_688041", "target": "down_0", "relation": "customer"},
+    {"source": "target_688041", "target": "down_1", "relation": "customer"},
+    {"source": "target_688041", "target": "down_2", "relation": "customer"},
+    {"source": "target_688041", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_688041", "relation": "compete"},
+    {"source": "comp_1", "target": "target_688041", "relation": "compete"},
+    {"source": "comp_2", "target": "target_688041", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "company_code": "688549",
+  "company_name": "中巨芯",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_688549",
+      "name": "中巨芯\n688549",
+      "category": "target",
+      "business": "电子湿化学品（氢氟酸/硫酸/硝酸等）、电子特种气体（氯气/氯化氢/六氟化钨等）、前驱体材料的研发、生产和销售",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "江化微\n603078",
+      "category": "competitor",
+      "business": "湿电子化学品（刻蚀液、清洗液等），在湿化学品领域与中巨芯直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华特气体\n688268",
+      "category": "competitor",
+      "business": "电子特种气体（氟类、混合气等），在特气领域与中巨芯竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "晶瑞电材\n300655",
+      "category": "competitor",
+      "business": "超纯化学材料和光刻胶，在电子湿化学品领域与中巨芯竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中船特气\n688146",
+      "category": "competitor",
+      "business": "电子特种气体（三氟化氮等），在特气领域与中巨芯竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "基础化工原料\n供应商",
+      "category": "upstream",
+      "business": "高纯氢氟酸原料、硫酸、硝酸、氨水等基础化工品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中央硝子\n株式会社",
+      "category": "upstream",
+      "business": "日本化学品企业，与博瑞电子合资成立博瑞中硝生产六氟化钨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯金属\n原料供应商",
+      "category": "upstream",
+      "business": "高纯钨化合物、氯源、有机金属化合物等特种原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "Heraeus\nConamic UK",
+      "category": "upstream",
+      "business": "半导体高纯石英材料，通过参股子公司晶恒希道全资持有",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "中国最大晶圆代工厂，系列产品批量供应五周年",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "SK海力士\n（无锡）",
+      "category": "downstream",
+      "business": "全球DRAM龙头，氯气直销+代理模式采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "台积电\nTSMC",
+      "category": "downstream",
+      "business": "全球最大晶圆代工厂，代理模式采购电子化学品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "华虹集团",
+      "category": "downstream",
+      "business": "晶圆代工厂，国产超纯电子湿化学品首家量产供应商，合作八周年",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "显示面板\n厂商",
+      "category": "downstream",
+      "business": "京东方、华星光电等面板制造，采购清洗/刻蚀用湿化学品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688549",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688549",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688549",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688549",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688549",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688549",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688549",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688549",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688549",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688549",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688549",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688549",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688549",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

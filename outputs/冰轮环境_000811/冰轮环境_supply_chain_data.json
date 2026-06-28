@@ -1,0 +1,190 @@
+{
+  "company_code": "000811",
+  "company_name": "冰轮环境",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_000811",
+      "name": "冰轮环境\n000811",
+      "category": "target",
+      "business": "制冷压缩机平台龙头：IDC冷水机组（顿汉布什）、冷链装备、工业制冷、可控核聚变氦气压缩机",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "钢材/铜材\n供应商",
+      "category": "upstream",
+      "business": "压缩机壳体、换热器管材等大宗原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "电机/变频器\n供应商",
+      "category": "upstream",
+      "business": "压缩机核心驱动部件：高效电机、变频控制系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铸造件\n供应商",
+      "category": "upstream",
+      "business": "压缩机壳体/阀体等铸造件，公司部分自制",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "密封件/轴承\n供应商",
+      "category": "upstream",
+      "business": "压缩机密封件、高性能轴承等关键零部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "江森自控\n(约克)\nJCI",
+      "category": "competitor",
+      "business": "全球暖通空调/楼宇自动化龙头，约克品牌冷水机组，IDC制冷全球领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "冰山冷热\n000530",
+      "category": "competitor",
+      "business": "国内工业制冷/冷链设备老牌企业，与冰轮环境直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "同飞股份\n300990",
+      "category": "competitor",
+      "business": "精密温控设备（数据中心/储能/半导体），IDC温控新进入者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "摩丁制造\nMOD(美股)",
+      "category": "competitor",
+      "business": "工业冷却/数据中心温控，获40亿美元长期产能协议，冰轮对标的美股龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "数据中心\n/AIDC运营商",
+      "category": "downstream",
+      "business": "AI数据中心冷水机组需求方，顿汉布什北美直接覆盖，当前核心增长引擎",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "冷链物流\n/食品企业",
+      "category": "downstream",
+      "business": "冷库/速冻设备/冷链物流系统，传统基本盘",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "能源化工\n企业",
+      "category": "downstream",
+      "business": "石油天然气、煤化工、LNG等工业制冷及余热回收需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "可控核聚变\n科研装置",
+      "category": "downstream",
+      "business": "托卡马克等核聚变实验装置的超导磁体低温冷却（氦气压缩机），极早期阶段",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "军工/核电\n项目",
+      "category": "downstream",
+      "business": "航空风洞、船用核反应堆制冷、军用智能仓储，资质壁垒高",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000811",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000811",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000811",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000811",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000811",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000811",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000811",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000811",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000811",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000811",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000811",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000811",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_000811",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

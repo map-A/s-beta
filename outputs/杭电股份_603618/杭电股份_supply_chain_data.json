@@ -1,0 +1,214 @@
+{
+  "company_code": "603618",
+  "company_name": "杭电股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603618",
+      "name": "杭电股份\n603618",
+      "category": "target",
+      "business": "电力电缆+光纤光缆+铜箔，浙江省电线电缆行业协会理事长单位",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "江西铜业\n600362",
+      "category": "upstream",
+      "business": "电解铜冶炼，电缆核心原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中国铝业\n601600",
+      "category": "upstream",
+      "business": "电解铝冶炼，架空导线原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯四氯化硅/\n锗材料供应商",
+      "category": "upstream",
+      "business": "光纤预制棒核心原材料（高纯SiCl4、GeCl4）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "聚乙烯/\nPVC化工企业",
+      "category": "upstream",
+      "business": "电缆绝缘层和护套用高分子材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "铜箔设备/\n添加剂供应商",
+      "category": "upstream",
+      "business": "铜箔生产设备及添加剂材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "远东股份\n600869",
+      "category": "competitor",
+      "business": "电线电缆行业龙头，营收~350亿，全产业链布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "东方电缆\n603606",
+      "category": "competitor",
+      "business": "海缆龙头，毛利率~30%，高端特种电缆",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "长飞光纤\n601869",
+      "category": "competitor",
+      "business": "光纤光缆全球龙头，全球份额11.3%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中天科技\n600522",
+      "category": "competitor",
+      "business": "海缆+电力电缆+光通信综合龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "宝胜股份\n600973",
+      "category": "competitor",
+      "business": "特种电缆（中航系背景），营收~250亿",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "国家电网",
+      "category": "downstream",
+      "business": "电力输配电基础设施建设，十五五投资规划~4万亿元",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "南方电网",
+      "category": "downstream",
+      "business": "南方区域电网建设及改造",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电信运营商\n(移动/电信/联通)",
+      "category": "downstream",
+      "business": "5G基站建设、光纤到户、数据中心互联",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源/\n风电光伏企业",
+      "category": "downstream",
+      "business": "风电场、光伏电站、抽水蓄能项目电缆需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "锂电池/\n新能源汽车企业",
+      "category": "downstream",
+      "business": "新能源汽车动力电池铜箔集流体需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603618",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603618",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603618",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603618",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603618",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603618",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603618",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603618",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603618",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603618",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603618",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603618",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603618",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603618",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_603618",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

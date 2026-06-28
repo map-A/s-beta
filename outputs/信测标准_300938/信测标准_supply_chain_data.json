@@ -1,0 +1,178 @@
+{
+  "company_code": "300938",
+  "company_name": "信测标准",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300938",
+      "name": "信测标准\n300938",
+      "category": "target",
+      "business": "汽车研发检测+电子电器检测+试验设备制造，行业前列第三方检测机构",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华测检测\n300012",
+      "category": "competitor",
+      "business": "A股检测龙头，综合性第三方检测（营收约60亿）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "苏试试验\n300416",
+      "category": "competitor",
+      "business": "力学/环境试验设备+检测服务",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "广电计量\n002967",
+      "category": "competitor",
+      "business": "计量检测+可靠性试验",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "SGS/BV/TüV",
+      "category": "competitor",
+      "business": "全球大型检测认证机构",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "检测仪器\n设备商",
+      "category": "upstream",
+      "business": "环境试验箱、EMC暗室设备、力学试验机等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "标准件/\n标准物质",
+      "category": "upstream",
+      "business": "标准样品、校准件、参考物质",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "试验耗材\n供应商",
+      "category": "upstream",
+      "business": "传感器、线缆、夹具等检测耗材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "IT/信息化\n供应商",
+      "category": "upstream",
+      "business": "LIMS实验室管理系统、数据分析软件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "汽车整车/\n零部件企业",
+      "category": "downstream",
+      "business": "汽车研发验证检测（环境/EMC/力学）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "消费电子\n企业",
+      "category": "downstream",
+      "business": "电子产品安全/EMC/可靠性检测认证",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新能源/\n智能汽车",
+      "category": "downstream",
+      "business": "智能网联汽车检测认证（ADAS/V2X）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "军工/新兴\n产业企业",
+      "category": "downstream",
+      "business": "军民融合检测、机器人/低空经济检测",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300938",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300938",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300938",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300938",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300938",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300938",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

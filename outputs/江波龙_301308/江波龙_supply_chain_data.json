@@ -1,0 +1,166 @@
+{
+  "company_code": "301308",
+  "company_name": "江波龙",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_301308",
+      "name": "江波龙\n301308",
+      "category": "target",
+      "business": "全球第二大独立存储器企业（Lexar+FORESEE），eMMC/UFS/SSD/DIMM存储模组及品牌",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "三星电子",
+      "category": "upstream",
+      "business": "全球最大NAND/DRAM存储原厂，江波龙核心晶圆供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "SK海力士",
+      "category": "upstream",
+      "business": "全球第二大存储原厂，HBM技术领先",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "美光科技",
+      "category": "upstream",
+      "business": "全球第三大存储原厂（美国纳斯达克上市）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "长江存储",
+      "category": "upstream",
+      "business": "国产NAND Flash龙头，江波龙国产替代方案供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "金士顿\nKingston",
+      "category": "competitor",
+      "business": "全球最大独立存储模组/品牌企业（美国，非上市）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "佰维存储\n688525",
+      "category": "competitor",
+      "business": "A股存储模组企业（嵌入式存储/SSD），国内竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "威刚\n3260.TW",
+      "category": "competitor",
+      "business": "台系存储模组/品牌企业（DRAM模组/SSD）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "智能手机厂商",
+      "category": "downstream",
+      "business": "小米/OPPO/vivo等手机品牌，采购FORESEE嵌入式存储（eMMC/UFS）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "PC/服务器厂商",
+      "category": "downstream",
+      "business": "联想/戴尔/惠普等，采购SSD和DRAM内存条",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "全球零售渠道",
+      "category": "downstream",
+      "business": "Costco/BestBuy/亚马逊/Shopee等，销售Lexar品牌消费存储产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子厂商",
+      "category": "downstream",
+      "business": "车企/Tier1供应商，采购AEC-Q100认证车规级存储产品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301308",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301308",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301308",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301308",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301308",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301308",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301308",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301308",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

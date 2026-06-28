@@ -1,0 +1,166 @@
+{
+  "company_code": "688502",
+  "company_name": "茂莱光学",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688502",
+      "name": "茂莱光学\n688502",
+      "category": "target",
+      "business": "国内领先的工业级精密光学供应商，半导体检测设备光学镜头/系统核心配套",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "特种光学玻璃商",
+      "category": "upstream",
+      "business": "高折射率/低色散特种光学玻璃/晶体材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光学镀膜材料商",
+      "category": "upstream",
+      "business": "多层膜系镀膜材料（介质膜/金属膜）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密机械加工商",
+      "category": "upstream",
+      "business": "镜筒/结构件精密加工配套",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "光学检测设备商",
+      "category": "upstream",
+      "business": "面形精度/表面质量检测设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "蔡司\nCarl Zeiss",
+      "category": "competitor",
+      "business": "全球半导体精密光学垄断级龙头（德国，非上市）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "蓝特光学\n688127",
+      "category": "competitor",
+      "business": "A股精密光学元件（偏消费/工业级）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "腾景科技\n688195",
+      "category": "competitor",
+      "business": "A股精密光学元件（偏光通信/工业级）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "半导体检测设备商",
+      "category": "downstream",
+      "business": "KLA/中科飞测/精测电子等，采购精密光学镜头/系统",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "生命科学仪器商",
+      "category": "downstream",
+      "business": "基因测序仪/显微镜光学模块客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "航空航天院所",
+      "category": "downstream",
+      "business": "卫星光学载荷/遥感系统客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "LiDAR/工业检测",
+      "category": "downstream",
+      "business": "无人驾驶激光雷达/机器视觉光学组件客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688502",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688502",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688502",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688502",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688502",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688502",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688502",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688502",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688502",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688502",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688502",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

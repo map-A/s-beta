@@ -1,0 +1,178 @@
+{
+  "company_code": "688146",
+  "company_name": "中船特气",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688146",
+      "name": "中船特气\n688146",
+      "category": "target",
+      "business": "国内电子特种气体最全品类龙头，源自718研究所，9大核心技术（7项国际领先），产品覆盖NF₃/WF₆/C₄F₈等半导体制造用特气",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "SK Materials",
+      "category": "competitor",
+      "business": "全球NF₃/SiH₄电子特气主要供应商（韩国），全球市场份额领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Kanto Denka",
+      "category": "competitor",
+      "business": "日本电子特气龙头，半导体级特气全球供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华特气体\n688268",
+      "category": "competitor",
+      "business": "国内电子特气+光刻气供应商，已获ASML光刻气认证",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "昊华科技\n600378",
+      "category": "competitor",
+      "business": "六氟化钨国内第二大供应商+电子特气布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "电力供应商\n（国网/蒙电）",
+      "category": "upstream",
+      "business": "占采购17.51%，电子特气生产最大成本项",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "钨钼材料\n供应商",
+      "category": "upstream",
+      "business": "赣州虹飞钨钼，占采购7.01%，生产用关键材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工原料\n供应商",
+      "category": "upstream",
+      "business": "中色天津新材料等，占采购6.68%，基础化工原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "硬质合金\n供应商",
+      "category": "upstream",
+      "business": "南昌硬质合金，占采购5.55%，设备/容器用材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际",
+      "category": "downstream",
+      "business": "国内晶圆代工龙头，采购电子特气用于芯片制造（占收入9.42%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "头部晶圆厂\n（客户A）",
+      "category": "downstream",
+      "business": "占收入13.31%，推测为台积电等国际晶圆代工厂 [inferred]",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "显示面板\n企业",
+      "category": "downstream",
+      "business": "天马微电子等面板厂，采购特气用于TFT-LCD/OLED生产",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "医药/新材料\n企业",
+      "category": "downstream",
+      "business": "采购三氟甲磺酸用于医药/农药/有机硅/含氟新材料",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688146",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688146",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688146",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688146",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688146",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688146",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688146",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688146",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688146",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688146",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688146",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688146",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

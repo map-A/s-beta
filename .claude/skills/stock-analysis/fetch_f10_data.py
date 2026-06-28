@@ -12,8 +12,8 @@ import subprocess
 from pathlib import Path
 import clickhouse_connect
 
-# 自动推算项目根目录（fetch_f10_data.py 在 .claude/skills/stock-analysis/ 下）
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
+# 自动推算项目根目录（fetch_f10_data.py 在 .claude/skills/stock-analysis/ 下，需4级parent）
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 
 CK_CONFIG = {
     'host': os.getenv('CK_HOST', 'localhost'),
@@ -105,22 +105,22 @@ PAGES = [
         ("f10_rdtc_theme",          "热点题材",        "theme_date",   50),
         ("f10_rdtc_event",          "题材事件",        "event_date",   5),
         ("f10_rdtc_logic",          "投资逻辑",        "fetched_at",  10),
-        # ("f10_rdtc_concept",        "概念板块",        "fetched_at",  100),
+        ("f10_rdtc_concept",        "概念板块",        "fetched_at",  100),
     ]),
     ("12_公司资讯", [
         ("f10_gszx_news",           "公司新闻",        "pub_date",     5),
         ("f10_gszx_report",         "公司研报",        "pub_date",     10),
     ]),
-    # ("13_主力持仓", [
-    #     ("f10_zlcc_inst_timeline",  "机构持仓时间线",  "report_date",  20),
-    #     ("f10_zlcc_inst_by_type",   "机构分类持仓",    "report_date",  50),
-    #     ("f10_zlcc_inst_detail",    "机构持仓明细",    "report_date", 100),
-    # ]),
+    ("13_主力持仓", [
+        ("f10_zlcc_inst_timeline",  "机构持仓时间线",  "report_date",  20),
+        ("f10_zlcc_inst_by_type",   "机构分类持仓",    "report_date",  50),
+        ("f10_zlcc_inst_detail",    "机构持仓明细",    "report_date", 100),
+    ]),
     ("14_行业分析", [
         ("f10_hyfx_industry_news",  "行业新闻",        "pub_date",     10),
         ("f10_hyfx_industry_report","行业研报",        "pub_date",     10),
         ("f10_hyfx_market_rank",    "行情排名",        "fetched_at",  10),
-        # ("f10_hyfx_size_rank",      "规模排名",        "fetched_at",  200),
+        ("f10_hyfx_size_rank",      "规模排名",        "fetched_at",  200),
         # ("f10_hyfx_valuation_rank", "估值排名",        "fetched_at",  200),
         # ("f10_hyfx_financial_rank", "财务排名",        "fetched_at",  200),
         # ("f10_hyfx_dividend_rank",  "分红排名",        "fetched_at",  200),

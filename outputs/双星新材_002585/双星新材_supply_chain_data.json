@@ -1,0 +1,214 @@
+{
+  "company_code": "002585",
+  "company_name": "双星新材",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002585",
+      "name": "双星新材\n002585",
+      "category": "target",
+      "business": "全球BOPET聚酯薄膜产能第一，60+系列100+品种，光学膜/MLCC离型膜/复合铜箔基膜/光伏背板/包装薄膜",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "PTA供应商",
+      "category": "upstream",
+      "business": "精对苯二甲酸，BOPET核心石化原料（占采购43.05%），大宗商品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "MEG供应商",
+      "category": "upstream",
+      "business": "乙二醇，BOPET核心石化原料（占采购16.29%），大宗商品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "涂布/靶材\n供应商",
+      "category": "upstream",
+      "business": "精密涂布液、磁控溅射靶材等功能性辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "薄膜设备\n供应商",
+      "category": "upstream",
+      "business": "BOPET挤出拉伸线、涂布线、磁控溅射设备等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "铜箔材料\n供应商",
+      "category": "upstream",
+      "business": "复合铜箔生产用铜靶材/铜丝等原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "裕兴股份\n300305",
+      "category": "competitor",
+      "business": "功能性聚酯薄膜，光伏背板基膜，双星新材BOPET直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "东丽\nToray",
+      "category": "competitor",
+      "business": "全球光学膜/高端薄膜龙头（日本），双星光学膜国产替代对标",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "宝明科技\n002992",
+      "category": "competitor",
+      "business": "复合铜箔先行者，双星新材复合铜箔基膜竞品方向",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "洁美科技\n002859",
+      "category": "competitor",
+      "business": "MLCC载带/离型膜龙头，双星新材MLCC离型膜竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "长阳科技\n688299",
+      "category": "competitor",
+      "business": "光学级BOPET薄膜/反射膜，双星新材光学膜竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "显示面板\n厂商",
+      "category": "downstream",
+      "business": "LCD/OLED面板用光学膜终端客户（三星/LG/京东方等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "MLCC厂商",
+      "category": "downstream",
+      "business": "MLCC离型膜终端客户（村田/三星电机/国巨等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏组件\n企业",
+      "category": "downstream",
+      "business": "光伏背板基膜终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "锂电池/\n复合铜箔",
+      "category": "downstream",
+      "business": "动力电池复合铜箔基膜终端客户（概念阶段）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "包装企业",
+      "category": "downstream",
+      "business": "食品/日化包装薄膜终端客户（传统业务，竞争最激烈）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002585",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002585",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002585",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002585",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002585",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002585",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002585",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002585",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002585",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002585",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002585",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002585",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002585",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002585",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_002585",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

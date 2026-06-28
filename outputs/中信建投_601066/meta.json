@@ -1,0 +1,8 @@
+{
+  "code": "601066",
+  "name": "中信建投",
+  "rating": "不适用",
+  "class": "avoid",
+  "summary": "头部券商（投行业务领先），券商行业受监管定价和资金成本驱动，不适用Serenity卡点框架（chain_map.md第11节明确排除），建议使用PB-ROE模型等金融行业框架独立评估",
+  "position": "N/A"
+}

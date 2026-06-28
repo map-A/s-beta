@@ -1,0 +1,166 @@
+{
+  "company_code": "002273",
+  "company_name": "水晶光电",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002273",
+      "name": "水晶光电\n002273",
+      "category": "target",
+      "business": "IRCF/OLPF国际前列，AR-HUD/AR光波导/AI光学，深度绑定苹果/华为/三星",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "五方光电\n002962",
+      "category": "competitor",
+      "business": "国内IRCF重要供应商，水晶光电国内竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "舜宇光学\n2382.HK",
+      "category": "competitor",
+      "business": "全球光学龙头（手机镜头+车载镜头+光学元件）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "瑞声科技\n2018.HK",
+      "category": "competitor",
+      "business": "光学+声学+触觉解决方案，光学元件及模组",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "大立光\n3008.TW",
+      "category": "competitor",
+      "business": "全球手机镜头龙头，高端光学元件",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "光学玻璃\n基板供应商",
+      "category": "upstream",
+      "business": "IRCF/OLPF核心基材，光学级特种玻璃",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光学薄膜\n材料供应商",
+      "category": "upstream",
+      "business": "镀膜用靶材、化学材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光学设备\n供应商",
+      "category": "upstream",
+      "business": "光学镀膜机、精密加工设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "苹果\n（Apple）",
+      "category": "downstream",
+      "business": "第一大客户（34.03%），iPhone/iPad光学元器件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华为",
+      "category": "downstream",
+      "business": "智能手机光学元器件（IRCF/OLPF）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "三星/\nVIVO/OPPO",
+      "category": "downstream",
+      "business": "智能手机光学元器件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车/\nAR终端",
+      "category": "downstream",
+      "business": "AR-HUD（长安深蓝/红旗量产）、AR眼镜光波导",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002273",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002273",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002273",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002273",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002273",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002273",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002273",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002273",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002273",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002273",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002273",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

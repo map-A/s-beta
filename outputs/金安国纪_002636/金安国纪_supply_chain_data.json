@@ -1,0 +1,178 @@
+{
+  "company_code": "002636",
+  "company_name": "金安国纪",
+  "analysis_date": "2026-06-21",
+  "nodes": [
+    {
+      "id": "target_002636",
+      "name": "金安国纪\n002636",
+      "category": "target",
+      "business": "覆铜板(CCL)龙头之一，PCB核心上游材料",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "铜箔供应商",
+      "category": "upstream",
+      "business": "电解铜箔/压延铜箔（CCL成本最大项）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "环氧树脂供应商",
+      "category": "upstream",
+      "business": "CCL粘结剂用环氧树脂",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "玻纤布供应商",
+      "category": "upstream",
+      "business": "电子级玻纤布（CCL增强材料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铜矿/冶炼企业",
+      "category": "upstream",
+      "business": "铜原料大宗商品供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "生益科技",
+      "category": "competitor",
+      "business": "国内最大覆铜板制造商，全球产能前列",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "建滔积层板",
+      "category": "competitor",
+      "business": "全球最大覆铜板制造商（港股）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "南亚新材",
+      "category": "competitor",
+      "business": "国内CCL第二梯队",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "台光电子",
+      "category": "competitor",
+      "business": "台湾CCL龙头，高频高速材料领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "深南电路",
+      "category": "downstream",
+      "business": "国内高端PCB+IC封装基板龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "沪电股份",
+      "category": "downstream",
+      "business": "A股AI服务器PCB龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "胜宏科技",
+      "category": "downstream",
+      "business": "A股AI服务器PCB龙头之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "鹏鼎控股",
+      "category": "downstream",
+      "business": "全球最大PCB制造商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002636",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002636",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002636",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002636",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002636",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002636",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

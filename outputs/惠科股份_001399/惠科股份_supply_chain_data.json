@@ -1,0 +1,178 @@
+{
+  "company_code": "001399",
+  "company_name": "惠科股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_001399",
+      "name": "惠科股份\n001399",
+      "category": "target",
+      "business": "全球第三大LCD面板供应商+智能终端OEM/ODM/OBM，85英寸+超大尺寸电视面板全球第一",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "玻璃基板\n（康宁/NEG）",
+      "category": "upstream",
+      "business": "面板制造核心基板材料，全球寡头垄断（真正的上游卡点）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "驱动IC\n（联咏/奇景）",
+      "category": "upstream",
+      "business": "面板显示驱动芯片，控制像素点亮逻辑",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "偏光片\n（日东电工）",
+      "category": "upstream",
+      "business": "LCD面板核心光学膜材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "液晶材料\n（默克/JNC）",
+      "category": "upstream",
+      "business": "LCD面板核心液晶材料，德国/日本供应商主导",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "京东方A\n000725",
+      "category": "competitor",
+      "business": "全球LCD面板龙头+OLED柔性屏",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "TCL科技\n000100",
+      "category": "competitor",
+      "business": "华星光电LCD/OLED面板+光伏",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "深天马A\n000050",
+      "category": "competitor",
+      "business": "中小尺寸显示面板（手机/车载/工控）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "彩虹股份\n600707",
+      "category": "competitor",
+      "business": "G8.5+基板玻璃+面板",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "海信集团",
+      "category": "downstream",
+      "business": "占收入12.24%，国内电视龙头品牌",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "三星集团",
+      "category": "downstream",
+      "business": "占收入9.5%，全球最大电视/手机品牌",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "TCL集团",
+      "category": "downstream",
+      "business": "占收入8.67%，国内电视/显示器品牌",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "LG集团",
+      "category": "downstream",
+      "business": "占收入5.3%，韩国电视/显示器品牌",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_001399",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_001399",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_001399",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_001399",
+      "relation": "supply"
+    },
+    {
+      "source": "target_001399",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001399",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001399",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001399",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_001399",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_001399",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_001399",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_001399",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

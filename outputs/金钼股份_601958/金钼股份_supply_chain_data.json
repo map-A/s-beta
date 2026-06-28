@@ -1,0 +1,178 @@
+{
+  "company_code": "601958",
+  "company_name": "金钼股份",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_601958",
+      "name": "金钼股份\n601958",
+      "category": "target",
+      "business": "世界领先钼业公司，227万吨钼金属量，全球市占率13%，采矿-选矿-冶炼-化工-金属加工全产业链",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "金堆城钼矿\n（自有）",
+      "category": "upstream",
+      "business": "全球六大原生钼矿床之一，公司核心矿山",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "东沟钼矿\n（自有）",
+      "category": "upstream",
+      "business": "河南汝阳世界级钼矿，公司第二大矿山",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "沙坪沟钼矿\n（参股34%）",
+      "category": "upstream",
+      "business": "世界最大单体钼矿，紫金矿业+金钼联合开发，权益79万吨金属量",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "采矿设备/\n辅材供应商",
+      "category": "upstream",
+      "business": "采矿设备、炸药、选矿药剂、电力等辅助供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "洛阳钼业\n603993",
+      "category": "competitor",
+      "business": "钼钨铜钴多金属矿业龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Freeport-\nMcMoRan",
+      "category": "competitor",
+      "business": "全球最大铜钼矿生产商之一（美国）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Codelco\n（智利国企）",
+      "category": "competitor",
+      "business": "全球最大铜生产商（副产钼），智利国企",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Grupo Mexico",
+      "category": "competitor",
+      "business": "全球重要铜钼矿商（墨西哥）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "钢铁企业\n（~80%需求）",
+      "category": "downstream",
+      "business": "钢铁冶炼企业，钼作为合金元素提升钢材性能",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "航空航天/\n军工企业",
+      "category": "downstream",
+      "business": "航空发动机/火箭发动机用高温合金，军工特种钢",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "石油化工/\n核电企业",
+      "category": "downstream",
+      "business": "石油精炼催化剂、核电用核级不锈钢",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电子信息/\nOLED面板",
+      "category": "downstream",
+      "business": "OLED面板用钼靶材、电子元器件",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601958",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601958",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601958",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601958",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601958",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601958",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601958",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601958",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601958",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601958",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601958",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_601958",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

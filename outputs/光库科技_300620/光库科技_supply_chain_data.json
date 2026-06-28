@@ -1,0 +1,214 @@
+{
+  "company_code": "300620",
+  "company_name": "光库科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300620",
+      "name": "光库科技\n300620",
+      "category": "target",
+      "business": "全球仅三家、国内唯一TFLN调制器量产厂商+光纤激光器件龙头+光通信无源器件，应用于AI数据中心/电信/星链/激光加工",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "铌酸锂晶体\n供应商",
+      "category": "upstream",
+      "business": "铌酸锂晶体/薄膜材料，TFLN调制器核心基材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "特种光纤\n供应商",
+      "category": "upstream",
+      "business": "保偏光纤、大模场光纤等特种光纤，光纤激光器件和调制器核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光学元件\n供应商",
+      "category": "upstream",
+      "business": "晶体、法拉第片、滤波片等光学元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精密机械件\n供应商",
+      "category": "upstream",
+      "business": "精密机械加工件和封装结构件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "TFLN薄膜制备\n设备/工艺",
+      "category": "upstream",
+      "business": "离子注入、晶圆键合、亚微米光波导加工等TFLN核心制备工艺设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Fujitsu Optical\nComponents",
+      "category": "competitor",
+      "business": "全球TFLN调制器三家量产厂商之一（日本），传统TFLN强者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "HyperLight\n(美国)",
+      "category": "competitor",
+      "business": "全球TFLN调制器三家量产厂商之一（美国MIT孵化），TFLN初创",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Lumentum\nLITE",
+      "category": "competitor",
+      "business": "全球光通信器件龙头，InP调制器+激光器，TFLN替代路线竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "天孚通信\n300394",
+      "category": "competitor",
+      "business": "光无源器件龙头，FA光纤阵列全球领先，光器件层竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "源杰科技\n688498",
+      "category": "competitor",
+      "business": "10G激光器芯片全球第一，光芯片国产替代龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "中际旭创\n等光模块厂商",
+      "category": "downstream",
+      "business": "800G/1.6T光模块组装厂商，TFLN调制器核心下游客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "Cisco/Ciena/\nNokia等",
+      "category": "downstream",
+      "business": "电信设备厂商，长途相干传输用高速调制器客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "Trumpf/Coherent\n等激光器厂商",
+      "category": "downstream",
+      "business": "全球知名光纤激光器厂商，高功率光纤器件核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "SpaceX星链\n等航天客户",
+      "category": "downstream",
+      "business": "卫星通信星载800G TFLN调制器客户 [inferred]",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "AI数据中心\n（谷歌/英伟达等）",
+      "category": "downstream",
+      "business": "AI算力集群光互联，1.6T/3.2T光模块终端需求方 [inferred]",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300620",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300620",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300620",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300620",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300620",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300620",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300620",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300620",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300620",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300620",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300620",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300620",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300620",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300620",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_300620",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

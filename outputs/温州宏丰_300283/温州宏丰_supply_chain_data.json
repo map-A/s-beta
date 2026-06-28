@@ -1,0 +1,178 @@
+{
+  "company_code": "300283",
+  "company_name": "温州宏丰",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_300283",
+      "name": "温州宏丰\n300283",
+      "category": "target",
+      "business": "国内最大电接触功能复合材料企业，五大板块：电接触材料+金属基复合材料+硬质合金+锂电铜箔+半导体引线框架",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "白银/贵金属\n原材料供应商",
+      "category": "upstream",
+      "business": "白银等贵金属原材料供应，电接触材料核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜/合金\n基础材料",
+      "category": "upstream",
+      "business": "铜及铜合金基础材料，用于电接触材料和铜箔生产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密设备\n供应商",
+      "category": "upstream",
+      "business": "20辊精密轧机、气氛热复合机等核心生产设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "辅材/化工\n供应商",
+      "category": "upstream",
+      "business": "生产用辅助材料和化工原料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "安泰科技\n000969",
+      "category": "competitor",
+      "business": "央企，难熔材料+粉末冶金+电接触材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华光新材\n688379",
+      "category": "competitor",
+      "business": "钎焊材料/电接触材料，科创板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "田中贵金属\n美泰乐",
+      "category": "competitor",
+      "business": "全球电接触材料巨头（日本田中收购美泰乐后整合）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "有研粉材\n688456",
+      "category": "competitor",
+      "business": "有色金属粉体材料，央企背景，科创板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "正泰电器\n（核心客户）",
+      "category": "downstream",
+      "business": "国内最大低压电器制造商之一，占温州宏丰收入30.53%-43.63%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "施耐德/西门子\nABB/伊顿",
+      "category": "downstream",
+      "business": "国际一流电气设备制造商，温州宏丰核心海外客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "德力西/中熔\n等国内厂商",
+      "category": "downstream",
+      "business": "国内低压电器/熔断器制造企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源/\n数据中心终端",
+      "category": "downstream",
+      "business": "新能源汽车电子、5G通信、数据中心等新兴应用终端",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300283",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300283",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300283",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300283",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300283",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300283",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300283",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300283",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300283",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300283",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300283",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300283",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

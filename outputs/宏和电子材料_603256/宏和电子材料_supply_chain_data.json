@@ -1,0 +1,190 @@
+{
+  "company_code": "603256",
+  "company_name": "宏和电子材料",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_603256",
+      "name": "宏和电子材料\n603256",
+      "category": "target",
+      "business": "超薄/极薄电子级玻纤布+3微米极细纱自产，AI服务器PCB上游关键材料",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "黄石宏和\n(子公司)",
+      "category": "upstream",
+      "business": "3微米极细电子纱自产，核心原材料自主可控",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯矿物原料\n供应商",
+      "category": "upstream",
+      "business": "叶蜡石/石英砂/石灰石等玻璃纤维矿物原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "进口电子纱\n供应商",
+      "category": "upstream",
+      "business": "部分高端电子纱仍需进口",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "织造/拉丝设备\n供应商",
+      "category": "upstream",
+      "business": "超细纱拉丝设备、精密织造设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "日东纺\nNitto Boseki",
+      "category": "competitor",
+      "business": "全球超薄电子布龙头（日本），NE玻璃技术领先，市占率50-60%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "台玻集团",
+      "category": "competitor",
+      "business": "电子级玻纤布，产能规模大（台湾）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "建滔化工集团",
+      "category": "competitor",
+      "business": "覆铜板+电子布垂直一体化（香港）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "光远新材",
+      "category": "competitor",
+      "business": "电子级玻纤布，超薄布国产追赶者（河南）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "生益科技\n600183",
+      "category": "downstream",
+      "business": "国内最大覆铜板(CCL)制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "联茂电子",
+      "category": "downstream",
+      "business": "台湾CCL厂商，高频高速CCL领先",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "台光集团",
+      "category": "downstream",
+      "business": "台湾CCL厂商，AI服务器CCL核心供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "南亚新材\n688519",
+      "category": "downstream",
+      "business": "国内CCL厂商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "AI服务器/PCB\n终端",
+      "category": "downstream",
+      "business": "AI服务器/5G/IC封装基板等终端应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603256",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603256",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603256",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603256",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603256",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603256",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603256",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603256",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603256",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603256",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603256",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603256",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603256",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

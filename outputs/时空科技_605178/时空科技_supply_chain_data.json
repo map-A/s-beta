@@ -1,0 +1,190 @@
+{
+  "company_code": "605178",
+  "company_name": "时空科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_605178",
+      "name": "时空科技\n605178",
+      "category": "target",
+      "business": "景观照明系统集成工程、智慧城市照明、文旅夜游经济，拟收购深圳嘉合劲威切入存储芯片",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "名家汇\n300506",
+      "category": "competitor",
+      "business": "景观照明工程系统集成",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "豪尔赛\n002963",
+      "category": "competitor",
+      "business": "景观照明工程、智慧照明系统",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "罗曼股份\n605289",
+      "category": "competitor",
+      "business": "景观照明工程系统集成",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "华体科技\n603679",
+      "category": "competitor",
+      "business": "智慧路灯、景观照明工程",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "LED灯具厂商",
+      "category": "upstream",
+      "business": "LED路灯、投光灯、洗墙灯等景观照明灯具制造",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "智能控制系统商",
+      "category": "upstream",
+      "business": "智能照明控制系统、DMX512控制器、物联网控制平台",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "LED驱动电源厂商",
+      "category": "upstream",
+      "business": "LED驱动电源、开关电源、恒流驱动器",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "钢结构/灯杆厂商",
+      "category": "upstream",
+      "business": "灯杆、支架、安装结构件、智慧灯杆壳体",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "线缆/电气厂商",
+      "category": "upstream",
+      "business": "电力电缆、信号线缆、电气连接器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "地方政府",
+      "category": "downstream",
+      "business": "城市亮化工程、夜景灯光工程发包方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "房地产开发商",
+      "category": "downstream",
+      "business": "商业综合体、写字楼照明工程发包方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "文旅项目方",
+      "category": "downstream",
+      "business": "夜游经济、主题公园照明工程发包方（如环球影城）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "大型活动组委会",
+      "category": "downstream",
+      "business": "G20峰会、北京冬奥会等国家级活动照明配套",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_605178",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_605178",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_605178",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_605178",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_605178",
+      "relation": "supply"
+    },
+    {
+      "source": "target_605178",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605178",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605178",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605178",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_605178",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_605178",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_605178",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_605178",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

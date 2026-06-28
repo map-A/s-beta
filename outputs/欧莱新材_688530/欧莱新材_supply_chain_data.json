@@ -1,0 +1,214 @@
+{
+  "company_code": "688530",
+  "company_name": "欧莱新材",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688530",
+      "name": "欧莱新材\n688530",
+      "category": "target",
+      "business": "国内平面显示用溅射靶材龙头，覆盖铜靶/铝靶/钼靶/ITO靶，全产业链垂直一体化，正拓展半导体靶材和新能源靶材",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "高纯铜\n供应商",
+      "category": "upstream",
+      "business": "高纯无氧铜锭/铜粉，靶材核心原材料（占采购33.26%），公司正自建高纯铜基地",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯钼\n供应商",
+      "category": "upstream",
+      "business": "高纯钼粉/钼锭，钼靶及钼合金靶核心原料（占采购17.58%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯铝/\n铟锡供应商",
+      "category": "upstream",
+      "business": "高纯铝锭（铝靶原料）、铟/锡氧化物（ITO靶材原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精密加工\n设备供应商",
+      "category": "upstream",
+      "business": "靶材精密加工设备（焊接、机加工、检测设备等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "高纯材料\n自建项目",
+      "category": "upstream",
+      "business": "明月湖半导体高纯材料项目（1.08亿投资），高纯无氧铜锭/高纯钴锭生产基地",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "江丰电子\n300666",
+      "category": "competitor",
+      "business": "国内半导体溅射靶材绝对龙头，已进入全球头部晶圆厂供应链（台积电/中芯国际等），~500亿市值",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "阿石创\n300706",
+      "category": "competitor",
+      "business": "光学/显示/半导体溅射靶材，A股靶材直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "JX金属\n(日本)",
+      "category": "competitor",
+      "business": "全球溅射靶材龙头之一，日系靶材代表，显示面板靶材全球市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "霍尼韦尔\n(美国)",
+      "category": "competitor",
+      "business": "全球溅射靶材龙头之一，美系靶材代表，半导体/显示靶材均有布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "隆华科技\n300263",
+      "category": "competitor",
+      "business": "靶材+节能环保双主业，A股靶材概念竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "京东方\n(BOE)",
+      "category": "downstream",
+      "business": "国内最大面板厂商，TFT-LCD/OLED面板生产线持续消耗靶材，公司核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华星光电\n(CSOT/TCL)",
+      "category": "downstream",
+      "business": "国内第二大面板厂商，显示面板靶材核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "惠科/深天马\n等面板厂商",
+      "category": "downstream",
+      "business": "国内其他面板厂商，TFT-LCD/OLED面板靶材客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体\n晶圆/存储厂",
+      "category": "downstream",
+      "business": "存储芯片/晶圆制造用靶材客户（拓展中，海力士/华虹等）[inferred]",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "光伏/电池\n终端",
+      "category": "downstream",
+      "business": "HJT/钙钛矿太阳能电池用靶材、动力电池复合铜箔用铜靶",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688530",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688530",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688530",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688530",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688530",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688530",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688530",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688530",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688530",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688530",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688530",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688530",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688530",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688530",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688530",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

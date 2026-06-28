@@ -1,0 +1,178 @@
+{
+  "company_code": "002515",
+  "company_name": "金字火腿",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002515",
+      "name": "金字火腿\n002515",
+      "category": "target",
+      "business": "金华火腿龙头，中式/欧式火腿、肉制品、预制菜品牌企业",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "双汇发展\n000895",
+      "category": "competitor",
+      "business": "中国肉类加工绝对龙头（火腿肠/冷鲜肉/肉制品）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "光明肉业\n600073",
+      "category": "competitor",
+      "business": "肉类加工（猪肉/牛羊肉）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "春雪食品\n605567",
+      "category": "competitor",
+      "business": "鸡肉调理品/预制菜",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "益客食品\n301116",
+      "category": "competitor",
+      "business": "禽类屠宰加工",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "生猪养殖\n屠宰企业",
+      "category": "upstream",
+      "business": "生猪养殖/屠宰（提供猪腿肉原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "食品添加剂\n供应商",
+      "category": "upstream",
+      "business": "盐、调味料、食品添加剂",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "包装材料\n供应商",
+      "category": "upstream",
+      "business": "食品级包装材料（真空袋、礼盒等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "冷链物流\n企业",
+      "category": "upstream",
+      "business": "冷链运输、仓储配送",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "商超/零售\n渠道",
+      "category": "downstream",
+      "business": "超市、便利店等线下零售终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "餐饮/烘焙\n食品加工",
+      "category": "downstream",
+      "business": "B端餐饮客户、烘焙店、食品加工厂",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电商平台",
+      "category": "downstream",
+      "business": "直播电商、内容电商、社群电商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "终端消费者",
+      "category": "downstream",
+      "business": "C端个人消费者（家庭烹饪/礼品/休闲零食）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002515",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002515",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002515",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002515",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002515",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002515",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002515",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002515",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002515",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002515",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002515",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002515",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

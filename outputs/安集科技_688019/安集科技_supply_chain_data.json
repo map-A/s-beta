@@ -1,0 +1,202 @@
+{
+  "company_code": "688019",
+  "company_name": "安集科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688019",
+      "name": "安集科技\n688019",
+      "category": "target",
+      "business": "CMP化学机械抛光液、功能性湿电子化学品、电镀液及添加剂，国内CMP材料龙头",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Cabot/Entegris\nENTG",
+      "category": "competitor",
+      "business": "全球CMP抛光液龙头，全球市占率约35%，产品线最全",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Fujimi\n6885.JP",
+      "category": "competitor",
+      "business": "全球CMP抛光液第二大，精细化工强项，全球市占率约25%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "鼎龙股份\n300054",
+      "category": "competitor",
+      "business": "CMP抛光垫国产龙头，正在布局CMP抛光液业务",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "格林达\n603931",
+      "category": "competitor",
+      "business": "湿电子化学品（TMAH显影液等），国内湿化学品供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "氧化铈磨料\n(自研+外购)",
+      "category": "upstream",
+      "business": "稀土氧化物抛光磨料，CMP抛光液核心组分，公司正自研替代",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硅溶胶/纳米\n氧化铝供应商",
+      "category": "upstream",
+      "business": "纳米粒子分散体，抛光液磨料基材，公司已自研部分型号",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯化学试剂\n供应商",
+      "category": "upstream",
+      "business": "酸/碱/氧化剂等抛光液配方组分，高纯度要求",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "包装容器与\n辅材供应商",
+      "category": "upstream",
+      "business": "化学品储运容器、稳定剂等辅助材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "CORDOUAN\nTECHNOLOGIES",
+      "category": "upstream",
+      "business": "子公司，实验设备生产销售及研发，支撑材料研发能力",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "国内最大晶圆代工厂，14nm/28nm主力产线，安集核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长江存储\nYMTC",
+      "category": "downstream",
+      "business": "国内3D NAND存储芯片龙头，安集重要客户（董秘确认）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "华虹半导体\n688347",
+      "category": "downstream",
+      "business": "特色工艺晶圆代工（功率器件/嵌入式存储），12英寸扩产中",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "合肥晶合集成\n688249",
+      "category": "downstream",
+      "business": "12英寸晶圆代工（面板驱动IC/微控制器），产能持续扩张",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "先进封装厂\n(长电/通富等)",
+      "category": "downstream",
+      "business": "Chiplet/TSV先进封装厂商，CMP步骤需求随封装密度提升而增加",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688019",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688019",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688019",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688019",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688019",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688019",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688019",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688019",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688019",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688019",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

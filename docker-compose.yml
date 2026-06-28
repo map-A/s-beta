@@ -1,8 +1,8 @@
 services:
   clickhouse:
     image: clickhouse/clickhouse-server:24.8-alpine
-    container_name: stock-beta-clickhouse
-    hostname: stock-beta-clickhouse
+    container_name: qbrs-clickhouse
+    hostname: qbrs-clickhouse
     ports:
       - "8123:8123"   # HTTP 接口
       - "9000:9000"   # Native 协议

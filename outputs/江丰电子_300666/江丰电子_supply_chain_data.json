@@ -1,0 +1,166 @@
+{
+  "company_code": "300666",
+  "company_name": "江丰电子",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_300666",
+      "name": "江丰电子\n300666",
+      "category": "target",
+      "business": "超高纯金属溅射靶材和半导体精密零部件的研发、生产和销售",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "有研新材\n600206",
+      "category": "competitor",
+      "business": "有色金属材料、靶材、稀土材料，国内靶材第二梯队",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "阿石创\n300706",
+      "category": "competitor",
+      "business": "PVD镀膜材料（靶材+蒸发材料），以面板靶材为主",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "隆华科技\n300263",
+      "category": "competitor",
+      "business": "靶材+高效复合蒸发式冷凝器双主业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯铝供应商",
+      "category": "upstream",
+      "business": "99.999%+高纯铝锭/坯料精炼",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯钛供应商",
+      "category": "upstream",
+      "business": "海绵钛提纯+高纯钛锭制造",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯钽/钴供应商",
+      "category": "upstream",
+      "business": "稀有金属提纯，全球供应集中于非洲矿区+日本精炼",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "热等静压设备商",
+      "category": "upstream",
+      "business": "超大规格热等静压设备等关键生产设备制造",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "台积电\nTSMC",
+      "category": "downstream",
+      "business": "全球最大晶圆代工厂，先进制程龙头，已认证江丰靶材",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中芯国际\nSMIC",
+      "category": "downstream",
+      "business": "中国大陆最大晶圆代工厂，江丰国内最大客户之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "SK海力士",
+      "category": "downstream",
+      "business": "全球第二大存储芯片厂，HBM/DRAM靶材需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "京东方\nBOE",
+      "category": "downstream",
+      "business": "全球最大显示面板供应商，OLED/AMOLED靶材需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300666",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300666",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300666",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300666",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300666",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300666",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300666",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300666",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300666",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300666",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300666",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

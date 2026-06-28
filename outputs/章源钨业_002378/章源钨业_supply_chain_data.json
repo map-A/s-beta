@@ -1,0 +1,118 @@
+{
+  "company_code": "002378",
+  "company_name": "章源钨业",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002378",
+      "name": "章源钨业\n002378",
+      "category": "target",
+      "business": "钨矿+硬质合金一体化，钨粉国内前三/硬质合金国内前五",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "自有钨矿山",
+      "category": "upstream",
+      "business": "自有钨矿石开采，提供核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "外购钨精矿市场",
+      "category": "upstream",
+      "business": "国内外钨精矿供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "能源供应商",
+      "category": "upstream",
+      "business": "冶炼加工过程能源供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化工辅料供应商",
+      "category": "upstream",
+      "business": "APT生产所需化工辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "厦门钨业",
+      "category": "competitor",
+      "business": "钨+稀土龙头，硬质合金国内最大",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中钨高新",
+      "category": "competitor",
+      "business": "硬质合金龙头（株洲钻石母公司）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "翔鹭钨业",
+      "category": "competitor",
+      "business": "钨粉/碳化钨粉专业生产商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Sandvik",
+      "category": "competitor",
+      "business": "全球硬质合金龙头（瑞典），高端市场",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "硬质合金刀具企业",
+      "category": "downstream",
+      "business": "欧科亿/华锐精密等采购碳化钨粉制造刀具",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "矿山开采企业",
+      "category": "downstream",
+      "business": "硬质合金矿山工具（凿岩/截齿）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车/航空制造企业",
+      "category": "downstream",
+      "business": "切削加工用硬质合金刀具终端用户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电子信息企业",
+      "category": "downstream",
+      "business": "高强度钨丝/特种钨制品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002378", "relation": "supply"},
+    {"source": "up_1", "target": "target_002378", "relation": "supply"},
+    {"source": "up_2", "target": "target_002378", "relation": "supply"},
+    {"source": "up_3", "target": "target_002378", "relation": "supply"},
+    {"source": "target_002378", "target": "down_0", "relation": "customer"},
+    {"source": "target_002378", "target": "down_1", "relation": "customer"},
+    {"source": "target_002378", "target": "down_2", "relation": "customer"},
+    {"source": "target_002378", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002378", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002378", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002378", "relation": "compete"},
+    {"source": "comp_3", "target": "target_002378", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

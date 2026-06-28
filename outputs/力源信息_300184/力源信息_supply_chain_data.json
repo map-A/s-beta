@@ -1,0 +1,110 @@
+{
+  "company_code": "300184",
+  "company_name": "力源信息",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300184",
+      "name": "力源信息\n300184",
+      "category": "target",
+      "business": "电子元器件代理分销商，代理海思/长鑫存储/长江存储/意法半导体等，服务消费电子/工业/汽车客户",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "深圳华强\n000062",
+      "category": "competitor",
+      "business": "电子元器件分销+华强北电子市场，国内分销龙头之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "商络电子\n300975",
+      "category": "competitor",
+      "business": "电子元器件分销，创业板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "雅创电子\n301099",
+      "category": "competitor",
+      "business": "电子元器件分销（汽车电子为主），创业板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "海思(华为)",
+      "category": "upstream",
+      "business": "半导体原厂，力源代理合作十多年，最大供应商之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "长鑫存储",
+      "category": "upstream",
+      "business": "国产DRAM存储芯片原厂，力源代理其产品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "长江存储/\n武汉新芯",
+      "category": "upstream",
+      "business": "国产NAND存储芯片原厂，力源代理其产品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "意法半导体\n(ST)",
+      "category": "upstream",
+      "business": "国际MCU/模拟芯片原厂，力源代理其产品",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子\n制造商",
+      "category": "downstream",
+      "business": "手机/IoT/智能硬件终端制造商，采购存储/MCU/被动元器件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "工业控制\n厂商",
+      "category": "downstream",
+      "business": "工业自动化/电力设备制造商，采购半导体元器件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车电子\n厂商",
+      "category": "downstream",
+      "business": "车规级电子元器件需求，汽车电子客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信/数据\n中心厂商",
+      "category": "downstream",
+      "business": "通信基站/数据中心设备制造商，存储芯片/MLCC需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_300184", "relation": "supply"},
+    {"source": "up_1", "target": "target_300184", "relation": "supply"},
+    {"source": "up_2", "target": "target_300184", "relation": "supply"},
+    {"source": "up_3", "target": "target_300184", "relation": "supply"},
+    {"source": "target_300184", "target": "down_0", "relation": "customer"},
+    {"source": "target_300184", "target": "down_1", "relation": "customer"},
+    {"source": "target_300184", "target": "down_2", "relation": "customer"},
+    {"source": "target_300184", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_300184", "relation": "compete"},
+    {"source": "comp_1", "target": "target_300184", "relation": "compete"},
+    {"source": "comp_2", "target": "target_300184", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

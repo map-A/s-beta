@@ -1,0 +1,178 @@
+{
+  "company_code": "600141",
+  "company_name": "兴发集团",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600141",
+      "name": "兴发集团\n600141",
+      "category": "target",
+      "business": "国内磷化工龙头，6.25亿吨磷矿+精细磷酸盐+草甘膦+有机硅+IC级电子化学品（兴福电子）+磷酸铁锂",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "磷矿资源",
+      "category": "upstream",
+      "business": "自有磷矿6.25亿吨储量，6座在产矿（5座国家级绿色矿山），642万吨/年产能",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "煤炭/能源供应商",
+      "category": "upstream",
+      "business": "煤炭采购（化工生产能源），受煤价波动影响",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硫磺/化工原料供应商",
+      "category": "upstream",
+      "business": "硫磺（湿法磷酸原料）、金属硅、纯碱、甲醇等大宗化工原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "兴福电子材料",
+      "category": "upstream",
+      "business": "IC级磷酸/硫酸/蚀刻液等湿电子化学品（持股39.93%子公司，已IPO 688545）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "云天化\n600096",
+      "category": "competitor",
+      "business": "国内最大磷化工+氮肥企业，磷矿资源和化肥产能更大",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "川恒股份\n002895",
+      "category": "competitor",
+      "business": "精细磷酸盐（饲料级/食品级/工业级）细分竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "晶瑞电材\n300655",
+      "category": "competitor",
+      "business": "超纯双氧水/硫酸等湿电子化学品，IC级电子化学品竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "江化微\n603078",
+      "category": "competitor",
+      "business": "湿电子化学品全系列（蚀刻液/清洗液/剥离液），IC级电子化学品竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "化肥/农药终端",
+      "category": "downstream",
+      "business": "农业投入品（磷肥/复合肥/草甘膦），通过经销商网络分销",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "比亚迪",
+      "category": "downstream",
+      "business": "动力电池/新能源汽车龙头，磷酸铁锂委托加工合作方（2025年12月签约）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体晶圆厂",
+      "category": "downstream",
+      "business": "芯片制造企业，IC级电子化学品终端客户（通过兴福电子）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业精细化工客户",
+      "category": "downstream",
+      "business": "有机硅/精细磷酸盐下游（密封胶/建筑/电子/食品/医药等）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600141",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600141",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600141",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600141",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600141",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600141",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600141",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600141",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600141",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "601138",
+  "company_name": "工业富联",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_601138",
+      "name": "工业富联\n601138",
+      "category": "target",
+      "business": "全球电子代工龙头（EMS/ODM），AI服务器核心制造商，2025年营收9,029亿，市值1.55万亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "英伟达\nNVDA",
+      "category": "upstream",
+      "business": "全球GPU龙头，AI服务器核心芯片供应商（H100/B100/GB200），真正的上游卡点",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "SK海力士\nHynix",
+      "category": "upstream",
+      "business": "HBM存储全球龙头，AI GPU配套高带宽存储器，真正的上游卡点",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "英特尔/AMD",
+      "category": "upstream",
+      "business": "通用服务器CPU供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "台积电\nTSMC",
+      "category": "upstream",
+      "business": "全球晶圆代工龙头，GPU/CPU代工厂，真正的上游卡点",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "广达电脑",
+      "category": "competitor",
+      "business": "全球服务器/笔记本ODM龙头，工业富联主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "纬创资通",
+      "category": "competitor",
+      "business": "全球服务器/笔记本ODM，AI服务器代工竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "和硕联合",
+      "category": "competitor",
+      "business": "消费电子/服务器ODM，全球EMS竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "谷歌/微软\n/亚马逊",
+      "category": "downstream",
+      "business": "北美头部云厂商，AI算力Capex核心买家",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "META",
+      "category": "downstream",
+      "business": "全球社交媒体+AI公司，AI服务器核心采购方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "阿里巴巴",
+      "category": "downstream",
+      "business": "中国最大云厂商，AI算力需求核心买家（F10概念题材confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "字节跳动",
+      "category": "downstream",
+      "business": "中国AI应用龙头，AI服务器采购大户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601138",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601138",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601138",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601138",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601138",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601138",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601138",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601138",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601138",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601138",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601138",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

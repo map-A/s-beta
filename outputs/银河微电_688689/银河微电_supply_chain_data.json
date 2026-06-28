@@ -1,0 +1,178 @@
+{
+  "company_code": "688689",
+  "company_name": "银河微电",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688689",
+      "name": "银河微电\n688689",
+      "category": "target",
+      "business": "半导体分立器件全覆盖（小信号/功率MOSFET/IGBT/桥式整流器），布局SiC/GaN第三代半导体，车规级+AI服务器电源",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "斯达半导\n603290",
+      "category": "competitor",
+      "business": "IGBT模块国产龙头，功率半导体核心标的，车规级IGBT放量",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新洁能\n605111",
+      "category": "competitor",
+      "business": "MOSFET专业供应商，沟槽型+屏蔽栅型，国产替代核心标的",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "苏州固锝\n002079",
+      "category": "competitor",
+      "business": "二极管传统龙头，MEMS传感器，光伏银浆",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "捷捷微电\n300623",
+      "category": "competitor",
+      "business": "晶闸管/防护器件龙头，功率半导体细分领域",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "硅片/外延片\n供应商",
+      "category": "upstream",
+      "business": "硅基晶圆，分立器件制造核心材料，第一名供应商占采购9.02%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "引线框架/\n封装材料商",
+      "category": "upstream",
+      "business": "铜合金引线框架、模塑料、键合丝等封装材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "半导体设备\n供应商",
+      "category": "upstream",
+      "business": "扩散炉、光刻机、测试设备、封装设备等制造装备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "SiC/GaN衬底\n外延材料商",
+      "category": "upstream",
+      "business": "第三代半导体衬底和外延材料，公司SiC/GaN布局的关键上游",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "汽车电子\n客户",
+      "category": "downstream",
+      "business": "车规级功率器件（MOSFET/IGBT）、LED灯珠、光电耦合器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AI服务器\n电源方案商",
+      "category": "downstream",
+      "business": "头部电源方案商，间接进入主流AI服务器供应链 [confirmed]",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "工业自动化/\n能源动力客户",
+      "category": "downstream",
+      "business": "工业控制、电机驱动、电源管理等功率器件应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子/\n家电客户",
+      "category": "downstream",
+      "business": "计算机、网络通讯、家用电器等小信号器件和功率器件终端应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688689",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688689",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688689",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688689",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688689",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688689",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688689",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688689",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688689",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688689",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688689",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688689",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

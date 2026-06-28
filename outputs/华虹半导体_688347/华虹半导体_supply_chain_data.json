@@ -1,0 +1,190 @@
+{
+  "company_code": "688347",
+  "company_name": "华虹半导体",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_688347",
+      "name": "华虹半导体\n688347",
+      "category": "target",
+      "business": "全球功率器件代工产能第一，特色工艺晶圆代工（IGBT/BCD/NOR Flash/EEPROM）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中芯国际\n688981",
+      "category": "competitor",
+      "business": "国内晶圆代工龙头，覆盖成熟+先进制程，12英寸产能~30万片/月",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "晶合集成\n688249",
+      "category": "competitor",
+      "business": "12英寸晶圆代工，聚焦面板驱动IC和电源管理，产能~16万片/月",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "联电（UMC）",
+      "category": "competitor",
+      "business": "全球成熟制程代工龙头之一，8/12英寸产线覆盖亚太",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "格芯（GFS）",
+      "category": "competitor",
+      "business": "全球特色工艺代工龙头，聚焦RF/嵌入式/功率器件",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "沪硅产业\n688126",
+      "category": "upstream",
+      "business": "国内12英寸半导体级硅片龙头，华虹核心原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "北方华创\n002371",
+      "category": "upstream",
+      "business": "国内半导体设备龙头（刻蚀/薄膜沉积/清洗设备）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电子特气\n供应商",
+      "category": "upstream",
+      "business": "高纯度电子特种气体，晶圆制造刻蚀/沉积工艺核心耗材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "光刻胶/\n光掩模供应商",
+      "category": "upstream",
+      "business": "成熟制程DUV光刻胶和光掩模，国内替代率逐步提升",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "新能源车企，自研IGBT芯片由华虹代工，华虹核心大客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "英飞凌\n（Infineon）",
+      "category": "downstream",
+      "business": "全球IGBT/功率MOSFET龙头，部分产品由华虹代工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "德州仪器\n（TI）",
+      "category": "downstream",
+      "business": "全球模拟芯片龙头，BCD/电源管理芯片代工合作",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "MCU/IoT\n设计公司",
+      "category": "downstream",
+      "business": "嵌入式NOR Flash/EEPROM代工客户，消费电子/物联网终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "光伏逆变器\n厂商",
+      "category": "downstream",
+      "business": "逆变器用功率器件（IGBT/超级结MOSFET）代工需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688347",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688347",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688347",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688347",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688347",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688347",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688347",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688347",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688347",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688347",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688347",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688347",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688347",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

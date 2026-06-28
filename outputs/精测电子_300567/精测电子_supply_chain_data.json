@@ -1,0 +1,166 @@
+{
+  "company_code": "300567",
+  "company_name": "精测电子",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300567",
+      "name": "精测电子\n300567",
+      "category": "target",
+      "business": "半导体检测/量测设备、显示面板检测设备、新能源检测系统",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "KLA\nKLAC",
+      "category": "competitor",
+      "business": "半导体检测/量测全球龙头（50%+市占率），光学检测+电子束检测+膜厚量测",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "致茂电子\n2360.TW",
+      "category": "competitor",
+      "business": "台湾电子测试设备龙头，显示/半导体/电力电子测试",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "长川科技\n300604",
+      "category": "competitor",
+      "business": "国内半导体ATE测试设备龙头（SoC/存储测试机）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "集成芯片供应商",
+      "category": "upstream",
+      "business": "处理器/FPGA等集成芯片（通过代理商采购，供应商一占采购5.16%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光学元件供应商",
+      "category": "upstream",
+      "business": "高精度镜头、光源、传感器等检测核心光学部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电子元器件供应商",
+      "category": "upstream",
+      "business": "电源模块、连接器、精密电阻电容等标准电子元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB/结构件供应商",
+      "category": "upstream",
+      "business": "定制PCB电路板、精密机械结构件、机加工零部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "京东方\n000725",
+      "category": "downstream",
+      "business": "全球LCD/OLED面板龙头，面板检测设备核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华星光电\nTCL",
+      "category": "downstream",
+      "business": "国内第二大面板厂，LCD/OLED面板制造",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "国内最大晶圆代工厂，半导体检测设备核心潜在客户（inferred）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "维信诺\n002387",
+      "category": "downstream",
+      "business": "国内OLED面板厂商，G8.6 OLED产线投建中",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300567",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300567",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300567",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300567",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300567",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300567",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300567",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300567",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300567",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300567",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300567",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

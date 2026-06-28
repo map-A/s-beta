@@ -1,0 +1,190 @@
+{
+  "company_code": "300302",
+  "company_name": "同有科技",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_300302",
+      "name": "同有科技\n300302",
+      "category": "target",
+      "business": "军工全产业链存储（鸿秦科技鸿芯主控芯片+军用SSD+企业级存储系统），国内较早进入军用SSD领域，同时布局向量数据库AI存储",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "大普微电子\n301666",
+      "category": "competitor",
+      "business": "数据中心企业级SSD全栈（主控+固件+模组），主攻AI云存储，Nvidia/Google认证，与同有在存储赛道有概念重叠",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "得一微电子\n688588",
+      "category": "competitor",
+      "business": "SSD控制器芯片设计，偏消费/工业级，与鸿秦科技在主控芯片赛道有竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华为（未上市）",
+      "category": "competitor",
+      "business": "全栈存储系统，军工及信创存储的最大竞争者，OceanStor系列企业级存储与同有产品直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "浪潮信息\n000977",
+      "category": "competitor",
+      "business": "企业级AI服务器+存储，政府/金融市场竞争，在信创存储领域与同有竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "长鑫存储\nCXMT",
+      "category": "upstream",
+      "business": "国产NAND Flash（子公司泽石科技SSD使用长鑫DDR4芯片，热点题材确认），国产存储芯片供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "NAND Flash\n供应商（供应商1）",
+      "category": "upstream",
+      "business": "最大供应商（11.05%，3091万），推测为NAND Flash或关键存储芯片供应商（脱敏）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB/结构件\n供应商",
+      "category": "upstream",
+      "business": "SSD和存储系统的印制电路板、机械结构件、连接器等配套供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "台积电/中芯\n（芯片代工）",
+      "category": "upstream",
+      "business": "鸿芯系列军用SSD主控芯片的晶圆代工，是自研主控芯片量产的关键环节",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "军队/国防单位\n（特殊行业）",
+      "category": "downstream",
+      "business": "军工信息化装备用户（导弹制导、卫星接收、特种任务存储），是鸿秦科技最核心的客户群，有不可替代性",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "政府信创项目\n（第一大客户推测）",
+      "category": "downstream",
+      "business": "政府/金融/电信信创存储替换项目（替换EMC/NetApp等外资产品），第一大客户7984万（19.79%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "AI智算中心\n（向量数据库）",
+      "category": "downstream",
+      "business": "人工智能训练/推理数据中心，需要分布式全闪高性能存储，同有已布局并声称获得大量订单",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "卫星/航天单位",
+      "category": "downstream",
+      "business": "卫星大数据实时码流接收、解析、处理和存储，同有专门推出高端自主可控存储系统，热点题材确认",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "金融/能源行业\n企业客户",
+      "category": "downstream",
+      "business": "金融行业国产化替代存储，石油/电力等能源行业工业控制存储，信创客户的重要组成",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300302",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300302",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300302",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300302",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300302",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300302",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300302",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300302",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300302",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300302",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300302",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300302",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300302",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

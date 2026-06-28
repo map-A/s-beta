@@ -1,0 +1,202 @@
+{
+  "company_code": "603065",
+  "company_name": "宿迁联盛",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603065",
+      "name": "宿迁联盛\n603065",
+      "category": "target",
+      "business": "受阻胺光稳定剂（HALS）及中间体，己二腈/己二胺自主生产；概念：磷化铟衬底（仅框架协议）",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "己二腈/己二胺",
+      "category": "upstream",
+      "business": "光稳定剂核心中间体，公司已自主攻克生产技术（国内首创）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "有机化工原料",
+      "category": "upstream",
+      "business": "各类有机合成基础原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工设备（项王机械）",
+      "category": "upstream",
+      "business": "公司全资子公司，提供化工设备自主配套",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "高纯铟/高纯磷",
+      "category": "upstream",
+      "business": "InP衬底生产原料（概念阶段，公司尚未采购）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "能源/公用工程",
+      "category": "upstream",
+      "business": "化工生产所需能源、蒸汽、冷却水等",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "利安隆\n300596",
+      "category": "competitor",
+      "business": "高分子材料抗老化助剂，国内光稳定剂龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "巴斯夫\nBASF",
+      "category": "competitor",
+      "business": "全球化工巨头，光稳定剂全球领导者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "松原集团\nSongwon",
+      "category": "competitor",
+      "business": "韩国聚合物稳定剂主要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "风光股份",
+      "category": "competitor",
+      "business": "国内光稳定剂及抗氧化剂生产企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "农膜企业",
+      "category": "downstream",
+      "business": "农用薄膜防老化处理，传统主力市场",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏背板/胶膜",
+      "category": "downstream",
+      "business": "光伏组件材料防老化，重要增长方向",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车改性塑料",
+      "category": "downstream",
+      "business": "汽车零部件用改性塑料耐候性提升",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "涂料/胶黏剂",
+      "category": "downstream",
+      "business": "涂料和胶黏剂耐候性改善",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "人造草/合成纤维",
+      "category": "downstream",
+      "business": "人造草坪纤维和合成材料防老化",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603065",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603065",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603065",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603065",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603065",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603065",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603065",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603065",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603065",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603065",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603065",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603065",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603065",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603065",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "company_code": "002185",
+  "company_name": "华天科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002185",
+      "name": "华天科技\n002185",
+      "category": "target",
+      "business": "国内前三IC封测企业，先进封装（FCBGA/ePoP/PoPt），车规级封装，存储芯片封装",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "全球前三IC封测企业，先进封装+SiP，行业龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "国内先进封装龙头（AMD代工），FCBGA能力强",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "日月光\n（ASE）",
+      "category": "competitor",
+      "business": "全球封测龙头，市占率第一，全技术覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "安靠\n（Amkor）",
+      "category": "competitor",
+      "business": "全球封测第二，先进封装领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "封装基板\n供应商",
+      "category": "upstream",
+      "business": "ABF/BT封装基板，先进封装核心材料，全球供给集中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "封测设备\n供应商",
+      "category": "upstream",
+      "business": "贴片机、键合机、测试机等封测设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "引线框架/\n键合丝供应商",
+      "category": "upstream",
+      "business": "传统封装用铜合金引线框架、金丝/铜丝键合材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "塑封料/\n化学品供应商",
+      "category": "upstream",
+      "business": "环氧树脂塑封料、清洗液等封装用化工材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI芯片\n设计公司",
+      "category": "downstream",
+      "business": "AI/GPU芯片FCBGA先进封装需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车电子\n芯片公司",
+      "category": "downstream",
+      "business": "车规级FCBGA封装，智能座舱/自动驾驶芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "存储芯片\n公司",
+      "category": "downstream",
+      "business": "NOR Flash/DRAM封装（已量产）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子/\n通信芯片公司",
+      "category": "downstream",
+      "business": "MCU、电源管理IC、RF前端等传统/射频封装",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002185",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002185",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002185",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002185",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002185",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002185",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002185",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002185",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002185",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002185",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002185",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002185",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

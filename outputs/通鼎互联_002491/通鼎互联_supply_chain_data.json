@@ -1,0 +1,202 @@
+{
+  "company_code": "002491",
+  "company_name": "通鼎互联",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002491",
+      "name": "通鼎互联\n002491",
+      "category": "target",
+      "business": "光纤预制棒、光纤、光缆、通信电缆、网络安全设备、新能源业务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长飞光纤\n601869",
+      "category": "competitor",
+      "business": "光纤预制棒、光纤、光缆，国内光棒自给率最高的龙头企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "亨通光电\n600487",
+      "category": "competitor",
+      "business": "光纤预制棒、光纤、光缆、海缆、海洋工程，光通信+海缆双龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中天科技\n600522",
+      "category": "competitor",
+      "business": "光纤预制棒、光纤、光缆、储能系统、海缆，多元化布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "烽火通信\n600498",
+      "category": "competitor",
+      "business": "光通信系统设备、光纤光缆、数据网络，中国信科集团旗下",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "康宁公司\nGLW",
+      "category": "upstream",
+      "business": "全球光纤预制棒龙头，与通鼎互联有技术合作（含空芯光纤方向）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯石英砂\n供应商",
+      "category": "upstream",
+      "business": "高纯度石英砂，光纤预制棒核心原材料，全球供给集中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "四氯化硅\n/锗供应商",
+      "category": "upstream",
+      "business": "光纤掺杂材料，用于调整光纤折射率等性能参数",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "光纤设备\n制造商",
+      "category": "upstream",
+      "business": "光纤拉丝塔、光缆生产线等专用设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "套管/PVC\n材料供应商",
+      "category": "upstream",
+      "business": "光缆外护套、加强芯等辅助材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中国移动\n00941.HK",
+      "category": "downstream",
+      "business": "国内最大电信运营商，5G基站建设、FTTH光纤到户，通鼎第一大客户（23.39%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中国电信\n00728.HK",
+      "category": "downstream",
+      "business": "国内三大电信运营商之一，固网及移动网络建设",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "国家电网",
+      "category": "downstream",
+      "business": "电力通信网络建设，采购OPGW、ADSS等电力光缆",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "数据中心/\nAI算力企业",
+      "category": "downstream",
+      "business": "AI训练/推理集群互联，数据中心光互联（新兴需求增长点）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "中国铁塔\n00788.HK",
+      "category": "downstream",
+      "business": "通信基础设施服务，5G基站配套设施建设",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002491",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002491",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002491",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002491",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002491",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002491",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002491",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002491",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002491",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002491",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002491",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002491",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002491",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002491",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

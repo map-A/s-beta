@@ -1,0 +1,214 @@
+{
+  "company_code": "002049",
+  "company_name": "紫光国微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002049",
+      "name": "紫光国微\n002049",
+      "category": "target",
+      "business": "国内特种集成电路+智能安全芯片双龙头，FPGA/SoC/DSP/ASIC+SIM卡/金融IC卡/eSIM+石英晶振，军工+通信+金融+汽车多赛道",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "晶圆代工伙伴A",
+      "category": "upstream",
+      "business": "特种工艺晶圆代工（占采购21.44%），军品级芯片晶圆制造",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "晶圆代工伙伴B",
+      "category": "upstream",
+      "business": "补充晶圆代工产能（占采购15.78%），多工艺覆盖",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "封测服务伙伴",
+      "category": "upstream",
+      "business": "集成电路封装测试外协（公司自建高可靠封测产线提升自主可控）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "Linxens\n（法国子公司）",
+      "category": "upstream",
+      "business": "微连接器/RFID嵌体/天线，安全芯片封装核心环节（2019年180亿收购）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "EDA/IP/\n特种工艺",
+      "category": "upstream",
+      "business": "EDA工具、IP核授权、特种工艺PDK，芯片设计基础设施",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "成都华微\n688709",
+      "category": "competitor",
+      "business": "特种FPGA/ADC/DAC，军工芯片直接竞品，~300亿市值",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "复旦微电\n688385",
+      "category": "competitor",
+      "business": "FPGA+安全MCU+非挥发存储，特种+民用双线竞品，~500亿市值",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "景嘉微\n300474",
+      "category": "competitor",
+      "business": "军用GPU，特种显示/图形处理龙头，~300亿市值",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "恩智浦\nNXP",
+      "category": "competitor",
+      "business": "全球安全芯片/汽车芯片龙头，SIM卡/金融IC卡国际竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "瑞能半导体\n（拟收购）",
+      "category": "competitor",
+      "business": "功率半导体龙头（超结MOSFET），正在被紫光国微收购中",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "国防军工\n用户",
+      "category": "downstream",
+      "business": "各军兵种/航天/航空，特种FPGA/SoC/DSP/ASIC核心客户（因保密脱敏）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电信运营商",
+      "category": "downstream",
+      "business": "中国移动/联通/电信，SIM卡芯片+eSIM芯片核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "银行/支付\n机构",
+      "category": "downstream",
+      "business": "金融IC卡芯片+POS机SE芯片终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "车企/Tier1\n（含宁德时代合资）",
+      "category": "downstream",
+      "business": "汽车电子安全芯片+域控芯片客户，与宁德时代合资拓展",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "商业航天/\n物联网终端",
+      "category": "downstream",
+      "business": "商业航天（FPGA/存储器/总线接口正陆续导入）、物联网安全芯片",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002049",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002049",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002049",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002049",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002049",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002049",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002049",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002049",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002049",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002049",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002049",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002049",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002049",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002049",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_002049",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

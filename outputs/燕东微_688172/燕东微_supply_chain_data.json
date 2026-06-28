@@ -1,0 +1,202 @@
+{
+  "company_code": "688172",
+  "company_name": "燕东微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688172",
+      "name": "燕东微\n688172",
+      "category": "target",
+      "business": "IDM功率半导体(IGBT/MOSFET/SiC)+特色工艺代工+硅光平台，6/8/12英寸产线",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华润微\n688396",
+      "category": "competitor",
+      "business": "国内功率半导体IDM龙头（MOSFET/IGBT/模拟IC）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "士兰微\n600460",
+      "category": "competitor",
+      "business": "IDM+化合物半导体（SiC/GaN），功率器件+IPM模块",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华虹半导体\n1347.HK",
+      "category": "competitor",
+      "business": "国内特色工艺晶圆代工龙头（功率/嵌入式存储等）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "扬杰科技\n300373",
+      "category": "competitor",
+      "business": "功率器件+SiC，IDM模式",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "半导体设备\n供应商",
+      "category": "upstream",
+      "business": "光刻机、刻蚀机、离子注入、CVD/PVD等（北方华创/中微/进口）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硅片/衬底\n供应商",
+      "category": "upstream",
+      "business": "6/8/12英寸硅片、SOI衬底、碳化硅衬底",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光刻胶/电子特气\n供应商",
+      "category": "upstream",
+      "business": "光刻胶、高纯电子特气（南大光电/华特气体等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "靶材/化学品\n供应商",
+      "category": "upstream",
+      "business": "溅射靶材、CMP抛光液、湿电子化学品（江丰电子等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "封装材料\n供应商",
+      "category": "upstream",
+      "business": "引线框架、塑封料、键合丝等封装配套材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "新能源车企",
+      "category": "downstream",
+      "business": "IGBT/SiC功率器件（车载逆变器/OBC/电驱系统）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏/储能\n逆变器厂商",
+      "category": "downstream",
+      "business": "IGBT/MOSFET功率器件（逆变器核心器件）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子\n品牌",
+      "category": "downstream",
+      "business": "分立器件、数字三极管、ECM前置放大器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "显示面板厂",
+      "category": "downstream",
+      "business": "DDIC代工（LCD/OLED驱动IC）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "硅光通信企业",
+      "category": "downstream",
+      "business": "数据中心光互联芯片（硅光平台代工）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688172",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688172",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688172",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688172",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688172",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688172",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688172",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688172",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688172",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688172",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "000636",
+  "company_name": "风华高科",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_000636",
+      "name": "风华高科\n000636",
+      "category": "target",
+      "business": "国内最大MLCC/片式电阻器厂商，被动电子元器件龙头",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "陶瓷粉体供应商",
+      "category": "upstream",
+      "business": "钛酸钡等MLCC介质材料（日本堺化学/国瓷材料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "贵金属浆料商",
+      "category": "upstream",
+      "business": "钯/镍/银内电极浆料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "MLCC设备商",
+      "category": "upstream",
+      "business": "叠层机、烧结炉、印刷机等MLCC专用设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "稀土材料商",
+      "category": "upstream",
+      "business": "高容MLCC用稀土掺杂材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "村田制作所",
+      "category": "competitor",
+      "business": "全球最大MLCC厂商（日本，市占率~30-35%）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三星电机",
+      "category": "competitor",
+      "business": "全球第二大MLCC厂商（韩国，市占率~20-25%）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "三环集团",
+      "category": "competitor",
+      "business": "国内MLCC/陶瓷基板龙头（300408），风华高科国内最大竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子品牌",
+      "category": "downstream",
+      "business": "手机/PC/家电终端厂商（华为/小米/美的等），采购MLCC/电阻",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车电子Tier1",
+      "category": "downstream",
+      "business": "车规级MLCC客户（博世/大陆/比亚迪等），认证门槛高",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "通讯设备商",
+      "category": "downstream",
+      "business": "5G基站/数据中心/AI算力服务器厂商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工控/新能源厂商",
+      "category": "downstream",
+      "business": "光伏逆变器/储能系统/工业自动化厂商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000636",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000636",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000636",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000636",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000636",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000636",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

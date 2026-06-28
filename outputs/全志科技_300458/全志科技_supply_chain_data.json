@@ -1,0 +1,166 @@
+{
+  "company_code": "300458",
+  "company_name": "全志科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300458",
+      "name": "全志科技\n300458",
+      "category": "target",
+      "business": "国产端侧AI SoC芯片设计(fabless)，产品覆盖AIoT/智能车载/机器人/AR眼镜推理算力芯片",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "瑞芯微\n603893",
+      "category": "competitor",
+      "business": "AI SoC芯片设计，全志最直接竞争对手，产品线高度重叠",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "晶晨股份\n688099",
+      "category": "competitor",
+      "business": "智能机顶盒/电视SoC龙头，AIoT领域扩展",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中科蓝讯\n688332",
+      "category": "competitor",
+      "business": "蓝牙音频SoC，低功耗IoT芯片设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "晶圆代工厂\n(台积电/中芯)",
+      "category": "upstream",
+      "business": "晶圆代工制造，全志第一大供应商占采购39.94%，产能高度依赖",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "存储芯片\n供应商",
+      "category": "upstream",
+      "business": "DDR/Flash存储芯片，SoC配套存储，涨价直接影响BOM成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "封装测试厂\n(长电/通富等)",
+      "category": "upstream",
+      "business": "芯片封装测试服务，占采购约13.79%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "ARM IP/\nEDA工具商",
+      "category": "upstream",
+      "business": "ARM IP核授权、EDA设计工具，芯片设计的基础工具",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI玩具/\n智能硬件厂商",
+      "category": "downstream",
+      "business": "AI玩具、智能音箱等端侧AI推理场景，新兴高增长赛道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "智能车载\n厂商",
+      "category": "downstream",
+      "business": "车载信息娱乐系统、智能座舱SoC需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "机器人/\nAR眼镜厂商",
+      "category": "downstream",
+      "business": "机器人控制系统SoC、AI/AR眼镜端侧算力芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "智能家电/\n安防厂商",
+      "category": "downstream",
+      "business": "智能家居语音交互、安防视觉AI、平板电脑等终端应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300458",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300458",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300458",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300458",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300458",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300458",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300458",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300458",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300458",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300458",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300458",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

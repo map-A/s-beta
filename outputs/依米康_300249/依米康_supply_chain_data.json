@@ -1,0 +1,166 @@
+{
+  "company_code": "300249",
+  "company_name": "依米康",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300249",
+      "name": "依米康\n300249",
+      "category": "target",
+      "business": "数据中心精密空调、液冷温控系统、整体解决方案",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "英维克\n002837",
+      "category": "competitor",
+      "business": "精密温控龙头，液冷全覆盖（冷板/浸没），市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "佳力图\n603912",
+      "category": "competitor",
+      "business": "精密空调、间接蒸发冷却，运营商渠道稳固",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "高澜股份\n300499",
+      "category": "competitor",
+      "business": "纯液冷技术（冷板/浸没式），电力电子液冷积累",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "压缩机厂商",
+      "category": "upstream",
+      "business": "制冷压缩机，精密空调核心部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "换热器/冷凝器厂商",
+      "category": "upstream",
+      "business": "热交换设备，制冷系统核心组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "风机/水泵厂商",
+      "category": "upstream",
+      "business": "通风/水循环系统，温控辅助设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "控制系统/传感器厂商",
+      "category": "upstream",
+      "business": "智能控制系统、温度/湿度传感器",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "三大运营商",
+      "category": "downstream",
+      "business": "中国移动/联通/电信数据中心温控需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "互联网巨头",
+      "category": "downstream",
+      "business": "腾讯/阿里/字节等AI算力中心液冷需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "政府/央企",
+      "category": "downstream",
+      "business": "政府/央企数据中心建设温控需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "海外数据中心",
+      "category": "downstream",
+      "business": "海外数据中心温控需求（第二增长曲线）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300249",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300249",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300249",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300249",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300249",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300249",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300249",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300249",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300249",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300249",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300249",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

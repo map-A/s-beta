@@ -1,0 +1,178 @@
+{
+  "company_code": "002859",
+  "company_name": "洁美科技",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002859",
+      "name": "洁美科技\n002859",
+      "category": "target",
+      "business": "全球被动元器件纸质载带龙头（市占率~50%），纵向一体化原纸自产，MLCC/半导体载带+离型膜+复合集流体，市值430亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "木浆/原纸\n供应商",
+      "category": "upstream",
+      "business": "载带专用木浆原料供应商（公司已自产原纸，降低对外部依赖）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "PC化工原料\n供应商",
+      "category": "upstream",
+      "business": "聚碳酸酯（PC）粒子供应商，塑料载带关键原材料（公司已自产黑色PC粒子）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PET薄膜\n基材供应商",
+      "category": "upstream",
+      "business": "离型膜/流延膜用PET等薄膜基材供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "载带生产线、涂布设备、分切机等专用设备制造商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "日本制纸\n非A股",
+      "category": "competitor",
+      "business": "日本传统纸质载带厂商，市占率正在被洁美科技蚕食",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "3M\n非A股",
+      "category": "competitor",
+      "business": "全球塑料载带龙头（Carrier Tape Division），洁美塑料载带业务对标对象",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Advantek\n非A股",
+      "category": "competitor",
+      "business": "全球知名塑料载带企业（怡凡得），洁美成功研发自产PC粒子对标其技术",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "三星电机",
+      "category": "downstream",
+      "business": "全球第一大MLCC厂商，洁美核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "村田制作所",
+      "category": "downstream",
+      "business": "全球第二大MLCC厂商，日本被动元器件龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长电科技\n600584",
+      "category": "downstream",
+      "business": "中国最大IC封测企业，半导体载带核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "国巨电子",
+      "category": "downstream",
+      "business": "台湾MLCC龙头，洁美重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "英飞凌/\n德州仪器",
+      "category": "downstream",
+      "business": "全球半导体巨头，半导体芯片编带封装客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002859",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002859",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002859",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002859",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002859",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002859",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002859",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002859",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002859",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002859",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002859",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002859",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

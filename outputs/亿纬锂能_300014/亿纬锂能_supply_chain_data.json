@@ -1,0 +1,166 @@
+{
+  "company_code": "300014",
+  "company_name": "亿纬锂能",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300014",
+      "name": "亿纬锂能\n300014",
+      "category": "target",
+      "business": "消费电池+动力电池+储能电池，大圆柱电池全球先行者，锂原电池全球龙头",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "宁德时代\n300750",
+      "category": "competitor",
+      "business": "全球动力电池龙头（37%份额），储能+消费电池全覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "比亚迪\n002594",
+      "category": "competitor",
+      "business": "垂直整合车企+电池，刀片电池技术，自产自用+外供",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "国轩高科\n002074",
+      "category": "competitor",
+      "business": "磷酸铁锂电池为主，大众入股，储能+动力并重",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "天齐锂业\n002466",
+      "category": "upstream",
+      "business": "碳酸锂/氢氧化锂，锂矿资源龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "湖南裕能\n301358",
+      "category": "upstream",
+      "business": "磷酸铁锂正极材料龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "恩捷股份\n002812",
+      "category": "upstream",
+      "business": "湿法锂电隔膜全球龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "天赐材料\n002709",
+      "category": "upstream",
+      "business": "电解液/六氟磷酸锂龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "宝马(BMW)",
+      "category": "downstream",
+      "business": "全球豪华车龙头，大圆柱电池核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "大众集团",
+      "category": "downstream",
+      "business": "全球最大车企之一，圆柱电池供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "储能系统集成商\n(Powin/Fluence等)",
+      "category": "downstream",
+      "business": "大型储能电站系统集成，储能电池核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AIDC数据中心",
+      "category": "downstream",
+      "business": "UPS备电、BBU圆柱电芯、集装箱储能",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300014",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300014",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300014",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300014",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300014",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300014",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300014",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300014",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300014",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300014",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300014",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

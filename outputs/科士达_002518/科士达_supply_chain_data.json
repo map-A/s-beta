@@ -1,0 +1,178 @@
+{
+  "company_code": "002518",
+  "company_name": "科士达",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002518",
+      "name": "科士达\n002518",
+      "category": "target",
+      "business": "数据中心基础设施(UPS/HVDC/精密空调)+新能源储能(PCS/电池包)+充电桩，双轮驱动设备厂商",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华为\n(非上市)",
+      "category": "competitor",
+      "business": "数据中心能源全球龙头，UPS/HVDC/精密空调/液冷全覆盖，科士达最强竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "维谛技术\n300434",
+      "category": "competitor",
+      "business": "数据中心基础设施（原艾默生网络能源），全球UPS和精密空调龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "科华数据\n002335",
+      "category": "competitor",
+      "business": "UPS+数据中心运营，科士达最直接A股竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "阳光电源\n300274",
+      "category": "competitor",
+      "business": "光伏逆变器+储能PCS/系统集成全球龙头，储能领域核心竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "IGBT/功率模块\n供应商",
+      "category": "upstream",
+      "business": "IGBT/MOSFET功率半导体模块，UPS和PCS核心电力电子器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "蓄电池/电芯\n供应商",
+      "category": "upstream",
+      "business": "铅酸/锂电池电芯，UPS蓄电池和储能电池包核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB/电子元器件\n供应商",
+      "category": "upstream",
+      "business": "PCB、电容、电阻、磁性元件等电力电子基础元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "散热/液冷组件\n供应商",
+      "category": "upstream",
+      "business": "风扇、液冷管路、散热器等温控组件，液冷服务器配套关键",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "国内云/互联网\n厂商",
+      "category": "downstream",
+      "business": "数据中心运营商，AI智算中心UPS/HVDC/精密空调需求（最大客户11.82%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "海外ODM客户\n(含台达电子)",
+      "category": "downstream",
+      "business": "海外电源设备ODM代工客户，UPS ODM毛利率35%+",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海外储能\n集成商/分销商",
+      "category": "downstream",
+      "business": "欧盟/美国户储和工商业储能市场，储能PCS和电池包需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "充电桩/\n光伏电站客户",
+      "category": "downstream",
+      "business": "电动汽车充电站、光伏电站EPC，充电桩和逆变器需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002518",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002518",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002518",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002518",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002518",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002518",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002518",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002518",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002518",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002518",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002518",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002518",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

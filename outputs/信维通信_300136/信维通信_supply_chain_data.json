@@ -1,0 +1,190 @@
+{
+  "company_code": "300136",
+  "company_name": "信维通信",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300136",
+      "name": "信维通信\n300136",
+      "category": "target",
+      "business": "全球一站式泛射频解决方案龙头（天线/无线充电/EMI/EMC/连接器），参股信维电科高端MLCC，SpaceX供应商",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "电连技术\n300679",
+      "category": "competitor",
+      "business": "射频连接器、汽车连接器，国内射频连接器龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "飞荣达\n300602",
+      "category": "competitor",
+      "business": "电磁屏蔽及导热器件，消费电子EMI/EMC竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "蓝思科技\n300433",
+      "category": "competitor",
+      "business": "消费电子精密结构件，全球玻璃盖板龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "卓胜微\n300782",
+      "category": "competitor",
+      "business": "射频开关/LNA，国产射频芯片龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "LCP/MPI\n材料供应商",
+      "category": "upstream",
+      "business": "液晶聚合物(LCP)、改性聚酰亚胺(MPI)等5G天线核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "被动元件\n供应商",
+      "category": "upstream",
+      "business": "MLCC、电感、电阻等被动元件（公司参股信维电科自研高端MLCC）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密加工\n设备商",
+      "category": "upstream",
+      "business": "精密模具、注塑设备、SMT设备等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "金属/塑胶\n原材料",
+      "category": "upstream",
+      "business": "铜合金、不锈钢、塑胶粒等基础原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "全球手机\n品牌",
+      "category": "downstream",
+      "business": "苹果/三星/华为等全球头部手机品牌，采购天线/无线充电/EMI/EMC",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "SpaceX",
+      "category": "downstream",
+      "business": "提供高性能连接器及线缆解决方案（卫星通信）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车客户",
+      "category": "downstream",
+      "business": "智能汽车厂商，采购车载天线/毫米波雷达/无线充电/连接器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI眼镜/\n智能穿戴",
+      "category": "downstream",
+      "business": "AI眼镜/智能穿戴设备厂商，采购天线+射频零部件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "IoT/智能家居",
+      "category": "downstream",
+      "business": "物联网/智能家居设备厂商，采购各类射频器件",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300136",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300136",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300136",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300136",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300136",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300136",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300136",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300136",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300136",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300136",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300136",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300136",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300136",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "company_code": "600497",
+  "company_name": "驰宏锌锗",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_600497",
+      "name": "驰宏锌锗\n600497",
+      "category": "target",
+      "business": "央企铅锌锗龙头，铅锌资源量超3200万吨+锗产量全国第一，矿冶一体化+深加工全产业链",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "会泽/彝良\n高品位矿山",
+      "category": "upstream",
+      "business": "公司自有世界级高品位铅锌矿山（品位27%/20%），铅锌资源量超3200万吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硝洞铅锌矿",
+      "category": "upstream",
+      "business": "新获探矿权，铅+锌资源量232万吨金属量，三期勘查推进中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "岔路口\n钼铅锌矿",
+      "category": "upstream",
+      "business": "世界特大型斑岩型单体钼矿山，保有钼金属量246.7万吨，采矿证办理中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "冶炼辅助\n材料供应商",
+      "category": "upstream",
+      "business": "冶炼辅材、能源等供应商，支持铅锌冶炼全流程",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "云南锗业",
+      "category": "competitor",
+      "business": "国内另一大锗生产商，锗深加工龙头，锗产量/质量仅次于驰宏锌锗",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中金岭南",
+      "category": "competitor",
+      "business": "国内大型铅锌采选冶炼企业，铅锌主业直接竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "紫金矿业",
+      "category": "competitor",
+      "business": "综合矿业巨头，锌产量国内前列，全球化矿产资源布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "光纤制造商",
+      "category": "downstream",
+      "business": "光纤预制棒厂商，采购四氯化锗用于光纤掺杂——全球互联网/5G基础设施必需",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "红外光学企业",
+      "category": "downstream",
+      "business": "军用/民用红外热成像厂商，采购锗单晶用于红外镜头——导弹制导/夜视仪/测温",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "镀锌钢/蓄电池\n企业",
+      "category": "downstream",
+      "business": "锌锭/铅锭大宗消费商（建筑/汽车/通信），铅锌主业终端需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体/航天\n企业",
+      "category": "downstream",
+      "business": "GaAs太阳能电池厂商，采购锗衬底用于空间太阳能电池（航天/卫星）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_600497", "relation": "supply"},
+    {"source": "up_1", "target": "target_600497", "relation": "supply"},
+    {"source": "up_2", "target": "target_600497", "relation": "supply"},
+    {"source": "up_3", "target": "target_600497", "relation": "supply"},
+    {"source": "target_600497", "target": "down_0", "relation": "customer"},
+    {"source": "target_600497", "target": "down_1", "relation": "customer"},
+    {"source": "target_600497", "target": "down_2", "relation": "customer"},
+    {"source": "target_600497", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_600497", "relation": "compete"},
+    {"source": "comp_1", "target": "target_600497", "relation": "compete"},
+    {"source": "comp_2", "target": "target_600497", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

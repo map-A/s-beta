@@ -1,0 +1,178 @@
+{
+  "company_code": "002141",
+  "company_name": "贤丰控股",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002141",
+      "name": "贤丰控股\n002141",
+      "category": "target",
+      "business": "多元化控股公司：覆铜板（高硕航宇）+兽用疫苗（史纪生物）+饲料业务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "生益科技\n600183",
+      "category": "competitor",
+      "business": "覆铜板行业龙头，高频高速CCL，市值200亿+",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "科前生物\n688526",
+      "category": "competitor",
+      "business": "兽用疫苗龙头（科创板），猪用疫苗市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "金安国纪\n002636",
+      "category": "competitor",
+      "business": "覆铜板第二梯队，规模较大",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "江西麦得豪\n新材料",
+      "category": "upstream",
+      "business": "电解铜箔供应商，覆铜板核心原材料（采购占比17.24%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "江西杭电\n铜箔",
+      "category": "upstream",
+      "business": "电解铜箔，覆铜板关键材料（采购占比11.12%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "中国巨石\n600176",
+      "category": "upstream",
+      "business": "全球玻纤龙头，覆铜板用玻纤布（采购占比7.13%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "遵义辰益\n嘉禾贸易",
+      "category": "upstream",
+      "business": "原材料贸易商（采购占比6.59%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "重庆兰政\n商贸",
+      "category": "upstream",
+      "business": "原材料供应商（采购占比4.15%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "广东天农\n食品集团",
+      "category": "downstream",
+      "business": "生猪养殖集团，第一大客户（收入占比28.36%，含兽用疫苗）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "深圳嘉立创\n科技",
+      "category": "downstream",
+      "business": "互联网PCB打样/小批量龙头（收入占比5.08%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "江西威尔高\n电子",
+      "category": "downstream",
+      "business": "PCB制造企业（收入占比4.52%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "益阳明正宏\n电子",
+      "category": "downstream",
+      "business": "PCB制造企业（收入占比4.56%）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002141",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002141",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002141",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002141",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002141",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002141",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002141",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002141",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002141",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

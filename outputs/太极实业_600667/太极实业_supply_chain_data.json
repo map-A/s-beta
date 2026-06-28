@@ -1,0 +1,166 @@
+{
+  "company_code": "600667",
+  "company_name": "太极实业",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_600667",
+      "name": "太极实业\n600667",
+      "category": "target",
+      "business": "混合型国企：半导体封测（海太半导体/SK海力士后工序）+工程技术服务（十一科技/EPC）+光伏电站，市值438亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "封装基板/\n引线框架",
+      "category": "upstream",
+      "business": "半导体封测用封装基板、引线框架、键合丝等材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光伏组件\n供应商",
+      "category": "upstream",
+      "business": "光伏电站EPC用组件、逆变器等设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "钢材/建材\n供应商",
+      "category": "upstream",
+      "business": "十一科技EPC工程用钢材、水泥等建材供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "工程分包商",
+      "category": "upstream",
+      "business": "十一科技EPC工程分包商（如河南碧志建筑，占采购3.78%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "国内最大IC封测企业，全球第三，封测业务直接竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华天科技\n002185",
+      "category": "competitor",
+      "business": "国内前三IC封测企业，封测业务竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "国内第二大IC封测企业，AMD核心封测伙伴",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "SK海力士",
+      "category": "downstream",
+      "business": "海太半导体主要客户，存在一定单一客户依赖（F10核心风险confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长鑫存储",
+      "category": "downstream",
+      "business": "12英寸存储器项目，十一科技已承接其工程设计和总承包（F10 confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "各地国资/\n电力公司",
+      "category": "downstream",
+      "business": "光伏电站/半导体工厂EPC项目的政府/国企业主",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "光通信\n企业",
+      "category": "downstream",
+      "business": "上海光通信等工程客户（占营收5.86%）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600667",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600667",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600667",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600667",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600667",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600667",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600667",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600667",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "company_code": "600378",
+  "company_name": "昊华科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_600378",
+      "name": "昊华科技\n600378",
+      "category": "target",
+      "business": "高端氟材料（制冷剂/PVDF）、电子化学品（特种气体/湿电子化学品）、军工材料（涂料/密封/航材）、碳减排，中国中化旗下国家级化工新材料平台",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "巨化股份\n600160",
+      "category": "competitor",
+      "business": "第三代/第四代制冷剂，在制冷剂领域与昊华科技竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华特气体\n688268",
+      "category": "competitor",
+      "business": "电子特种气体（氟类、混合气等），在电子特气领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中船特气\n688146",
+      "category": "competitor",
+      "business": "电子特种气体（三氟化氮等），在特气领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "三美股份\n603379",
+      "category": "competitor",
+      "business": "制冷剂+含氟聚合物，在氟化工领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "萤石供应商",
+      "category": "upstream",
+      "business": "氟化工基础原料（萤石/氢氟酸），受《萤石行业规范条件》管控",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯原料\n供应商",
+      "category": "upstream",
+      "business": "高纯卤素/金属原料，电子特气生产用",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工基础\n原料供应商",
+      "category": "upstream",
+      "business": "有机/无机化工原料，制冷剂/电解液生产用",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "碳酸锂\n供应商",
+      "category": "upstream",
+      "business": "锂电池电解液核心原材料（六氟磷酸锂用）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "晶圆代工龙头，电子特气核心客户（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长鑫存储",
+      "category": "downstream",
+      "business": "存储芯片制造，电子特气客户（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "空调/汽车\n制冷企业",
+      "category": "downstream",
+      "business": "格力/美的/汽车空调等，制冷剂终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "军工/航天\n企业",
+      "category": "downstream",
+      "business": "国产航母/商业航天/航空，特种涂料/密封材料/航材客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600378",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600378",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600378",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600378",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600378",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600378",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600378",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600378",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600378",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600378",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600378",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600378",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

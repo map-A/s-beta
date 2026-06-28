@@ -1,0 +1,178 @@
+{
+  "company_code": "300518",
+  "company_name": "新迅达",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_300518",
+      "name": "新迅达\n300518",
+      "category": "target",
+      "business": "原游戏开发运营，转型锂矿/新能源（矿区建设停滞），实际无有效主营业务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "天齐锂业\n002466",
+      "category": "competitor",
+      "business": "全球锂资源龙头，格林布什矿+扎布耶盐湖，碳酸锂/氢氧化锂",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "赣锋锂业\n002460",
+      "category": "competitor",
+      "business": "全球锂行业龙头，锂矿+锂盐+锂电池+回收全产业链",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "盐湖股份\n000792",
+      "category": "competitor",
+      "business": "中国最大钾肥+锂盐生产商（察尔汗盐湖），碳酸锂年产能4万吨+",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "永兴材料\n002756",
+      "category": "competitor",
+      "business": "云母提锂龙头（江西宜春），碳酸锂+特钢双主业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "蔡家锂矿",
+      "category": "upstream",
+      "business": "石矿储量274万吨，氧化锂资源量19,767吨（矿区建设停滞）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "南阳山锂矿",
+      "category": "upstream",
+      "business": "石矿储量29万吨，氧化锂资源量3,280吨（矿区建设停滞）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "碳酸锂市场",
+      "category": "upstream",
+      "business": "碳酸锂现货价~20万元/吨（2026年5月），公司锂矿经济性取决于市场价格",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "游戏引擎/开发工具",
+      "category": "upstream",
+      "business": "Unity/Unreal等游戏开发引擎及开发工具（原游戏业务上游，已萎缩）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "动力电池厂商",
+      "category": "downstream",
+      "business": "宁德时代/比亚迪等电池厂商（理论锂盐客户，实际无供应关系）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "陶瓷/玻璃行业",
+      "category": "downstream",
+      "business": "锂盐传统下游应用（理论客户，实际无供应关系）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "储能行业",
+      "category": "downstream",
+      "business": "储能电池对碳酸锂/氢氧化锂的需求（理论客户，实际无供应关系）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "手游玩家",
+      "category": "downstream",
+      "business": "原游戏业务下游用户群（业务已萎缩）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300518",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300518",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300518",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300518",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300518",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300518",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300518",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300518",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300518",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300518",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300518",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300518",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

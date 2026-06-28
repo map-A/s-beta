@@ -1,0 +1,178 @@
+{
+  "company_code": "601133",
+  "company_name": "柏诚股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_601133",
+      "name": "柏诚股份\n601133",
+      "category": "target",
+      "business": "半导体/面板/生物制药洁净室系统集成工程（设计-采购-工厂预制-施工）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "亚翔集成\n603299",
+      "category": "competitor",
+      "business": "台资背景，半导体/面板洁净室工程",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "圣晖集成\n603163",
+      "category": "competitor",
+      "business": "台资背景，半导体洁净室工程",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "至纯科技\n603690",
+      "category": "competitor",
+      "business": "洁净室设备+高纯工艺系统",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "正帆科技\n688596",
+      "category": "competitor",
+      "business": "高纯气体/化学品供应系统+洁净室配套",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "建筑材料\n供应商",
+      "category": "upstream",
+      "business": "彩钢板、环氧地坪、铝材等洁净室建材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "HVAC设备\n供应商",
+      "category": "upstream",
+      "business": "空调机组、风机盘管、空气处理设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高效过滤器\n供应商",
+      "category": "upstream",
+      "business": "HEPA/ULPA高效/超高效空气过滤器",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "管道/阀门/\n电气设备",
+      "category": "upstream",
+      "business": "不锈钢管道、阀门、电气控制系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "中国晶圆代工龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "SK海力士\n长鑫存储",
+      "category": "downstream",
+      "business": "存储芯片制造（DRAM/NAND）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "京东方\n华星光电",
+      "category": "downstream",
+      "business": "全球LCD/OLED面板龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "生物制药\n企业",
+      "category": "downstream",
+      "business": "百济神州/药明生物等生物制药GMP洁净室需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601133",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601133",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601133",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601133",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601133",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601133",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601133",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601133",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601133",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601133",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601133",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_601133",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

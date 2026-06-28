@@ -1,0 +1,202 @@
+{
+  "company_code": "688484",
+  "company_name": "南芯科技",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688484",
+      "name": "南芯科技\n688484",
+      "category": "target",
+      "business": "电荷泵充电管理芯片、升降压充电IC、电池管理芯片、DC-DC转换器、MCU",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "TI德州仪器",
+      "category": "competitor",
+      "business": "全球模拟芯片龙头，电源管理IC、信号链、嵌入式处理器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "英集芯\n688209",
+      "category": "competitor",
+      "business": "充电协议芯片、快充芯片、电池管理芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "圣邦股份\n300661",
+      "category": "competitor",
+      "business": "模拟芯片全品类龙头（信号链+电源管理+转换器）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "希荻微\n688173",
+      "category": "competitor",
+      "business": "电源管理芯片（DC-DC、LDO、充电管理）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "艾为电子\n688798",
+      "category": "competitor",
+      "business": "音频芯片+电源管理+射频前端芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "台积电",
+      "category": "upstream",
+      "business": "全球晶圆代工龙头（推测为主要代工供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中芯国际\n688981",
+      "category": "upstream",
+      "business": "国内晶圆代工龙头，成熟制程",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "长电科技\n600584",
+      "category": "upstream",
+      "business": "封装测试服务（全球OSAT龙头之一）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "华虹半导体\n688347",
+      "category": "upstream",
+      "business": "晶圆代工（功率器件/模拟芯片代工）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "小米集团",
+      "category": "downstream",
+      "business": "智能手机/穿戴设备/IoT（推测为客户1）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "OPPO/vivo",
+      "category": "downstream",
+      "business": "智能手机制造（充电IC核心客户）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "安克创新\n300866",
+      "category": "downstream",
+      "business": "消费电子品牌（充电配件、智能硬件，同时是股东持股5.46%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "智能座舱、车载充电器、ADAS电源管理",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "储能/工业客户",
+      "category": "downstream",
+      "business": "储能系统电池管理、电动工具、无人机",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688484",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688484",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688484",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688484",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688484",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688484",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688484",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

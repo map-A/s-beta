@@ -1,0 +1,178 @@
+{
+  "company_code": "603011",
+  "company_name": "合锻智能",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_603011",
+      "name": "合锻智能\n603011",
+      "category": "target",
+      "business": "高端液压机/压力机+智能分选设备制造，布局核聚变核心部件",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "钢材/铸锻件供应商",
+      "category": "upstream",
+      "business": "提供机床机身、结构件所需的钢材和铸锻件（大宗商品级）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "力士乐/液压件厂商",
+      "category": "upstream",
+      "business": "液压泵、液压阀、液压缸等液压系统核心元件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "发那科/西门子/华中数控",
+      "category": "upstream",
+      "business": "数控系统、伺服电机、PLC等电气控制系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "光电器件供应商",
+      "category": "upstream",
+      "business": "CCD/CMOS相机、光源、光谱传感器等光电分选核心元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "德国舒勒集团",
+      "category": "competitor",
+      "business": "全球锻压设备龙头，汽车冲压线核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "济南二机床",
+      "category": "competitor",
+      "business": "国内大型冲压设备龙头，汽车冲压线国内市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "美亚光电",
+      "category": "competitor",
+      "business": "国内智能色选机/分选设备龙头，行业第一梯队",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "国机重装",
+      "category": "competitor",
+      "business": "央企重型装备制造龙头，具备核聚变部件制造能力",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪等车企",
+      "category": "downstream",
+      "business": "采购冲压生产线用于汽车覆盖件成形",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "航空航天企业",
+      "category": "downstream",
+      "business": "采购精密锻压设备用于飞机/火箭/飞船部件成形",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "聚变新能(BEST项目)",
+      "category": "downstream",
+      "business": "采购真空室、屏蔽块等核聚变装置核心部件（尚未产生收入）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "食品/矿产加工企业",
+      "category": "downstream",
+      "business": "采购智能色选机/干选机用于粮食/矿石/煤炭分选",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603011",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603011",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603011",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603011",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603011",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603011",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603011",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603011",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603011",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603011",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603011",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603011",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

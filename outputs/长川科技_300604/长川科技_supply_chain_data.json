@@ -1,0 +1,178 @@
+{
+  "company_code": "300604",
+  "company_name": "长川科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_300604",
+      "name": "长川科技\n300604",
+      "category": "target",
+      "business": "国内SoC/存储半导体ATE测试机龙头+分选机+探针台，半导体后道检测设备",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "泰瑞达\nTeradyne",
+      "category": "competitor",
+      "business": "全球ATE龙头，市占率约40-50%，SoC/存储/汽车芯片测试",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "爱德万\nAdvantest",
+      "category": "competitor",
+      "business": "全球ATE第二，市占率约30-40%，存储器/SoC测试",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华峰测控\n688200",
+      "category": "competitor",
+      "business": "国内模拟/混合信号ATE龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "FPGA/芯片供应商",
+      "category": "upstream",
+      "business": "测试系统核心FPGA/ADC/DAC等芯片供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "视觉系统供应商",
+      "category": "upstream",
+      "business": "探针台/分选机精密视觉对准系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "机械零件/PCB供应商",
+      "category": "upstream",
+      "business": "结构件、PCB板、连接器等通用零部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "温控/传感器供应商",
+      "category": "upstream",
+      "business": "精密温控器和传感器件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "长电科技",
+      "category": "downstream",
+      "business": "中国最大封测企业，全球前三，公司重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华天科技",
+      "category": "downstream",
+      "business": "国内封测龙头之一，公司重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "通富微电",
+      "category": "downstream",
+      "business": "国内封测企业，AMD重要封测伙伴",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "日月光/安靠/美光",
+      "category": "downstream",
+      "business": "全球封测/存储龙头，via STI子公司供货",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "士兰微/华润微",
+      "category": "downstream",
+      "business": "国内IDM厂商（功率/模拟芯片），公司客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300604",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300604",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300604",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300604",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300604",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300604",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300604",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300604",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300604",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300604",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300604",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300604",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

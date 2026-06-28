@@ -1,0 +1,190 @@
+{
+  "company_code": "603688",
+  "company_name": "石英股份",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_603688",
+      "name": "石英股份\n603688",
+      "category": "target",
+      "business": "高纯石英砂、石英管/棒/板/锭/筒、石英坩埚等石英材料的研发、生产与销售",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "东海县石英矿\n资源",
+      "category": "upstream",
+      "business": "天然脉石英矿石，国内最优质的高纯石英矿源集中区",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "化工原料\n供应商",
+      "category": "upstream",
+      "business": "SiCl4等合成石英原料，用于合成石英砂生产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高温熔炼\n设备商",
+      "category": "upstream",
+      "business": "石英高温熔炼炉、提纯设备等专用设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电力能源\n供应商",
+      "category": "upstream",
+      "business": "石英提纯为高能耗过程，需稳定工业电力供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "菲利华\n300395",
+      "category": "competitor",
+      "business": "石英制品龙头（半导体石英器件、光纤石英材料），石英制品端竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "TQC\n（The Quartz Corp）",
+      "category": "competitor",
+      "business": "全球半导体级高纯石英砂双寡头之一（挪威/美国），拥有Spruce Pine矿源",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Sibelco\n矽比科",
+      "category": "competitor",
+      "business": "全球半导体级高纯石英砂双寡头之一（比利时），与TQC共享Spruce Pine矿源",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "凯盛科技\n600552",
+      "category": "competitor",
+      "business": "合成石英砂方向，天然石英砂的潜在替代竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "隆基绿能",
+      "category": "downstream",
+      "business": "全球光伏龙头，单晶硅片/组件制造商，石英坩埚大客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "中国大陆晶圆代工龙头，半导体石英材料认证目标客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长江存储",
+      "category": "downstream",
+      "business": "国产NAND Flash存储芯片龙头，12英寸石英材料已完成全部工艺测试",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "长飞光纤\n601869",
+      "category": "downstream",
+      "business": "全球光纤预制棒/光纤光缆龙头，光纤用石英衬管/套管客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "亨通光电\n600487",
+      "category": "downstream",
+      "business": "光纤预制棒/光纤光缆/海缆龙头，光纤用石英材料客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603688",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603688",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603688",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603688",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603688",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603688",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603688",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603688",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603688",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603688",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603688",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603688",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603688",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

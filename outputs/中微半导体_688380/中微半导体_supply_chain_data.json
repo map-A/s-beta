@@ -1,0 +1,214 @@
+{
+  "company_code": "688380",
+  "company_name": "中微半导体",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688380",
+      "name": "中微半导体\n688380",
+      "category": "target",
+      "business": "以MCU为核心的平台型芯片设计公司（Fabless），产品覆盖8/32位MCU、ASIC、SoC、功率器件、NOR Flash，应用于家电/汽车/消费电子/工业控制",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "华虹宏力\n（晶圆代工）",
+      "category": "upstream",
+      "business": "核心晶圆代工伙伴（占采购54.26%），8寸+12寸成熟制程代工，90/55nm eFlash工艺首发客户",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中芯国际\n（晶圆代工）",
+      "category": "upstream",
+      "business": "补充晶圆代工产能，部分产品线代工",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "天水华天\n（封测服务）",
+      "category": "upstream",
+      "business": "集成电路封装服务合作伙伴，2001年开始合作",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "广东利扬芯片\n（测试服务）",
+      "category": "upstream",
+      "business": "芯片测试服务合作伙伴，2014年开始合作",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "EDA/IP供应商",
+      "category": "upstream",
+      "business": "EDA工具和IP核授权（Cadence/Synopsys等），芯片设计基础设施",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "兆易创新\n603986",
+      "category": "competitor",
+      "business": "国产MCU+NOR Flash+DRAM龙头，ARM Cortex-M系列产品线最全，32位MCU直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中颖电子\n300327",
+      "category": "competitor",
+      "business": "家电MCU+OLED驱动IC，家电MCU细分领域直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "峰岹科技\n688279",
+      "category": "competitor",
+      "business": "BLDC电机驱动MCU，电机控制细分龙头，人形机器人关节驱动竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "德州仪器\nTI",
+      "category": "competitor",
+      "business": "全球模拟芯片+MCU巨头，全球MCU市场份额前三，国际巨头竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "芯海科技\n688595",
+      "category": "competitor",
+      "business": "MCU+ADC+信号链芯片，模拟+MCU混合方案竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "家电终端厂商",
+      "category": "downstream",
+      "business": "美的、格力、苏泊尔、九阳等，家电MCU核心下游（智能控制方案）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车Tier1/车企",
+      "category": "downstream",
+      "business": "赛力斯、吉利、长安、一汽红旗、大明电子等，车规级MCU下游",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子/方案商",
+      "category": "downstream",
+      "business": "智能控制器方案商和终端品牌商，MCU+方案二次开发后销售给终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业控制/医疗",
+      "category": "downstream",
+      "business": "工业自动化设备、电机驱动、电源管理、血氧仪、雾化器等医疗电子",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "IoT/机器人终端",
+      "category": "downstream",
+      "business": "物联网传感器节点、人形机器人关节驱动控制、智能家居终端",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688380",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688380",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688380",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688380",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688380",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688380",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688380",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688380",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688380",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688380",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688380",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688380",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688380",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688380",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688380",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

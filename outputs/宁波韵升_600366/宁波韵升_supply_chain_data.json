@@ -1,0 +1,178 @@
+{
+  "company_code": "600366",
+  "company_name": "宁波韵升",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_600366",
+      "name": "宁波韵升\n600366",
+      "category": "target",
+      "business": "中国三大NdFeB生产商之一，消费电子+新能源车+人形机器人，年产26,000吨产能",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中科三环\n000970",
+      "category": "competitor",
+      "business": "国内最大烧结NdFeB生产商，产能约2万吨+",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "金力永磁\n300748",
+      "category": "competitor",
+      "business": "NdFeB龙头，深度绑定新能源车（特斯拉等），扩产最快",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "正海磁材\n300224",
+      "category": "competitor",
+      "business": "高性能NdFeB，新能源车驱动电机差异化优势",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "稀土氧化物供应商",
+      "category": "upstream",
+      "business": "镨钕金属、镝铁合金等稀土原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "稀土分离冶炼企业",
+      "category": "upstream",
+      "business": "稀土分离冶炼，受国家总量控制指标约束——行业真正卡点",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "NdFeB专用设备供应商",
+      "category": "upstream",
+      "business": "烧结炉、气流磨等NdFeB生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "辅材/化学试剂供应商",
+      "category": "upstream",
+      "business": "化学辅料、包装材料等辅助原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "新能源车驱动电机厂",
+      "category": "downstream",
+      "business": "国内外新能源车主驱系统制造商，2026Q1销售6.58亿（+14.6%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "苹果/消费电子",
+      "category": "downstream",
+      "business": "全球智能消费电子巨头的核心磁材供应商，2026Q1销售3.82亿（+49.2%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "人形机器人客户",
+      "category": "downstream",
+      "business": "已达到量产供货状态，每台约需2-4kg NdFeB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业电机/伺服电机",
+      "category": "downstream",
+      "business": "伺服电机、电梯曳引机、变频空调等，2026Q1销售2.79亿（+37.4%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "风电整机厂",
+      "category": "downstream",
+      "business": "风力发电直驱电机用NdFeB永磁材料",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600366",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600366",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600366",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600366",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600366",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600366",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600366",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600366",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600366",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600366",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600366",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600366",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

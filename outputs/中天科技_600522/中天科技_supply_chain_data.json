@@ -1,0 +1,190 @@
+{
+  "company_code": "600522",
+  "company_name": "中天科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600522",
+      "name": "中天科技\n600522",
+      "category": "target",
+      "business": "光纤光缆+海底电缆+电力电缆+新能源四大板块龙头，棒纤缆一体化，800G光模块批量出货",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "高纯四氯化硅\n/锗供应商",
+      "category": "upstream",
+      "business": "光纤预制棒核心原材料，公司自主掌握三大预制棒技术，关键材料自主可控",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜材/铝材\n供应商",
+      "category": "upstream",
+      "business": "电力电缆/海缆主要大宗原材料，价格波动影响成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "REBCO超导\n带材供应商",
+      "category": "upstream",
+      "business": "可控核聚变超导线材用高温超导材料，供应商较少",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "海缆铠装\n/护套材料",
+      "category": "upstream",
+      "business": "海底电缆铠装钢丝、护套材料等关键材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "亨通光电\n600487",
+      "category": "competitor",
+      "business": "光纤光缆+海缆+量子通信，中天科技最直接竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "长飞光纤\n601869",
+      "category": "competitor",
+      "business": "光纤预制棒+光纤光缆，国内光纤领域龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东方电缆\n600363",
+      "category": "competitor",
+      "business": "海底电缆+海洋工程，海缆领域龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中际旭创\n300308",
+      "category": "competitor",
+      "business": "高速光模块全球龙头（800G/1.6T），AI算力互联核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "通信运营商\n移动/电信/联通",
+      "category": "downstream",
+      "business": "光纤光缆传统大客户，5G/F5G/千兆光网建设，单位Ⅰ占收入15.02%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AI算力/\n数据中心",
+      "category": "downstream",
+      "business": "头部互联网大厂高速互联核心供应链，800G光模块+光纤，当前核心增长引擎",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海上风电\n开发商",
+      "category": "downstream",
+      "business": "中广核/三峡等，高压海底电缆+敷设工程，在手订单121亿元",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电网公司\n国网/南网",
+      "category": "downstream",
+      "business": "高压/超高压电力电缆、柔性直流输电设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "海外客户\n(多国)",
+      "category": "downstream",
+      "business": "印尼/巴西/摩洛哥/土耳其/沙特等，海外再造一个中天战略，本地化制造",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600522",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600522",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600522",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600522",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600522",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600522",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600522",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600522",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600522",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600522",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600522",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600522",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600522",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

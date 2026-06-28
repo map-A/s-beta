@@ -1,0 +1,166 @@
+{
+  "company_code": "300857",
+  "company_name": "协创数据",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_300857",
+      "name": "协创数据\n300857",
+      "category": "target",
+      "business": "数据存储设备、AI服务器组装、算力租赁服务、AIoT终端",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "浪潮信息\n000977",
+      "category": "competitor",
+      "business": "国内服务器市占率第一，AI服务器/通用服务器制造",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中科曙光\n603019",
+      "category": "competitor",
+      "business": "高端计算（服务器+存储），国产芯片（海光信息）布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "拓维信息\n002261",
+      "category": "competitor",
+      "business": "AI算力服务、国产智能计算，华为生态合作伙伴",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "英伟达GPU供应商",
+      "category": "upstream",
+      "business": "AI GPU芯片（H100/H200/B200等），协创数据核心采购品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "存储芯片厂商",
+      "category": "upstream",
+      "business": "DRAM/NAND Flash存储芯片（三星/SK海力士/美光等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "服务器组件供应商",
+      "category": "upstream",
+      "business": "服务器主板、电源、散热模组等标准化组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "数据中心/电力",
+      "category": "upstream",
+      "business": "数据中心机柜租赁、电力供应（算力中心高耗能）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "头部互联网/云厂商\n（客户一，占30.81%）",
+      "category": "downstream",
+      "business": "AI大模型训练/推理、云服务，协创数据最大客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AI企业客户",
+      "category": "downstream",
+      "business": "AI创业公司、大模型企业，采购算力租赁服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "企业存储客户",
+      "category": "downstream",
+      "business": "企业级数据存储、备份设备采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AIoT终端客户",
+      "category": "downstream",
+      "business": "智能摄像头、智能家居等物联网终端采购",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300857",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300857",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300857",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300857",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300857",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300857",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300857",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300857",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300857",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300857",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300857",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

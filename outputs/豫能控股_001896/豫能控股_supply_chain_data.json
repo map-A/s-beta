@@ -1,0 +1,190 @@
+{
+  "company_code": "001896",
+  "company_name": "豫能控股",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_001896",
+      "name": "豫能控股\n001896",
+      "category": "target",
+      "business": "河南省火电+新能源+抽水蓄能+煤炭贸易物流，省级国资综合能源企业",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "山西焦煤集团",
+      "category": "upstream",
+      "business": "大型国有煤炭企业，动力煤/焦煤供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "陕西榆林能源集团",
+      "category": "upstream",
+      "business": "陕西省煤炭企业，煤炭供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "山西成功投资集团",
+      "category": "upstream",
+      "business": "山西省煤炭企业，煤炭供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "世德能源",
+      "category": "upstream",
+      "business": "煤炭贸易商，燃料供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "哈尔滨电气/上海电气",
+      "category": "upstream",
+      "business": "发电设备制造商（锅炉/汽轮机/发电机）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "大唐发电\n601991",
+      "category": "competitor",
+      "business": "全国性发电集团，火电+水电+风电+光伏",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "国电电力\n600795",
+      "category": "competitor",
+      "business": "全国性发电集团，火电+水电+新能源",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华银电力\n600744",
+      "category": "competitor",
+      "business": "湖南省火电为主",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "通宝能源\n600780",
+      "category": "competitor",
+      "business": "山西省火电",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "国网河南省电力公司",
+      "category": "downstream",
+      "business": "河南省输配电垄断运营，占公司收入85.77%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "濮阳市热力有限公司",
+      "category": "downstream",
+      "business": "城市集中供热企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "安阳益和热力集团",
+      "category": "downstream",
+      "business": "城市集中供热企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "河南投资集团",
+      "category": "downstream",
+      "business": "控股股东关联方，部分关联交易",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_001896",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_001896",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_001896",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_001896",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_001896",
+      "relation": "supply"
+    },
+    {
+      "source": "target_001896",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001896",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001896",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001896",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_001896",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_001896",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_001896",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_001896",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

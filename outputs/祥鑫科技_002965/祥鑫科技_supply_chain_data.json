@@ -1,0 +1,134 @@
+{
+  "company_code": "002965",
+  "company_name": "祥鑫科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002965",
+      "name": "祥鑫科技\n002965",
+      "category": "target",
+      "business": "汽车精密冲压模具/金属结构件，蹭液冷服务器/AI/机器人概念，深交所上市",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "文灿股份\n603348",
+      "category": "competitor",
+      "business": "汽车铝合金压铸件龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "拓普集团\n601689",
+      "category": "competitor",
+      "business": "汽车NVH+轻量化底盘系统",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "旭升集团\n603305",
+      "category": "competitor",
+      "business": "汽车铝合金精密件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "和胜股份\n002824",
+      "category": "competitor",
+      "business": "铝合金型材/汽车轻量化",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "钢材供应商",
+      "category": "upstream",
+      "business": "汽车用钢材/特种钢",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铝材供应商",
+      "category": "upstream",
+      "business": "铝合金材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "模具钢供应商",
+      "category": "upstream",
+      "business": "特种模具钢",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "数控设备供应商",
+      "category": "upstream",
+      "business": "数控机床、冲压设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "表面处理\n供应商",
+      "category": "upstream",
+      "business": "电镀/喷涂等表面处理服务",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "汽车整车厂",
+      "category": "downstream",
+      "business": "汽车金属结构件/模具核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "通信设备\n厂商",
+      "category": "downstream",
+      "business": "通信基站金属结构件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "数据中心/\nAI服务器",
+      "category": "downstream",
+      "business": "液冷散热金属件（概念方向，订单未确认）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源企业",
+      "category": "downstream",
+      "business": "充电桩/光伏金属结构件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "机器人企业",
+      "category": "downstream",
+      "business": "机器人金属结构件（概念方向）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002965", "relation": "supply"},
+    {"source": "up_1", "target": "target_002965", "relation": "supply"},
+    {"source": "up_2", "target": "target_002965", "relation": "supply"},
+    {"source": "up_3", "target": "target_002965", "relation": "supply"},
+    {"source": "up_4", "target": "target_002965", "relation": "supply"},
+    {"source": "target_002965", "target": "down_0", "relation": "customer"},
+    {"source": "target_002965", "target": "down_1", "relation": "customer"},
+    {"source": "target_002965", "target": "down_2", "relation": "customer"},
+    {"source": "target_002965", "target": "down_3", "relation": "customer"},
+    {"source": "target_002965", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002965", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002965", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002965", "relation": "compete"},
+    {"source": "comp_3", "target": "target_002965", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "company_code": "002579",
+  "company_name": "中京电子",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002579",
+      "name": "中京电子\n002579",
+      "category": "target",
+      "business": "全品类PCB制造商（刚性板/HDI/FPC/刚柔结合板），正向IC载板和光模块PCB延伸，应用于消费电子/汽车电子/AI/低空经济",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "覆铜板(CCL)\n供应商",
+      "category": "upstream",
+      "business": "PCB核心基材供应商（如生益科技、建滔积层板等），占采购8.17%（前5大第1名）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜箔供应商",
+      "category": "upstream",
+      "business": "电解铜箔/压延铜箔，PCB导电层核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB设备\n供应商",
+      "category": "upstream",
+      "business": "曝光机、蚀刻线、钻孔机、电镀线等PCB生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "半固化片/\n油墨供应商",
+      "category": "upstream",
+      "business": "环氧树脂+玻璃布半固化片、阻焊油墨、字符油墨等辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "IC载板\n基材供应商",
+      "category": "upstream",
+      "business": "ABF/BT基板材料，IC封装基板核心原材料（面向先进封装方向）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "景旺电子\n603228",
+      "category": "competitor",
+      "business": "国内PCB龙头，刚性板+FPC+金属基板，规模大毛利率稳定，A股直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "深南电路\n002916",
+      "category": "competitor",
+      "business": "国内高端PCB+IC封装基板领军企业，AI服务器PCB核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "沪电股份\n002463",
+      "category": "competitor",
+      "business": "A股AI服务器PCB龙头，高频高速高多层板，英伟达/AMD核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "博敏电子\n603936",
+      "category": "competitor",
+      "business": "高端PCB+IC载板，业务模式与中京电子最为接近",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "崇达技术\n002815",
+      "category": "competitor",
+      "business": "小批量PCB龙头，高多层板+HDI+高频高速板，产品结构更高端",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子\n品牌商",
+      "category": "downstream",
+      "business": "手机、游戏机（索尼）、VR/AR眼镜、可穿戴设备终端品牌",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车电子\n厂商",
+      "category": "downstream",
+      "business": "比亚迪等车企及Tier1，ADAS、毫米波雷达、车身控制PCB应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "显示模组\n厂商",
+      "category": "downstream",
+      "business": "京东方、深天马等OLED显示模组厂商，FPC柔性显示配套",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信/AI\n设备商",
+      "category": "downstream",
+      "business": "光模块厂商、数据中心设备商、网络通信设备（25G-400G光模块PCB）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "无人机/安防\n终端",
+      "category": "downstream",
+      "business": "大疆（无人机）、海康威视（安防）等终端设备厂商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002579",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002579",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002579",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002579",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002579",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002579",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002579",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002579",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002579",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002579",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002579",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002579",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002579",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002579",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_002579",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

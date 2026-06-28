@@ -1,0 +1,178 @@
+{
+  "company_code": "600584",
+  "company_name": "长电科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600584",
+      "name": "长电科技\n600584",
+      "category": "target",
+      "business": "全球OSAT前三，国内封测龙头，先进封装（XDFOI/Chiplet/CPO/SiP）、传统封装、测试服务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "日月光\n3711.TW",
+      "category": "competitor",
+      "business": "全球最大OSAT，先进封装布局广泛，SiP/Fan-out/测试全覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "安靠\nAMKR",
+      "category": "competitor",
+      "business": "全球第二大OSAT，苹果等大客户，先进封装技术领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "国内封测第二，与AMD深度合作，Flip Chip/Bump强项",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "华天科技\n002185",
+      "category": "competitor",
+      "business": "国内封测第三，功率器件/传感器封装特色，昆山先进封装基地",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "ABF/BT基板\n供应商",
+      "category": "upstream",
+      "business": "IC封装基板，先进封装关键材料，受味之素ABF膜供应约束",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "封装设备商\n(ASM/K&S等)",
+      "category": "upstream",
+      "business": "贴片机、键合机、塑封机、测试设备等封测核心装备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "引线框架/\n键合丝供应商",
+      "category": "upstream",
+      "business": "铜合金引线框架、金线/铜线键合丝，传统封装核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "环氧树脂/\n模塑料供应商",
+      "category": "upstream",
+      "business": "芯片封装保护材料，成型工艺关键原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI/HPC芯片\n设计公司",
+      "category": "downstream",
+      "business": "GPU/AI加速卡设计，需要2.5D/3D/Chiplet先进封装，运算电子YoY+42.6%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "存储芯片厂商\n(长江存储等)",
+      "category": "downstream",
+      "business": "DRAM/NAND存储芯片封测需求，收购晟碟半导体拓展存储封测",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "ADAS/功率器件/传感器封装，车规级认证要求高，业务YoY+31.7%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信/消费电子\n客户",
+      "category": "downstream",
+      "business": "5G基站/光模块CPO/手机SoC/射频芯片封装测试",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600584",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600584",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600584",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600584",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600584",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600584",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600584",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600584",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600584",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600584",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600584",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600584",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

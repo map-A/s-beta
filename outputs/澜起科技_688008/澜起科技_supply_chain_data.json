@@ -1,0 +1,190 @@
+{
+  "company_code": "688008",
+  "company_name": "澜起科技",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688008",
+      "name": "澜起科技\n688008",
+      "category": "target",
+      "business": "全球内存接口芯片三寡头之一（36.8%第一），DDR5标准制定者，PCIe Retimer全球第二，CXL MXC全球首发",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Rambus\nRMBS",
+      "category": "competitor",
+      "business": "内存接口芯片三寡头之一+PCIe Retimer双寡头之一，硅IP授权",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "IDT/瑞萨\n6723.T",
+      "category": "competitor",
+      "business": "内存接口芯片三寡头之一（被瑞萨收购），时钟芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Marvell\nMRVL",
+      "category": "competitor",
+      "business": "CXL/PCIe互连芯片、定制ASIC、光DSP，AI运力层综合芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Broadcom\nAVGO",
+      "category": "competitor",
+      "business": "PCIe交换芯片、网络芯片、定制ASIC，全球半导体巨头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "台积电\nTSM",
+      "category": "upstream",
+      "business": "先进制程晶圆代工，公司核心代工供应商（Q3起150万颗/月）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "OSAT封测\n厂商",
+      "category": "upstream",
+      "business": "芯片封装和测试服务第三方厂商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "EDA/IP\n供应商",
+      "category": "upstream",
+      "business": "Synopsys/Cadence等IC设计工具及高速SerDes IP",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "JEDEC\n标准组织",
+      "category": "upstream",
+      "business": "内存技术国际标准制定组织，公司为董事会成员+委员会主席",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "三星/SK海力士\n/美光",
+      "category": "downstream",
+      "business": "全球三大DRAM厂商，采购RCD/MDB用于DDR5内存模组",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "云服务提供商\n(CSP)",
+      "category": "downstream",
+      "business": "AWS/Azure/GCP/阿里云等，AI服务器终端用户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "服务器OEM\n/ODM",
+      "category": "downstream",
+      "business": "浪潮/联想/Dell/HPE等服务器整机制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "CPU/GPU\n厂商",
+      "category": "downstream",
+      "business": "Intel/AMD/NVIDIA，内存接口芯片的上游集成方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "国产服务器\n生态",
+      "category": "downstream",
+      "business": "津逮®CPU平台用户，国产替代服务器方案",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688008",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688008",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688008",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688008",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688008",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688008",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688008",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688008",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688008",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688008",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

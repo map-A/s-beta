@@ -1,0 +1,40 @@
+{
+  "company_code": "688271",
+  "company_name": "联影医疗",
+  "analysis_date": "2026-06-18",
+  "nodes": [
+    {"id": "target_688271", "name": "联影医疗\n688271", "category": "target", "business": "国产高端医学影像设备龙头（MR/CT/XR/PET-CT/PET-MR/RT/US全产品线），核心部件全部自研自产，11500+专利", "symbolSize": 90},
+    {"id": "comp_0", "name": "GE医疗\nGEHC", "category": "competitor", "business": "全球医学影像设备龙头（GPS三巨头之一），MR/CT/PET-CT等", "symbolSize": 45},
+    {"id": "comp_1", "name": "西门子医疗\nSiemens Healthineers", "category": "competitor", "business": "全球医学影像设备龙头（GPS三巨头之一），MR/CT/DSA等", "symbolSize": 45},
+    {"id": "comp_2", "name": "飞利浦医疗\nPhilips", "category": "competitor", "business": "全球医学影像设备龙头（GPS三巨头之一），MR/CT/超声等", "symbolSize": 45},
+    {"id": "comp_3", "name": "万东医疗\n600055", "category": "competitor", "business": "国产医学影像设备（DR/DSA/MR），中低端为主", "symbolSize": 45},
+    {"id": "up_0", "name": "超导磁体\n（自研）", "category": "upstream", "business": "MR核心部件，联影自研自产（核心壁垒）", "symbolSize": 40},
+    {"id": "up_1", "name": "探测器/功率\n器件（自研）", "category": "upstream", "business": "CT/PET核心部件，联影自研自产", "symbolSize": 40},
+    {"id": "up_2", "name": "AI影像软件\n（联影智能）", "category": "upstream", "business": "医学影像处理AI软件，联影智能自研", "symbolSize": 40},
+    {"id": "up_3", "name": "通用零部件\n供应商", "category": "upstream", "business": "电子元器件/结构件等通用零部件（前5大仅占采购15%）", "symbolSize": 40},
+    {"id": "down_0", "name": "三甲医院", "category": "downstream", "business": "采购高端MR/CT/PET-CT用于临床诊断（前5大客户仅占8.75%）", "symbolSize": 50},
+    {"id": "down_1", "name": "基层医疗\n机构", "category": "downstream", "business": "采购中端DR/CT/MR用于分级诊疗", "symbolSize": 50},
+    {"id": "down_2", "name": "科研院所\n/高校", "category": "downstream", "business": "采购生命科学仪器（动物MR/PET-CT）和高端影像设备", "symbolSize": 50},
+    {"id": "down_3", "name": "海外医疗\n机构", "category": "downstream", "business": "产品已进入100+国家（美国/日本/韩国/新西兰/意大利等）", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_688271", "relation": "supply"},
+    {"source": "up_1", "target": "target_688271", "relation": "supply"},
+    {"source": "up_2", "target": "target_688271", "relation": "supply"},
+    {"source": "up_3", "target": "target_688271", "relation": "supply"},
+    {"source": "target_688271", "target": "down_0", "relation": "customer"},
+    {"source": "target_688271", "target": "down_1", "relation": "customer"},
+    {"source": "target_688271", "target": "down_2", "relation": "customer"},
+    {"source": "target_688271", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_688271", "relation": "compete"},
+    {"source": "comp_1", "target": "target_688271", "relation": "compete"},
+    {"source": "comp_2", "target": "target_688271", "relation": "compete"},
+    {"source": "comp_3", "target": "target_688271", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

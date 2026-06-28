@@ -1,0 +1,178 @@
+{
+  "company_code": "000703",
+  "company_name": "恒逸石化",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_000703",
+      "name": "恒逸石化\n000703",
+      "category": "target",
+      "business": "全球领先PTA+聚酯纤维+文莱炼化+己内酰胺一体化石化企业",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "原油供应商\n（中东/全球）",
+      "category": "upstream",
+      "business": "国际原油供应（Brent/迪拜原油），占总成本60%以上",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "PX对二甲苯\n（自产+外购）",
+      "category": "upstream",
+      "business": "PTA核心原料，文莱炼化一期自产+国内外采购",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "MEG乙二醇\n（外购为主）",
+      "category": "upstream",
+      "business": "聚酯核心原料，国内煤制/石脑油制乙二醇供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "己内酰胺原料\n（苯/环己酮）",
+      "category": "upstream",
+      "business": "己内酰胺-聚酰胺产业链上游原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "恒力石化\n600346",
+      "category": "competitor",
+      "business": "PTA全球产能最大+大连长兴岛炼化一体化",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "荣盛石化\n002493",
+      "category": "competitor",
+      "business": "PTA+聚酯+浙石化4000万吨炼油一体化",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "桐昆股份\n601233",
+      "category": "competitor",
+      "business": "国内涤纶长丝产量第一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "新凤鸣\n603225",
+      "category": "competitor",
+      "business": "涤纶长丝/短纤快速扩产企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "纺织服装企业",
+      "category": "downstream",
+      "business": "织造/针织/印染企业，使用涤纶长丝/短纤",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "包装行业",
+      "category": "downstream",
+      "business": "饮料瓶/食品包装用PET聚酯瓶片",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "工业用丝",
+      "category": "downstream",
+      "business": "轮胎帘子布/输送带/安全带等工业涤纶丝",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "出口贸易商",
+      "category": "downstream",
+      "business": "东南亚/南亚等海外市场（占收入41.6%）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000703",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000703",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000703",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000703",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000703",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000703",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000703",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000703",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000703",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000703",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000703",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_000703",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

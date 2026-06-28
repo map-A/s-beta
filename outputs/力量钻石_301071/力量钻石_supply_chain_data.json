@@ -1,0 +1,178 @@
+{
+  "company_code": "301071",
+  "company_name": "力量钻石",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_301071",
+      "name": "力量钻石\n301071",
+      "category": "target",
+      "business": "培育钻石+金刚石单晶+金刚石微粉研发生产，正向金刚石功能材料（散热/光学/声学）转型",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "石墨/金属触媒\n原材料供应商",
+      "category": "upstream",
+      "business": "HPHT金刚石合成用石墨和金属触媒（镍/钴/锰）原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "六面顶压机\n设备供应商",
+      "category": "upstream",
+      "business": "超硬材料核心合成设备六面顶压机及关键备件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "CVD设备/\n高纯气体",
+      "category": "upstream",
+      "business": "CVD金刚石生长设备及甲烷/氢气等高纯气体原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电力/能源\n供应商",
+      "category": "upstream",
+      "business": "金刚石合成过程高能耗所需电力和能源供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "中南钻石\n（央企）",
+      "category": "competitor",
+      "business": "兵装集团旗下，国内最大人造金刚石生产商之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "黄河旋风\n600172",
+      "category": "competitor",
+      "business": "超硬材料+培育钻石，国内最大金刚石生产基地之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "惠丰钻石\n920725",
+      "category": "competitor",
+      "business": "金刚石微粉龙头，北交所上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Element Six\n（戴比尔斯）",
+      "category": "competitor",
+      "business": "全球CVD金刚石技术领导者，高端工业/功能金刚石",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "金刚石线锯\n光伏企业",
+      "category": "downstream",
+      "business": "光伏硅片切割用金刚石线锯生产商（美畅股份/岱勒新材等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "培育钻石\n饰品加工",
+      "category": "downstream",
+      "business": "培育钻石饰品切割、加工和零售企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体加工\nIC晶圆厂",
+      "category": "downstream",
+      "business": "IC芯片超精加工用特种金刚石客户，半导体晶圆切割/研磨",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI芯片散热\n功率器件",
+      "category": "downstream",
+      "business": "金刚石散热材料应用于AI芯片热管理和功率器件（远期概念）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301071",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301071",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301071",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301071",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301071",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301071",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301071",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301071",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301071",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301071",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301071",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301071",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

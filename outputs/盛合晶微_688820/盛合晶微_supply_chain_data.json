@@ -1,0 +1,178 @@
+{
+  "company_code": "688820",
+  "company_name": "盛合晶微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688820",
+      "name": "盛合晶微\n688820",
+      "category": "target",
+      "business": "全球前十先进封测企业，2.5D芯粒集成封装中国大陆领先",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "日月光\nASE",
+      "category": "competitor",
+      "business": "全球封测#1，全面先进封装能力",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "安靠\nAmkor",
+      "category": "competitor",
+      "business": "全球封测#2，先进封装领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "国内封测#1，追赶2.5D封装",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "国内封测#2，AMD先进封装合作",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "ABF载板/\n封装基板",
+      "category": "upstream",
+      "business": "先进封装核心基板材料（占采购14.11%的第一大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "封装设备\n(ASML/BESI)",
+      "category": "upstream",
+      "business": "光刻/键合/切割等先进封装设备（占采购7.94%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化学品/\n光刻胶",
+      "category": "upstream",
+      "business": "封装用光刻胶、清洗液等化学品（占采购6.83%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "键合材料\n供应商",
+      "category": "upstream",
+      "business": "铜线/金线/键合丝（占采购4.46%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "国产算力\n核心客户",
+      "category": "downstream",
+      "business": "第一大客户（占营收74.4%！），推测为国产AI芯片设计企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "高性能计算\n芯片设计",
+      "category": "downstream",
+      "business": "HPC/AI芯片设计企业的先进封装需求（占营收8.12%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "存储芯片\n厂商",
+      "category": "downstream",
+      "business": "存储芯片封测需求（占营收5.91%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "其他芯片\n设计企业",
+      "category": "downstream",
+      "business": "各类芯片设计企业的封装需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688820",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688820",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688820",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688820",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688820",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688820",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688820",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688820",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688820",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688820",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688820",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688820",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

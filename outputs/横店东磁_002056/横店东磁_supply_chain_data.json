@@ -1,0 +1,110 @@
+{
+  "company_code": "002056",
+  "company_name": "横店东磁",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002056",
+      "name": "横店东磁\n002056",
+      "category": "target",
+      "business": "全球铁氧体磁材出货量第一(21.8万吨)+光伏组件全球前十(24.9GW)+锂电池，2025年营收226亿/净利4亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "天通股份",
+      "category": "competitor",
+      "business": "600330，磁性材料+蓝宝石+光伏设备，铁氧体国内主要竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "北矿科技",
+      "category": "competitor",
+      "business": "600980，磁性材料+矿山设备，铁氧体材料竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "隆基绿能",
+      "category": "competitor",
+      "business": "601012，全球光伏龙头（硅片+组件），光伏赛道绝对龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "氧化铁/铁氧体\n粉料供应商",
+      "category": "upstream",
+      "business": "铁氧体核心原料（大宗商品级，非稀缺资源）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硅料供应商",
+      "category": "upstream",
+      "business": "光伏用多晶硅/单晶硅料（通威/协鑫等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "正极材料/\n电解液供应商",
+      "category": "upstream",
+      "business": "锂电池用正极材料、电解液、隔膜等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "磁材成型设备、光伏产线设备、锂电设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "汽车电子/\n新能源车",
+      "category": "downstream",
+      "business": "新能源车电机/电控用永磁铁氧体、汽车电子传感器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏电站",
+      "category": "downstream",
+      "business": "光伏组件采购（24.9GW出货量），集中式+分布式电站",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子/\n通信",
+      "category": "downstream",
+      "business": "手机/基站/电脑等用小型磁芯和磁性元件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "储能/家电",
+      "category": "downstream",
+      "business": "储能系统用锂电池+变频空调/洗衣机用电机磁体",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002056", "relation": "supply"},
+    {"source": "up_1", "target": "target_002056", "relation": "supply"},
+    {"source": "up_2", "target": "target_002056", "relation": "supply"},
+    {"source": "up_3", "target": "target_002056", "relation": "supply"},
+    {"source": "target_002056", "target": "down_0", "relation": "customer"},
+    {"source": "target_002056", "target": "down_1", "relation": "customer"},
+    {"source": "target_002056", "target": "down_2", "relation": "customer"},
+    {"source": "target_002056", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002056", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002056", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002056", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

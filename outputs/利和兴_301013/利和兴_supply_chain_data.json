@@ -1,0 +1,178 @@
+{
+  "company_code": "301013",
+  "company_name": "利和兴",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_301013",
+      "name": "利和兴\n301013",
+      "category": "target",
+      "business": "自动化智能检测设备+MLCC电子元器件，48个概念标签堆砌的创业板公司",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "博杰股份\n002975",
+      "category": "competitor",
+      "business": "智能检测设备，消费电子/半导体检测",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "赛腾股份\n603283",
+      "category": "competitor",
+      "business": "自动化设备，消费电子/半导体检测",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华兴源创\n688001",
+      "category": "competitor",
+      "business": "检测设备，面板/半导体/消费电子",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "科瑞技术\n002957",
+      "category": "competitor",
+      "business": "智能装备，精密自动化",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "机械零件供应商",
+      "category": "upstream",
+      "business": "自动化设备结构件和精密零部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "视觉系统供应商",
+      "category": "upstream",
+      "business": "机器视觉和传感器系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "MLCC原材料供应商",
+      "category": "upstream",
+      "business": "陶瓷粉体、内/外电极浆料等MLCC制造原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "通用零部件供应商",
+      "category": "upstream",
+      "business": "连接器、导轨、PCB等标准件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "第一大客户（推测荣耀）",
+      "category": "downstream",
+      "business": "2025年采购1.46亿元，占营收31.12%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "第二大客户（脱敏）",
+      "category": "downstream",
+      "business": "2025年采购8591万元，占营收18.28%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新凯来/摩尔线程",
+      "category": "downstream",
+      "business": "精密结构件/测试平台/电子元器件客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "比亚迪/汽车客户",
+      "category": "downstream",
+      "business": "电池焊接检测系统等汽车电子客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301013",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301013",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301013",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301013",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301013",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301013",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301013",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301013",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301013",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301013",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301013",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301013",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

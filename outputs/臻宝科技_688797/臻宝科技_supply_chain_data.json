@@ -1,0 +1,134 @@
+{
+  "company_code": "688797",
+  "company_name": "臻宝科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688797",
+      "name": "臻宝科技\n688797",
+      "category": "target",
+      "business": "半导体设备硅/石英/碳化硅/陶瓷零部件（本土#1）及表面处理解决方案",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "单晶/多晶硅棒",
+      "category": "upstream",
+      "business": "硅零部件基础材料，公司自产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯石英材料",
+      "category": "upstream",
+      "business": "石英零部件基础材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "碳化硅/陶瓷粉体",
+      "category": "upstream",
+      "business": "通过CVD工艺自产碳化硅和氧化铝/氧化钇陶瓷",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化学品/气体",
+      "category": "upstream",
+      "business": "清洗和表面处理用高纯化学品及特种气体",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "精密加工设备",
+      "category": "upstream",
+      "business": "硬脆材料精密加工设备（硅/石英/陶瓷切磨抛）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "富创精密\n688409",
+      "category": "competitor",
+      "business": "半导体设备精密零部件（A股上市）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "珂玛科技",
+      "category": "competitor",
+      "business": "半导体设备陶瓷零部件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "先锋精科",
+      "category": "competitor",
+      "business": "半导体设备零部件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Ferrotec",
+      "category": "competitor",
+      "business": "日本全球半导体设备零部件龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "SK海力士大连",
+      "category": "downstream",
+      "business": "存储芯片厂商，已稳定批量供货（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "美光半导体",
+      "category": "downstream",
+      "business": "全球存储芯片巨头，已建立合作（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "京东方",
+      "category": "downstream",
+      "business": "显示面板制造，设备零部件客户（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通富微电",
+      "category": "downstream",
+      "business": "先进封装厂商，先进封装零部件合作（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "国内晶圆厂",
+      "category": "downstream",
+      "business": "集成电路制造，刻蚀/薄膜沉积设备零部件（inferred）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_688797", "relation": "supply"},
+    {"source": "up_1", "target": "target_688797", "relation": "supply"},
+    {"source": "up_2", "target": "target_688797", "relation": "supply"},
+    {"source": "up_3", "target": "target_688797", "relation": "supply"},
+    {"source": "up_4", "target": "target_688797", "relation": "supply"},
+    {"source": "target_688797", "target": "down_0", "relation": "customer"},
+    {"source": "target_688797", "target": "down_1", "relation": "customer"},
+    {"source": "target_688797", "target": "down_2", "relation": "customer"},
+    {"source": "target_688797", "target": "down_3", "relation": "customer"},
+    {"source": "target_688797", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_688797", "relation": "compete"},
+    {"source": "comp_1", "target": "target_688797", "relation": "compete"},
+    {"source": "comp_2", "target": "target_688797", "relation": "compete"},
+    {"source": "comp_3", "target": "target_688797", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

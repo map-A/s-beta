@@ -1,0 +1,190 @@
+{
+  "company_code": "600183",
+  "company_name": "生益科技",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_600183",
+      "name": "生益科技\n600183",
+      "category": "target",
+      "business": "覆铜板(CCL)+粘结片+PCB（国内最大，全球产能第二）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "建滔积层板\n1888.HK",
+      "category": "competitor",
+      "business": "覆铜板（全球最大CCL制造商）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "联茂\n6213.TW",
+      "category": "competitor",
+      "business": "覆铜板（台湾CCL龙头，高频高速领域强）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "金安国纪\n002636",
+      "category": "competitor",
+      "business": "覆铜板（国内CCL厂商）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "华正新材\n603186",
+      "category": "competitor",
+      "business": "覆铜板+复合材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铜箔供应商",
+      "category": "upstream",
+      "business": "CCL核心导电层（电解铜箔/压延铜箔）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "树脂供应商",
+      "category": "upstream",
+      "business": "环氧树脂等绝缘粘合材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "玻纤布供应商",
+      "category": "upstream",
+      "business": "玻璃纤维布（CCL增强材料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "特种化学品供应商",
+      "category": "upstream",
+      "business": "高频高速CCL专用树脂/填料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "PCB制造商",
+      "category": "downstream",
+      "business": "鹏鼎控股/深南电路/沪电股份/东山精密等",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AI服务器厂商",
+      "category": "downstream",
+      "business": "AI数据中心高端PCB（高频高速CCL）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "5G通信设备商",
+      "category": "downstream",
+      "business": "5G基站PCB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子厂商",
+      "category": "downstream",
+      "business": "新能源汽车电子PCB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "消费电子品牌",
+      "category": "downstream",
+      "business": "智能手机/电脑等消费电子PCB",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600183",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600183",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600183",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600183",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600183",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600183",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600183",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600183",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600183",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600183",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600183",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600183",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600183",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

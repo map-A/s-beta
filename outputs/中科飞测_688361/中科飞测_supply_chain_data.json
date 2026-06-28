@@ -1,0 +1,178 @@
+{
+  "company_code": "688361",
+  "company_name": "中科飞测",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688361",
+      "name": "中科飞测\n688361",
+      "category": "target",
+      "business": "国内半导体检测/量测设备龙头，789项专利，光学+电子束+X光一站式布局",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "光学元件供应商",
+      "category": "upstream",
+      "business": "深紫外光源/镜头/传感器（核心部件，部分可能依赖进口）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "精密机械供应商",
+      "category": "upstream",
+      "business": "运动平台/真空腔体（高精度要求）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电子元器件供应商",
+      "category": "upstream",
+      "business": "FPGA/DSP/高速ADC等芯片级零部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "计算硬件供应商",
+      "category": "upstream",
+      "business": "GPU/CPU（AI算法数据处理加速）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "KLA科磊半导体\nKLAC",
+      "category": "competitor",
+      "business": "全球半导体检测/量测设备龙头，市占率>50%，美国",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "应用材料\nAMAT",
+      "category": "competitor",
+      "business": "全球半导体设备全品类龙头（含检测），美国",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "上海精测\n300567",
+      "category": "competitor",
+      "business": "国内半导体检测设备企业，中科飞测主要国内竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "上海睿励",
+      "category": "competitor",
+      "business": "国内半导体量测设备企业，国内竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "晶圆代工厂",
+      "category": "downstream",
+      "business": "中芯国际/华虹半导体等，检测/量测设备核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "先进封装厂",
+      "category": "downstream",
+      "business": "长电科技/通富微电等，Chiplet/2.5D/3D封装检测需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "存储芯片厂",
+      "category": "downstream",
+      "business": "长江存储/长鑫存储等，3D NAND/DRAM检测需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "功率器件/MEMS厂",
+      "category": "downstream",
+      "business": "成熟制程器件制造商，稳定型检测需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688361",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688361",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688361",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688361",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688361",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688361",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688361",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688361",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688361",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688361",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688361",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688361",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

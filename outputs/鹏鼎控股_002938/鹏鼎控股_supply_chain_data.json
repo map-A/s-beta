@@ -1,0 +1,166 @@
+{
+  "company_code": "002938",
+  "company_name": "鹏鼎控股",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002938",
+      "name": "鹏鼎控股\n002938",
+      "category": "target",
+      "business": "全球最大PCB厂商，HDI/FPC/多层板，苹果核心供应商，AI服务器PCB新拓展",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "欣兴电子\n3037.TW",
+      "category": "competitor",
+      "business": "全球第二大PCB厂商，HDI/IC载板，中国台湾",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "深南电路\n002916",
+      "category": "competitor",
+      "business": "高端PCB/IC载板，通信+服务器PCB龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "沪电股份\n002463",
+      "category": "competitor",
+      "business": "高速PCB/AI服务器PCB龙头，毛利率~35%",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "覆铜板(CCL)供应商",
+      "category": "upstream",
+      "business": "覆铜板/半固化片（生益科技/建滔积层板等），PCB核心基材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜箔供应商",
+      "category": "upstream",
+      "business": "电解铜箔/压延铜箔，PCB导电层材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB化学品供应商",
+      "category": "upstream",
+      "business": "蚀刻液、沉铜液、电镀液等PCB专用化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "油墨/干膜供应商",
+      "category": "upstream",
+      "business": "感光油墨、光致抗蚀干膜，PCB图形转移材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "苹果(Apple)\n（客户一，占79.65%）",
+      "category": "downstream",
+      "business": "iPhone/iPad/Mac等消费电子，鹏鼎最大客户（推测）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AI服务器/光模块客户",
+      "category": "downstream",
+      "business": "1.6T/3.2T光模块PCB、AI服务器PCB客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "ADAS/智能座舱/新能源汽车电子PCB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "商业航天客户",
+      "category": "downstream",
+      "business": "低轨卫星/商业航天PCB（前瞻性布局）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002938",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002938",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002938",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002938",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002938",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002938",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

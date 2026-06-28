@@ -1,0 +1,202 @@
+{
+  "company_code": "600367",
+  "company_name": "红星发展",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_600367",
+      "name": "红星发展\n600367",
+      "category": "target",
+      "business": "全球碳酸钡第一（世界钡王）+亚洲碳酸锶龙头（亚洲锶王）+锰盐+碳酸锂6000吨，依托贵州重晶石矿资源",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "重晶石矿\n资源",
+      "category": "upstream",
+      "business": "碳酸钡核心原料，公司拥有贵州优质重晶石矿（国内最好的可持续开采重晶石矿）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "天青石矿\n资源",
+      "category": "upstream",
+      "business": "碳酸锶核心原料，重庆当地矿山+国外进口，部分依赖进口有地缘风险",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "锰矿石\n供应商",
+      "category": "upstream",
+      "business": "锰盐原料，国内外非关联方采购，Q1均价1420元/吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "无烟煤\n供应商",
+      "category": "upstream",
+      "business": "生产燃料，贵州/重庆当地招标采购，Q1均价700-880元/吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "贵州宏泰\n钡业",
+      "category": "competitor",
+      "business": "碳酸钡国内主要竞争对手，非上市企业，原材料和人工成本有优势",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "京山楚天\n钡盐",
+      "category": "competitor",
+      "business": "碳酸钡国际市场竞争对手，非上市企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "金瑞矿业\n600714",
+      "category": "competitor",
+      "business": "碳酸锶国内竞争对手，青海天青石矿资源，A股上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "南京金焰\n锶盐",
+      "category": "competitor",
+      "business": "碳酸锶国内竞争对手，非上市企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "玻璃制造\n企业",
+      "category": "downstream",
+      "business": "特种玻璃、液晶显示基板制造，使用碳酸钡作为原料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "MLCC/电子\n陶瓷企业",
+      "category": "downstream",
+      "business": "多层陶瓷电容器制造，使用高纯碳酸钡（电子级产品）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "磁性材料\n企业",
+      "category": "downstream",
+      "business": "锶铁氧体永磁材料制造，使用碳酸锶",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电池材料\n企业",
+      "category": "downstream",
+      "business": "一次干电池用电解二氧化锰，锂电池正极材料用高纯硫酸锰/四氧化三锰",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "陶瓷制造\n企业",
+      "category": "downstream",
+      "business": "陶瓷釉料用碳酸钡",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "显示面板\n企业",
+      "category": "downstream",
+      "business": "LCD/OLED玻璃基板制造，使用碳酸锶",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600367",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600367",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600367",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600367",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600367",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600367",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600367",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600367",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600367",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600367",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600367",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600367",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600367",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600367",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

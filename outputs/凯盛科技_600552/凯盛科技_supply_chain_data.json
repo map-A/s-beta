@@ -1,0 +1,38 @@
+{
+  "company_code": "600552",
+  "company_name": "凯盛科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_600552", "name": "凯盛科技\n600552", "category": "target", "business": "中国建材集团旗下显示材料+应用材料平台（UTG超薄玻璃/ITO/玻璃基板/电熔氧化锆），620件专利", "symbolSize": 90},
+    {"id": "comp_0", "name": "康宁\nGLW", "category": "competitor", "business": "全球显示玻璃龙头（Gorilla Glass/柔性玻璃UTG）", "symbolSize": 45},
+    {"id": "comp_1", "name": "NEG\n电气硝子", "category": "competitor", "business": "全球显示基板玻璃龙头（日本）", "symbolSize": 45},
+    {"id": "comp_2", "name": "彩虹股份\n600707", "category": "competitor", "business": "国内基板玻璃龙头（G8.5+）", "symbolSize": 45},
+    {"id": "up_0", "name": "硅砂/石英砂供应商", "category": "upstream", "business": "玻璃制造核心原料", "symbolSize": 40},
+    {"id": "up_1", "name": "化工原料供应商", "category": "upstream", "business": "氧化锆/化学品等应用材料原料", "symbolSize": 40},
+    {"id": "up_2", "name": "玻璃加工设备", "category": "upstream", "business": "玻璃熔制/切割/加工设备", "symbolSize": 40},
+    {"id": "up_3", "name": "能源供应商", "category": "upstream", "business": "玻璃生产用电/天然气", "symbolSize": 40},
+    {"id": "down_0", "name": "显示面板厂\n（京东方等）", "category": "downstream", "business": "采购ITO导电膜玻璃/UTG/玻璃基板", "symbolSize": 50},
+    {"id": "down_1", "name": "折叠屏手机厂商", "category": "downstream", "business": "采购UTG超薄柔性玻璃用于折叠屏", "symbolSize": 50},
+    {"id": "down_2", "name": "耐火材料企业", "category": "downstream", "business": "采购电熔氧化锆用于耐火材料", "symbolSize": 50},
+    {"id": "down_3", "name": "光伏/新能源企业", "category": "downstream", "business": "采购光伏玻璃/钙钛矿叠层电池用玻璃", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_600552", "relation": "supply"},
+    {"source": "up_1", "target": "target_600552", "relation": "supply"},
+    {"source": "up_2", "target": "target_600552", "relation": "supply"},
+    {"source": "up_3", "target": "target_600552", "relation": "supply"},
+    {"source": "target_600552", "target": "down_0", "relation": "customer"},
+    {"source": "target_600552", "target": "down_1", "relation": "customer"},
+    {"source": "target_600552", "target": "down_2", "relation": "customer"},
+    {"source": "target_600552", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_600552", "relation": "compete"},
+    {"source": "comp_1", "target": "target_600552", "relation": "compete"},
+    {"source": "comp_2", "target": "target_600552", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

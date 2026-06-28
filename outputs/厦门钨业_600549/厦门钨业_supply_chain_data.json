@@ -1,0 +1,166 @@
+{
+  "company_code": "600549",
+  "company_name": "厦门钨业",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_600549",
+      "name": "厦门钨业\n600549",
+      "category": "target",
+      "business": "中国最大钨产品生产商（仲钨酸铵/氧化钨/钨粉全球第一）+稀土+电池材料，完整钨产业链，市值1,364亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "自有钨矿\n（3座在产）",
+      "category": "upstream",
+      "business": "洛阳豫鹭/宁化行洛坑/都昌金鼎，公司自有钨矿资源保障",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中国稀土集团",
+      "category": "upstream",
+      "business": "国家级稀土整合平台，与厦门钨业在福建稀土矿业/冶炼/深加工合作",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "腾远钴业",
+      "category": "upstream",
+      "business": "钴原料供应商，厦门钨业参股第三大股东，电池材料上游保障",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "盛屯矿业/\n雅化锂业",
+      "category": "upstream",
+      "business": "锂原料供应商，与厦钨新能合资合作，电池材料上游保障",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "中钨高新\n000657",
+      "category": "competitor",
+      "business": "中国五矿旗下钨业平台，硬质合金龙头，厦门钨业国内主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "章源钨业\n002378",
+      "category": "competitor",
+      "business": "国内钨矿+冶炼+深加工企业，厦门钨业竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "翔鹭钨业\n002842",
+      "category": "competitor",
+      "business": "国内钨冶炼+深加工企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "硬质合金/\n刀具行业",
+      "category": "downstream",
+      "business": "硬质合金棒材/切削工具，厦门钨业多项制造业单项冠军产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "军工/航天\n行业",
+      "category": "downstream",
+      "business": "钨合金穿甲弹/航天耐高温部件，不可替代的战略应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体\n靶材行业",
+      "category": "downstream",
+      "business": "高纯钨/钼溅射靶材（F10投资逻辑confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源电池\n（厦钨新能）",
+      "category": "downstream",
+      "business": "钴酸锂电池正极材料（制造业单项冠军），通过控股子公司厦钨新能",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600549",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600549",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600549",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600549",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600549",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600549",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600549",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600549",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600549",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600549",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600549",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

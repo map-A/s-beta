@@ -1,0 +1,190 @@
+{
+  "company_code": "688702",
+  "company_name": "盛科通信",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688702",
+      "name": "盛科通信\n688702",
+      "category": "target",
+      "business": "国产商用以太网交换芯片设计龙头，产品覆盖企业/运营商/数据中心/工业网络",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "台积电/中芯国际",
+      "category": "upstream",
+      "business": "晶圆代工服务，提供交换芯片制造的先进/成熟制程产能",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "Synopsys/Cadence",
+      "category": "upstream",
+      "business": "EDA工具与高速SerDes IP授权，芯片设计核心基础设施",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "长电科技/通富微电",
+      "category": "upstream",
+      "business": "芯片封装与测试服务，Fabless模式下的封测环节",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "华大九天",
+      "category": "upstream",
+      "business": "国产EDA工具供应商，芯片设计工具国产替代",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Broadcom\n博通",
+      "category": "competitor",
+      "business": "全球以太网交换芯片绝对龙头，Tomahawk/Jericho系列，约70-80%全球份额",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Marvell\n美满电子",
+      "category": "competitor",
+      "business": "Teralynx系列交换芯片，聚焦云数据中心市场，约10%全球份额",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "NVIDIA\n英伟达",
+      "category": "competitor",
+      "business": "Spectrum系列交换芯片，依托AI集群以太网互连生态切入交换芯片市场",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "华为海思",
+      "category": "competitor",
+      "business": "自研CloudEngine系列交换芯片，仅供华为自用，不对外销售",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "新华三/紫光集团",
+      "category": "downstream",
+      "business": "国内领先的网络设备整机厂商，交换机/路由器生产",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中兴通讯",
+      "category": "downstream",
+      "business": "通信设备巨头，交换机/路由器/5G设备产品线",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "锐捷网络",
+      "category": "downstream",
+      "business": "企业级网络设备厂商，教育/医疗/政府行业客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "阿里云/字节跳动",
+      "category": "downstream",
+      "business": "云厂商/AI公司，采购交换设备用于数据中心Scale-up/Scale-out互连",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "电信运营商",
+      "category": "downstream",
+      "business": "中国移动/电信/联通，采购网络设备用于5G承载网/城域网/骨干网建设",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688702",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688702",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688702",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688702",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688702",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688702",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688702",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688702",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688702",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688702",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688702",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688702",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688702",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

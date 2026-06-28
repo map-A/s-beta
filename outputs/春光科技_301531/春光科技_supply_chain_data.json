@@ -1,0 +1,178 @@
+{
+  "company_code": "301531",
+  "company_name": "春光科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_301531",
+      "name": "春光科技\n301531",
+      "category": "target",
+      "business": "国内软磁铁氧体磁粉第一，磁心/电子元器件/电源，应用于新能源车/光伏/通信",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "天通股份\n600330",
+      "category": "competitor",
+      "business": "软磁铁氧体材料+光伏设备，国内重要磁性材料厂商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "横店东磁\n002056",
+      "category": "competitor",
+      "business": "铁氧体永磁+软磁+光伏，国内磁性材料龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "TDK",
+      "category": "competitor",
+      "business": "全球磁性材料/被动元件龙头，软磁铁氧体全球领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "南通冠优达\n磁业",
+      "category": "competitor",
+      "business": "国内软磁铁氧体材料厂商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "氧化锌\n供应商",
+      "category": "upstream",
+      "business": "软磁铁氧体磁粉核心原料，大宗商品（江苏正诚锌业等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "氧化锰\n供应商",
+      "category": "upstream",
+      "business": "软磁铁氧体磁粉核心原料（四川中哲新材料等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "氧化铁/\n钢铁企业",
+      "category": "upstream",
+      "business": "铁氧体主要成分（唐山钢铁等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "中钢天源\n002057",
+      "category": "upstream",
+      "business": "磁性材料原料供应商，春光前5大供应商之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "磁心/电感\n厂商",
+      "category": "downstream",
+      "business": "采购磁粉制造磁心、电感器（山东嘉诺、江苏佰磁等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源车\n供应链",
+      "category": "downstream",
+      "business": "车载充电器/DC-DC变换器用磁性元件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏/储能\n逆变器厂商",
+      "category": "downstream",
+      "business": "逆变器/PCS用变压器、电感",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信/电源\n设备厂商",
+      "category": "downstream",
+      "business": "5G基站/服务器电源/消费电子充电器用磁性元件",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301531",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301531",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301531",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301531",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301531",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301531",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301531",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301531",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301531",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301531",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301531",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301531",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

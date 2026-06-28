@@ -1,0 +1,178 @@
+{
+  "company_code": "601991",
+  "company_name": "大唐发电",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_601991",
+      "name": "大唐发电\n601991",
+      "category": "target",
+      "business": "大型综合发电公司，火电+水电+风电+光伏，总装机86,192MW",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华能国际\n600011",
+      "category": "competitor",
+      "business": "中国最大上市发电公司之一，火电+清洁能源",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "国电电力\n600795",
+      "category": "competitor",
+      "business": "国家能源集团旗下上市平台，火电+水电+新能源",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华电国际\n600027",
+      "category": "competitor",
+      "business": "华电集团旗下上市平台，火电为主+清洁能源",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "中国神华\n601088",
+      "category": "upstream",
+      "business": "中国最大煤炭生产商，动力煤供应，火电核心燃料来源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中煤能源\n601898",
+      "category": "upstream",
+      "business": "大型煤炭央企，动力煤供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "东方电气\n600875",
+      "category": "upstream",
+      "business": "火电核心设备供应商，锅炉/汽轮机/发电机",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "金风科技\n002202",
+      "category": "upstream",
+      "business": "国内风电设备龙头，风机制造+风电服务",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "隆基绿能\n601012",
+      "category": "upstream",
+      "business": "全球光伏组件龙头，光伏硅片+组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "国家电网",
+      "category": "downstream",
+      "business": "中国最大电网公司，覆盖26省，大唐发电第一大客户（收入占比66.87%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "南方电网",
+      "category": "downstream",
+      "business": "覆盖南方5省的电网公司",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "工业大用户",
+      "category": "downstream",
+      "business": "直接购电的大型工业企业，市场化交易客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "城市供暖用户",
+      "category": "downstream",
+      "business": "北方城市集中供暖终端用户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601991",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601991",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601991",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601991",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_601991",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601991",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601991",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601991",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601991",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601991",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601991",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601991",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

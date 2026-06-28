@@ -1,0 +1,190 @@
+{
+  "company_code": "300806",
+  "company_name": "斯迪克",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300806",
+      "name": "斯迪克\n300806",
+      "category": "target",
+      "business": "功能性薄膜、OCA光学胶、胶粘材料、热管理复合材料研发生产",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "3M",
+      "category": "competitor",
+      "business": "全球多元化胶粘材料/功能性薄膜巨头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "日东电工\n6988.JP",
+      "category": "competitor",
+      "business": "日本功能性薄膜/光学膜龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "晶华新材\n300682",
+      "category": "competitor",
+      "business": "国内胶粘材料/功能性薄膜",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "激智科技\n300656",
+      "category": "competitor",
+      "business": "国内光学膜/扩散膜",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "PET粒子\n供应商",
+      "category": "upstream",
+      "business": "PET树脂/粒子等原材料（占采购12.47%的第一大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "丙烯酸丁酯\n供应商",
+      "category": "upstream",
+      "business": "丙烯酸丁酯等胶原料化工企业（占采购6.62%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "BOPP膜\n供应商",
+      "category": "upstream",
+      "business": "双向拉伸聚丙烯薄膜等薄膜基材（占采购5.88%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "硅胶\n供应商",
+      "category": "upstream",
+      "business": "硅胶等胶材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "苹果(Apple)\n供应链",
+      "category": "downstream",
+      "business": "iPhone/iPad/Mac等OCA光学胶、保护膜终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源汽车\n电池厂",
+      "category": "downstream",
+      "business": "动力电池热管理复合材料、绝缘/导热材料客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏组件\n厂商",
+      "category": "downstream",
+      "business": "光伏背板膜、封装材料客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子\n品牌厂",
+      "category": "downstream",
+      "business": "手机/穿戴设备等OCA胶、功能性保护膜客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "PCB/MLCC\n厂商",
+      "category": "downstream",
+      "business": "FPC补强胶带、电子级胶粘材料客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300806",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300806",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300806",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300806",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300806",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300806",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300806",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300806",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300806",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300806",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300806",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300806",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300806",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

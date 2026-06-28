@@ -1,0 +1,190 @@
+{
+  "company_code": "688260",
+  "company_name": "昀冢科技",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_688260",
+      "name": "昀冢科技\n688260",
+      "category": "target",
+      "business": "消费电子精密零部件（CMI/CCMI摄像头马达基座）、电子陶瓷基板（DPC技术）、汽车电子控制器（线控制动ESC/ONE-BOX），布局MLCC",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "康而富集团",
+      "category": "competitor",
+      "business": "台资精密电子零部件厂商，手机摄像头马达结构件供应商，与昀冢在CMI细分市场直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "信华精机",
+      "category": "competitor",
+      "business": "日系精密零部件厂商，手机摄像头马达零件供应商，技术积累深厚",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "贝隆精密",
+      "category": "competitor",
+      "business": "国内精密电子零部件厂商，消费电子领域竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "长盈精密\n300115",
+      "category": "competitor",
+      "business": "国内精密电子零部件龙头，产品线更全、规模更大，已实现盈利",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铜合金/不锈钢\n材料供应商",
+      "category": "upstream",
+      "business": "提供冲压用金属材料（铜合金带材、不锈钢等），大宗商品级产品，供应充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "工程塑料\n供应商",
+      "category": "upstream",
+      "business": "提供精密注塑用工程塑料（PBT、PA、LCP等），石化产品，多供应商可选",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "陶瓷粉体\n供应商",
+      "category": "upstream",
+      "business": "提供电子陶瓷基板用粉体材料（氧化铝、氮化铝等），有一定专业性但非稀缺",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "IC/被动元件\n供应商",
+      "category": "upstream",
+      "business": "提供SMT贴装用IC芯片、MLCC、电阻等被动元件，标准化产品，供应充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "立景创新",
+      "category": "downstream",
+      "business": "国内头部VCM音圈马达厂商，推测为昀冢第一大客户，供应华为等品牌手机摄像头马达",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新思考电机",
+      "category": "downstream",
+      "business": "国内VCM马达厂商，昀冢直接客户，产品应用于多品牌智能手机",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "舜宇光学\n02382.HK",
+      "category": "downstream",
+      "business": "全球领先CCM摄像头模组厂商，昀冢可比公司兼客户，产品用于手机/车载摄像头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "新能源汽车龙头，昀冢汽车电子业务客户（线控制动系统控制器），产品尚在验证/小批量阶段",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "华为/小米\n手机终端",
+      "category": "downstream",
+      "business": "智能手机终端品牌，通过VCM/CCM厂商间接使用昀冢CMI马达基座，应用于高端机型摄像头",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688260",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688260",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688260",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688260",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688260",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688260",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688260",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688260",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688260",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688260",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

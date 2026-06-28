@@ -1,0 +1,178 @@
+{
+  "company_code": "002428",
+  "company_name": "云南锗业",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002428",
+      "name": "云南锗业\n002428",
+      "category": "target",
+      "business": "国内锗行业龙头+InP/GaAs衬底国产替代先行者，锗矿开采→冶炼→深加工→化合物半导体材料全链",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "锗矿资源\n（自有矿山）",
+      "category": "upstream",
+      "business": "云南临沧地区锗矿资源（韭菜坝煤矿等），锗金属量114.69吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯铟\n（外购）",
+      "category": "upstream",
+      "business": "InP衬底合成原料，国内铟冶炼企业供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯磷\n（外购）",
+      "category": "upstream",
+      "business": "InP衬底合成原料，化工原料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "锗精矿\n（外购补充）",
+      "category": "upstream",
+      "business": "国内外锗精矿贸易商，补充自有矿山产能",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "AXTI\n（纳斯达克）",
+      "category": "competitor",
+      "business": "全球InP衬底龙头，中国北京有产线，纳斯达克上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "住友电工\n（日本）",
+      "category": "competitor",
+      "business": "InP衬底老牌供应商，品质全球领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "JX金属\n（日本）",
+      "category": "competitor",
+      "business": "InP/GaAs衬底重要供应商，日本矿业巨头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "驰宏锌锗\n600497",
+      "category": "competitor",
+      "business": "铅锌锗综合冶炼，锗产量全国第一（综合冶炼口径）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "光模块企业",
+      "category": "downstream",
+      "business": "800G/1.6T光模块制造商（InP衬底→激光器→光模块）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "红外光学企业",
+      "category": "downstream",
+      "business": "军用/民用红外热成像系统制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光纤通信企业",
+      "category": "downstream",
+      "business": "光纤制造商（四氯化锗用于光纤掺杂）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "光伏/航天企业",
+      "category": "downstream",
+      "business": "空间太阳能电池制造商（锗衬底用于卫星/航天器）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002428",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002428",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002428",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002428",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002428",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002428",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002428",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002428",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002428",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002428",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002428",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002428",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

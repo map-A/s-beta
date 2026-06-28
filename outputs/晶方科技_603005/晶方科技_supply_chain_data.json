@@ -1,0 +1,190 @@
+{
+  "company_code": "603005",
+  "company_name": "晶方科技",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_603005",
+      "name": "晶方科技\n603005",
+      "category": "target",
+      "business": "WLCSP晶圆级芯片尺寸封装CIS细分龙头，12英寸WLCSP技术开发者，486项专利",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "封装设备\n供应商",
+      "category": "upstream",
+      "business": "光刻机/刻蚀机/键合机等半导体封装设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "封装材料\n供应商",
+      "category": "upstream",
+      "business": "底填料/模塑料/光刻胶等封装材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硅晶圆\n供应商",
+      "category": "upstream",
+      "business": "8英寸/12英寸硅晶圆原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "测试设备\n供应商",
+      "category": "upstream",
+      "business": "芯片测试设备及探针卡",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "全品类封测龙头（BGA/FC/SiP/WLCSP），国内最大OSAT",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华天科技\n002185",
+      "category": "competitor",
+      "business": "国内封测第二梯队，FC-CSP封装",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "AMD绑定+先进封装布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "日月光ASE\n3711.TW",
+      "category": "competitor",
+      "business": "全球OSAT龙头，全品类封测",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "索尼Sony\n(第一大客户)",
+      "category": "downstream",
+      "business": "全球CIS龙头，[inferred]占公司收入39.29%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "豪威科技\nOmniVision",
+      "category": "downstream",
+      "business": "韦尔股份旗下，全球CIS前三",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "格科微\n688728",
+      "category": "downstream",
+      "business": "国内CIS设计龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "思特威\n688213",
+      "category": "downstream",
+      "business": "安防CIS领先企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "终端应用\n(手机/汽车/安防)",
+      "category": "downstream",
+      "business": "智能手机/汽车ADAS/安防监控/AI眼镜等终端",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603005",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603005",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603005",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603005",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603005",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603005",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603005",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603005",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603005",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603005",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603005",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603005",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603005",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

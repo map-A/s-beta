@@ -1,0 +1,190 @@
+{
+  "company_code": "688808",
+  "company_name": "联讯仪器",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_688808",
+      "name": "联讯仪器\n688808",
+      "category": "target",
+      "business": "光电子器件测试设备、光通信测试仪器、SiC功率器件测试设备，国产龙头，科创板2026年上市",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "是德科技\nKeysight",
+      "category": "competitor",
+      "business": "全球测试仪器龙头，占中国光通信测试市场约38-40%，美股KEYS",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "安立\nAnritsu",
+      "category": "competitor",
+      "business": "日本测试仪器巨头，占中国光通信测试市场约22-24%，日股6754",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "广立微\n301095",
+      "category": "competitor",
+      "business": "国内半导体WAT测试机/晶圆电性能测试设备，与联讯在电性能测试赛道有竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "SPEA\n（意大利）",
+      "category": "competitor",
+      "business": "SiC功率器件KGD分选测试全球领先，与联讯在SiC测试赛道竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "苏州苏汀达\n自动化科技",
+      "category": "upstream",
+      "business": "精密自动化设备与机械零部件，前5大供应商第一（采购占比7.81%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "艾睿电子\nArrow Electronics",
+      "category": "upstream",
+      "business": "全球最大电子元器件分销商之一，提供高精度ADC/DAC及核心电子器件（采购5.25%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "苏州康巨富\n自动化设备",
+      "category": "upstream",
+      "business": "自动化设备制造商，提供测试设备核心机械结构件（采购占比6.52%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "矽电股份",
+      "category": "upstream",
+      "business": "半导体测试相关零部件/探针台配套供应商（采购占比2.79%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中际旭创\n300308",
+      "category": "downstream",
+      "business": "中国光模块/收发器绝对龙头，深度受益AI数据中心800G/1.6T升级，年报前5大客户（7.17%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新易盛\n300502",
+      "category": "downstream",
+      "business": "国内光模块头部企业，覆盖100G-800G高速光收发器，年报前5大客户（6.30%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "Lumentum\nLITE.US",
+      "category": "downstream",
+      "business": "全球领先光学器件/激光器公司，年报前5大客户中唯一海外客户（5.23%），国际认可验证",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "赛丽科技",
+      "category": "downstream",
+      "business": "光通信精密器件和模块，光无源器件生产商，年报前5大客户（5.71%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "SiC功率\n器件厂商",
+      "category": "downstream",
+      "business": "碳化硅功率芯片制造商（斯达半导/比亚迪半导体等），使用联讯WLBI晶圆级老化测试系统",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688808",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688808",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688808",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688808",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688808",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688808",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688808",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688808",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688808",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688808",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688808",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688808",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688808",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

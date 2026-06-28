@@ -1,0 +1,178 @@
+{
+  "company_code": "002617",
+  "company_name": "露笑科技",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_002617",
+      "name": "露笑科技\n002617",
+      "category": "target",
+      "business": "漆包线/电磁线制造（核心）+碳化硅衬底（占比极小）+蓝宝石+光伏电站，概念标签堆砌型标的",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "精达股份\n600577",
+      "category": "competitor",
+      "business": "电磁线/漆包线龙头，国内市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "长城科技\n603897",
+      "category": "competitor",
+      "business": "电磁线/漆包线制造商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "天岳先进\n688234",
+      "category": "competitor",
+      "business": "国内碳化硅衬底龙头，6寸/8寸SiC衬底供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "经纬辉开\n300120",
+      "category": "competitor",
+      "business": "电磁线+液晶显示",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铜材供应商",
+      "category": "upstream",
+      "business": "铜杆/铜线（漆包线核心原材料，铜价波动直接影响成本）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "碳化硅粉体供应商",
+      "category": "upstream",
+      "business": "高纯碳化硅粉体（SiC衬底原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "绝缘漆供应商",
+      "category": "upstream",
+      "business": "漆包线涂覆用绝缘漆",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "蓝宝石晶棒供应商",
+      "category": "upstream",
+      "business": "蓝宝石晶体生长原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "尼得科(Nidec)",
+      "category": "downstream",
+      "business": "全球最大电机制造商，漆包线重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "三星/LG电子",
+      "category": "downstream",
+      "business": "家电电机用漆包线客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "正泰电器",
+      "category": "downstream",
+      "business": "电力设备/变压器用漆包线客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "家电制造商",
+      "category": "downstream",
+      "business": "海尔/长虹/钱江制冷等冰箱/空调压缩机电机用漆包线",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002617",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002617",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002617",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002617",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002617",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002617",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002617",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002617",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002617",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002617",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002617",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002617",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

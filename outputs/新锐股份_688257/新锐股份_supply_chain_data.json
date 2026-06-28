@@ -1,0 +1,118 @@
+{
+  "company_code": "688257",
+  "company_name": "新锐股份",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688257",
+      "name": "新锐股份\n688257",
+      "category": "target",
+      "business": "国产硬质合金前十，硬质合金及切削工具研发生产",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "碳化钨粉供应商",
+      "category": "upstream",
+      "business": "硬质合金核心原料碳化钨粉",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "钴粉供应商",
+      "category": "upstream",
+      "business": "硬质合金粘结剂用钴粉",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "涂层材料/设备商",
+      "category": "upstream",
+      "business": "PVD/CVD涂层用靶材和涂层设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "粉末冶金设备商",
+      "category": "upstream",
+      "business": "压机、烧结炉、磨削设备等专用生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Sandvik\n山特维克",
+      "category": "competitor",
+      "business": "全球硬质合金/刀具龙头（瑞典）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "欧科亿",
+      "category": "competitor",
+      "business": "国产数控刀具龙头之一，硬质合金刀片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华锐精密",
+      "category": "competitor",
+      "business": "国产数控刀具企业，硬质合金刀片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "株洲钻石",
+      "category": "competitor",
+      "business": "国产硬质合金最大企业（中钨高新子公司）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "汽车制造企业",
+      "category": "downstream",
+      "business": "发动机/变速箱/底盘零件切削加工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "航空航天企业",
+      "category": "downstream",
+      "business": "钛合金/高温合金零件精密切削加工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "通用机械企业",
+      "category": "downstream",
+      "business": "模具/液压件/轴承/齿轮切削加工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "矿山开采企业",
+      "category": "downstream",
+      "business": "硬质合金矿山工具（凿岩/截齿等）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_688257", "relation": "supply"},
+    {"source": "up_1", "target": "target_688257", "relation": "supply"},
+    {"source": "up_2", "target": "target_688257", "relation": "supply"},
+    {"source": "up_3", "target": "target_688257", "relation": "supply"},
+    {"source": "target_688257", "target": "down_0", "relation": "customer"},
+    {"source": "target_688257", "target": "down_1", "relation": "customer"},
+    {"source": "target_688257", "target": "down_2", "relation": "customer"},
+    {"source": "target_688257", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_688257", "relation": "compete"},
+    {"source": "comp_1", "target": "target_688257", "relation": "compete"},
+    {"source": "comp_2", "target": "target_688257", "relation": "compete"},
+    {"source": "comp_3", "target": "target_688257", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

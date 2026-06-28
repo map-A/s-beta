@@ -1,0 +1,178 @@
+{
+  "company_code": "601899",
+  "company_name": "紫金矿业",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_601899",
+      "name": "紫金矿业\n601899",
+      "category": "target",
+      "business": "全球领先多金属矿业集团，金/铜/锌/锂/银/钼资源储量领先，2026E产金118吨/产铜128万吨",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "矿产勘探\n（自有技术）",
+      "category": "upstream",
+      "business": "全球矿产勘查，自有技术体系（低品位矿石处理全球领先）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "矿山设备",
+      "category": "upstream",
+      "business": "采掘/选矿/冶炼设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "能源供应\n（电力/柴油）",
+      "category": "upstream",
+      "business": "矿山运营核心能源（柴油/电力），主要成本项",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化工试剂",
+      "category": "upstream",
+      "business": "选矿药剂/冶炼化工材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Newmont\n（美股）",
+      "category": "competitor",
+      "business": "全球最大金矿公司",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "BHP集团\n（澳股）",
+      "category": "competitor",
+      "business": "全球最大矿业公司（铜/铁矿石/煤）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Freeport\n（美股）",
+      "category": "competitor",
+      "business": "全球最大铜矿公司之一（印尼Grasberg矿）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "洛阳钼业\n603993",
+      "category": "competitor",
+      "business": "全球多元化矿业公司（铜钴钼钨）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "央行/金融机构",
+      "category": "downstream",
+      "business": "各国央行黄金储备+黄金ETF",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电力/建筑行业",
+      "category": "downstream",
+      "business": "电线电缆/铜管/铜合金（铜消费最大领域）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新能源行业",
+      "category": "downstream",
+      "business": "电动车/光伏/储能用铜和锂",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "珠宝/消费",
+      "category": "downstream",
+      "business": "黄金首饰/贵金属消费品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601899",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601899",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601899",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601899",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601899",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601899",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601899",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601899",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601899",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601899",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601899",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_601899",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

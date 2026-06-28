@@ -1,0 +1,214 @@
+{
+  "company_code": "300433",
+  "company_name": "蓝思科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300433",
+      "name": "蓝思科技\n300433",
+      "category": "target",
+      "business": "全球消费电子精密玻璃/金属结构件龙头，AI智能终端整机组装平台",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "康宁\nCorning",
+      "category": "upstream",
+      "business": "全球高铝硅玻璃基材龙头（大猩猩玻璃），蓝思核心原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铝合金/不锈钢\n金属材料供应商",
+      "category": "upstream",
+      "business": "手机中框、汽车结构件用铝合金/不锈钢原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "蓝宝石晶棒/\n陶瓷粉末供应商",
+      "category": "upstream",
+      "business": "蓝宝石盖板、陶瓷后盖用特种材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "CNC精雕机/\n自动化设备厂商",
+      "category": "upstream",
+      "business": "玻璃/金属精密加工设备，自动化产线及检测设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "抛光材料/镀膜\n材料供应商",
+      "category": "upstream",
+      "business": "玻璃后道加工耗材（抛光液、油墨、PVD靶材等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "伯恩光学\n(未上市)",
+      "category": "competitor",
+      "business": "全球最大玻璃盖板厂商，Apple核心供应商，蓝思第一竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "比亚迪电子\n00285.HK",
+      "category": "competitor",
+      "business": "精密制造+EMS整机代工，比亚迪集团旗下",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "领益智造\n002600",
+      "category": "competitor",
+      "business": "精密小件全球龙头，苹果核心结构件供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "立讯精密\n002475",
+      "category": "competitor",
+      "business": "果链EMS龙头，AirPods/Apple Watch代工，向整机延伸",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "长盈精密\n300115",
+      "category": "competitor",
+      "business": "精密连接器+消费电子结构件，新能源汽车连接器",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "Apple",
+      "category": "downstream",
+      "business": "iPhone/iPad/Apple Watch等消费电子品牌，蓝思第一大客户（45%收入）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "Samsung",
+      "category": "downstream",
+      "business": "Galaxy系列手机品牌，蓝思推测第二大客户（27.7%收入）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "华为/小米/OPPO\n/vivo/荣耀",
+      "category": "downstream",
+      "business": "国产智能手机品牌，玻璃盖板与金属结构件客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "特斯拉/比亚迪/\n宝马/奔驰",
+      "category": "downstream",
+      "business": "智能汽车品牌，中控屏、仪表盘、B/C柱、汽车玻璃客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "智元机器人等\n具身智能企业",
+      "category": "downstream",
+      "business": "人形机器人结构件、关节壳体、面罩客户（早期阶段）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300433",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300433",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300433",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300433",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300433",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300433",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300433",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300433",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300433",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300433",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300433",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300433",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300433",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300433",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_300433",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

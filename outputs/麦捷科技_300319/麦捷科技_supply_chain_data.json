@@ -1,0 +1,38 @@
+{
+  "company_code": "300319",
+  "company_name": "麦捷科技",
+  "analysis_date": "2026-06-18",
+  "nodes": [
+    {"id": "target_300319", "name": "麦捷科技\n300319", "category": "target", "business": "全国第二大片式电感厂商，一体成型电感/LTCC滤波器/SAW滤波器/LCM显示模组", "symbolSize": 90},
+    {"id": "comp_0", "name": "顺络电子\n002138", "category": "competitor", "business": "国内第一大电感厂商，在片式电感领域直接竞争", "symbolSize": 45},
+    {"id": "comp_1", "name": "村田\nMurata", "category": "competitor", "business": "全球电感/被动元器件龙头（日本）", "symbolSize": 45},
+    {"id": "comp_2", "name": "TDK", "category": "competitor", "business": "全球电感/被动元器件龙头（日本）", "symbolSize": 45},
+    {"id": "up_0", "name": "磁性材料\n供应商", "category": "upstream", "business": "铁氧体粉、合金粉等磁性材料", "symbolSize": 40},
+    {"id": "up_1", "name": "陶瓷基板\n供应商", "category": "upstream", "business": "LTCC/SAW滤波器用陶瓷基板", "symbolSize": 40},
+    {"id": "up_2", "name": "银浆/导线\n供应商", "category": "upstream", "business": "电极银浆、金属导线等", "symbolSize": 40},
+    {"id": "up_3", "name": "设备供应商", "category": "upstream", "business": "电感/滤波器制造设备", "symbolSize": 40},
+    {"id": "down_0", "name": "AI服务器\n厂商", "category": "downstream", "business": "浪潮/超聚变/摩尔线程等，采购一体成型电感用于电源管理", "symbolSize": 50},
+    {"id": "down_1", "name": "光模块厂商", "category": "downstream", "business": "中际旭创/光讯科技/剑桥科技等，采购电感用于CPO", "symbolSize": 50},
+    {"id": "down_2", "name": "智能手机\n/消费电子", "category": "downstream", "business": "手机/平板/AI眼镜等终端，采购电感/滤波器", "symbolSize": 50},
+    {"id": "down_3", "name": "汽车电子\n/存储芯片", "category": "downstream", "business": "新能源汽车/存储模组，采购车规级电感", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_300319", "relation": "supply"},
+    {"source": "up_1", "target": "target_300319", "relation": "supply"},
+    {"source": "up_2", "target": "target_300319", "relation": "supply"},
+    {"source": "up_3", "target": "target_300319", "relation": "supply"},
+    {"source": "target_300319", "target": "down_0", "relation": "customer"},
+    {"source": "target_300319", "target": "down_1", "relation": "customer"},
+    {"source": "target_300319", "target": "down_2", "relation": "customer"},
+    {"source": "target_300319", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_300319", "relation": "compete"},
+    {"source": "comp_1", "target": "target_300319", "relation": "compete"},
+    {"source": "comp_2", "target": "target_300319", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

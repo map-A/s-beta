@@ -1,0 +1,166 @@
+{
+  "company_code": "688017",
+  "company_name": "绿的谐波",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688017",
+      "name": "绿的谐波\n688017",
+      "category": "target",
+      "business": "国内谐波减速器龙头，打破日本Harmonic Drive垄断，拓展行星滚柱丝杠（人形机器人），市值748亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "特种合金钢\n供应商",
+      "category": "upstream",
+      "business": "柔轮毛坯用特种合金钢供应商（第一大供应商占采购8.79%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高精度磨床\n进口设备",
+      "category": "upstream",
+      "business": "高精度螺纹磨床供应商（进口为主，受出口管制，行星滚柱丝杠核心设备）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "轴承/密封件\n供应商",
+      "category": "upstream",
+      "business": "标准化轴承和密封件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "热处理/\n表面处理",
+      "category": "upstream",
+      "business": "特种热处理和表面处理服务商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Harmonic Drive\n（日本）",
+      "category": "competitor",
+      "business": "全球谐波减速器发明者和龙头，技术标杆，绿的对标对象",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "来福谐波\n非A股",
+      "category": "competitor",
+      "business": "国内第二梯队谐波减速器企业，绿的国内追赶者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "双环传动\n002472",
+      "category": "competitor",
+      "business": "RV减速器国产替代标的，另一种机器人减速器路线",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "工业机器人\n厂商",
+      "category": "downstream",
+      "business": "发那科/ABB/库卡/埃斯顿/汇川技术等，谐波减速器核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "人形机器人\n厂商",
+      "category": "downstream",
+      "business": "特斯拉Optimus/小米CyberOne等，行星滚柱丝杠未来增量客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "数控机床\n厂商",
+      "category": "downstream",
+      "business": "高端数控机床转台用谐波减速器客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "医疗/核电\n高端装备",
+      "category": "downstream",
+      "business": "手术机器人/核电设备等精密传动应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688017",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688017",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688017",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688017",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688017",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688017",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688017",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688017",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688017",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688017",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688017",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

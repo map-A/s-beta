@@ -1,0 +1,202 @@
+{
+  "company_code": "603660",
+  "company_name": "苏州科达",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_603660",
+      "name": "苏州科达\n603660",
+      "category": "target",
+      "business": "视频会议系统、视频监控系统、智慧城市解决方案、AI大模型行业应用",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "海康威视\n002415",
+      "category": "competitor",
+      "business": "视频监控设备及解决方案（全球龙头），AI视觉、智慧城市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "大华股份\n002236",
+      "category": "competitor",
+      "business": "视频监控设备及解决方案（全球第二），智慧物联",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "亿联网络\n300628",
+      "category": "competitor",
+      "business": "视频会议终端、统一通信设备、云办公终端",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "兴图新科\n688081",
+      "category": "competitor",
+      "business": "视频指挥控制系统、军事通信",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "海思半导体",
+      "category": "upstream",
+      "business": "视频编解码芯片、AI芯片（华为旗下）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "联发科",
+      "category": "upstream",
+      "business": "多媒体处理芯片、SoC芯片",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "浪潮信息\n000977",
+      "category": "upstream",
+      "business": "服务器硬件、AI服务器、存储设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "京东方A\n000725",
+      "category": "upstream",
+      "business": "显示面板、液晶屏、OLED显示",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "中科曙光\n603019",
+      "category": "upstream",
+      "business": "高性能计算服务器、存储系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "公安系统",
+      "category": "downstream",
+      "business": "公共安全视频监控、警情分析、应急指挥",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "政法系统",
+      "category": "downstream",
+      "business": "法院/检察院庭审直播、远程提审、视频会议",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "央国企客户",
+      "category": "downstream",
+      "business": "国产化视频会议系统升级改造（成都建工、中国人保、国网信通等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "智慧城市项目",
+      "category": "downstream",
+      "business": "城市时空镜像平台、数字孪生、智慧交通",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "教育/电力/气象",
+      "category": "downstream",
+      "business": "远程教学、电力调度监控、气象预警系统",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603660",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603660",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603660",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603660",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603660",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603660",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603660",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603660",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603660",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603660",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603660",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603660",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603660",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603660",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

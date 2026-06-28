@@ -1,0 +1,166 @@
+{
+  "company_code": "300285",
+  "company_name": "国瓷材料",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_300285",
+      "name": "国瓷材料\n300285",
+      "category": "target",
+      "business": "先进功能陶瓷材料平台：MLCC介质粉体、蜂窝陶瓷载体、生物陶瓷、电子浆料",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "三环集团\n300408",
+      "category": "competitor",
+      "business": "MLCC成品制造、陶瓷基片、光通信器件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "奥福环保\n688021",
+      "category": "competitor",
+      "business": "蜂窝陶瓷载体（柴油车尾气处理SCR/DPF）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "堺化学\n4078.JP",
+      "category": "competitor",
+      "business": "全球最大MLCC用钛酸钡粉体供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "钛矿/钡盐供应商",
+      "category": "upstream",
+      "business": "钛酸钡前驱体原料（钛白粉、碳酸钡等基础化工品）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "高纯氧化铝/氧化锆粉体商",
+      "category": "upstream",
+      "business": "高纯氧化物粉体原料，用于结构陶瓷和生物陶瓷",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高岭土/堇青石矿企",
+      "category": "upstream",
+      "business": "蜂窝陶瓷载体基材用矿物原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "贵金属供应商",
+      "category": "upstream",
+      "business": "铂、钯、铑等催化涂层用贵金属",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "风华高科\n000636",
+      "category": "downstream",
+      "business": "国内主要MLCC制造商，采购国瓷介质粉体",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "威孚高科\n000581",
+      "category": "downstream",
+      "business": "汽车尾气催化系统集成商，采购蜂窝陶瓷载体",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "齿科加工厂",
+      "category": "downstream",
+      "business": "牙科氧化锆修复体加工，采购生物陶瓷材料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电子元器件厂商",
+      "category": "downstream",
+      "business": "采购电子浆料用于电阻/电感/电极等元器件制造",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300285",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300285",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300285",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300285",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300285",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300285",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300285",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300285",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300285",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300285",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300285",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "company_code": "601179",
+  "company_name": "中国西电",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_601179",
+      "name": "中国西电\n601179",
+      "category": "target",
+      "business": "中国特高压/超高压输变电装备龙头央企，变压器/换流阀/GIS全产业链一次设备",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "取向硅钢\n(宝钢/首钢)",
+      "category": "upstream",
+      "business": "变压器铁芯核心材料，受大宗商品周期影响",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜材供应商",
+      "category": "upstream",
+      "business": "变压器绕组用铜杆/铜线，大宗商品级原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "绝缘材料供应商",
+      "category": "upstream",
+      "business": "绝缘纸板/环氧树脂/变压器油等特高压绝缘材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "五矿西电\n(常州)",
+      "category": "upstream",
+      "business": "关联方钢材加工企业，特高压设备用钢材加工",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "无锡巨龙硅钢",
+      "category": "upstream",
+      "business": "取向硅钢片加工，2025年第二大供应商（占比0.95%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "平高电气\n600312",
+      "category": "competitor",
+      "business": "高压/特高压GIS开关设备龙头，中国电气装备集团旗下",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "许继电气\n600035",
+      "category": "competitor",
+      "business": "直流输电控制保护系统/智能电网解决方案龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "特变电工\n600089",
+      "category": "competitor",
+      "business": "变压器民营龙头，特高压变压器主要竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "国电南瑞\n600406",
+      "category": "competitor",
+      "business": "电力自动化/二次设备龙头，智能电网核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "国家电网",
+      "category": "downstream",
+      "business": "中国最大电力输配运营商，特高压工程投资主体（含南网约43%收入）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "南方电网",
+      "category": "downstream",
+      "business": "中国南方区域电力输配运营商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "中国能建",
+      "category": "downstream",
+      "business": "电力工程总包央企，2025年第二大客户（4.52%营收）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "海外电力公司\n(EETC等)",
+      "category": "downstream",
+      "business": "一带一路沿线国家电力基础设施建设方，2025年第一大客户埃及EETC",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_601179",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601179",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601179",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601179",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601179",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601179",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601179",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601179",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_601179",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "000818",
+  "company_name": "航锦科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_000818",
+      "name": "航锦科技\n000818",
+      "category": "target",
+      "business": "三合一混业：氯碱化工（烧碱/环氧丙烷/聚醚）+军用集成电路（长沙韶光）+智算算力租赁，武汉国资委实控",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "君正集团\n601216",
+      "category": "competitor",
+      "business": "氯碱化工+PVC龙头，盈利能力远强于航锦化工板块",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "滨化股份\n601678",
+      "category": "competitor",
+      "business": "氯碱化工区域龙头，烧碱/环氧丙烷与航锦直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "北元化工\n601568",
+      "category": "competitor",
+      "business": "大型氯碱化工企业，PVC+烧碱为主",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "原盐供应商",
+      "category": "upstream",
+      "business": "氯碱化工核心原材料，大宗商品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "电力供应商",
+      "category": "upstream",
+      "business": "氯碱行业高耗能，电力是最大成本项",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "半导体材料商",
+      "category": "upstream",
+      "business": "硅片/锗硅外延等军用IC原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "GPU/服务器厂商",
+      "category": "upstream",
+      "business": "算力租赁业务的硬件基础（英伟达GPU等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "氧化铝/造纸企业",
+      "category": "downstream",
+      "business": "烧碱终端用户，工业基础材料需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "基建/地产企业",
+      "category": "downstream",
+      "business": "环氧丙烷/聚醚终端用户，建筑保温/涂料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "军工研究所",
+      "category": "downstream",
+      "business": "军用IC客户，XX研究所采购合同",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI/互联网企业",
+      "category": "downstream",
+      "business": "算力租赁/云服务客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000818",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000818",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000818",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000818",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000818",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000818",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000818",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000818",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000818",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000818",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000818",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

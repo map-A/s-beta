@@ -1,0 +1,178 @@
+{
+  "company_code": "300811",
+  "company_name": "铂科新材",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_300811",
+      "name": "铂科新材\n300811",
+      "category": "target",
+      "business": "全球金属软磁粉芯龙头，纵向一体化（磁粉→粉芯→芯片电感），37-46%毛利率，市值435亿，芯片电感受益AI ASIC需求",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "铁粉/硅粉\n原料供应商",
+      "category": "upstream",
+      "business": "金属软磁粉芯核心原料（铁粉/硅粉/铝粉），第一大供应商占采购20.92%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "绝缘材料\n供应商",
+      "category": "upstream",
+      "business": "粉体绝缘包覆材料供应商，粉芯制备关键辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "气雾化设备、压机、烧结炉等金属粉末/粉芯专用设备制造商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "合金添加剂\n供应商",
+      "category": "upstream",
+      "business": "镍/钼/钴等合金添加剂供应商，用于调控磁芯性能参数",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "美磁\nMagnetics",
+      "category": "competitor",
+      "business": "美国传统软磁粉芯全球龙头，铂科的主要国际竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "TDK",
+      "category": "competitor",
+      "business": "日本综合电子巨头，磁性材料和电感元件业务板块",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东睦股份\n600114",
+      "category": "competitor",
+      "business": "粉末冶金+软磁粉芯，国内竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "华为",
+      "category": "downstream",
+      "business": "数据中心/通信电源，芯片电感核心客户（F10 confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "台达电子",
+      "category": "downstream",
+      "business": "全球最大电源厂商，AI服务器电源核心供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "阳光电源\n300274",
+      "category": "downstream",
+      "business": "全球光伏逆变器龙头，软磁粉芯核心客户（F10 confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "新能源汽车OBC/DC-DC用磁芯（F10 confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "ABB/伊顿",
+      "category": "downstream",
+      "business": "全球电力电子/工业电源龙头（F10 confirmed）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300811",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300811",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300811",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300811",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300811",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300811",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300811",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300811",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300811",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300811",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300811",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300811",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

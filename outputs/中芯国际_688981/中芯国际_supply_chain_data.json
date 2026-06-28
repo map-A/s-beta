@@ -1,0 +1,178 @@
+{
+  "company_code": "688981",
+  "company_name": "中芯国际",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688981",
+      "name": "中芯国际\n688981",
+      "category": "target",
+      "business": "中国大陆第一晶圆代工厂，14nm先进制程量产",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "ASML",
+      "category": "upstream",
+      "business": "全球唯一EUV光刻机供应商（受出口管制限制对华供货）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "北方华创/中微公司",
+      "category": "upstream",
+      "business": "国产半导体设备（刻蚀/薄膜/清洗）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "沪硅产业",
+      "category": "upstream",
+      "business": "国产12英寸硅片供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "雅克科技/南大光电",
+      "category": "upstream",
+      "business": "半导体材料（前驱体/光刻胶/电子特气）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "台积电TSMC",
+      "category": "competitor",
+      "business": "全球晶圆代工绝对龙头，3nm量产",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三星晶圆代工",
+      "category": "competitor",
+      "business": "全球第二晶圆代工，3nm GAA",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华虹半导体",
+      "category": "competitor",
+      "business": "国内特色工艺代工龙头（功率/MCU）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "合肥晶合集成",
+      "category": "competitor",
+      "business": "国内新兴晶圆代工厂",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "华为海思",
+      "category": "downstream",
+      "business": "手机SoC/AI芯片设计（推测大客户）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "海光信息",
+      "category": "downstream",
+      "business": "国产CPU/DCU芯片设计",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "兆易创新",
+      "category": "downstream",
+      "business": "NOR Flash/MCU芯片设计",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "各类fabless设计公司",
+      "category": "downstream",
+      "business": "消费电子/工业/汽车芯片设计",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688981",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688981",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688981",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688981",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688981",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688981",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688981",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688981",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688981",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688981",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688981",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688981",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

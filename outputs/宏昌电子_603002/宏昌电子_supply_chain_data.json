@@ -1,0 +1,202 @@
+{
+  "company_code": "603002",
+  "company_name": "宏昌电子",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_603002",
+      "name": "宏昌电子\n603002",
+      "category": "target",
+      "business": "电子级环氧树脂（37.5万吨/年）+覆铜板（2160万张/年规划）",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "环氧氯丙烷(ECH)",
+      "category": "upstream",
+      "business": "环氧树脂核心单体原料，2026Q1均价11,324元/吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "双酚A(BPA)",
+      "category": "upstream",
+      "business": "环氧树脂另一核心单体，2026Q1均价7,531元/吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "四溴双酚A",
+      "category": "upstream",
+      "business": "阻燃型环氧树脂原料，2026Q1均价28,663元/吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "丙酮/溶剂",
+      "category": "upstream",
+      "business": "环氧树脂生产辅助材料，2026Q1均价4,265元/吨",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "圣泉集团\n605589",
+      "category": "competitor",
+      "business": "酚醛树脂+电子级特种树脂，毛利率18%+",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "兴业股份\n603928",
+      "category": "competitor",
+      "business": "铸造材料+环氧树脂，国内中小规模",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "阿科力\n603722",
+      "category": "competitor",
+      "business": "特种环氧树脂、光固化材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "国都化工(Kukdo)\n韩资",
+      "category": "competitor",
+      "business": "高端电子级环氧树脂，全球领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "长春化工\n台资",
+      "category": "competitor",
+      "business": "电子级环氧树脂，经验丰富",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "生益科技\n600183",
+      "category": "downstream",
+      "business": "国内覆铜板龙头，宏昌电子下游核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "凯华材料",
+      "category": "downstream",
+      "business": "电子材料商，宏昌长期合作主力供应商（董秘确认）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "鹏鼎控股\n002938",
+      "category": "downstream",
+      "business": "全球PCB龙头，AI服务器/消费电子PCB制造",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "深南电路\n002916",
+      "category": "downstream",
+      "business": "高端PCB/封装基板厂商，服务器/通信PCB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "建滔集团\n01467.HK",
+      "category": "downstream",
+      "business": "全球最大覆铜板厂商之一，宏昌下游客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603002",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603002",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603002",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603002",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603002",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603002",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603002",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603002",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603002",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603002",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603002",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603002",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603002",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_603002",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

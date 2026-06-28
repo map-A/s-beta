@@ -1,0 +1,206 @@
+{
+  "company_code": "688507",
+  "company_name": "索辰科技",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688507",
+      "name": "索辰科技\n688507",
+      "category": "target",
+      "business": "国产CAE仿真软件（天工平台）+ 物理AI（开物平台）+ SCADA工业控制，覆盖流体、结构、电磁、声学、光学多学科仿真",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Ansys\n(Synopsys)",
+      "category": "competitor",
+      "business": "全球CAE仿真软件龙头，覆盖结构/流体/电磁/光学全学科，2024年被Synopsys以$35B收购",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Dassault\n(SIMULIA)",
+      "category": "competitor",
+      "business": "法国达索系统SIMULIA品牌CAE软件，3DEXPERIENCE平台集成仿真，全球份额第二",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中望软件\n688808",
+      "category": "competitor",
+      "business": "国产CAD/CAE软件，以CAD为主业，CAE模块（ZWMeshWorks）处于拓展期",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Siemens\n(Simcenter)",
+      "category": "competitor",
+      "business": "西门子Simcenter系列CAE仿真软件，与Teamcenter PLM深度集成，全球份额第三",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "Intel / AMD",
+      "category": "upstream",
+      "business": "CPU芯片供应商，服务器/工作站处理器，CAE求解器计算密集型负载的核心硬件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "NVIDIA",
+      "category": "upstream",
+      "business": "GPU/AI加速卡供应商，CUDA生态支撑GPU加速CAE计算和物理AI模型训练推理",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "开源数学库\n(BLAS/LAPACK)",
+      "category": "upstream",
+      "business": "开源线性代数库和编译器工具链（GCC/LLVM），CAE求解器的底层计算基础",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "浪潮/联想\n(服务器厂商)",
+      "category": "upstream",
+      "business": "服务器/工作站硬件厂商，为CAE研发测试提供计算基础设施",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "航空航天企业\n(中航/商飞等)",
+      "category": "downstream",
+      "business": "飞行器结构设计、气动仿真、发动机仿真、热防护分析等国防航空领域",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车制造商\n(比亚迪/一汽等)",
+      "category": "downstream",
+      "business": "整车碰撞仿真、空气动力学、NVH分析、轻量化设计等汽车行业应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "能源企业\n(中石油/中石化)",
+      "category": "downstream",
+      "business": "管道应力分析、核电设备仿真、风电叶片疲劳分析，通过SCADA产品深度覆盖",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "低空经济企业\n(eVTOL厂商)",
+      "category": "downstream",
+      "business": "eVTOL飞行器气动设计仿真、数字孪生、飞行控制验证等低空经济应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "具身智能/\n机器人企业",
+      "category": "downstream",
+      "business": "机器人运动仿真、物理引擎训练数据生成、关节力学分析等具身智能应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688507",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688507",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688507",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688507",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688507",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688507",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688507",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688507",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688507",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688507",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688507",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688507",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688507",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ],
+  "_analysis_notes": {
+    "industry": "工业软件 / CAE仿真",
+    "chain_model": "通用方法现场建模（chain_map.md第0节）",
+    "data_sources": {
+      "confirmed": [
+        "2025年报F10数据（客户/供应商/财务/子公司）",
+        "券商研报（中信建投/浙商证券/中银证券，均'买入'评级）",
+        "Synopsos收购Ansys公开信息"
+      ],
+      "inferred": [
+        "全球CAE市场份额分布（基于行业报告估算）",
+        "国产CAE国产化率约5-10%（基于行业共识）",
+        "下游具体客户名称（年报仅披露行业类别，未披露具体公司名）"
+      ]
+    }
+  }
+}

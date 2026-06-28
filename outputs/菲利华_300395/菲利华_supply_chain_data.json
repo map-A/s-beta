@@ -1,0 +1,202 @@
+{
+  "company_code": "300395",
+  "company_name": "菲利华",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_300395",
+      "name": "菲利华\n300395",
+      "category": "target",
+      "business": "国内唯一通过三大半导体设备商认证的石英材料企业+航空航天石英纤维主导供应商",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "高纯石英砂\n供应商",
+      "category": "upstream",
+      "business": "天然石英矿提纯的高纯石英砂（如石英股份603688）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "四氯化硅\n供应商",
+      "category": "upstream",
+      "business": "合成石英玻璃原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电力公司\n（国网荆州）",
+      "category": "upstream",
+      "business": "石英熔炼高能耗工艺所需电力",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "石英熔炼/\n加工设备商",
+      "category": "upstream",
+      "business": "石英玻璃熔炼炉、精密加工设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "化工原料\n供应商",
+      "category": "upstream",
+      "business": "石英纤维生产用化工原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Momentive\n(美国)",
+      "category": "competitor",
+      "business": "半导体石英材料全球龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "TOSOH\n(日本)",
+      "category": "competitor",
+      "business": "高纯石英材料国际竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "信越化学\n(日本)",
+      "category": "competitor",
+      "business": "半导体石英材料国际竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "石英股份\n603688",
+      "category": "competitor",
+      "business": "高纯石英砂龙头（上游原材料）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "国际半导体设备商\n(TEL/Lam/AMAT)",
+      "category": "downstream",
+      "business": "经三大设备商认证的石英材料客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "国内半导体设备商\n(中微/北方华创)",
+      "category": "downstream",
+      "business": "石英器件加工客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "航空航天军工\n用户",
+      "category": "downstream",
+      "business": "石英纤维及防隔热复合材料结构件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI服务器PCB\n厂商",
+      "category": "downstream",
+      "business": "石英电子布客户（验证中，尚未量产）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "光伏/光通信\n企业",
+      "category": "downstream",
+      "business": "石英坩埚、光纤用石英玻璃客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300395",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300395",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300395",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300395",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300395",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300395",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300395",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300395",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300395",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300395",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300395",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300395",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300395",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300395",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

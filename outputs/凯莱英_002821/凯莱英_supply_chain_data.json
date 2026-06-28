@@ -1,0 +1,134 @@
+{
+  "company_code": "002821",
+  "company_name": "凯莱英",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002821",
+      "name": "凯莱英\n002821",
+      "category": "target",
+      "business": "中国最大商业化阶段化学药物CDMO，连续流技术全球领先，小分子+多肽+制剂CDMO，深交所上市",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "药明康德\n603259",
+      "category": "competitor",
+      "business": "一体化CRDMO平台，全球CDMO龙头之一，业务范围最广",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "博腾股份\n300363",
+      "category": "competitor",
+      "business": "小分子CDMO，国内前三",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "三星生物",
+      "category": "competitor",
+      "business": "大分子CDMO全球龙头，韩国上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Lonza",
+      "category": "competitor",
+      "business": "全球CDMO老牌龙头，瑞士上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯化学试剂\n供应商",
+      "category": "upstream",
+      "business": "高纯度化学原料/试剂，CDMO合成核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "多肽合成原料\n供应商",
+      "category": "upstream",
+      "business": "氨基酸、树脂等多肽合成材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "反应设备\n供应商",
+      "category": "upstream",
+      "business": "连续流反应器、传统反应釜等CDMO生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "GMP包装材料\n供应商",
+      "category": "upstream",
+      "business": "药品级包装材料，符合GMP标准",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "溶剂/辅料\n供应商",
+      "category": "upstream",
+      "business": "药用级溶剂和辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "辉瑞",
+      "category": "downstream",
+      "business": "全球最大药企之一，凯莱英长期客户（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "默沙东",
+      "category": "downstream",
+      "business": "全球Top 5药企，凯莱英客户（inferred）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "全球Biotech\n公司",
+      "category": "downstream",
+      "business": "中型创新药企，临床阶段CDMO需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "国内创新\n药企",
+      "category": "downstream",
+      "business": "国内创新药研发企业，CDMO国产替代方向",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "GLP-1药物\n终端",
+      "category": "downstream",
+      "business": "GLP-1类药物（司美格鲁肽/替尔泊肽）生产商，多肽CDMO核心驱动力",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002821", "relation": "supply"},
+    {"source": "up_1", "target": "target_002821", "relation": "supply"},
+    {"source": "up_2", "target": "target_002821", "relation": "supply"},
+    {"source": "up_3", "target": "target_002821", "relation": "supply"},
+    {"source": "up_4", "target": "target_002821", "relation": "supply"},
+    {"source": "target_002821", "target": "down_0", "relation": "customer"},
+    {"source": "target_002821", "target": "down_1", "relation": "customer"},
+    {"source": "target_002821", "target": "down_2", "relation": "customer"},
+    {"source": "target_002821", "target": "down_3", "relation": "customer"},
+    {"source": "target_002821", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002821", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002821", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002821", "relation": "compete"},
+    {"source": "comp_3", "target": "target_002821", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

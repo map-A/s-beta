@@ -1,0 +1,166 @@
+{
+  "company_code": "002354",
+  "company_name": "天娱数科",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002354",
+      "name": "天娱数科\n002354",
+      "category": "target",
+      "business": "AI营销+AI应用分发+空间智能MaaS平台，原天神娱乐，10+概念标签堆砌，2025年亏损9155万元",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "利欧股份",
+      "category": "competitor",
+      "business": "002131，数字营销龙头，字节跳动/腾讯广告核心代理",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "蓝色光标",
+      "category": "competitor",
+      "business": "300058，营销科技集团，AI+营销全球布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "易点天下",
+      "category": "competitor",
+      "business": "301171，出海数字营销，AI驱动广告投放",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "云服务/算力\n供应商",
+      "category": "upstream",
+      "business": "提供AI模型训练推理算力（阿里云/腾讯云/华为云等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "AI大模型\n供应商",
+      "category": "upstream",
+      "business": "提供基础大模型能力（DeepSeek等开源/闭源模型）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "广告流量\n平台",
+      "category": "upstream",
+      "business": "提供广告展示位和用户流量（字节/腾讯/百度/快手等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "数据服务\n供应商",
+      "category": "upstream",
+      "business": "提供用户行为数据、画像数据、第三方数据源",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "互联网\n广告主",
+      "category": "downstream",
+      "business": "游戏/电商/社交等互联网产品，需要用户获取和推广",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "品牌广告主",
+      "category": "downstream",
+      "business": "快消/汽车/金融等传统品牌的数字营销需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "应用开发者",
+      "category": "downstream",
+      "business": "移动应用的分发和推广需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "能源/工业\n企业",
+      "category": "downstream",
+      "business": "虚拟电厂/AI售电服务需求方（概念阶段）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002354",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002354",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002354",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002354",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002354",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002354",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002354",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002354",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002354",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002354",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002354",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

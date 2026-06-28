@@ -1,0 +1,118 @@
+{
+  "company_code": "002203",
+  "company_name": "海亮股份",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002203",
+      "name": "海亮股份\n002203",
+      "category": "target",
+      "business": "中国第二大铜管企业，铜管/铜棒/铜箔/导体材料/铝管加工制造",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "紫金矿业",
+      "category": "upstream",
+      "business": "全球铜矿龙头，提供阴极铜/电解铜原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "江西铜业",
+      "category": "upstream",
+      "business": "中国最大铜冶炼企业之一，提供电解铜",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "LME/SHFE铜市",
+      "category": "upstream",
+      "business": "全球铜期货定价市场，铜价基准",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "废铜回收企业",
+      "category": "upstream",
+      "business": "再生铜原料供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "金田铜业",
+      "category": "competitor",
+      "business": "中国最大铜加工企业之一，铜板带/铜棒/铜管",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "诺德股份",
+      "category": "competitor",
+      "business": "锂电池铜箔龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "嘉元科技",
+      "category": "competitor",
+      "business": "锂电池铜箔领先企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "楚江新材",
+      "category": "competitor",
+      "business": "铜基材料加工企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "格力/美的/海尔",
+      "category": "downstream",
+      "business": "空调制冷企业，采购铜管用于冷凝器/蒸发器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "建筑/房地产企业",
+      "category": "downstream",
+      "business": "采购铜管用于建筑给排水系统",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电力/电网企业",
+      "category": "downstream",
+      "business": "采购导体材料用于电力传输",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "锂电池企业",
+      "category": "downstream",
+      "business": "采购铜箔用于锂电池负极集流体",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002203", "relation": "supply"},
+    {"source": "up_1", "target": "target_002203", "relation": "supply"},
+    {"source": "up_2", "target": "target_002203", "relation": "supply"},
+    {"source": "up_3", "target": "target_002203", "relation": "supply"},
+    {"source": "target_002203", "target": "down_0", "relation": "customer"},
+    {"source": "target_002203", "target": "down_1", "relation": "customer"},
+    {"source": "target_002203", "target": "down_2", "relation": "customer"},
+    {"source": "target_002203", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002203", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002203", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002203", "relation": "compete"},
+    {"source": "comp_3", "target": "target_002203", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

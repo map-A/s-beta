@@ -1,0 +1,166 @@
+{
+  "company_code": "000831",
+  "company_name": "中国稀土",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_000831",
+      "name": "中国稀土\n000831",
+      "category": "target",
+      "business": "中国稀土集团核心上市平台，拥有湖南省唯一离子型稀土矿采矿权，稀土冶炼分离15种元素全分离能力，市值657亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "离子型稀土\n矿资源",
+      "category": "upstream",
+      "business": "湖南稀土自有离子型稀土矿采矿权（国家级绿色矿山），受国家开采配额管控",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "稀土精矿\n供应商",
+      "category": "upstream",
+      "business": "外部稀土精矿采购，用于冶炼分离加工",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工辅材\n供应商",
+      "category": "upstream",
+      "business": "酸碱等稀土冶炼分离用化工辅材供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "萃取设备/灼烧窑炉等稀土冶炼专用设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "北方稀土\n600111",
+      "category": "competitor",
+      "business": "北方稀土集团核心上市平台，轻稀土龙头，中国稀土行业两大国家级集团之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "厦门钨业\n600549",
+      "category": "competitor",
+      "business": "稀土+钨+电池材料三合一平台，中国稀土集团合作伙伴",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "广晟有色\n600259",
+      "category": "competitor",
+      "business": "广东稀土资源整合平台",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "稀土永磁\n材料厂商",
+      "category": "downstream",
+      "business": "钕铁硼等稀土永磁材料制造（新能源车/风电/工业电机核心材料）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "稀土发光/\n催化材料",
+      "category": "downstream",
+      "business": "LED荧光粉/石油裂化催化剂等稀土应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电子/\n信息产业",
+      "category": "downstream",
+      "business": "稀土抛光粉/电子陶瓷等电子信息应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "军工/航天\n国防",
+      "category": "downstream",
+      "business": "稀土在军工/航天/国防领域的不可替代应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000831",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000831",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000831",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000831",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000831",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000831",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000831",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000831",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000831",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000831",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000831",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

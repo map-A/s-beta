@@ -1,0 +1,166 @@
+{
+  "company_code": "600206",
+  "company_name": "有研新材",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_600206",
+      "name": "有研新材\n600206",
+      "category": "target",
+      "business": "高纯溅射靶材+稀土磁材+红外光学+生物医用（央企集团化）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "江丰电子\n300666",
+      "category": "competitor",
+      "business": "半导体超高纯金属靶材龙头，已入台积电/中芯国际供应链",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "日矿金属\n5714.T",
+      "category": "competitor",
+      "business": "全球#1溅射靶材供应商（日本）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "霍尼韦尔\nHON",
+      "category": "competitor",
+      "business": "全球#2溅射靶材供应商（美国）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯金属原料商",
+      "category": "upstream",
+      "business": "高纯铜/钴/镍/铝/钛等金属原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "稀土原料商",
+      "category": "upstream",
+      "business": "稀土氧化物/金属原料（磁板块核心原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "贵金属供应商",
+      "category": "upstream",
+      "business": "铂/铑/铱等贵金属原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "靶材加工设备商",
+      "category": "upstream",
+      "business": "靶材加工/焊接/检测设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "晶圆代工厂",
+      "category": "downstream",
+      "business": "中芯国际/长江存储等PVD溅射靶材需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "封装测试厂",
+      "category": "downstream",
+      "business": "先进封装薄膜沉积靶材需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "军工/航天企业",
+      "category": "downstream",
+      "business": "红外光学窗口/镜头、特种材料需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源/风电",
+      "category": "downstream",
+      "business": "稀土永磁材料需求（EV驱动电机/风电）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600206",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600206",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600206",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600206",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600206",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600206",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600206",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600206",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600206",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600206",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600206",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "company_code": "688126",
+  "company_name": "沪硅产业",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688126",
+      "name": "沪硅产业\n688126",
+      "category": "target",
+      "business": "300mm/200mm半导体硅片（抛光片、外延片、SOI），中国大陆300mm硅片龙头企业，科创板上市",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "信越化学",
+      "category": "competitor",
+      "business": "全球300mm硅片第一（市占率~33%），综合毛利率40%+，日本上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "SUMCO",
+      "category": "competitor",
+      "business": "全球300mm硅片第二（市占率~26%），日本上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "环球晶圆",
+      "category": "competitor",
+      "business": "全球第三大硅片厂（市占率~15%），中国台湾上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "西安奕材\n688783",
+      "category": "competitor",
+      "business": "300mm半导体硅片，国内第二家实现300mm硅片量产企业，科创板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "有研硅\n688432",
+      "category": "competitor",
+      "business": "200mm半导体硅片为主，科创板上市，国内200mm硅片领先企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯多晶硅料\n供应商",
+      "category": "upstream",
+      "business": "半导体级高纯多晶硅原料（Wacker/OCI/Hemlock/鑫华半导体），拉晶核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "石英坩埚\n供应商",
+      "category": "upstream",
+      "business": "拉晶用高纯石英坩埚，受高纯石英砂全球供应影响（志橙半导体等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硅片加工设备\n供应商",
+      "category": "upstream",
+      "business": "单晶炉、线切割、研磨、抛光、清洗等硅片加工设备（晶盛机电等国产+进口）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "Soitec S.A.",
+      "category": "upstream",
+      "business": "SOI（绝缘体上硅）Smart Cut™技术专利授权方，沪硅SOI技术许可来源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "特气/化学品\n供应商",
+      "category": "upstream",
+      "business": "硅片清洗/蚀刻用高纯化学品和特种气体",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "中国大陆最大晶圆代工厂，沪硅产业重要客户（confirmed），先进+成熟制程代工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华虹宏力\n688347",
+      "category": "downstream",
+      "business": "中国第二大晶圆代工厂，以功率/嵌入式非易失性存储器为主",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长江存储",
+      "category": "downstream",
+      "business": "中国3D NAND闪存主要制造商，国产存储芯片龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "长鑫存储",
+      "category": "downstream",
+      "business": "中国DRAM内存主要制造商，国产存储芯片核心企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "华润微/\n士兰微",
+      "category": "downstream",
+      "business": "国内功率半导体/模拟芯片IDM厂商，IGBT/MOSFET等功率器件制造商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688126",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688126",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688126",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688126",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688126",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688126",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688126",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688126",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688126",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688126",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688126",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688126",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688126",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688126",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688126",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

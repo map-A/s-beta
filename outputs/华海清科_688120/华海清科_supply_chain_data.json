@@ -1,0 +1,166 @@
+{
+  "company_code": "688120",
+  "company_name": "华海清科",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_688120",
+      "name": "华海清科\n688120",
+      "category": "target",
+      "business": "国产CMP化学机械抛光设备龙头，兼做减薄/离子注入/划切装备，中国唯一CMP量产厂商",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "应用材料\nAMAT",
+      "category": "competitor",
+      "business": "全球CMP设备龙头（市占率~60%+），美国，兼做刻蚀/薄膜/量测全品类半导体设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "荏原制作所\n6361.T",
+      "category": "competitor",
+      "business": "全球第二大CMP设备厂商（市占率~20-25%），日本，兼做泵/风机等工业设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "北方华创\n002371",
+      "category": "competitor",
+      "business": "国产刻蚀/薄膜/清洗设备龙头，半导体设备国产替代标的（不涉及CMP）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "抛光垫/抛光液供应商",
+      "category": "upstream",
+      "business": "CMP核心耗材（Cabot/DuPont等进口+国产替代中），抛光垫和研磨液",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "精密运动控制供应商",
+      "category": "upstream",
+      "business": "伺服电机、光栅尺、精密导轨等CMP设备核心运动控制部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "传感器/检测模块供应商",
+      "category": "upstream",
+      "business": "CMP工艺终点检测传感器、膜厚测量等精密检测部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精密机械加工供应商",
+      "category": "upstream",
+      "business": "CMP设备主机体、抛光头、载盘等精密机械加工件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "国内头部晶圆厂\n（推测：中芯国际/长江存储）",
+      "category": "downstream",
+      "business": "逻辑/存储芯片制造，CMP设备最大客户（占27.42%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "国内存储芯片厂\n（推测：长鑫存储）",
+      "category": "downstream",
+      "business": "DRAM存储芯片制造，存储扩产大年驱动CMP设备需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "国内晶圆代工厂",
+      "category": "downstream",
+      "business": "华虹半导体等国内晶圆代工厂，CMP设备重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "功率/先进封装厂商",
+      "category": "downstream",
+      "business": "IGBT/MOSFET/CIS/先进封装厂商，CMP设备新兴客户群",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688120",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688120",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688120",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688120",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688120",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688120",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688120",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688120",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688120",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688120",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688120",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

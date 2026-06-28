@@ -1,0 +1,178 @@
+{
+  "company_code": "688416",
+  "company_name": "恒烁股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688416",
+      "name": "恒烁股份\n688416",
+      "category": "target",
+      "business": "NOR Flash存储芯片+MCU微控制器Fabless设计（50nm/55nm ETOX工艺）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "兆易创新\n603986",
+      "category": "competitor",
+      "business": "国内NOR Flash+MCU龙头，全球NOR Flash市占率前三",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华邦(2344.TW)\n旺宏",
+      "category": "competitor",
+      "business": "全球NOR Flash市场双龙头（中国台湾）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "普冉股份\n688766",
+      "category": "competitor",
+      "business": "NOR Flash+EEPROM芯片设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "东芯股份\n688110",
+      "category": "competitor",
+      "business": "NAND/NOR/DRAM存储芯片设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "武汉新芯",
+      "category": "upstream",
+      "business": "第一大晶圆代工供应商（占采购53%），ETOX 50nm NOR Flash工艺",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中芯国际\n688981",
+      "category": "upstream",
+      "business": "第二大晶圆代工供应商，存储芯片生产工艺支持",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "封装测试\n厂商",
+      "category": "upstream",
+      "business": "国内领先封测企业（芯片封装测试）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "EDA/IP\n供应商",
+      "category": "upstream",
+      "business": "芯片设计工具（EDA软件、IP核授权）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子/\nIoT终端",
+      "category": "downstream",
+      "business": "智能家居、智能穿戴、IoT设备（NOR Flash代码存储）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车电子\n厂商",
+      "category": "downstream",
+      "business": "车载MCU、汽车存储芯片应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "工业控制\n企业",
+      "category": "downstream",
+      "business": "工业自动化、电机控制MCU应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电子元器件\n分销商",
+      "category": "downstream",
+      "business": "方案商/贸易商/终端品牌（小米生态链等）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688416",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688416",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688416",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688416",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688416",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688416",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688416",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688416",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688416",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688416",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688416",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688416",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

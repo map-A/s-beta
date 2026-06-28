@@ -1,0 +1,202 @@
+{
+  "company_code": "300292",
+  "company_name": "吴通控股",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300292",
+      "name": "吴通控股\n300292",
+      "category": "target",
+      "business": "移动信息服务（企业短信/5G消息平台）+电子与通讯智能制造（射频连接器/EMS/CCS集成母排）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "梦网科技\n002123",
+      "category": "competitor",
+      "business": "企业短信/5G消息/RCS富媒体通信平台运营商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中航光电\n002179",
+      "category": "competitor",
+      "business": "高端光电连接器龙头，覆盖军工/通信/新能源领域",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "瑞可达\n688800",
+      "category": "competitor",
+      "business": "新能源汽车/通信高端连接器，高毛利细分龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "银之杰\n300085",
+      "category": "competitor",
+      "business": "金融IT+移动信息服务，银行短信通道服务商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "中国移动",
+      "category": "upstream",
+      "business": "短信/流量/5G消息API通道供应商，占吴通采购额57.32%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "（脱敏）第二大供应商",
+      "category": "upstream",
+      "business": "通信设备或原材料供应商，占采购额12.58%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "（脱敏）第三大供应商",
+      "category": "upstream",
+      "business": "通信设备或原材料供应商，占采购额12.40%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "北京亿通捷讯科技",
+      "category": "upstream",
+      "business": "通信设备配件供应商，占采购额1.71%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "电子原材料供应商",
+      "category": "upstream",
+      "business": "铜材、塑胶等射频连接器/CCS母排原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "第一大客户（脱敏）",
+      "category": "downstream",
+      "business": "大型金融机构或互联网平台，占营收35.14%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "第二大客户（脱敏）",
+      "category": "downstream",
+      "business": "金融机构或运营商，占营收32.88%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长安汽车",
+      "category": "downstream",
+      "business": "汽车主机厂，采购域控制器/BMS/电机控制器EMS服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "互联网/电商企业",
+      "category": "downstream",
+      "business": "5G消息/短信营销推送服务客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "通信运营商",
+      "category": "downstream",
+      "business": "采购射频连接器件用于基站建设维护",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300292",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300292",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300292",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300292",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300292",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300292",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300292",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300292",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300292",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300292",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300292",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300292",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300292",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300292",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

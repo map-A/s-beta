@@ -1,0 +1,190 @@
+{
+  "company_code": "300475",
+  "company_name": "香农芯创",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_300475",
+      "name": "香农芯创\n300475",
+      "category": "target",
+      "business": "存储芯片授权分销商（SK海力士代理），服务国内互联网云服务商数据中心",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "SK海力士\n(SK Hynix)",
+      "category": "upstream",
+      "business": "全球DRAM/NAND/HBM存储芯片制造巨头，香农芯创第一大供应商（占比48.41%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "MTK\n(联发科)",
+      "category": "upstream",
+      "business": "全球手机/物联网主控芯片龙头，香农芯创授权代理品牌",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "AMD",
+      "category": "upstream",
+      "business": "CPU/GPU芯片制造商，香农芯创经销商资质",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "三星电子\n(Samsung)",
+      "category": "upstream",
+      "business": "全球最大存储芯片制造商（DRAM/NAND），SK海力士主要竞争对手",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "美光科技\n(Micron)",
+      "category": "upstream",
+      "business": "全球第三大存储芯片制造商，HBM市场竞争者",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "深圳华强\n000021",
+      "category": "competitor",
+      "business": "国内最大电子元器件分销平台，全品类覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中电港\n001287",
+      "category": "competitor",
+      "business": "中国电子旗下半导体分销龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "力源信息\n300184",
+      "category": "competitor",
+      "business": "半导体分销+自研芯片双业务",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "大联大\n(台湾)",
+      "category": "competitor",
+      "business": "全球最大半导体分销商，亚太地区龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "国内互联网\n云服务商",
+      "category": "downstream",
+      "business": "阿里云/腾讯云/字节跳动等头部互联网企业，数据中心服务器存储芯片核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "国内ODM\n企业",
+      "category": "downstream",
+      "business": "数据中心服务器整机代工制造企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子\n厂商",
+      "category": "downstream",
+      "business": "手机等消费电子终端产品制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI算力\n运营商",
+      "category": "downstream",
+      "business": "AI训练/推理算力服务商，间接拉动HBM/高速存储需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300475",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300475",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300475",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300475",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300475",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300475",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300475",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300475",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300475",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300475",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300475",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300475",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300475",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

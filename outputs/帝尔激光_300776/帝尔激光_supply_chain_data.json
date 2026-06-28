@@ -1,0 +1,190 @@
+{
+  "company_code": "300776",
+  "company_name": "帝尔激光",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_300776",
+      "name": "帝尔激光\n300776",
+      "category": "target",
+      "business": "光伏电池激光设备（BC/TOPCon）、TGV先进封装激光设备、MicroLED设备，精密激光微纳加工解决方案",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "迈为股份\n300751",
+      "category": "competitor",
+      "business": "光伏设备（丝网印刷+HJT整线），在光伏设备领域与帝尔激光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "海目星\n688559",
+      "category": "competitor",
+      "business": "激光设备（光伏+锂电+3C），在激光加工设备领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "德龙激光\n688170",
+      "category": "competitor",
+      "business": "精密激光加工设备，在半导体/显示领域与帝尔激光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "通快\nTRUMPF",
+      "category": "competitor",
+      "business": "全球激光设备龙头，在TGV先进封装设备领域与帝尔激光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "激光器\n供应商",
+      "category": "upstream",
+      "business": "定制化激光器（核心零部件），公司深度参与设计与集成",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "精密光学\n器件供应商",
+      "category": "upstream",
+      "business": "精密光学镜片、光学模组等定制化光学器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电控系统\n供应商",
+      "category": "upstream",
+      "business": "电控部件、运动控制系统等智能化控制模块",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "机械部件\n供应商",
+      "category": "upstream",
+      "business": "精密机械结构件、气动部件等设备组装配套",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "光伏电池\n龙头A",
+      "category": "downstream",
+      "business": "BC/TOPCon电池制造龙头，采购激光开槽/掺杂/SE设备（占营收25.45%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏电池\n厂商B",
+      "category": "downstream",
+      "business": "光伏电池制造，采购激光加工设备（占营收17.70%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体\n封装厂",
+      "category": "downstream",
+      "business": "先进封装企业，采购TGV玻璃基板激光通孔设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新型显示\n厂商",
+      "category": "downstream",
+      "business": "MicroLED/MiniLED面板制造，采购激光巨量转移设备（规划中）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "PCB\n制造商",
+      "category": "downstream",
+      "business": "高端PCB电路板制造，采购超快激光钻孔设备（研发中）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300776",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300776",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300776",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300776",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300776",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300776",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300776",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300776",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300776",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300776",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300776",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300776",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300776",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

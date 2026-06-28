@@ -1,0 +1,178 @@
+{
+  "company_code": "600703",
+  "company_name": "三安光电",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600703",
+      "name": "三安光电\n600703",
+      "category": "target",
+      "business": "全球LED芯片龙头+国内化合物半导体（SiC/GaN）IDM领军企业，4600+专利，大基金重点投资标的",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Wolfspeed",
+      "category": "competitor",
+      "business": "全球SiC衬底和器件龙头，三安SiC业务主要对标企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Infineon\n英飞凌",
+      "category": "competitor",
+      "business": "全球功率半导体龙头，SiC MOSFET主要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华灿光电\n300323",
+      "category": "competitor",
+      "business": "国内LED芯片第二大企业，三安国内主要竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Qorvo",
+      "category": "competitor",
+      "business": "全球GaN射频器件龙头，三安GaN业务对标企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "SiC衬底\n供应商",
+      "category": "upstream",
+      "business": "SiC晶圆衬底（天岳先进/天科合达/Wolfspeed），第三代半导体上游瓶颈",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "MOCVD设备\n供应商",
+      "category": "upstream",
+      "business": "化合物半导体外延生长核心设备（中微公司等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "MO源/特种\n气体供应商",
+      "category": "upstream",
+      "business": "高纯金属有机源和特种气体，外延生长关键材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "封装材料\n供应商",
+      "category": "upstream",
+      "business": "LED/半导体封装材料（支架/荧光粉/胶水等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "新能源车企\n（SiC功率）",
+      "category": "downstream",
+      "business": "采购SiC MOSFET/二极管用于电驱系统和充电桩",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "LED照明/\n显示企业",
+      "category": "downstream",
+      "business": "采购LED芯片用于照明、背光和LED显示屏",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "5G通信/\n基站企业",
+      "category": "downstream",
+      "business": "采购GaN射频器件用于5G基站和卫星通信",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "光伏逆变器\n企业",
+      "category": "downstream",
+      "business": "采购SiC功率器件用于光伏逆变器",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600703",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600703",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600703",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600703",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600703",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600703",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600703",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600703",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600703",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600703",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600703",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600703",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

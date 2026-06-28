@@ -1,0 +1,166 @@
+{
+  "company_code": "600172",
+  "company_name": "黄河旋风",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_600172",
+      "name": "黄河旋风\n600172",
+      "category": "target",
+      "business": "人造金刚石（HPHT+CVD）+ 培育钻石 + 金刚石散热概念，国内最大基地之一",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中南钻石\n(中兵红箭000519)",
+      "category": "competitor",
+      "business": "人造金刚石龙头，央企背景（兵器集团）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "力量钻石\n301071",
+      "category": "competitor",
+      "business": "人造金刚石/培育钻石，CVD技术先进",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "惠丰钻石\n920725",
+      "category": "competitor",
+      "business": "金刚石微粉，北交所上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "石墨原料供应商",
+      "category": "upstream",
+      "business": "石墨粉/石墨柱，金刚石HPHT合成主要碳源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "触媒合金供应商",
+      "category": "upstream",
+      "business": "镍基/铁基合金，催化金刚石结晶",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "六面顶压机\n(自研设备)",
+      "category": "upstream",
+      "business": "超高压合成设备，HWUDS-V型智能压机",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "CVD设备供应商",
+      "category": "upstream",
+      "business": "化学气相沉积设备，培育钻石/散热金刚石",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "石油钻探企业",
+      "category": "downstream",
+      "business": "金刚石钻头用于油气/页岩气钻井（全球市占率18%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "建筑/矿山企业",
+      "category": "downstream",
+      "business": "金刚石锯片、磨具用于切割和磨削",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "珠宝/消费品牌",
+      "category": "downstream",
+      "business": "培育钻石用于珠宝首饰",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体企业(远期)",
+      "category": "downstream",
+      "business": "金刚石散热片用于AI芯片/功率半导体（概念阶段）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600172",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600172",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600172",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600172",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600172",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600172",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600172",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600172",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600172",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

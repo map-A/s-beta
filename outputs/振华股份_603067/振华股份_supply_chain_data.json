@@ -1,0 +1,202 @@
+{
+  "company_code": "603067",
+  "company_name": "振华股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603067",
+      "name": "振华股份\n603067",
+      "category": "target",
+      "business": "全球最大铬盐企业，铬化学品全产品线+金属铬+储能材料，正向高温合金原料和储能新材料转型",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "四川银河化学",
+      "category": "competitor",
+      "business": "国内铬盐产能前列企业，主要产品为重铬酸钠、铬酸酐等",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "南非兄弟CISA",
+      "category": "competitor",
+      "business": "南非铬盐龙头，完成区域整合后形成垄断，全球铬盐重要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "土耳其金山集团",
+      "category": "competitor",
+      "business": "土耳其铬盐主导企业，依托土耳其铬矿资源形成区域垄断",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "新疆沈宏集团",
+      "category": "competitor",
+      "business": "西北地区铬盐企业，国内市场振华的竞争者之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "南非铬铁矿\n供应商",
+      "category": "upstream",
+      "business": "全球最大铬铁矿产区（占全球储量约70%），提供铬盐生产核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "哈萨克斯坦\n铬矿",
+      "category": "upstream",
+      "business": "中亚重要铬矿资源国，提供高品质铬铁矿原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硫酸供应商\n（部分自产）",
+      "category": "upstream",
+      "business": "铬盐生产关键化工原料，公司通过自产+外采协同保障",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "纯碱/石灰石\n供应商",
+      "category": "upstream",
+      "business": "铬盐生产辅助原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "土耳其铬矿\n供应商",
+      "category": "upstream",
+      "business": "高品质铬矿出口国，铬盐生产原料来源之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "高温合金/\n航空发动机",
+      "category": "downstream",
+      "business": "采购金属铬用于高温合金生产（添加量15-20%），BE供应链已签采购合同",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电镀/表面\n处理行业",
+      "category": "downstream",
+      "business": "金属表面处理行业，采购铬酸酐等铬盐产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "皮革鞣制\n行业",
+      "category": "downstream",
+      "business": "铬鞣剂用于皮革加工，采购重铬酸钠等产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "颜料/涂料\n行业",
+      "category": "downstream",
+      "business": "采购氧化铬绿等铬盐颜料产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "储能行业\n（液流电池）",
+      "category": "downstream",
+      "business": "铁铬液流电池储能电站，采购电解液；厦门首能半固态/固态电池电解液",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603067",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603067",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603067",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603067",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603067",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603067",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603067",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603067",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603067",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603067",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603067",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603067",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603067",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603067",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

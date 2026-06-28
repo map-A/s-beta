@@ -1,0 +1,166 @@
+{
+  "company_code": "002600",
+  "company_name": "领益智造",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002600",
+      "name": "领益智造\n002600",
+      "category": "target",
+      "business": "全球最大精密小件供应商，苹果产业链核心结构件厂商，业务向AI终端/汽车/低空经济拓展，市值1,229亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "铝材/钢材\n供应商",
+      "category": "upstream",
+      "business": "精密结构件用铝材/钢材原材料供应商（第一大供应商占采购21.32%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "塑胶原料\n供应商",
+      "category": "upstream",
+      "business": "工程塑胶等精密结构件原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密模具\n制造商",
+      "category": "upstream",
+      "business": "精密冲压/注塑模具供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "CNC设备\n供应商",
+      "category": "upstream",
+      "business": "CNC精密加工设备（发那科/兄弟等）供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "立讯精密\n002475",
+      "category": "competitor",
+      "business": "消费电子精密制造龙头+苹果代工，领益智造主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "蓝思科技\n300433",
+      "category": "competitor",
+      "business": "消费电子玻璃/蓝宝石盖板龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "长盈精密\n300115",
+      "category": "competitor",
+      "business": "消费电子精密结构件+新能源连接器",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "苹果\nApple",
+      "category": "downstream",
+      "business": "推测为第一大客户（占营收19.15%），精密结构件核心终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华为/\n小米等",
+      "category": "downstream",
+      "business": "国产手机/平板品牌，精密结构件客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车OEM\n厂商",
+      "category": "downstream",
+      "business": "新能源汽车精密零部件客户（业务拓展方向）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI终端\n设备厂商",
+      "category": "downstream",
+      "business": "AI手机/AI PC/AI眼镜等新兴AI终端设备客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002600",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002600",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002600",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002600",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002600",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002600",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002600",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002600",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002600",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002600",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002600",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

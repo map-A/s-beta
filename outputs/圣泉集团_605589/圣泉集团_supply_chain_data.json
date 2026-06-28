@@ -1,0 +1,110 @@
+{
+  "company_code": "605589",
+  "company_name": "圣泉集团",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_605589",
+      "name": "圣泉集团\n605589",
+      "category": "target",
+      "business": "国内铸造酚醛树脂龙头+先进电子材料(半导体封装/PCB树脂)+硅碳负极(固态电池)+生物质新材料，2025年营收109亿/净利2.5亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "住友电木",
+      "category": "competitor",
+      "business": "日本，全球半导体封装用环氧/酚醛树脂龙头，圣泉在该领域的对标企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "贝特瑞",
+      "category": "competitor",
+      "business": "835185，全球负极材料龙头，硅碳负极领域圣泉的竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "彤程新材",
+      "category": "competitor",
+      "business": "603650，特种橡胶助剂+半导体光刻胶用酚醛树脂，电子材料竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "苯酚/甲醛\n供应商",
+      "category": "upstream",
+      "business": "酚醛树脂核心原料（大宗商品级化工品）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "生物质原料\n供应商",
+      "category": "upstream",
+      "business": "秸秆等农林废弃物（生物质板块原料来源）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电子级化学品\n供应商",
+      "category": "upstream",
+      "business": "半导体封装用高纯环氧/酚醛原料（部分依赖进口）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "反应釜、成型设备、检测设备、碳化设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "半导体\n封装厂",
+      "category": "downstream",
+      "business": "芯片封装用特种环氧/酚醛树脂（先进电子材料板块）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "PCB/覆铜板\n制造商",
+      "category": "downstream",
+      "business": "5G/6G/AI服务器用高频高速覆铜板特种树脂",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新能源\n电池厂",
+      "category": "downstream",
+      "business": "固态电池用硅碳负极材料（电池材料板块）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "铸造厂/\n复合材料厂",
+      "category": "downstream",
+      "business": "汽车/机械铸造用酚醛树脂+风电/汽车轻量化复合材料（传统主业）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_605589", "relation": "supply"},
+    {"source": "up_1", "target": "target_605589", "relation": "supply"},
+    {"source": "up_2", "target": "target_605589", "relation": "supply"},
+    {"source": "up_3", "target": "target_605589", "relation": "supply"},
+    {"source": "target_605589", "target": "down_0", "relation": "customer"},
+    {"source": "target_605589", "target": "down_1", "relation": "customer"},
+    {"source": "target_605589", "target": "down_2", "relation": "customer"},
+    {"source": "target_605589", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_605589", "relation": "compete"},
+    {"source": "comp_1", "target": "target_605589", "relation": "compete"},
+    {"source": "comp_2", "target": "target_605589", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

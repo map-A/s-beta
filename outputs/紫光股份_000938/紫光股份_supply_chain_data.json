@@ -1,0 +1,190 @@
+{
+  "company_code": "000938",
+  "company_name": "紫光股份",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_000938",
+      "name": "紫光股份\n000938",
+      "category": "target",
+      "business": "通过核心子公司新华三H3C提供全栈ICT基础设施（网络/计算/存储/云/安全），数据中心交换机33.1%、企业网交换机36.1%中国市占，AI服务器12.5%",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华为\n（未上市）",
+      "category": "competitor",
+      "business": "中国ICT绝对龙头，CloudEngine系列数据中心交换机约35-40%市占，H3C最大竞争对手，在政企市场直接竞争全栈ICT",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "锐捷网络\n600996",
+      "category": "competitor",
+      "business": "园区网络设备，在中小企业网络和高校市场有竞争力，数据中心交换机能力弱于H3C",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "浪潮信息\n000977",
+      "category": "competitor",
+      "business": "AI/X86服务器中国#1-2，与H3C在服务器赛道竞争（H3C交换机业务更强），也是AI基础设施供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中兴通讯\n000063",
+      "category": "competitor",
+      "business": "运营商设备为主，企业ICT有布局，在运营商IT市场与H3C竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "博通\nBroadcom",
+      "category": "upstream",
+      "business": "数据中心交换机核心ASIC芯片（Tomahawk系列），H3C高速交换机的不可或缺芯片来源，推测为前5大供应商第1（16.13%采购）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "英伟达\nNVIDIA",
+      "category": "upstream",
+      "business": "AI GPU（H800/A100等），H3C AI服务器核心组件；紫光晓通/紫光数码是NVIDIA中国授权代理商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "中际旭创\n300308",
+      "category": "upstream",
+      "business": "400G/800G光模块，H3C高速数据中心交换机和AI服务器互联必需，推测为主要光器件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "内存/NAND\n供应商",
+      "category": "upstream",
+      "business": "服务器DRAM（三星/SK Hynix/长鑫CXMT）和企业级SSD，H3C AI服务器和存储产品核心物料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "互联网/云厂商\n（客户1/2脱敏）",
+      "category": "downstream",
+      "business": "推测为大型互联网公司或电信运营商，合计30.7%收入（159+138亿），是AI算力投资最活跃的客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "政府/央企\n数字化项目",
+      "category": "downstream",
+      "business": "政府部门、央企、国有金融机构的ICT国产化采购，是H3C最稳定的存量客户群，国产化政策强制推动替换",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电信运营商\n（三大运营商）",
+      "category": "downstream",
+      "business": "中国移动/联通/电信的内部IT基础设施建设，H3C是重要供应商（路由器31.5%市占印证）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "金融/教育/医疗\n行业用户",
+      "category": "downstream",
+      "business": "各行业数字化转型项目，H3C全行业覆盖，是最多样化的客户群，单客户规模较小但数量巨大",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "国家智算中心\n/AI算力平台",
+      "category": "downstream",
+      "business": "各省市国家智算中心、科研院所AI训练平台，使用H3C数据中心交换机+超节点AI服务器方案",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000938",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000938",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000938",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000938",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000938",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000938",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000938",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000938",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_000938",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

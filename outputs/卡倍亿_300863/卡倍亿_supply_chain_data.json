@@ -1,0 +1,190 @@
+{
+  "company_code": "300863",
+  "company_name": "卡倍亿",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_300863",
+      "name": "卡倍亿\n300863",
+      "category": "target",
+      "business": "汽车线缆的研发、生产和销售，产品覆盖传统燃油车和新能源汽车线缆，正在拓展数据中心高速铜缆、机器人零部件和商业航天业务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "远东股份\n600869",
+      "category": "competitor",
+      "business": "国内龙头电缆企业，产品线覆盖电力电缆、通信电缆、新能源线缆等，营收规模大于卡倍亿",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "宝胜股份\n600973",
+      "category": "competitor",
+      "business": "国有电缆龙头，产品覆盖电力电缆、特种电缆，背靠中国中化资本实力强",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东方电缆\n603606",
+      "category": "competitor",
+      "business": "海缆及特种电缆龙头，技术壁垒较高，市值约200亿元",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "久盛电气\n301082",
+      "category": "competitor",
+      "business": "汽车线缆直接竞争对手，同为创业板上市的汽车线缆企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "江西铜业\n600362",
+      "category": "upstream",
+      "business": "国内最大电解铜生产商，为铜杆/铜丝加工提供原材料，大宗商品供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜陵有色\n000630",
+      "category": "upstream",
+      "business": "大型铜冶炼企业，提供电解铜及铜加工材，铜材供应链上游",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "绝缘材料\n化工供应商",
+      "category": "upstream",
+      "business": "提供汽车线缆绝缘层材料（聚氯乙烯、交联聚乙烯等石化产品），非稀缺资源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "护套料/辅材\n供应商",
+      "category": "upstream",
+      "business": "提供线缆护套料、编织丝、填充料等辅助材料，标准化产品",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "安波福\nAPTV",
+      "category": "downstream",
+      "business": "全球领先汽车线束和电气分配系统供应商，推测为卡倍亿第一大客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "矢崎\nYazaki",
+      "category": "downstream",
+      "business": "全球最大汽车线束供应商，日系线束巨头，卡倍亿进入其供应链体系",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "国内新能源汽车龙头，通过弗迪科技（线束子公司）采购卡倍亿线缆产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "特斯拉\nTSLA",
+      "category": "downstream",
+      "business": "全球电动汽车龙头，卡倍亿已进入特斯拉供应链体系",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "德科斯米尔\nDraxlmaier",
+      "category": "downstream",
+      "business": "德国汽车线束及内饰系统供应商，豪华品牌核心线束供应商，卡倍亿战略供应商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300863",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300863",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300863",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300863",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300863",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300863",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300863",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300863",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300863",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300863",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300863",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300863",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300863",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

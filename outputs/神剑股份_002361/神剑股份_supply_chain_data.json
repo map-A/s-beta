@@ -1,0 +1,38 @@
+{
+  "company_code": "002361",
+  "company_name": "神剑股份",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {"id": "target_002361", "name": "神剑股份\n002361", "category": "target", "business": "聚酯树脂（粉末涂料原料，国内市占率第一）+航空航天复合材料零部件+无人机整机机体", "symbolSize": 90},
+    {"id": "comp_0", "name": "光华股份\n002786", "category": "competitor", "business": "聚酯树脂，在粉末涂料原料领域竞争", "symbolSize": 45},
+    {"id": "comp_1", "name": "鹿山新材\n603051", "category": "competitor", "business": "功能性薄膜/胶粘剂，在新材料领域竞争", "symbolSize": 45},
+    {"id": "comp_2", "name": "航空零部件\n竞品企业", "category": "competitor", "business": "航空复合材料零部件制造（军工体系内多家配套企业）", "symbolSize": 45},
+    {"id": "up_0", "name": "PTA供应商", "category": "upstream", "business": "精对苯二甲酸，聚酯树脂核心原料", "symbolSize": 40},
+    {"id": "up_1", "name": "新戊二醇\n供应商", "category": "upstream", "business": "聚酯树脂关键原料", "symbolSize": 40},
+    {"id": "up_2", "name": "碳纤维/预浸料\n供应商", "category": "upstream", "business": "航空复合材料零部件用原材料", "symbolSize": 40},
+    {"id": "up_3", "name": "石化基础\n原料", "category": "upstream", "business": "基础化工原料供应", "symbolSize": 40},
+    {"id": "down_0", "name": "粉末涂料\n制造商", "category": "downstream", "business": "采购聚酯树脂生产粉末涂料（占营收92.78%）", "symbolSize": 50},
+    {"id": "down_1", "name": "成飞/沈飞\n航空主机厂", "category": "downstream", "business": "采购航空复合材料零部件（军工业务）", "symbolSize": 50},
+    {"id": "down_2", "name": "无人机\n整机客户", "category": "downstream", "business": "采购无人机整机机体（低空经济概念）", "symbolSize": 50},
+    {"id": "down_3", "name": "卫星/航天\n客户", "category": "downstream", "business": "采购卫星天线/反射器/支撑塔等零部件（星网项目）", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002361", "relation": "supply"},
+    {"source": "up_1", "target": "target_002361", "relation": "supply"},
+    {"source": "up_2", "target": "target_002361", "relation": "supply"},
+    {"source": "up_3", "target": "target_002361", "relation": "supply"},
+    {"source": "target_002361", "target": "down_0", "relation": "customer"},
+    {"source": "target_002361", "target": "down_1", "relation": "customer"},
+    {"source": "target_002361", "target": "down_2", "relation": "customer"},
+    {"source": "target_002361", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002361", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002361", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002361", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

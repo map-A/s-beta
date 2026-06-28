@@ -1,0 +1,202 @@
+{
+  "company_code": "300913",
+  "company_name": "兆龙互联",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_300913",
+      "name": "兆龙互联\n300913",
+      "category": "target",
+      "business": "数据电缆（Cat5e-Cat8）、高速DAC/AOC铜缆（800G/1.6T验证中）、专用电缆、连接组件；数字通信电缆国标起草单位",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华丰科技\n688629",
+      "category": "competitor",
+      "business": "高速连接器（军工+通信），射频连接器、高速铜缆连接器，A股高速连接器龙头之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "鼎通科技\n688668",
+      "category": "competitor",
+      "business": "高速精密连接器及结构件，面向通信设备/数据中心，布局800G高速连接器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "通鼎互联\n002491",
+      "category": "competitor",
+      "business": "通信光电缆、数据中心布线、光纤预制棒，传统线缆企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "金信诺\n300252",
+      "category": "competitor",
+      "business": "信号互联产品（射频电缆、光电复合缆），军工+通信，高速连接产品线",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "海亮股份\n002203",
+      "category": "upstream",
+      "business": "铜材加工龙头，铜杆/铜丝/铜管，数据电缆核心原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "Marvell\nMRVL",
+      "category": "upstream",
+      "business": "高速PHY/DSP芯片，有源铜缆方案核心芯片供应商，全球高速连接芯片龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "博通\nAVGO",
+      "category": "upstream",
+      "business": "高速交换芯片/PHY芯片，有源铜缆方案合作方，数据中心芯片霸主",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "中天科技\n600522",
+      "category": "upstream",
+      "business": "光纤光缆及材料，特种绝缘材料（聚乙烯/XLPE），高频高速传输材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "安费诺\nAPH",
+      "category": "upstream",
+      "business": "全球连接器霸主，高速铜缆/光缆全产品线，数据中心连接器市占率第一",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "阿里巴巴\nBABA",
+      "category": "downstream",
+      "business": "阿里云/AI算力基础设施，超大规模数据中心高速互连铜缆需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "腾讯\n0700.HK",
+      "category": "downstream",
+      "business": "腾讯云/AI算力，数据中心GPU集群高速铜缆连接需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "字节跳动",
+      "category": "downstream",
+      "business": "AI大模型训练/推理，火山引擎数据中心高速互连需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业自动化客户群",
+      "category": "downstream",
+      "business": "工业以太网（PROFINET/EtherCAT）、工业控制专用线缆，MICE等级定制",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "智能建筑集成商",
+      "category": "downstream",
+      "business": "数据中心/商业楼宇综合布线系统，Cat6A/Cat7/Cat8企业级布线",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300913",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300913",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300913",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300913",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300913",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300913",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "company_code": "300903",
+  "company_name": "科翔股份",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_300903",
+      "name": "科翔股份\n300903",
+      "category": "target",
+      "business": "高密度印制电路板(PCB)研发、生产和销售——多层板/HDI/高频高速板/IC载板",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "生益科技(600183)",
+      "category": "upstream",
+      "business": "覆铜板(CCL)及粘结片——PCB核心原材料龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "建滔积层板(1888.HK)",
+      "category": "upstream",
+      "business": "全球最大覆铜板制造商——PCB上游核心供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铜箔供应商",
+      "category": "upstream",
+      "business": "电解铜箔/压延铜箔——PCB导电层核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB化学品厂商",
+      "category": "upstream",
+      "business": "蚀刻液、电镀液、油墨、感光胶等PCB制造辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "PCB设备厂商",
+      "category": "upstream",
+      "business": "曝光机、蚀刻机、钻孔机、电镀线等PCB生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "深南电路(002916)",
+      "category": "competitor",
+      "business": "国内高端PCB+IC载板龙头，毛利率~28%，AI服务器PCB核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "沪电股份(002463)",
+      "category": "competitor",
+      "business": "高频高速PCB龙头，毛利率~30%，AI服务器/通信PCB领军",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "鹏鼎控股(002938)",
+      "category": "competitor",
+      "business": "全球最大PCB厂商，FPC/HDI/多层板全覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "景旺电子(603228)",
+      "category": "competitor",
+      "business": "PCB综合制造商，多层板/HDI/FPC，毛利率~25%",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪(002594)",
+      "category": "downstream",
+      "business": "新能源汽车终端——科翔部分PCB产品应用于比亚迪汽车电子",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "Aptiv",
+      "category": "downstream",
+      "business": "汽车电子Tier1——77GHz毫米波雷达PCB已通过客户认证",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子品牌",
+      "category": "downstream",
+      "business": "手机/平板/可穿戴等消费电子终端——PCB传统主力市场",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信设备商",
+      "category": "downstream",
+      "business": "光模块/基站等通信设备——200G/400G光模块PCB研发试产中",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "工控/医疗设备",
+      "category": "downstream",
+      "business": "工业控制、医疗电子设备——PCB传统应用领域",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300903",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300903",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300903",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300903",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300903",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300903",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300903",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300903",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300903",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300903",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300903",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300903",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300903",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300903",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

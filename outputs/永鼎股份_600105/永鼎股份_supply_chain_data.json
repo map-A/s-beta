@@ -1,0 +1,166 @@
+{
+  "company_code": "600105",
+  "company_name": "永鼎股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600105",
+      "name": "永鼎股份\n600105",
+      "category": "target",
+      "business": "光纤光缆+电力电缆+高温超导带材（REBCO），国内唯一A股REBCO量产企业",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "稀土氧化物商",
+      "category": "upstream",
+      "business": "钇/钡/铜氧化物原料（REBCO超导带材原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "基带材料商",
+      "category": "upstream",
+      "business": "哈氏合金等金属基带（REBCO带材基底）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光棒供应商",
+      "category": "upstream",
+      "business": "光纤预制棒（光纤光缆核心原材料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铜杆/电缆材料商",
+      "category": "upstream",
+      "business": "铜杆/铝杆/绝缘料（电力电缆原材料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "SuperPower",
+      "category": "competitor",
+      "business": "全球REBCO超导带材龙头（美国/日本东芝旗下）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "亨通光电\n600487",
+      "category": "competitor",
+      "business": "光纤光缆+海洋通信+智能电网（光通信主要竞品）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中天科技\n600522",
+      "category": "competitor",
+      "business": "光纤光缆+海缆+新能源（光通信+电力竞品）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "三大运营商",
+      "category": "downstream",
+      "business": "中国电信/移动/联通，光纤光缆主要客户（集采采购）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "可控核聚变项目",
+      "category": "downstream",
+      "business": "ITER/CFETR等聚变实验装置（REBCO超导带材需求）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "国家电网/南方电网",
+      "category": "downstream",
+      "business": "电力电缆采购+超导电缆示范项目",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "军工/医疗/科研",
+      "category": "downstream",
+      "business": "超导磁体/粒子加速器/磁悬浮等应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600105",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600105",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600105",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600105",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600105",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600105",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600105",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600105",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600105",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600105",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600105",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

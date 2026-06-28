@@ -1,0 +1,166 @@
+{
+  "company_code": "688777",
+  "company_name": "中控技术",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688777",
+      "name": "中控技术\n688777",
+      "category": "target",
+      "business": "国内DCS龙头（市占率45.1%连续15年第一）+SIS国内第一+工业AI战略，服务3.9万家流程工业客户，市值985亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "芯片/元器件\n供应商",
+      "category": "upstream",
+      "business": "控制系统用芯片和电子元器件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "联想\n00992",
+      "category": "upstream",
+      "business": "服务器/网络设备供应商（占采购1.96%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "远东电缆",
+      "category": "upstream",
+      "business": "工业电缆供应商（占采购2.58%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "软件/云平台\n供应商",
+      "category": "upstream",
+      "business": "操作系统/数据库/云平台等基础软件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "艾默生\nEMR",
+      "category": "competitor",
+      "business": "全球DCS龙头之一，中控技术对标对象",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "霍尼韦尔\nHON",
+      "category": "competitor",
+      "business": "全球DCS/过程控制龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "和利时\n非A股",
+      "category": "competitor",
+      "business": "国内DCS第二梯队，中控技术国内主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "化工行业\n客户",
+      "category": "downstream",
+      "business": "中石油/万华化学/恒力石化等，化工DCS市占率68.5%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "石化行业\n客户",
+      "category": "downstream",
+      "business": "中石化/中海油等，石化DCS市占率59.4%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "冶金/造纸\n建材行业",
+      "category": "downstream",
+      "business": "传统流程工业客户，DCS市占率均居首位",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源/\n新材料",
+      "category": "downstream",
+      "business": "光伏/锂电/氢能等新兴流程工业客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688777",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688777",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688777",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688777",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688777",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688777",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688777",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688777",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688777",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688777",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688777",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

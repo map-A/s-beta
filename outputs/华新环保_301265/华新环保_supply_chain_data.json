@@ -1,0 +1,202 @@
+{
+  "company_code": "301265",
+  "company_name": "华新环保",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_301265",
+      "name": "华新环保\n301265",
+      "category": "target",
+      "business": "电子废弃物拆解、报废机动车拆解、危废无害化处置、贵金属资源再生、废旧电子设备回收再利用",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "格林美\n002340",
+      "category": "competitor",
+      "business": "电子废弃物回收+新能源材料回收（钴/镍/锂），行业龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中再资环\n600217",
+      "category": "competitor",
+      "business": "中国再生资源集团旗下，电子废弃物处理规模领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东江环保\n002672",
+      "category": "competitor",
+      "business": "危险废物处理龙头，工业废弃物处置",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "大地海洋\n301068",
+      "category": "competitor",
+      "business": "电子废弃物拆解，与华新环保业务高度类似",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "废旧家电回收渠道",
+      "category": "upstream",
+      "business": "回收废旧电视、冰箱、洗衣机、空调、电脑等废弃电器电子产品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "报废机动车回收网",
+      "category": "upstream",
+      "business": "报废汽车、摩托车等报废车辆的收集与转运",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "产危废企业",
+      "category": "upstream",
+      "business": "化工、制药、电子制造等企业产生的各类危险废物",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "拆解设备制造商",
+      "category": "upstream",
+      "business": "自动化拆解线、金属分选设备、破碎设备等环保处理设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "化学试剂供应商",
+      "category": "upstream",
+      "business": "贵金属提取用化学试剂（酸、碱等），危废处置辅助材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "有色金属冶炼企业",
+      "category": "downstream",
+      "business": "购买拆解产出的再生铜、铝、镍等有色金属进行精炼",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "贵金属精炼企业",
+      "category": "downstream",
+      "business": "购买拆解产出的含金银铂钯物料进行精炼提纯",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "钢铁企业",
+      "category": "downstream",
+      "business": "购买报废汽车拆解产出的废钢作为炼钢原料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "塑料再生企业",
+      "category": "downstream",
+      "business": "购买拆解产出的再生塑料颗粒进行加工利用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "电子产品再制造客户",
+      "category": "downstream",
+      "business": "购买海南子公司再制造的存储类旧器件产品（PC/笔记本/存储卡）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301265",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301265",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301265",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301265",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_301265",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301265",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301265",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301265",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301265",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301265",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301265",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301265",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301265",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301265",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

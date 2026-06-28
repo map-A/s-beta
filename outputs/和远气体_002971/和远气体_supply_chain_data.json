@@ -1,0 +1,178 @@
+{
+  "company_code": "002971",
+  "company_name": "和远气体",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002971",
+      "name": "和远气体\n002971",
+      "category": "target",
+      "business": "华中最大综合气体供应商，主营大宗气体（氧/氮/氩）及电子特气（WF6/NF3），正在向电子特气平台转型",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中船特气",
+      "category": "competitor",
+      "business": "688146，国内电子特气龙头，中国船舶集团旗下，NF3/WF6已实现量产，半导体客户覆盖广",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华特气体",
+      "category": "competitor",
+      "business": "688268，国内特种气体领先企业，产品线覆盖50+种特种气体，电子特气领域先发优势明显",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "金宏气体",
+      "category": "competitor",
+      "business": "688106，综合气体服务商，大宗气体+电子特气并重，积极扩产电子特气产能",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "凯美特气",
+      "category": "competitor",
+      "business": "002549，食品级CO2龙头，拓展电子特气及尾气回收业务",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "氟化工原料\n供应商",
+      "category": "upstream",
+      "business": "提供高纯氟化工原料（用于生产NF3/WF6等氟基电子特气），采购占比36.58%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "空气分离\n设备商",
+      "category": "upstream",
+      "business": "提供空气分离装置（林德/杭氧等），将空气分离为氧/氮/氩等组分",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "钨原料\n供应商",
+      "category": "upstream",
+      "business": "提供高纯钨原料（用于合成六氟化钨WF6），半导体级纯度要求极高",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电力与能源\n供应商",
+      "category": "upstream",
+      "business": "气体生产为高能耗行业，空气分离装置需要大量电力，电力成本为主要变动成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "半导体\n制造厂",
+      "category": "downstream",
+      "business": "晶圆代工厂/IDM，使用WF6进行CVD钨沉积、NF3进行腔体清洗（先进制程关键材料）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏/LED\n企业",
+      "category": "downstream",
+      "business": "光伏电池片/LED外延片厂商，使用高纯氨（NH3）等特种气体",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "钢铁/化工\n企业",
+      "category": "downstream",
+      "business": "大型钢铁厂和化工厂，使用大宗氧气（42万吨产能）、氮气（76万吨）、氩气等",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "食品/医药\n企业",
+      "category": "downstream",
+      "business": "食品级CO2、医用氧气、工业级化学品等需求方",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002971",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002971",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002971",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002971",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002971",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002971",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002971",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002971",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002971",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002971",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002971",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002971",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

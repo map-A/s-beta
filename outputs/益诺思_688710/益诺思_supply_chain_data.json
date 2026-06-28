@@ -1,0 +1,178 @@
+{
+  "company_code": "688710",
+  "company_name": "益诺思",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688710",
+      "name": "益诺思\n688710",
+      "category": "target",
+      "business": "非临床安全性评价CRO（NMPA+FDA+OECD三重GLP认证），国药集团旗下",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "药明康德\n603259",
+      "category": "competitor",
+      "business": "全球CRO/CDMO龙头（含安评业务）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "昭衍新药\n603127",
+      "category": "competitor",
+      "business": "临床前安全性评价（GLP毒理学）细分龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "康龙化成\n300759",
+      "category": "competitor",
+      "business": "综合CRO龙头（含安评业务）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "IQVIA\nCovance",
+      "category": "competitor",
+      "business": "全球大型CRO（含全球安评网络）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "实验动物\n供应商",
+      "category": "upstream",
+      "business": "猴、犬、大小鼠等实验动物（黄山猴舍自建）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "试剂/耗材\n供应商",
+      "category": "upstream",
+      "business": "毒理学检测试剂、病理学耗材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "检测仪器\n设备商",
+      "category": "upstream",
+      "business": "PET-CT、流式细胞仪、放射影像设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "同位素/\n放射材料",
+      "category": "upstream",
+      "business": "同位素实验室材料（1800㎡实验室已投用）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "Pharma\n大型药企",
+      "category": "downstream",
+      "business": "全球大型传统药企（多中心申报安评需求）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "Biopharma\n创新药企",
+      "category": "downstream",
+      "business": "创新生物制药企业（合同金额及个数快速上升）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "Biotech\n初创企业",
+      "category": "downstream",
+      "business": "高速增长型创新药Biotech（IND申报安评）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "科研院所",
+      "category": "downstream",
+      "business": "高校/研究机构药物安全性研究",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688710",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688710",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688710",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688710",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688710",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688710",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688710",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688710",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688710",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688710",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688710",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688710",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

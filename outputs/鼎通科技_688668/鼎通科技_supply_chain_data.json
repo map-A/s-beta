@@ -1,0 +1,178 @@
+{
+  "company_code": "688668",
+  "company_name": "鼎通科技",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688668",
+      "name": "鼎通科技\n688668",
+      "category": "target",
+      "business": "高速通讯连接器+汽车连接器一流厂商",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "铜合金供应商",
+      "category": "upstream",
+      "business": "连接器用铜合金带材/线材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "塑胶原料供应商",
+      "category": "upstream",
+      "business": "连接器绝缘体用工程塑料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电镀材料商",
+      "category": "upstream",
+      "business": "连接器端子电镀用金/锡材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "模具/设备商",
+      "category": "upstream",
+      "business": "精密冲压模具+注塑设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "TE Connectivity",
+      "category": "competitor",
+      "business": "全球连接器龙头（瑞士）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中航光电",
+      "category": "competitor",
+      "business": "国内军用+民用连接器龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "安费诺",
+      "category": "competitor",
+      "business": "全球连接器第二（美国）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "立讯精密",
+      "category": "competitor",
+      "business": "消费电子+汽车连接器龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "通信设备企业",
+      "category": "downstream",
+      "business": "5G基站/交换机/数据中心设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车电子企业",
+      "category": "downstream",
+      "business": "新能源车/智能驾驶连接器终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "服务器企业",
+      "category": "downstream",
+      "business": "AI服务器高速连接器终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子企业",
+      "category": "downstream",
+      "business": "手机/平板连接器终端",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688668",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688668",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688668",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688668",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688668",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688668",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688668",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688668",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688668",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688668",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688668",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688668",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

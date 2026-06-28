@@ -1,0 +1,202 @@
+{
+  "company_code": "002317",
+  "company_name": "众生药业",
+  "analysis_date": "2026-06-24",
+  "nodes": [
+    {
+      "id": "target_002317",
+      "name": "众生药业\n002317",
+      "category": "target",
+      "business": "药品研发、生产、销售。核心品种：复方血栓通胶囊（独家）、昂拉地韦（流感）、RAY1225（GLP-1减重/糖尿病，在研）",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "三七药材种植\n（GAP基地）",
+      "category": "upstream",
+      "business": "复方血栓通核心原料三七药材的标准化种植，公司自有/合作GAP种植基地",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "化学原料药\n供应商",
+      "category": "upstream",
+      "business": "奥美拉唑、克拉霉素、更昔洛韦等化学原料药供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "药用辅料\n供应商",
+      "category": "upstream",
+      "business": "胶囊壳、片剂辅料、注射用辅料、药用包装材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "多肽合成\nCDMO",
+      "category": "upstream",
+      "business": "GLP-1类多肽药物的合成与代工生产（RAY1225商业化阶段可能需要）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "中药提取\n设备供应商",
+      "category": "upstream",
+      "business": "肇庆大旺基地中药提取自动化产线设备、工业物联网系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "以岭药业\n002603",
+      "category": "competitor",
+      "business": "通心络胶囊、连花清瘟胶囊，心脑血管+呼吸系统中药龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "步长制药\n603858",
+      "category": "competitor",
+      "business": "脑心通胶囊、稳心颗粒，心脑血管中成药龙头企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "恒瑞医药\n600276",
+      "category": "competitor",
+      "business": "创新药龙头，GLP-1（HRS9531）、ADC等多管线，GLP-1赛道直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "天士力\n600535",
+      "category": "competitor",
+      "business": "复方丹参滴丸，现代中药+生物药创新转型，同为中药创新转型标的",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "全国医院\n（1.3万+家）",
+      "category": "downstream",
+      "business": "眼科、心脑血管、呼吸科等临床终端，复方血栓通核心处方渠道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "基层医疗机构\n（5万+家）",
+      "category": "downstream",
+      "business": "县域医院、社区卫生服务中心，基药目录品种的核心下沉渠道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "零售药店\n（23万+家）",
+      "category": "downstream",
+      "business": "连锁药店、单体药店，OTC品种（众生丸等）和处方药院外销售渠道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "医药商业\n经销商",
+      "category": "downstream",
+      "business": "医药流通企业（前5大客户均为经销商），负责药品配送至各级终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "医保基金",
+      "category": "downstream",
+      "business": "国家医保支付方，复方血栓通为基药+医保双目录品种，昂拉地韦争取医保准入",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002317",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002317",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002317",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002317",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002317",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002317",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002317",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002317",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002317",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002317",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002317",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002317",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002317",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002317",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

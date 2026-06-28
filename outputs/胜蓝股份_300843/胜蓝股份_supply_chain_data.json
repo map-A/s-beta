@@ -1,0 +1,166 @@
+{
+  "company_code": "300843",
+  "company_name": "胜蓝股份",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300843",
+      "name": "胜蓝股份\n300843",
+      "category": "target",
+      "business": "消费电子连接器、新能源汽车连接器、高速数据通讯连接器、液冷板的研发与生产",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "TE Connectivity",
+      "category": "competitor",
+      "business": "全球连接器龙头，覆盖汽车/工业/通信/消费电子全领域",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "鼎通科技\n688668",
+      "category": "competitor",
+      "business": "高速连接器，数据中心和通信领域应用",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华丰科技\n688510",
+      "category": "competitor",
+      "business": "国内连接器龙头，军工+民用高速连接器",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铜材供应商",
+      "category": "upstream",
+      "business": "铜材、铜合金，连接器端子核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "塑胶粒料\n供应商",
+      "category": "upstream",
+      "business": "工程塑胶粒料，连接器外壳和绝缘材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电镀材料\n供应商",
+      "category": "upstream",
+      "business": "镀金、镀锡等电镀材料，连接器表面处理",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精密模具\n供应商",
+      "category": "upstream",
+      "business": "连接器精密模具和冲压设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "新能源汽车+储能，采购汽车连接器和储能连接器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "消费电子\n品牌商",
+      "category": "downstream",
+      "business": "手机/PC/平板品牌，采购Type-C/FPC/BTB连接器（含客户1等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "服务器/\n数据中心",
+      "category": "downstream",
+      "business": "AI服务器和数据中心厂商，采购高速背板/IO连接器",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新兴领域\n(机器人/飞行汽车)",
+      "category": "downstream",
+      "business": "人形机器人(优必选)、飞行汽车(小鹏汇天)、无人机(大疆)等新兴应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300843",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300843",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300843",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300843",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300843",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300843",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300843",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300843",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300843",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300843",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300843",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

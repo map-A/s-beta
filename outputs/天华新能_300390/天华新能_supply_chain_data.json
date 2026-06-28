@@ -1,0 +1,190 @@
+{
+  "company_code": "300390",
+  "company_name": "天华新能",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_300390",
+      "name": "天华新能\n300390",
+      "category": "target",
+      "business": "通过控股子公司天宜锂业（天华68%+CATL 25%）生产电池级氢氧化锂/碳酸锂，深度绑定CATL，同时经营防静电超净（服务半导体客户）和医疗器械",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "赣锋锂业\n002460",
+      "category": "competitor",
+      "business": "中国最大综合锂盐供应商（氢氧化锂+碳酸锂+锂矿），A+H双重上市，无CATL深度绑定",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "天齐锂业\n002466",
+      "category": "competitor",
+      "business": "上游锂矿优势（持有SQM23.77%股权），锂盐深加工，A+H双重上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "盛新锂能\n002240",
+      "category": "competitor",
+      "business": "碳酸锂/氢氧化锂加工，四川内江基地，与天华在同一锂盐赛道竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "永兴材料\n002756",
+      "category": "competitor",
+      "business": "江西锂云母矿+碳酸锂生产，与天华在锂盐赛道有竞争，受益同一锂价周期",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "澳洲锂辉石矿\n（Pilbara/Liontown）",
+      "category": "upstream",
+      "business": "锂辉石精矿（Li2O含量6%+），是生产氢氧化锂的主要原料，推测为供应商A/B（合计24.6%采购）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "宜春盛源锂业\n（江西新布局）",
+      "category": "upstream",
+      "business": "天华2026-06-22新签增资协议的江西锂矿，向上游垂直整合的战略布局，降低进口依赖",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "烧碱/化工原料\n供应商",
+      "category": "upstream",
+      "business": "氢氧化钠（NaOH）等化学品是氢氧化锂生产必需辅料，来自国内化工企业",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电力\n（水电/四川）",
+      "category": "upstream",
+      "business": "天宜锂业（宜宾/甘眉）地处四川，享有水电价格优势，是成本竞争力的重要来源",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "宁德时代CATL\n（推测Customer A）",
+      "category": "downstream",
+      "business": "全球最大动力电池厂，持有天宜锂业25%+上市公司7%，是天华最重要战略客户（推测23%收入）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "LG化学/SK On\n（推测Customer B）",
+      "category": "downstream",
+      "business": "韩国动力电池双巨头，使用高镍NMC需要大量LiOH，天华重要境外客户（推测）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "三元正极材料厂\n（容百/华友）",
+      "category": "downstream",
+      "business": "高镍NCM正极材料厂商，是LiOH的直接下游客户，LiOH→正极前驱体→正极材料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体洁净室客户\n（美光/AMD/中芯）",
+      "category": "downstream",
+      "business": "防静电超净技术业务的客户，包括美光、希捷、西部数据、中芯国际、AMD等全球半导体厂商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "宇寿医疗\n医疗客户",
+      "category": "downstream",
+      "business": "自毁式/安全式注射器等医疗耗材的下游医院/医疗机构，贡献~3.6%稳定收入",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300390",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300390",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300390",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300390",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300390",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300390",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300390",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300390",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300390",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300390",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300390",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300390",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300390",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

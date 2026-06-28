@@ -1,0 +1,190 @@
+{
+  "company_code": "603601",
+  "company_name": "再升科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_603601",
+      "name": "再升科技\n603601",
+      "category": "target",
+      "business": "超细玻璃纤维棉、HEPA滤纸、PTFE膜、无尘空调，全产业链覆盖，国内双料单项冠军",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "H&V\n（美国）",
+      "category": "competitor",
+      "business": "全球领先特种滤材和工业用无纺布制造商，HEPA滤纸国际龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Ahlstrom\n（芬兰）",
+      "category": "competitor",
+      "business": "全球特种纤维材料龙头，过滤材料和装饰材料重要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "南京双威\n科技",
+      "category": "competitor",
+      "business": "国内玻璃纤维滤纸生产商，核电/半导体过滤材料供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "苏州华泰\n空气过滤器",
+      "category": "competitor",
+      "business": "国内空气过滤器和滤材生产商，工业/洁净室过滤产品",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯石英砂\n供应商",
+      "category": "upstream",
+      "business": "超细玻璃纤维棉核心原材料，全球供应集中于少数厂商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "PTFE树脂\n供应商",
+      "category": "upstream",
+      "business": "PTFE空气过滤膜原材料，高端化工原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "玻璃原料\n供应商",
+      "category": "upstream",
+      "business": "玻璃纤维拉丝用基础原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "意大利法比\n里奥研究院",
+      "category": "upstream",
+      "business": "技术研发合作方，提供高端过滤材料技术支撑",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "半导体\n晶圆厂",
+      "category": "downstream",
+      "business": "洁净室HEPA/ULPA空气过滤（ISO Class 1-4级），AI算力驱动扩产",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "核电站",
+      "category": "downstream",
+      "business": "核设施空气过滤，控制放射性污染，再升已批量供货",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "SpaceX/\n航天企业",
+      "category": "downstream",
+      "business": "高硅氧纤维隔热保温材料，用于火箭/航天器热防护",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "生物医药\n实验室",
+      "category": "downstream",
+      "business": "P2/P3生物安全实验室空气过滤产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "家电/暖通\n消费者",
+      "category": "downstream",
+      "business": "无尘空调、新风系统（2C端拓展，2025年销量25.9万台）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603601",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603601",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603601",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603601",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603601",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603601",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603601",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603601",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603601",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603601",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603601",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603601",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603601",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

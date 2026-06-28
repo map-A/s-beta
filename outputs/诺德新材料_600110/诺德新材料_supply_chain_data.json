@@ -1,0 +1,178 @@
+{
+  "company_code": "600110",
+  "company_name": "诺德新材料",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600110",
+      "name": "诺德新材料\n600110",
+      "category": "target",
+      "business": "电解铜箔全品类（极薄锂电铜箔4-6μm+HVLP高频高速PCB铜箔），四大基地全国布局，产能规模最大",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "铜冠铜箔\n301217",
+      "category": "competitor",
+      "business": "国内唯一HVLP1-4代全系列量产电子铜箔厂商，高端PCB铜箔国产替代先锋",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "嘉元科技\n688388",
+      "category": "competitor",
+      "business": "极薄锂电铜箔技术领先，毛利率~20%，盈利能力强于诺德",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中一科技\n301150",
+      "category": "competitor",
+      "business": "电解铜箔双轨（锂电80%+HVLP高频高速20%），正向高端PCB铜箔转型",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "德福科技\n301511",
+      "category": "competitor",
+      "business": "锂电铜箔生产商，与诺德在锂电铜箔细分直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "阴极铜供应商",
+      "category": "upstream",
+      "business": "铜箔核心原材料，大宗商品价格（LME/SHFE铜价），全球供应充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硫酸供应商",
+      "category": "upstream",
+      "business": "电解铜箔生产工艺必需化工品，供应充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "添加剂供应商",
+      "category": "upstream",
+      "business": "电解液添加剂，影响铜箔品质和性能，部分依赖进口",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铜箔设备厂商",
+      "category": "upstream",
+      "business": "生箔机等铜箔生产设备，部分进口依赖，国产替代进行中",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "锂电池厂\n宁德时代/比亚迪",
+      "category": "downstream",
+      "business": "锂电铜箔核心客户，动力电池+储能电池铜箔需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "PCB制造商\n深南电路/沪电",
+      "category": "downstream",
+      "business": "高端PCB铜箔客户，AI服务器PCB需求驱动HVLP铜箔增长",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海外车企",
+      "category": "downstream",
+      "business": "已签长期供应合同，月供1515吨+锂电铜箔",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "储能系统商\n阳光电源等",
+      "category": "downstream",
+      "business": "储能电池铜箔需求方，全球储能装机量高增长",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600110",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600110",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600110",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600110",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600110",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600110",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600110",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600110",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600110",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600110",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600110",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600110",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

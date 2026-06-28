@@ -1,0 +1,179 @@
+{
+  "company_code": "601066",
+  "company_name": "中信建投",
+  "analysis_date": "2026-06-26",
+  "_note": "券商行业不适用供应链分析框架，以下节点为业务关系示意而非实体供应链",
+  "nodes": [
+    {
+      "id": "target_601066",
+      "name": "中信建投\n601066",
+      "category": "target",
+      "business": "头部综合性券商，投行业务行业领先，财富管理市场前列",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中信证券\n600030",
+      "category": "competitor",
+      "business": "中国最大券商，全业务链龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华泰证券\n601688",
+      "category": "competitor",
+      "business": "头部券商，科技驱动",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中金公司\n601995",
+      "category": "competitor",
+      "business": "投行+机构业务强势",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "国泰君安\n601211",
+      "category": "competitor",
+      "business": "头部综合性券商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "客户保证金",
+      "category": "upstream",
+      "business": "经纪业务客户的证券交易保证金",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "债务融资",
+      "category": "upstream",
+      "business": "公司债/短融/次级债等债务融资工具",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "同业拆借",
+      "category": "upstream",
+      "business": "银行间市场同业拆借资金",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "自有资本",
+      "category": "upstream",
+      "business": "股东权益+留存收益",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "企业客户",
+      "category": "downstream",
+      "business": "IPO承销、再融资、并购重组需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "个人投资者",
+      "category": "downstream",
+      "business": "证券交易代理、金融产品销售",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "机构客户",
+      "category": "downstream",
+      "business": "研究服务、主经纪商、做市服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "政府/国企",
+      "category": "downstream",
+      "business": "地方政府债承销、国企改革顾问",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601066",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601066",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601066",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601066",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601066",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601066",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601066",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601066",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601066",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601066",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601066",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_601066",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "资金来源"
+    },
+    {
+      "name": "competitor",
+      "label": "同业公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "客户群体"
+    }
+  ]
+}

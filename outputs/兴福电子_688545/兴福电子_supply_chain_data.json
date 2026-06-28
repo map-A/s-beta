@@ -1,0 +1,226 @@
+{
+  "company_code": "688545",
+  "company_name": "兴福电子",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688545",
+      "name": "兴福电子\n688545",
+      "category": "target",
+      "business": "超高纯湿电子化学品制造（电子级磷酸国内#1、硫酸、双氧水、蚀刻液），IDM模式",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中巨芯\n688549",
+      "category": "competitor",
+      "business": "蚀刻液、清洗液等湿电子化学品，科创板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "上海新阳\n300236",
+      "category": "competitor",
+      "business": "半导体化学品、封装材料、光刻胶等综合半导体材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "江化微\n603078",
+      "category": "competitor",
+      "business": "超高纯化学试剂、湿电子化学品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "晶瑞电材\n300655",
+      "category": "competitor",
+      "business": "超纯化学试剂、光刻胶、电子化学品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "格林达\n603931",
+      "category": "competitor",
+      "business": "显影液、剥离液等湿电子化学品",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "兴发集团\n600141",
+      "category": "upstream",
+      "business": "磷化工龙头（控股股东），提供黄磷等电子级磷酸核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "外部黄磷\n供应商",
+      "category": "upstream",
+      "business": "黄磷等基础化工原料供应（占采购9.25%的第一大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "自建三氧化硫\n生产线",
+      "category": "upstream",
+      "business": "液体三氧化硫自产（电子级硫酸核心原料内部化）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "三峡实验室",
+      "category": "upstream",
+      "business": "光刻胶用光引发剂制备专有技术转让（4627万元）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "添鸿化学",
+      "category": "upstream",
+      "business": "先进封装材料（已收购65%股权），拓展封装湿化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "国内晶圆代工龙头，28nm及以下先进制程用电子级磷酸/蚀刻液",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长江存储\n(YMTC)",
+      "category": "downstream",
+      "business": "国内3D NAND存储龙头，先进存储高选择性蚀刻液客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长鑫存储\n(CXMT)",
+      "category": "downstream",
+      "business": "国内DRAM存储龙头，电子级化学品客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "SK海力士\n(无锡)",
+      "category": "downstream",
+      "business": "全球存储芯片巨头中国工厂，持股500万股+认证供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "华虹集团\n688347",
+      "category": "downstream",
+      "business": "国内特色工艺晶圆代工龙头，成熟制程湿化学品客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "台积电\n(成都)",
+      "category": "downstream",
+      "business": "全球最大晶圆代工厂中国工厂，通过产品认证",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688545",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688545",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688545",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688545",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688545",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688545",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688545",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688545",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688545",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688545",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688545",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688545",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688545",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688545",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688545",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688545",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

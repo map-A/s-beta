@@ -1,0 +1,110 @@
+{
+  "company_code": "688662",
+  "company_name": "富信科技",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688662",
+      "name": "富信科技\n688662",
+      "category": "target",
+      "business": "国内半导体热电全产业链龙头（碲化铋热电器件+热电系统+热电整机），应用于CPO散热/5G/储能，2025年营收5.35亿/净利668万",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Ferrotec",
+      "category": "competitor",
+      "business": "日本，全球热电器件领先企业，富信的主要国际竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Coherent",
+      "category": "competitor",
+      "business": "美国(原II-VI)，全球光模块/热电器件领先企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Kryotherm",
+      "category": "competitor",
+      "business": "俄罗斯，欧洲市场TEC主要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "碲化铋原料\n供应商",
+      "category": "upstream",
+      "business": "热电材料核心原料（稀有金属碲、铋等），受大宗商品周期影响",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "陶瓷基板/\n覆铜板商",
+      "category": "upstream",
+      "business": "热电器件基板材料供应（2025年覆铜板收入4700万）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "封装材料商",
+      "category": "upstream",
+      "business": "焊料、封装胶、绝缘材料等辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "热电器件制造/检测设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "光通信/\n光模块厂商",
+      "category": "downstream",
+      "business": "CPO散热核心客户，光模块中激光器精密温控用TEC（第一大客户占11.4%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "5G基站\n设备商",
+      "category": "downstream",
+      "business": "5G基站光模块/射频散热温控",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "储能系统\n集成商",
+      "category": "downstream",
+      "business": "电池热管理系统（储能温控）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子/\n汽车电子",
+      "category": "downstream",
+      "business": "便携冰箱/饮水机/车载冰箱/座椅温控等热电整机应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_688662", "relation": "supply"},
+    {"source": "up_1", "target": "target_688662", "relation": "supply"},
+    {"source": "up_2", "target": "target_688662", "relation": "supply"},
+    {"source": "up_3", "target": "target_688662", "relation": "supply"},
+    {"source": "target_688662", "target": "down_0", "relation": "customer"},
+    {"source": "target_688662", "target": "down_1", "relation": "customer"},
+    {"source": "target_688662", "target": "down_2", "relation": "customer"},
+    {"source": "target_688662", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_688662", "relation": "compete"},
+    {"source": "comp_1", "target": "target_688662", "relation": "compete"},
+    {"source": "comp_2", "target": "target_688662", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

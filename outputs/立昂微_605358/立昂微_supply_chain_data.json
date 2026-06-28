@@ -1,0 +1,40 @@
+{
+  "company_code": "605358",
+  "company_name": "立昂微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_605358", "name": "立昂微\n605358", "category": "target", "business": "国内稀缺'硅片→芯片'一站式半导体平台（硅片+功率器件+化合物半导体RF/光电）", "symbolSize": 90},
+    {"id": "comp_0", "name": "信越化学\n4063.JP", "category": "competitor", "business": "全球半导体硅片龙头（日本），全球市占率第一", "symbolSize": 45},
+    {"id": "comp_1", "name": "沪硅产业\n688126", "category": "competitor", "business": "国内300mm硅片唯一规模化量产企业", "symbolSize": 45},
+    {"id": "comp_2", "name": "SUMCO\n3436.JP", "category": "competitor", "business": "全球第二大硅片供应商（日本）", "symbolSize": 45},
+    {"id": "comp_3", "name": "中环股份\n002129", "category": "competitor", "business": "硅片+光伏双主业，国内硅片参与者", "symbolSize": 45},
+    {"id": "up_0", "name": "多晶硅供应商", "category": "upstream", "business": "半导体级高纯多晶硅原料", "symbolSize": 40},
+    {"id": "up_1", "name": "拉晶/切片设备", "category": "upstream", "business": "硅片制造核心设备（单晶炉/切片机等）", "symbolSize": 40},
+    {"id": "up_2", "name": "化合物半导体材料", "category": "upstream", "business": "GaAs/InP等化合物半导体衬底材料", "symbolSize": 40},
+    {"id": "up_3", "name": "特种气体/化学品", "category": "upstream", "business": "半导体制造用电子特气和超纯化学品", "symbolSize": 40},
+    {"id": "down_0", "name": "芯联集成", "category": "downstream", "business": "晶圆代工厂，立昂微第一大客户（占收入5.85%）", "symbolSize": 50},
+    {"id": "down_1", "name": "功率器件厂商", "category": "downstream", "business": "采购硅片用于IGBT/MOSFET等功率器件制造", "symbolSize": 50},
+    {"id": "down_2", "name": "射频/光电芯片厂", "category": "downstream", "business": "采购化合物半导体芯片用于5G/光通信", "symbolSize": 50},
+    {"id": "down_3", "name": "存储/逻辑芯片厂", "category": "downstream", "business": "采购12英寸硅片用于先进制程芯片制造", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_605358", "relation": "supply"},
+    {"source": "up_1", "target": "target_605358", "relation": "supply"},
+    {"source": "up_2", "target": "target_605358", "relation": "supply"},
+    {"source": "up_3", "target": "target_605358", "relation": "supply"},
+    {"source": "target_605358", "target": "down_0", "relation": "customer"},
+    {"source": "target_605358", "target": "down_1", "relation": "customer"},
+    {"source": "target_605358", "target": "down_2", "relation": "customer"},
+    {"source": "target_605358", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_605358", "relation": "compete"},
+    {"source": "comp_1", "target": "target_605358", "relation": "compete"},
+    {"source": "comp_2", "target": "target_605358", "relation": "compete"},
+    {"source": "comp_3", "target": "target_605358", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

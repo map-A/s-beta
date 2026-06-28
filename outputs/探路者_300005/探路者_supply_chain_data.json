@@ -1,0 +1,166 @@
+{
+  "company_code": "300005",
+  "company_name": "探路者",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_300005",
+      "name": "探路者\n300005",
+      "category": "target",
+      "business": "户外用品研发设计与销售+触控/显示芯片设计（北京芯能），双主业模式",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "牧高笛\n603908",
+      "category": "competitor",
+      "business": "户外帐篷/露营装备龙头，国内户外用品竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三夫户外\n002780",
+      "category": "competitor",
+      "business": "户外用品零售渠道+自有品牌，国内户外竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "汇顶科技\n603160",
+      "category": "competitor",
+      "business": "触控IC/指纹识别芯片全球龙头，芯片业务核心竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "功能性面料供应商",
+      "category": "upstream",
+      "business": "防水透气面料、保暖材料等功能性纺织材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "辅料供应商",
+      "category": "upstream",
+      "business": "拉链、扣件、织带等户外装备辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "OEM/ODM代工厂",
+      "category": "upstream",
+      "business": "户外服装/鞋类/装备代工生产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "晶圆代工/封测厂",
+      "category": "upstream",
+      "business": "芯片代工制造+封装测试（晶圆级封装/Chiplet）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "户外零售经销商",
+      "category": "downstream",
+      "business": "线下户外用品零售渠道，覆盖全国核心商圈",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电商平台",
+      "category": "downstream",
+      "business": "天猫/京东等线上销售渠道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "面板厂/终端品牌",
+      "category": "downstream",
+      "business": "笔记本/平板/车载触控面板及消费电子终端品牌",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "户外运动消费者",
+      "category": "downstream",
+      "business": "登山/徒步/滑雪/露营等户外运动爱好者终端消费者",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300005",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300005",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300005",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300005",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300005",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300005",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300005",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300005",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300005",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300005",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300005",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "603893",
+  "company_name": "瑞芯微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603893",
+      "name": "瑞芯微\n603893",
+      "category": "target",
+      "business": "国内领先AIoT SoC芯片设计公司：RK3588旗舰6 TOPS NPU，覆盖安防/座舱/机器人/AI眼镜等多场景",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "台积电/中芯国际\n晶圆代工",
+      "category": "upstream",
+      "business": "8nm先进制程晶圆代工，Fabless模式的核心依赖",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "长电科技/通富微电\n封装测试",
+      "category": "upstream",
+      "business": "芯片封装测试服务，先进封装能力",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "EDA/IP\n供应商",
+      "category": "upstream",
+      "business": "Synopsys/Cadence等EDA工具（公司大量自研IP降低依赖）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "存储芯片\n供应商",
+      "category": "upstream",
+      "business": "DDR/Flash存储芯片，当前涨价是行业瓶颈",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "全志科技\n300458",
+      "category": "competitor",
+      "business": "AIoT SoC/智能应用处理器，瑞芯微最直接国内竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "澜起科技\n688008",
+      "category": "competitor",
+      "business": "内存接口/AI处理器芯片，高端半导体设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "高通(QCOM)",
+      "category": "competitor",
+      "business": "全球高端移动/AIoT/汽车SoC龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "智能安防/\nNVR厂商",
+      "category": "downstream",
+      "business": "安防摄像头/NVR设备，RK3588传统基本盘",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车厂商\n(比亚迪等)",
+      "category": "downstream",
+      "business": "智能座舱/AI Box/仪表盘，与比亚迪等头部车企合作 [confirmed]",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "机器人/\nAIoT设备厂商",
+      "category": "downstream",
+      "business": "AGV/人形机器人、智能零售、工业网关等AIoT边缘计算",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子\n/AI眼镜厂商",
+      "category": "downstream",
+      "business": "AI眼镜/智能穿戴/AI玩具/AI Agent应用等新兴消费场景",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603893",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603893",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603893",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603893",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603893",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603893",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603893",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603893",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603893",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603893",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603893",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

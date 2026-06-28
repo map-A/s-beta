@@ -1,0 +1,166 @@
+{
+  "company_code": "300179",
+  "company_name": "四方达",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_300179",
+      "name": "四方达\n300179",
+      "category": "target",
+      "business": "国内复合超硬材料龙头（PCD/PDC/PCBN），同时布局CVD金刚石散热/半导体，深耕20+年，出口40+国家",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "人造金刚石微粉\n供应商",
+      "category": "upstream",
+      "business": "六面顶压机合成金刚石微粉，河南产业集群配套成熟，供给充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "CBN原料\n供应商",
+      "category": "upstream",
+      "business": "立方氮化硼（CBN）原料供应商，用于PCBN复合材料制造",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "MPCVD设备\n供应商",
+      "category": "upstream",
+      "business": "微波等离子体化学气相沉积设备，天璇半导体自研+外购，CVD金刚石核心设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "硬质合金基体\n供应商",
+      "category": "upstream",
+      "business": "PDC齿的硬质合金基体，提供PDC齿的支撑结构",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "黄河旋风",
+      "category": "competitor",
+      "business": "国内最大金刚石生产基地之一，超硬材料+培育钻石，河南产业集群核心企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "力量钻石",
+      "category": "competitor",
+      "business": "人造金刚石单晶+培育钻石+金刚石微粉，创业板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "沃尔德",
+      "category": "competitor",
+      "business": "超硬刀具（PCD/PCBN刀具）龙头，科创板上市，与四方达在刀具领域直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "油气钻探公司",
+      "category": "downstream",
+      "business": "石油/天然气开采企业，采购PDC钻头齿用于深井/超深井钻探，四方达核心收入来源",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "矿山开采企业",
+      "category": "downstream",
+      "business": "采矿企业，采购聚晶金刚石复合片用于采掘工具，耐磨性能远超硬质合金",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "PCB制造企业",
+      "category": "downstream",
+      "business": "高密度电路板制造商，验证PCD微钻用于M8/M9电路板打孔（尚处验证阶段）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体/散热\n企业",
+      "category": "downstream",
+      "business": "AI芯片/GPU散热方案供应商，潜在客户（金刚石热沉片，英伟达暂未确认合作）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300179",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300179",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300179",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300179",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300179",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300179",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300179",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300179",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300179",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

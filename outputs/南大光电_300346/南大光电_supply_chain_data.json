@@ -1,0 +1,166 @@
+{
+  "company_code": "300346",
+  "company_name": "南大光电",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300346",
+      "name": "南大光电\n300346",
+      "category": "target",
+      "business": "先进前驱体（含MO源）、电子特气、光刻胶三大核心电子材料的研发、生产和销售",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "雅克科技\n002409",
+      "category": "competitor",
+      "business": "前驱体材料、光刻胶、电子特气，与南大光电在前驱体和光刻胶领域直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华特气体\n688268",
+      "category": "competitor",
+      "business": "电子特种气体（氟类、混合气等），在特气领域与南大光电竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "彤程新材\n603650",
+      "category": "competitor",
+      "business": "光刻胶（KrF/ArF），在ArF光刻胶国产替代领域与南大光电竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯金属原料\n供应商",
+      "category": "upstream",
+      "business": "三甲基镓、三甲基铟、三甲基铝等MO源原材料供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "氟化物原料\n供应商",
+      "category": "upstream",
+      "business": "高纯氟化物原料，用于NF3等电子特种气体生产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光刻胶原料\n供应商",
+      "category": "upstream",
+      "business": "光刻胶用树脂、光敏剂、溶剂等有机化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "MOCVD设备、ALD/CVD设备、高纯气体储运容器等生产配套设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "集成电路晶圆代工，采购NF3特气和前驱体材料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华为",
+      "category": "downstream",
+      "business": "通信设备和芯片设计，通过供应链间接采购半导体材料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "三安光电\n600703",
+      "category": "downstream",
+      "business": "LED外延片和化合物半导体制造，MO源核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "国内存储\n芯片厂",
+      "category": "downstream",
+      "business": "存储芯片制造，ArF光刻胶已通过50nm技术节点验证",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300346",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300346",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300346",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300346",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300346",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300346",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300346",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300346",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300346",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300346",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300346",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

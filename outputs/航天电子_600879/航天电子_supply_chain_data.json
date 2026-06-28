@@ -1,0 +1,178 @@
+{
+  "company_code": "600879",
+  "company_name": "航天电子",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_600879",
+      "name": "航天电子\n600879",
+      "category": "target",
+      "business": "航天九院唯一上市平台，惯性导航/遥测/集成电路/无人系统/精确制导，660亿市值",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "航天彩虹\n002389",
+      "category": "competitor",
+      "business": "航天十一院上市平台，彩虹系列军用无人机龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中航电子\n600372",
+      "category": "competitor",
+      "business": "中航工业航电系统上市平台，航空电子设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "北斗星通\n002151",
+      "category": "competitor",
+      "business": "卫星导航芯片及终端，北斗产业链核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "四创电子\n600990",
+      "category": "competitor",
+      "business": "中电科38所雷达上市平台，军用雷达/电子对抗",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "特种元器件供应商",
+      "category": "upstream",
+      "business": "航天级电容/电阻/连接器等军工元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "特种材料供应商",
+      "category": "upstream",
+      "business": "铝合金/钛合金/碳纤维复合材料等航天结构材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "外协加工供应商",
+      "category": "upstream",
+      "business": "精密机械加工/表面处理/特种焊接",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电子化学品供应商",
+      "category": "upstream",
+      "business": "半导体制造用特种气体/光刻胶等",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中国航天\n科技集团",
+      "category": "downstream",
+      "business": "最大客户，2025年占营收56.65%（78.8亿元），航天型号总体单位",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "军方用户",
+      "category": "downstream",
+      "business": "各军兵种装备采购，无人机/精确制导弹药用户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "商业航天企业",
+      "category": "downstream",
+      "business": "低轨卫星星座运营商，激光通信/星间通信配套",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "无人机出口客户",
+      "category": "downstream",
+      "business": "飞腾系列精确制导产品出口，国际军贸客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600879",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600879",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600879",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600879",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600879",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600879",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600879",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600879",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600879",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600879",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600879",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600879",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

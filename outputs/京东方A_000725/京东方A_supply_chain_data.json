@@ -1,0 +1,187 @@
+{
+  "company_code": "000725",
+  "company_name": "京东方A",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_000725",
+      "name": "京东方A\n000725",
+      "category": "target",
+      "business": "全球LCD面板龙头+OLED/MLED面板制造+物联网创新+传感+智慧医工",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "TCL华星光电\n000100",
+      "category": "competitor",
+      "business": "LCD+OLED面板，国内面板第二",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "天马微电子\n000050",
+      "category": "competitor",
+      "business": "中小尺寸LCD/OLED面板，手机面板",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "维信诺\n002387",
+      "category": "competitor",
+      "business": "OLED面板，新兴OLED厂商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "和辉光电\n688538",
+      "category": "competitor",
+      "business": "OLED面板，刚性OLED",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "康宁/AGC\n（玻璃基板）",
+      "category": "upstream",
+      "business": "TFT-LCD/OLED用玻璃基板，全球双寡头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "偏光片供应商\n（日东电工/杉杉）",
+      "category": "upstream",
+      "business": "偏光片，面板核心光学材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "驱动IC供应商\n（联咏/集创北方）",
+      "category": "upstream",
+      "business": "面板驱动IC（DDIC），控制面板像素驱动",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "蒸镀/曝光设备\n（佳能Tokki/ASML）",
+      "category": "upstream",
+      "business": "OLED蒸镀机、半导体曝光机，面板制造核心设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "三星/苹果/华为\n（推测第一客户）",
+      "category": "downstream",
+      "business": "全球消费电子终端品牌，手机/电视/笔记本",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "小米/荣耀/联想\n（推测第二/三客户）",
+      "category": "downstream",
+      "business": "国内消费电子品牌，手机/平板/笔记本",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电视/显示器品牌\n（推测第四/五客户）",
+      "category": "downstream",
+      "business": "电视/显示器OEM/品牌，大尺寸LCD面板终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "车载/AI眼镜\n（新兴应用）",
+      "category": "downstream",
+      "business": "汽车座舱显示、AI眼镜微显示，新增长点",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000725",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000725",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000725",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000725",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000725",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000725",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000725",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000725",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000725",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000725",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000725",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_000725",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ],
+  "_analysis_notes": {
+    "supply_chain_position": "L3 面板制造层 — 全球LCD龙头但非卡点",
+    "chokepoint_rating": "1/5 — 非卡点，面板行业是Serenity框架反面教材",
+    "key_risk": "产能过剩+ROE1.3%价值陷阱+技术替代+强周期",
+    "valuation": "2260亿市值PB1.7倍看似便宜但ROE1.3%=经典价值陷阱",
+    "competitive_landscape": "全球9家+面板厂商，中国占60%产能，严重过剩",
+    "serenity_verdict": "面板是'人人都能造、赚辛苦钱'的典型，完全不符合卡点标准",
+    "only_positive": "玻璃基封装载板（与康宁合作）是唯一潜在新方向，但距离2-5年"
+  }
+}

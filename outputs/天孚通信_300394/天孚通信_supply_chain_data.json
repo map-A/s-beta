@@ -1,0 +1,198 @@
+{
+  "company_code": "300394",
+  "company_name": "天孚通信",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300394",
+      "name": "天孚通信\n300394",
+      "category": "target",
+      "business": "高速光器件研发/量产/销售，核心产品FA光纤阵列、透镜、准直器、隔离器",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "光迅科技\n002281",
+      "category": "competitor",
+      "business": "光器件+光模块全品类龙头，国内光通信综合供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "德科立\n688205",
+      "category": "competitor",
+      "business": "光器件、光放大器、光模块，部分品类与天孚重叠",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华脉科技\n603042",
+      "category": "competitor",
+      "business": "光连接器件、光缆，无源器件领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "源杰科技\n688498",
+      "category": "competitor",
+      "business": "光芯片（DFB/EML激光器芯片），上游光芯片供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "陶瓷插芯供应商\n（推测：京瓷/潮州三环）",
+      "category": "upstream",
+      "business": "陶瓷插芯/毛细管，光连接器核心基础元件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光纤供应商\n（长飞光纤/信越化学）",
+      "category": "upstream",
+      "business": "光纤预制棒及光纤，FA组件核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密金属件\n（自加工为主）",
+      "category": "upstream",
+      "business": "精密机械加工件、金属壳体、连接器五金件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "光学元件供应商\n（舜宇光学/蓝特光学）",
+      "category": "upstream",
+      "business": "玻璃光学元件、透镜毛坯、棱镜",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "Fabrinet\nFN（占63.3%）",
+      "category": "downstream",
+      "business": "全球光通信代工龙头（泰国），为英伟达/Cisco/Lumentum代工光模块",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中际旭创\n300308（推测）",
+      "category": "downstream",
+      "business": "国内光模块龙头，800G/1.6T光模块制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新易盛\n300502（推测）",
+      "category": "downstream",
+      "business": "光模块制造商，数据中心高速光互联方案",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "英伟达/超大厂\n（终端需求源）",
+      "category": "downstream",
+      "business": "AI GPU/ASIC厂商及北美超大厂数据中心，光通信终端需求驱动",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "仕佳光子\n688313",
+      "category": "downstream",
+      "business": "PLC光分路器芯片及器件，部分采购天孚组件",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300394",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300394",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300394",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300394",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300394",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300394",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300394",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300394",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300394",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300394",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300394",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300394",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300394",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ],
+  "_analysis_notes": {
+    "supply_chain_position": "L3 光模块组件层 — 光通信精密无源器件",
+    "chokepoint_rating": "3/5 — 中等卡点，非垄断型",
+    "key_risk": "Fabrinet占营收63.3%单一客户集中度风险",
+    "valuation": "PE 163倍，已充分定价，非Serenity卡点标的",
+    "market_share_FA": "全球FA光纤阵列30-50%市占率（推测）",
+    "competitor_type": "一超多强竞争格局，天孚领先但非垄断"
+  }
+}

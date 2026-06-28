@@ -1,0 +1,178 @@
+{
+  "company_code": "002335",
+  "company_name": "科华数据",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_002335",
+      "name": "科华数据\n002335",
+      "category": "target",
+      "business": "数据中心基础设施（含液冷）+UPS+新能源，AI智算中心全栈方案提供商，326亿市值",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "维谛技术\n(VRT)",
+      "category": "competitor",
+      "business": "全球数据中心基础设施龙头（UPS/液冷/配电），美股上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "科士达\n002518",
+      "category": "competitor",
+      "business": "UPS+数据中心+储能设备供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "英维克\n002837",
+      "category": "competitor",
+      "business": "数据中心精密温控+液冷散热龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "阳光电源\n300274",
+      "category": "competitor",
+      "business": "光伏逆变器+储能全球龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "IGBT/功率半导体\n供应商",
+      "category": "upstream",
+      "business": "英飞凌/三菱等IGBT模块，UPS/逆变器核心器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "电容/变压器供应商",
+      "category": "upstream",
+      "business": "电解电容/高频变压器等被动元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "冷却设备供应商",
+      "category": "upstream",
+      "business": "液冷系统用压缩机/冷却塔/CDU",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB/连接器供应商",
+      "category": "upstream",
+      "business": "控制板/驱动板用PCB及连接器",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "腾讯",
+      "category": "downstream",
+      "business": "25亿级智算订单，AI数据中心建设需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "三大运营商",
+      "category": "downstream",
+      "business": "中国移动/电信/联通数据中心基础设施采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "国产GPU厂商",
+      "category": "downstream",
+      "business": "沐曦/壁仞/燧原/清微等，深度合作构建国产算力生态",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "金融/政府客户",
+      "category": "downstream",
+      "business": "银行/保险/政府数据中心+UPS采购",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002335",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002335",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002335",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002335",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002335",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002335",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002335",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002335",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002335",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002335",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002335",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002335",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "company_code": "002580",
+  "company_name": "圣阳股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002580",
+      "name": "圣阳股份\n002580",
+      "category": "target",
+      "business": "储能电池（磷酸铁锂）+铅蓄电池（AGM/GEL/铅炭）+储能系统+智能电源方案，覆盖通信/数据中心/储能/电力场景",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "宁德时代\n300750",
+      "category": "competitor",
+      "business": "全球动力电池+储能电池绝对龙头，磷酸铁锂/三元全覆盖，万亿市值",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "亿纬锂能\n300014",
+      "category": "competitor",
+      "business": "锂电池全品类（动力/储能/消费），大圆柱电池先行者，千亿市值",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "雄韬股份\n002733",
+      "category": "competitor",
+      "business": "铅酸+锂电双轨企业，通信/UPS电池为主，与圣阳直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "骆驼股份\n601311",
+      "category": "competitor",
+      "business": "国内铅酸蓄电池龙头（汽车起停电池），正向锂电储能转型",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "碳酸锂/正极材料\n湖南裕能等",
+      "category": "upstream",
+      "business": "磷酸铁锂正极材料，锂电池核心原材料，价格受碳酸锂周期影响",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铅材料供应商",
+      "category": "upstream",
+      "business": "铅锭/铅合金，铅蓄电池核心原材料，大宗商品价格",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "隔膜厂商\n恩捷/星源等",
+      "category": "upstream",
+      "business": "锂电池隔膜，四大关键材料之一，湿法/干法两种路线",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电解液厂商\n天赐材料等",
+      "category": "upstream",
+      "business": "锂电池电解液（含六氟磷酸锂），四大关键材料之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "通信运营商\n移动/电信/联通",
+      "category": "downstream",
+      "business": "通信基站备电/储能系统，圣阳传统核心客户群",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中国铁塔",
+      "category": "downstream",
+      "business": "铁塔备电电池集中采购，大型通信基础设施运营商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "数据中心/互联网\n阿里/腾讯等",
+      "category": "downstream",
+      "business": "UPS备电+储能系统，AI算力基建新增长极",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电力电网\n国网/南网",
+      "category": "downstream",
+      "business": "电网侧/用户侧储能电站，受储能装机量增长驱动",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002580",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002580",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002580",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002580",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002580",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002580",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002580",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002580",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002580",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002580",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002580",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002580",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

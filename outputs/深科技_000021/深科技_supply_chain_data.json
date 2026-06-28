@@ -1,0 +1,202 @@
+{
+  "company_code": "000021",
+  "company_name": "深科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_000021",
+      "name": "深科技\n000021",
+      "category": "target",
+      "business": "存储芯片封测（DRAM/NAND Flash）、EMS电子制造、硬盘磁头精密制造",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "味之素（ABF基板）",
+      "category": "upstream",
+      "business": "ABF封装基板材料，全球高端IC封装基板核心供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "爱德万/泰瑞达",
+      "category": "upstream",
+      "business": "半导体测试设备，存储芯片测试机全球龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "封装基板厂商",
+      "category": "upstream",
+      "business": "BT/ABF封装基板制造，存储芯片BGA封装核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "键合丝/引线框架厂商",
+      "category": "upstream",
+      "business": "金丝/铜丝键合线及铜合金引线框架，封装核心辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "封装设备厂商",
+      "category": "upstream",
+      "business": "贴片机、键合机、塑封机等封装产线核心设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "全球第三大封测企业，综合集成电路封装测试",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "国内第二大封测企业，AMD先进封装合作",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华天科技\n002185",
+      "category": "competitor",
+      "business": "集成电路封测，侧重中低端+部分先进封装",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "日月光ASE\n3711.TW",
+      "category": "competitor",
+      "business": "全球第一大封测企业（台股）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "长鑫存储CXMT",
+      "category": "downstream",
+      "business": "中国大陆唯一DRAM量产企业，DDR4/DDR5/LPDDR生产",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长江存储YMTC",
+      "category": "downstream",
+      "business": "中国大陆NAND Flash主要厂商，3D NAND生产",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "服务器/数据中心",
+      "category": "downstream",
+      "business": "AI服务器、云计算数据中心，DDR5/HBM终端需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "智能电表客户",
+      "category": "downstream",
+      "business": "国家电网/南方电网智能电表招标，EMS业务终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "消费电子品牌",
+      "category": "downstream",
+      "business": "PC/手机/物联网终端品牌商，存储及EMS终端客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000021",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000021",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000021",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000021",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_000021",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000021",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000021",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000021",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000021",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000021",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000021",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000021",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000021",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_000021",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

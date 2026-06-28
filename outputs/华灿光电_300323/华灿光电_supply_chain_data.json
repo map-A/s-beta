@@ -1,0 +1,178 @@
+{
+  "company_code": "300323",
+  "company_name": "华灿光电",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_300323",
+      "name": "华灿光电\n300323",
+      "category": "target",
+      "business": "国内第二大LED芯片供应商+显示屏芯片最大+MicroLED+GaN功率器件，京东方持股22.92%",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "蓝宝石衬底\n（自产）",
+      "category": "upstream",
+      "business": "LED外延生长基底材料，公司自产（云南蓝晶科技），三氧化二铝原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "PSS图形化\n衬底（自产）",
+      "category": "upstream",
+      "business": "图形化蓝宝石衬底，公司自产（浙江晶图），提升LED出光效率",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "MO源\n供应商",
+      "category": "upstream",
+      "business": "金属有机化合物，LED外延生长核心原料，供应商一占采购37.58%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "特种气体\n/化学品",
+      "category": "upstream",
+      "business": "高纯氨气、氢气等特种气体及化学品，LED芯片制造辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "三安光电\n600703",
+      "category": "competitor",
+      "business": "国内LED芯片第一+SiC/GaN化合物半导体IDM，市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "乾照光电\n300102",
+      "category": "competitor",
+      "business": "LED芯片+VCSEL，红黄光LED领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "兆驰股份\n002429",
+      "category": "competitor",
+      "business": "LED芯片+封装+电视全产业链，成本优势突出",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "京东方（客户一\n46.9%）",
+      "category": "downstream",
+      "business": "全球面板龙头，华灿光电控股股东+最大客户，占收入46.9%（超红线）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "LED封装\n厂商",
+      "category": "downstream",
+      "business": "国内主流LED封装企业，采购LED芯片用于封装",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "显示屏\n制造商",
+      "category": "downstream",
+      "business": "户内外LED显示屏制造，超高清显示应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子\n品牌",
+      "category": "downstream",
+      "business": "电视、电脑、手机背光LED应用，Mini LED背光渗透",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "AR/VR\n终端厂商",
+      "category": "downstream",
+      "business": "Micro LED微显示应用（0.12寸3.75微米屏幕），AI眼镜等",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300323",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300323",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300323",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300323",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300323",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300323",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300323",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300323",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300323",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300323",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300323",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300323",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

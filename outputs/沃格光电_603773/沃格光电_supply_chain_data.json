@@ -1,0 +1,166 @@
+{
+  "company_code": "603773",
+  "company_name": "沃格光电",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_603773",
+      "name": "沃格光电\n603773",
+      "category": "target",
+      "business": "光电玻璃深加工（薄化/镀膜/切割）、TGV玻璃基板、Mini/Micro LED玻璃基板、AMOLED蚀刻精加工",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长信科技\n300088",
+      "category": "competitor",
+      "business": "显示面板玻璃深加工（薄化/镀膜/切割）+触控显示模组",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "凯盛科技\n600552",
+      "category": "competitor",
+      "business": "显示玻璃+新材料，在玻璃基板领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "帝尔激光\n300776",
+      "category": "competitor",
+      "business": "TGV激光微孔设备（与沃格光电在TGV领域形成上下游竞合）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "玻璃基板\n供应商",
+      "category": "upstream",
+      "business": "显示面板用玻璃基板（来料加工模式，由客户提供）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "ITO靶材\n供应商",
+      "category": "upstream",
+      "business": "ITO导电膜镀膜用靶材和化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铜靶材\n供应商",
+      "category": "upstream",
+      "business": "TGV玻璃通孔镀铜用铜靶材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精加工设备\n供应商",
+      "category": "upstream",
+      "business": "玻璃薄化/镀膜/蚀刻/切割设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "显示面板\n厂商",
+      "category": "downstream",
+      "business": "手机/笔记本/平板/车载显示面板制造商（占营收71.44%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "Mini/Micro\nLED厂商",
+      "category": "downstream",
+      "business": "Mini/Micro LED直显/背光厂商，采购玻璃基板",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体封装\n企业",
+      "category": "downstream",
+      "business": "先进封装企业，采购TGV玻璃基载板（送样验证中）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "光模块\n企业",
+      "category": "downstream",
+      "business": "CPO光模块企业，采购玻璃基光电器件（送样验证中）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603773",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603773",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603773",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603773",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603773",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603773",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603773",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603773",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603773",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603773",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603773",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

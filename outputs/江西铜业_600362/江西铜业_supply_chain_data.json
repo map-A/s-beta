@@ -1,0 +1,178 @@
+{
+  "company_code": "600362",
+  "company_name": "江西铜业",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_600362",
+      "name": "江西铜业\n600362",
+      "category": "target",
+      "business": "中国最大铜矿+冶炼+加工一体化企业，年产阴极铜200万吨+，贵溪冶炼厂全球最大单体冶炼厂，市值1,846亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "TRAFIGURA\n大宗商品贸易",
+      "category": "upstream",
+      "business": "全球大宗商品贸易巨头，供应铜精矿（占采购3.33%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "金川集团\n非上市",
+      "category": "upstream",
+      "business": "中国最大镍钴生产商+铜冶炼企业，供应铜精矿/粗铜（占采购4.25%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铜陵有色\n000630",
+      "category": "upstream",
+      "business": "中国第二大铜冶炼企业，供应铜原料（占采购2.33%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "全球铜矿\n供应商",
+      "category": "upstream",
+      "business": "全球铜矿企业（Codelco/Freeport/BHP等）通过贸易商供应铜精矿，公司自给率仅~10%",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "紫金矿业\n601899",
+      "category": "competitor",
+      "business": "全球化铜金矿龙头，铜矿产量快速增长，ROE更高，估值更低",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "铜陵有色\n000630",
+      "category": "competitor",
+      "business": "中国第二大铜冶炼企业，铜冠铜箔控股股东",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "云南铜业\n000878",
+      "category": "competitor",
+      "business": "中国铜冶炼第三，西南地区铜业龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "电力电缆\n行业",
+      "category": "downstream",
+      "business": "铜导体核心应用领域，占铜消费量约45%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电子/PCB\n制造",
+      "category": "downstream",
+      "business": "PCB铜箔、连接器、引线框架等电子用铜",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新能源\n行业",
+      "category": "downstream",
+      "business": "锂电池铜箔、光伏接线盒、风电发电机铜线圈",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "建筑/交通\n行业",
+      "category": "downstream",
+      "business": "建筑铜管铜排、汽车线束、高铁接触线等",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "机械制造\n行业",
+      "category": "downstream",
+      "business": "铜合金零部件、散热器、阀门等工业用铜",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600362",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600362",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600362",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600362",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600362",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600362",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600362",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600362",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600362",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600362",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600362",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600362",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

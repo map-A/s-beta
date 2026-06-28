@@ -1,0 +1,190 @@
+{
+  "company_code": "301205",
+  "company_name": "联特科技",
+  "analysis_date": "2026-06-18",
+  "nodes": [
+    {
+      "id": "target_301205",
+      "name": "联特科技\n301205",
+      "category": "target",
+      "business": "光通信收发模块研发、生产和销售，400G/800G量产出货，1.6T送样验证中，武汉+马来西亚双基地",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中际旭创\n300308",
+      "category": "competitor",
+      "business": "全球光模块龙头，400G/800G/1.6T全覆盖，全球市占率~30%+，市值~1700亿",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新易盛\n300502",
+      "category": "competitor",
+      "business": "高速光模块强势第二梯队，800G快速放量，市值~1000亿",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "光迅科技\n002281",
+      "category": "competitor",
+      "business": "光通信全链条（芯片+器件+模块），具备自研光芯片能力",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Coherent\n(美股COHR)",
+      "category": "competitor",
+      "business": "全球光器件龙头，InP激光器芯片+光模块垂直整合",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "激光器芯片厂商\n(EML/VCSEL)",
+      "category": "upstream",
+      "business": "高速激光二极管芯片，全球Coherent/Lumentum/住友主导，占采购15.4%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "InP衬底厂商",
+      "category": "upstream",
+      "business": "磷化铟衬底和外延片，全球AXTI/住友/JX Metals高度集中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "TIA/Driver IC厂商",
+      "category": "upstream",
+      "business": "跨阻放大器和驱动芯片，Broadcom/Marvell等模拟芯片设计公司",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "无源光学组件厂商",
+      "category": "upstream",
+      "business": "光纤准直器、连接器、透镜等无源光学组件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "PCB/封装基板厂商",
+      "category": "upstream",
+      "business": "高速PCB板和封装基板，支撑光模块电路互联",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "全球头部云服务商",
+      "category": "downstream",
+      "business": "Meta/Google/Microsoft/Amazon等，AI数据中心GPU互联采购方，客户1占收入22.61%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "网络设备制造商",
+      "category": "downstream",
+      "business": "交换机/路由器集成商，将光模块集成到网络设备中",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "AI计算解决方案商",
+      "category": "downstream",
+      "business": "GPU服务器厂商（NVIDIA生态），万卡集群光互联需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电信运营商",
+      "category": "downstream",
+      "business": "5G基站前传/中传/回传光模块需求方",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301205",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_301205",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301205",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301205",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301205",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301205",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301205",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301205",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301205",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301205",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

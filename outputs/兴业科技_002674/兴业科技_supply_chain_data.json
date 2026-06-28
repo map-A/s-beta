@@ -1,0 +1,166 @@
+{
+  "company_code": "002674",
+  "company_name": "兴业科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002674",
+      "name": "兴业科技\n002674",
+      "category": "target",
+      "business": "天然牛皮革龙头，唯一A股上市制革企业，产品覆盖鞋包带/汽车内饰/家具/电子产品皮革",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华峰超纤\n300180",
+      "category": "competitor",
+      "business": "超纤革/合成革龙头，真皮替代品行业领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "安利股份\n300218",
+      "category": "competitor",
+      "business": "生态功能性合成革，真皮替代品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "国内中小\n制革企业",
+      "category": "competitor",
+      "business": "温州/广州/泉州/成都等地大量中小型制革企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "生牛皮\n供应商",
+      "category": "upstream",
+      "business": "生牛皮/盐湿皮全球大宗商品，牧场/屠宰场供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "皮革化学品\n供应商",
+      "category": "upstream",
+      "business": "鞣剂、染料、涂饰剂等皮革加工化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "意大利/法国\n制革设备商",
+      "category": "upstream",
+      "business": "染色转鼓、片皮机、削匀机等高端制革设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "联华皮革\n(印尼)",
+      "category": "upstream",
+      "business": "位于印尼的子公司，供应部分原材料和二层皮",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "理想汽车",
+      "category": "downstream",
+      "business": "新能源汽车厂商，汽车内饰皮革客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "蔚来汽车",
+      "category": "downstream",
+      "business": "新能源汽车厂商，汽车内饰皮革客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "运动品牌\n企业(推测)",
+      "category": "downstream",
+      "business": "运动鞋/休闲鞋品牌，鞋面皮革客户（研报提及拓展核心运动品牌）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "家具/箱包\n制造企业",
+      "category": "downstream",
+      "business": "家具沙发/箱包手袋制造企业，家具和箱包皮革客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002674",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002674",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002674",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002674",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002674",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002674",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002674",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002674",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002674",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002674",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002674",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

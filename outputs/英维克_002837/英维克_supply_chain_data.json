@@ -1,0 +1,202 @@
+{
+  "company_code": "002837",
+  "company_name": "英维克",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002837",
+      "name": "英维克\n002837",
+      "category": "target",
+      "business": "精密温控节能设备全系列（精密空调+液冷系统+储能温控+轨交空调+空气环境机），覆盖数据中心/储能/通信/轨道交通",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "曙光数创\n920808",
+      "category": "competitor",
+      "business": "中科曙光旗下，国内冷板式液冷技术龙头，AI服务器液冷散热专精",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "佳力图\n603912",
+      "category": "competitor",
+      "business": "数据中心精密空调和温控解决方案，积极布局液冷散热",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "依米康\n300249",
+      "category": "competitor",
+      "business": "数据中心精密温控设备厂商，产品涵盖精密空调和节能制冷",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "申菱环境\n301018",
+      "category": "competitor",
+      "business": "数据中心精密空调和环境控制设备，华南区域有竞争优势",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "美芝（美的旗下）",
+      "category": "upstream",
+      "business": "国内最大空调压缩机制造商，温控设备核心制冷动力部件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "银轮股份\n002126",
+      "category": "upstream",
+      "business": "汽车/工业换热器龙头，提供蒸发器/冷凝器/液冷板等换热组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "三花智控\n002050",
+      "category": "upstream",
+      "business": "全球制冷空调控制元器件龙头，膨胀阀/电子膨胀阀/制冷系统控制",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "巨化股份\n600160",
+      "category": "upstream",
+      "business": "国内最大制冷剂生产商（R410a/R134a），受基加利修正案配额管制",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "卧龙电驱\n600580",
+      "category": "upstream",
+      "business": "工业电机龙头，为温控设备风机提供驱动电机",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "互联网/云厂商\n腾讯/阿里等",
+      "category": "downstream",
+      "business": "大型智算中心/数据中心温控需求方，AI液冷核心客户群",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "储能系统商\n宁德时代等",
+      "category": "downstream",
+      "business": "大型储能电站液冷温控系统需求方，全球储能装机高增长",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "通信运营商\n移动/电信/联通",
+      "category": "downstream",
+      "business": "通信基站/数据中心温控设备采购方，5G基站配套需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "华为数字能源",
+      "category": "downstream",
+      "business": "通信设备配套温控+数字能源解决方案，英维克重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "轨道交通\n地铁车辆厂",
+      "category": "downstream",
+      "business": "地铁/城轨列车空调系统采购方，受城市轨道交通投资节奏影响",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002837",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002837",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002837",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002837",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002837",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002837",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002837",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002837",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002837",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002837",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002837",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002837",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002837",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002837",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "company_code": "002436",
+  "company_name": "兴森科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002436",
+      "name": "兴森科技\n002436",
+      "category": "target",
+      "business": "PCB样板/小批量板+FCBGA/CSP封装基板+半导体测试板，国内PCB样板龙头+IC载板国产替代领先",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "深南电路\n002916",
+      "category": "competitor",
+      "business": "高端PCB+IC载板，国内兴森科技在FCBGA领域直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "揖斐电\nIbiden",
+      "category": "competitor",
+      "business": "全球IC载板龙头（日本），FCBGA封装基板全球领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "欣兴电子\nUnimicron",
+      "category": "competitor",
+      "business": "全球IC载板龙头（中国台湾），FCBGA主要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "崇达技术\n002815",
+      "category": "competitor",
+      "business": "中高端PCB，在PCB领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "覆铜板/铜箔\n供应商",
+      "category": "upstream",
+      "business": "PCB/IC载板核心基材（占采购5.41%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "特种化学品\n供应商",
+      "category": "upstream",
+      "business": "蚀刻液/电镀液等PCB/IC载板制程化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "干膜/油墨\n供应商",
+      "category": "upstream",
+      "business": "图形转移材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "曝光机/蚀刻线/电镀线等IC载板制造设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "半导体封装厂",
+      "category": "downstream",
+      "business": "采购FCBGA封装基板用于AI芯片/HBM/CPU/GPU封装",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光模块厂商",
+      "category": "downstream",
+      "business": "采购800G光模块用PCB（已稳定供货）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "芯片设计公司",
+      "category": "downstream",
+      "business": "采购半导体测试板用于芯片验证",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信/汽车电子",
+      "category": "downstream",
+      "business": "5G/6G基站PCB、毫米波雷达PCB",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002436",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002436",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002436",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002436",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002436",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002436",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002436",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002436",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002436",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002436",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002436",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002436",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

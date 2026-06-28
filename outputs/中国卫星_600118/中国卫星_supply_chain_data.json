@@ -1,0 +1,202 @@
+{
+  "company_code": "600118",
+  "company_name": "中国卫星",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_600118",
+      "name": "中国卫星\n600118",
+      "category": "target",
+      "business": "CASC旗下唯一卫星总体上市公司，军用小卫星垄断+卫星应用",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "碳纤维/复合材料\n供应商",
+      "category": "upstream",
+      "business": "卫星结构件用碳纤维复合材料、钛合金等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "航天电子\n600879",
+      "category": "upstream",
+      "business": "星上电子设备、遥测遥控系统（CASC九院）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "星敏感器/惯导\n系统厂商",
+      "category": "upstream",
+      "business": "卫星姿态测量与控制核心部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "空间太阳能\n电池片企业",
+      "category": "upstream",
+      "business": "卫星电源用空间太阳电池阵",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "CASC运载火箭\n（一院/八院）",
+      "category": "upstream",
+      "business": "卫星发射服务，运载火箭研制与发射",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "银河航天\n(未上市)",
+      "category": "competitor",
+      "business": "民营低轨宽带卫星批产，商业航天新势力",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "长光卫星\n(未上市)",
+      "category": "competitor",
+      "business": "商业遥感卫星制造，吉林一号星座200+颗",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "吉利时空道宇\n(未上市)",
+      "category": "competitor",
+      "business": "民营通信卫星制造，吉利集团旗下",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "航天八院\n（上海航天）",
+      "category": "competitor",
+      "business": "CASC旗下另一卫星研制单位，参与商业卫星竞标",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "军方用户",
+      "category": "downstream",
+      "business": "军事侦察/通信/导航卫星，第一大客户（80.5%集中度）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中国卫星网络集团\n（星网工程）",
+      "category": "downstream",
+      "business": "~13,000颗低轨卫星互联网星座",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "千帆星座\n（垣信卫星）",
+      "category": "downstream",
+      "business": "上海市政府支持的低轨互联网星座",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "政府行业用户",
+      "category": "downstream",
+      "business": "气象/海洋/应急/环保等遥感应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "商业航天客户",
+      "category": "downstream",
+      "business": "遥感数据服务、卫星通信服务等商业用户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600118",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600118",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600118",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600118",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_600118",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600118",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600118",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600118",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600118",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600118",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600118",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600118",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600118",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600118",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

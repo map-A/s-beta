@@ -1,0 +1,190 @@
+{
+  "company_code": "001309",
+  "company_name": "德明利",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_001309",
+      "name": "德明利\n001309",
+      "category": "target",
+      "business": "存储主控芯片设计与存储模组集成（SSD/嵌入式存储/内存条），国内NAND Flash存储领域重要企业",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "江波龙\n301308",
+      "category": "competitor",
+      "business": "国内存储模组龙头，FORELEX雷克沙品牌，嵌入式存储+消费级SSD",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "群联电子\nPhison",
+      "category": "competitor",
+      "business": "全球存储主控芯片龙头，NAND主控方案全球市占率领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "慧荣科技\nSilicon Motion",
+      "category": "competitor",
+      "business": "全球NAND主控芯片龙头之一，SSD/eMMC/UFS主控方案",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "朗科科技\n300042",
+      "category": "competitor",
+      "business": "U盘发明者，存储产品（U盘/SSD/存储卡）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "三星电子\nNAND Flash",
+      "category": "upstream",
+      "business": "全球NAND Flash市场份额第一（约30%+），存储晶圆核心供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "SK海力士\nNAND Flash",
+      "category": "upstream",
+      "business": "全球NAND Flash第二梯队，收购Intel NAND业务后份额提升",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "美光科技\nNAND Flash",
+      "category": "upstream",
+      "business": "全球NAND Flash三寡头之一，美国最大存储芯片厂",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铠侠/西部数据\nNAND Flash",
+      "category": "upstream",
+      "business": "全球NAND Flash第二梯队（铠侠由东芝存储分拆）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "存储主控\n外采供应商",
+      "category": "upstream",
+      "business": "部分外采存储主控芯片（群联/慧荣等turnkey方案）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子\n品牌商",
+      "category": "downstream",
+      "business": "笔记本/台式机/手机品牌，采购SSD/嵌入式存储/内存条",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AI/数据中心\n企业级存储",
+      "category": "downstream",
+      "business": "数据中心/云计算厂商，采购企业级NVMe SSD",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "工业控制\n客户",
+      "category": "downstream",
+      "business": "工业自动化/物联网终端，采购工业级存储模组",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子\n客户",
+      "category": "downstream",
+      "business": "智能汽车/车载信息娱乐系统，采购车规级存储",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_001309",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_001309",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_001309",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_001309",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_001309",
+      "relation": "supply"
+    },
+    {
+      "source": "target_001309",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001309",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001309",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001309",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_001309",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_001309",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_001309",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_001309",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "company_code": "600673",
+  "company_name": "东阳光",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_600673",
+      "name": "东阳光\n600673",
+      "category": "target",
+      "business": "化成箔/亲水箔/铝电解电容器+氟化工制冷剂+锂电池材料+AI算力基础设施（秦淮数据+算力租赁+液冷）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "新疆众和\n600888",
+      "category": "competitor",
+      "business": "高纯铝、电极箔、电子铝箔，在化成箔领域与东阳光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "江海股份\n002484",
+      "category": "competitor",
+      "business": "铝电解电容器、超级电容器，在电容器领域与东阳光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "巨化股份\n600160",
+      "category": "competitor",
+      "business": "氟化工（第三代制冷剂为主），在制冷剂领域与东阳光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "万国数据\nGDS",
+      "category": "competitor",
+      "business": "第三方数据中心运营商，在数据中心/算力领域与东阳光竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铝锭/高纯铝\n供应商",
+      "category": "upstream",
+      "business": "电极箔和电池铝箔的核心原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "萤石/氢氟酸\n供应商",
+      "category": "upstream",
+      "business": "制冷剂生产用氟化工原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "碳酸锂/磷酸铁\n供应商",
+      "category": "upstream",
+      "business": "锂电池正极材料原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "AI服务器\n供应商",
+      "category": "upstream",
+      "business": "高性能算力服务器（GPU集群），用于算力租赁业务",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "NCC/NICHICON\nRUBYCON",
+      "category": "downstream",
+      "business": "日本全球顶级铝电解电容器制造商，化成箔核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "格力/美的\n海尔",
+      "category": "downstream",
+      "business": "空调/家电制造龙头，亲水箔核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "数据中心\n终端用户",
+      "category": "downstream",
+      "business": "AI算力需求方（A公司等），采购160-190亿算力服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新能源车企\n/储能厂",
+      "category": "downstream",
+      "business": "采购锂电池正极材料和电池铝箔",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600673",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600673",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600673",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600673",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600673",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600673",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600673",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600673",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600673",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600673",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600673",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600673",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

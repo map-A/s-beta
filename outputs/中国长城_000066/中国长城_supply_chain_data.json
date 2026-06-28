@@ -1,0 +1,178 @@
+{
+  "company_code": "000066",
+  "company_name": "中国长城",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_000066",
+      "name": "中国长城\n000066",
+      "category": "target",
+      "business": "PKS体系信创整机（PC/服务器/打印机），持股飞腾28.04%",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "飞腾信息\n（ARM CPU）",
+      "category": "upstream",
+      "business": "ARM架构国产CPU设计（FT-2000/腾锐D3000M），中国长城持股28.04%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "麒麟软件\n（操作系统）",
+      "category": "upstream",
+      "business": "银河麒麟操作系统，PKS体系核心软件层",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "长鑫存储\n（DRAM）",
+      "category": "upstream",
+      "business": "国产DRAM存储芯片设计与制造",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "长城电源\n（电源组件）",
+      "category": "upstream",
+      "business": "服务器/PC电源模块研发与生产（中国长城全资子公司）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "中科曙光\n603019",
+      "category": "competitor",
+      "business": "国产高性能计算/服务器+海光CPU持股（x86路线）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "浪潮信息\n000977",
+      "category": "competitor",
+      "business": "国内服务器出货量第一+AI服务器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "同方股份\n600100",
+      "category": "competitor",
+      "business": "信创PC/服务器整机+清华系背景",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "华为鲲鹏\n（未上市）",
+      "category": "competitor",
+      "business": "鲲鹏CPU+昇腾AI+openEuler全栈信创方案",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "党政机关",
+      "category": "downstream",
+      "business": "信创强制替换：国产PC/服务器/打印机采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "军工/国防",
+      "category": "downstream",
+      "business": "嵌入式计算系统、军用终端、加固笔记本",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "金融行业",
+      "category": "downstream",
+      "business": "银行/证券/保险IT基础设施国产化",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "央企/能源/电信",
+      "category": "downstream",
+      "business": "能源/电信/交通等行业信创替代",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_000066",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_000066",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_000066",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_000066",
+      "relation": "supply"
+    },
+    {
+      "source": "target_000066",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000066",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000066",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_000066",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_000066",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_000066",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_000066",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_000066",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

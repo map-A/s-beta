@@ -1,0 +1,166 @@
+{
+  "company_code": "688072",
+  "company_name": "拓荆科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_688072",
+      "name": "拓荆科技\n688072",
+      "category": "target",
+      "business": "半导体薄膜沉积设备（PECVD/ALD/SACVD），国内唯一规模供应商",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "应用材料\nAMAT",
+      "category": "competitor",
+      "business": "全球半导体设备龙头，CVD/PVD/刻蚀/CMP全品类",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "东京电子\nTEL",
+      "category": "competitor",
+      "business": "日本半导体设备龙头，CVD/刻蚀/涂胶显影设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "北方华创\n002371",
+      "category": "competitor",
+      "business": "国产多品类半导体设备（刻蚀/PVD/CVD/氧化/清洗）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "真空腔体/密封件商",
+      "category": "upstream",
+      "business": "超高真空腔体、金属密封法兰、真空泵等核心部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "射频电源（RF）供应商",
+      "category": "upstream",
+      "business": "等离子体激发用射频电源（13.56MHz/60MHz等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "高纯特种气体商",
+      "category": "upstream",
+      "business": "硅烷(SiH4)、TEOS、TMA等CVD工艺气体（华特气体/中船特气等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精密温控/流量控制器商",
+      "category": "upstream",
+      "business": "MFC（质量流量控制器）、温控系统等精密控制部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "国内最大晶圆代工厂，拓荆第一大客户（推测）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长江存储",
+      "category": "downstream",
+      "business": "国内3D NAND Flash存储芯片制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "华虹半导体\n688347",
+      "category": "downstream",
+      "business": "特色工艺晶圆代工（功率器件/MEMS等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "合肥长鑫",
+      "category": "downstream",
+      "business": "国内DRAM存储芯片制造商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688072",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688072",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688072",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688072",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688072",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688072",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688072",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688072",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688072",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688072",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688072",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "688182",
+  "company_name": "灿勤科技",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688182",
+      "name": "灿勤科技\n688182",
+      "category": "target",
+      "business": "陶瓷介质滤波器/谐振器，5G基站射频前端核心元件",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "武汉凡谷\n002194",
+      "category": "competitor",
+      "business": "射频滤波器/双工器，5G基站滤波器主要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "大富科技\n300134",
+      "category": "competitor",
+      "business": "射频器件/滤波器，华为中兴核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "春兴精工\n002547",
+      "category": "competitor",
+      "business": "通信结构件/滤波器，5G基站结构件供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "电子陶瓷粉体厂商",
+      "category": "upstream",
+      "business": "钛酸钡/钛酸锶等微波介质陶瓷粉体材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "银浆/钯浆厂商",
+      "category": "upstream",
+      "business": "金属化浆料，陶瓷元件电极材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "氧化铝基板厂商",
+      "category": "upstream",
+      "business": "陶瓷基板材料，滤波器封装基座",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "HTCC生瓷带厂商",
+      "category": "upstream",
+      "business": "高温共烧陶瓷生瓷带，HTCC工艺核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "华为",
+      "category": "downstream",
+      "business": "5G基站/通信设备（第一大客户，占收入73.8%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中兴通讯",
+      "category": "downstream",
+      "business": "5G基站/通信设备制造",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "爱立信",
+      "category": "downstream",
+      "business": "全球5G基站/通信设备制造",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "诺基亚",
+      "category": "downstream",
+      "business": "全球5G基站/通信设备制造",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688182",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688182",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688182",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688182",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688182",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688182",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688182",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688182",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688182",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688182",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688182",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

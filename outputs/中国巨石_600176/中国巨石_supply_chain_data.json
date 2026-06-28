@@ -1,0 +1,202 @@
+{
+  "company_code": "600176",
+  "company_name": "中国巨石",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600176",
+      "name": "中国巨石\n600176",
+      "category": "target",
+      "business": "全球玻纤产能第一（300万吨+），电子布+粗纱+短切纤维三个世界第一",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "欧文斯科宁\nOC",
+      "category": "competitor",
+      "business": "美国玻纤龙头，全球技术标杆，复合材料+绝缘材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "泰山玻纤\n（中建材系）",
+      "category": "competitor",
+      "business": "中国玻纤第二（~150万吨），同属中国建材集团",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "重庆国际CPIC",
+      "category": "competitor",
+      "business": "中国玻纤第三（~100万吨），复星系控股",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "建滔积层板\n1888.HK",
+      "category": "competitor",
+      "business": "覆铜板+电子布，电子布重要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "叶腊石/高岭土\n矿产",
+      "category": "upstream",
+      "business": "玻纤核心原材料矿产，国内供应充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "石英砂/石灰石",
+      "category": "upstream",
+      "business": "玻璃配合料基础原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "浸润剂原料\n（化工品）",
+      "category": "upstream",
+      "business": "玻纤表面处理关键材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铂金漏板",
+      "category": "upstream",
+      "business": "池窑拉丝核心部件，公司自研设计加工能力",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "天然气/电力",
+      "category": "upstream",
+      "business": "池窑运行能源成本，主要成本变量",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "PCB/覆铜板厂商",
+      "category": "downstream",
+      "business": "电子布→覆铜板→PCB→AI服务器/5G基站",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "风电叶片制造商",
+      "category": "downstream",
+      "business": "高模量玻纤→风电叶片→风电整机（金风/远景等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车零部件厂",
+      "category": "downstream",
+      "business": "热塑增强纱→复合材料→汽车轻量化结构件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "建筑/管道厂商",
+      "category": "downstream",
+      "business": "保温材料/玻璃钢管道/船舶，传统基本盘",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "航空航天/军工",
+      "category": "downstream",
+      "business": "复合材料结构件，高端应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600176",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600176",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600176",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600176",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_600176",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600176",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600176",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600176",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600176",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600176",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600176",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600176",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600176",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600176",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "002432",
+  "company_name": "九安医疗",
+  "analysis_date": "2026-06-21",
+  "nodes": [
+    {
+      "id": "target_002432",
+      "name": "九安医疗\n002432",
+      "category": "target",
+      "business": "全球家用移动医疗智能硬件领先企业（iHealth品牌），血压计/血糖仪/血氧仪+大类资产配置投资，市值342亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "医疗传感器\n供应商",
+      "category": "upstream",
+      "business": "血压传感器/血糖试纸酶/血氧传感器等核心医疗传感器供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "MCU/芯片\n供应商",
+      "category": "upstream",
+      "business": "医疗设备用MCU芯片供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "塑胶模具\n供应商",
+      "category": "upstream",
+      "business": "家用医疗器械外壳/结构件注塑供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电池/电源\n供应商",
+      "category": "upstream",
+      "business": "可充电电池/电源管理模组供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "鱼跃医疗\n002223",
+      "category": "competitor",
+      "business": "国内家用医疗器械龙头（制氧机/血压计/血糖仪），九安医疗主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三诺生物\n300298",
+      "category": "competitor",
+      "business": "国内血糖监测龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "欧姆龙\n非A股",
+      "category": "competitor",
+      "business": "全球家用血压计龙头（日本），iHealth对标对象",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "大型零售商\n（亚马逊/沃尔玛）",
+      "category": "downstream",
+      "business": "推测为第一大客户（占营收42.68%！），全球大型零售商采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "各国经销商",
+      "category": "downstream",
+      "business": "美洲/欧盟/亚洲各国iHealth产品经销商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "药房/医疗\n机构",
+      "category": "downstream",
+      "business": "线下药房和医疗机构零售渠道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "终端消费者",
+      "category": "downstream",
+      "business": "全球家用医疗器械终端消费者（DTC+零售）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002432",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002432",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002432",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002432",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002432",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002432",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002432",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002432",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002432",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002432",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002432",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "company_code": "600961",
+  "company_name": "株冶集团",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_600961",
+      "name": "株冶集团\n600961",
+      "category": "target",
+      "business": "国内锌冶炼龙头，锌30万吨+铅10万吨+自有矿山+综合回收金银铜铟锗",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "自有矿山",
+      "category": "upstream",
+      "business": "86万吨/年铅锌铜矿采选能力（康家湾矿等3座矿山）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "外购锌精矿市场",
+      "category": "upstream",
+      "business": "国内外锌精矿供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "煤炭/电力供应商",
+      "category": "upstream",
+      "business": "冶炼过程能源供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铅精矿供应商",
+      "category": "upstream",
+      "business": "铅冶炼原料供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "驰宏锌锗",
+      "category": "competitor",
+      "business": "铅锌冶炼+稀有金属锗",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中金岭南",
+      "category": "competitor",
+      "business": "铅锌冶炼+矿山",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "西部矿业",
+      "category": "competitor",
+      "business": "铅锌铜多金属矿业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "紫金矿业",
+      "category": "competitor",
+      "business": "全球多金属矿业龙头（含锌）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "宝武/首钢等钢企",
+      "category": "downstream",
+      "business": "镀锌钢板生产，锌合金核心下游",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车制造企业",
+      "category": "downstream",
+      "business": "高端汽车板用锌合金（IATF16949认证）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电池企业",
+      "category": "downstream",
+      "business": "铅酸电池生产，铅产品下游",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "化工企业",
+      "category": "downstream",
+      "business": "氧化锌等锌化工产品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_600961", "relation": "supply"},
+    {"source": "up_1", "target": "target_600961", "relation": "supply"},
+    {"source": "up_2", "target": "target_600961", "relation": "supply"},
+    {"source": "up_3", "target": "target_600961", "relation": "supply"},
+    {"source": "target_600961", "target": "down_0", "relation": "customer"},
+    {"source": "target_600961", "target": "down_1", "relation": "customer"},
+    {"source": "target_600961", "target": "down_2", "relation": "customer"},
+    {"source": "target_600961", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_600961", "relation": "compete"},
+    {"source": "comp_1", "target": "target_600961", "relation": "compete"},
+    {"source": "comp_2", "target": "target_600961", "relation": "compete"},
+    {"source": "comp_3", "target": "target_600961", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

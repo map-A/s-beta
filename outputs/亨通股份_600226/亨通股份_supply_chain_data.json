@@ -1,0 +1,178 @@
+{
+  "company_code": "600226",
+  "company_name": "亨通股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600226",
+      "name": "亨通股份\n600226",
+      "category": "target",
+      "business": "多元化混业：电解铜箔（亨通铜箔）+生物兽药/饲料添加剂（拜克生物）+热电联供，亨通集团旗下",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "铜冠铜箔\n301217",
+      "category": "competitor",
+      "business": "HVLP1-4代全系列量产电子铜箔厂商，高端PCB铜箔国产替代先锋",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "诺德新材料\n600110",
+      "category": "competitor",
+      "business": "电解铜箔全品类，产能规模最大，2025年亏损后2026Q1扭亏",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "嘉元科技\n688388",
+      "category": "competitor",
+      "business": "极薄锂电铜箔技术领先，毛利率~20%为行业最高",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中一科技\n301150",
+      "category": "competitor",
+      "business": "电解铜箔双轨（锂电+HVLP高频高速），正向高端PCB铜箔转型",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "阴极铜供应商",
+      "category": "upstream",
+      "business": "铜箔核心原材料，大宗商品铜价（LME/SHFE）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硫酸供应商",
+      "category": "upstream",
+      "business": "电解铜箔生产工艺必需化工品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工原料供应商",
+      "category": "upstream",
+      "business": "兽药/饲料添加剂生产所需化工/生物原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "煤炭供应商",
+      "category": "upstream",
+      "business": "热电联供燃料，大宗商品",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "锂电池厂\n宁德时代等",
+      "category": "downstream",
+      "business": "锂电铜箔核心客户，动力电池+储能电池",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "PCB制造商",
+      "category": "downstream",
+      "business": "高端PCB铜箔客户，AI服务器PCB需求驱动",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "饲料/养殖企业",
+      "category": "downstream",
+      "business": "兽药/饲料添加剂终端用户，养殖规模化驱动",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业/商业用户",
+      "category": "downstream",
+      "business": "热电联供终端用户，区域性公用事业",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600226",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600226",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600226",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600226",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600226",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600226",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600226",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600226",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600226",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600226",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600226",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600226",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

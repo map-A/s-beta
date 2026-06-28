@@ -1,0 +1,166 @@
+{
+  "company_code": "002916",
+  "company_name": "深南电路",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002916",
+      "name": "深南电路\n002916",
+      "category": "target",
+      "business": "高端PCB（AI服务器20-30层板）+ IC封装基板（FC-BGA）+ 电子装联",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "鹏鼎控股\n002938",
+      "category": "competitor",
+      "business": "全球最大PCB厂商（FPC/HDI/多层板），消费电子为主",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "沪电股份\n002463",
+      "category": "competitor",
+      "business": "高端通信/汽车PCB，AI服务器PCB直接竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "兴森科技\n002436",
+      "category": "competitor",
+      "business": "IC封装基板/样板，深南封装基板直接竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "覆铜板（CCL）商",
+      "category": "upstream",
+      "business": "PCB核心基材（生益科技/南亚新材等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜箔/玻纤布商",
+      "category": "upstream",
+      "business": "CCL上游基础原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "ABF膜供应商",
+      "category": "upstream",
+      "business": "IC封装基板核心材料（味之素ABF膜，全球寡头供给）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB专用设备商",
+      "category": "upstream",
+      "business": "钻孔机/曝光机/电镀线等PCB制造设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI服务器厂商",
+      "category": "downstream",
+      "business": "AI训练/推理服务器，使用20-30层超高层数PCB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "通信设备商",
+      "category": "downstream",
+      "business": "华为、中兴等5G基站设备，采购高频高速PCB",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体封装厂",
+      "category": "downstream",
+      "business": "长电科技等IC封装企业，采购FC-BGA封装基板",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子厂商",
+      "category": "downstream",
+      "business": "新能源车/自动驾驶电子系统，采购高可靠性车载PCB",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002916",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002916",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002916",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002916",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002916",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002916",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002916",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002916",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002916",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002916",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002916",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

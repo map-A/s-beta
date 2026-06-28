@@ -1,0 +1,178 @@
+{
+  "company_code": "002709",
+  "company_name": "天赐材料",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002709",
+      "name": "天赐材料\n002709",
+      "category": "target",
+      "business": "全球电解液龙头+六氟磷酸锂全球前二，一体化循环经济（碳酸锂提纯→LiPF6→电解液→添加剂→电池回收），全球化布局（美/欧/摩洛哥）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "多氟多\n002407",
+      "category": "competitor",
+      "business": "六氟磷酸锂+电解液，国内天赐材料主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新宙邦\n300037",
+      "category": "competitor",
+      "business": "电解液+氟化工，在电解液领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "江苏国泰\n002091",
+      "category": "competitor",
+      "business": "电解液（国内前三），在电解液领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "比亚迪\n002594",
+      "category": "competitor",
+      "business": "部分自供电解液，既是客户也是潜在竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "碳酸锂\n供应商",
+      "category": "upstream",
+      "business": "电解液核心原材料（公司自产提纯+外购，占采购10.77%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "氟化物\n供应商",
+      "category": "upstream",
+      "business": "六氟磷酸锂原料（占采购7.99%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "有机溶剂\n供应商",
+      "category": "upstream",
+      "business": "电解液用有机溶剂（EC/DMC/EMC等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "添加剂原料\n供应商",
+      "category": "upstream",
+      "business": "VC/FEC等电解液添加剂原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "宁德时代\n（推测）",
+      "category": "downstream",
+      "business": "全球动力电池龙头，天赐第一大客户（占营收36.10%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "其他电池厂",
+      "category": "downstream",
+      "business": "动力/储能/消费电池制造商（前5大合计58.53%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "储能系统\n集成商",
+      "category": "downstream",
+      "business": "储能电池电解液客户（2026年占比预计25-30%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "海外OEM\n客户",
+      "category": "downstream",
+      "business": "美国/欧洲工厂已投产，导入全球领先电池客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002709",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002709",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002709",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002709",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002709",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002709",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002709",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002709",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002709",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002709",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002709",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002709",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

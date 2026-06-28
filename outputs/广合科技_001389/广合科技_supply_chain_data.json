@@ -1,0 +1,190 @@
+{
+  "company_code": "001389",
+  "company_name": "广合科技",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_001389",
+      "name": "广合科技\n001389",
+      "category": "target",
+      "business": "内资AI服务器PCB排名第一，46层PCB量产+7阶HDI验证，全球TOP10服务器厂8家客户",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "沪电股份\n002463",
+      "category": "competitor",
+      "business": "A股AI服务器PCB绝对龙头，深度绑定英伟达/AMD/Meta/谷歌",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "深南电路\n002916",
+      "category": "competitor",
+      "business": "高端PCB+IC封装基板龙头，AI服务器/FC-BGA核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "胜宏科技\n300476",
+      "category": "competitor",
+      "business": "A股AI服务器PCB龙头之一，深度嵌入英伟达/AMD供应链",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "鹏鼎控股\n002938",
+      "category": "competitor",
+      "business": "全球最大PCB制造商，苹果核心供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "生益科技\n600183",
+      "category": "upstream",
+      "business": "国内最大覆铜板(CCL)制造商，高频高速CCL技术领先，PCB核心上游",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "建滔积层板\n1888.HK",
+      "category": "upstream",
+      "business": "全球最大覆铜板制造商，PCB核心基材供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铜冠铜箔\n301217",
+      "category": "upstream",
+      "business": "国内唯一HVLP1-4代全系列量产电子铜箔厂商，AI服务器PCB上游关键材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化学药水/油墨供应商",
+      "category": "upstream",
+      "business": "PCB制程材料：光刻胶、蚀刻液、电镀液等",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "全球AI服务器\nTOP10厂商",
+      "category": "downstream",
+      "business": "全球服务器TOP10中8家已是广合客户，AI训练/推理服务器制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "800G交换机/\n光模块厂商",
+      "category": "downstream",
+      "business": "数据中心高速互连设备，800G交换机PCB（送样测试中）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "通信设备商",
+      "category": "downstream",
+      "business": "5G基站/核心网设备制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "智能驾驶域控制器/车载电子",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "商业航天客户",
+      "category": "downstream",
+      "business": "卫星/航天器电子",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_001389",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_001389",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_001389",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_001389",
+      "relation": "supply"
+    },
+    {
+      "source": "target_001389",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001389",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001389",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001389",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_001389",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_001389",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_001389",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_001389",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_001389",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

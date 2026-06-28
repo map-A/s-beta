@@ -1,0 +1,190 @@
+{
+  "company_code": "603986",
+  "company_name": "兆易创新",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_603986",
+      "name": "兆易创新\n603986",
+      "category": "target",
+      "business": "NOR Flash+MCU+DRAM+传感器+模拟芯片（国内存储+MCU龙头）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "旺宏\n2337.TW",
+      "category": "competitor",
+      "business": "NOR Flash（全球第一）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "北京君正\n300223",
+      "category": "competitor",
+      "business": "DRAM+MCU+智能视频芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "意法半导体\nST",
+      "category": "competitor",
+      "business": "MCU+NOR Flash+传感器（全球MCU龙头）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "东芯股份\n688110",
+      "category": "competitor",
+      "business": "NAND+NOR+DRAM（国内存储芯片）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "台积电",
+      "category": "upstream",
+      "business": "晶圆代工（NOR Flash/MCU/DRAM制造）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "中芯国际\n688981",
+      "category": "upstream",
+      "business": "晶圆代工（国产替代代工）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "长电科技\n600584",
+      "category": "upstream",
+      "business": "封装测试服务",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "华虹半导体\n688347",
+      "category": "upstream",
+      "business": "晶圆代工（特色工艺）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子厂商",
+      "category": "downstream",
+      "business": "可穿戴/智能手表/TWS耳机/家电（占收入35.73%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车电子厂商",
+      "category": "downstream",
+      "business": "车规级NOR Flash+MCU（ADAS/智能座舱）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "工业控制厂商",
+      "category": "downstream",
+      "business": "工业MCU+NOR Flash（PLC/电机控制）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "物联网厂商",
+      "category": "downstream",
+      "business": "IoT设备MCU+存储（智能家居/穿戴）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "网络通讯厂商",
+      "category": "downstream",
+      "business": "路由器/基站/光模块NOR Flash+MCU",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603986",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603986",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603986",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603986",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603986",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603986",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603986",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603986",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603986",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603986",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603986",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603986",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603986",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

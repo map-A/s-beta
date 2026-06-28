@@ -1,0 +1,202 @@
+{
+  "company_code": "603629",
+  "company_name": "利通电子",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_603629",
+      "name": "利通电子\n603629",
+      "category": "target",
+      "business": "AI算力租赁服务（38,000P+）+ 液晶显示精密金属结构件制造，NVIDIA DGX AI服务器经销商",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "NVIDIA\n英伟达",
+      "category": "upstream",
+      "business": "全球AI GPU芯片设计龙头，DGX AI服务器设计，CUDA生态垄断",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "超聚变",
+      "category": "upstream",
+      "business": "GPU服务器整机制造，国内AI服务器经销渠道",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "宝钢股份",
+      "category": "upstream",
+      "business": "黑电用电镀锌板生产，精密金属件核心原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铝型材供应商",
+      "category": "upstream",
+      "business": "铝型材生产，精密金属件辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "SK海力士",
+      "category": "upstream",
+      "business": "HBM高带宽存储器生产，AI GPU关键配套组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "鸿博股份\n002229",
+      "category": "competitor",
+      "business": "AI算力服务运营，英伟达合作伙伴，GPU集群建设",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中贝通信\n603220",
+      "category": "competitor",
+      "business": "通信工程+算力租赁，GPU服务器采购与算力运营",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "协创数据\n300857",
+      "category": "competitor",
+      "business": "服务器制造+算力服务，国产服务器ODM",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "润泽科技\n300442",
+      "category": "competitor",
+      "business": "大型IDC数据中心运营商，算力基础设施服务",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "TCL科技",
+      "category": "downstream",
+      "business": "液晶电视/面板制造，全球面板龙头，利通传统精密件大客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "海信视像",
+      "category": "downstream",
+      "business": "国内领先电视品牌，精密金属结构件需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "京东方\nBOE",
+      "category": "downstream",
+      "business": "全球最大LCD面板制造商，精密金属件采购方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "AI大模型企业",
+      "category": "downstream",
+      "business": "国内互联网/AI头部企业，AI训练与推理算力需求方（具体名称未披露）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "小米集团",
+      "category": "downstream",
+      "business": "智能电视/IoT生态，电视精密金属件采购方",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603629",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603629",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603629",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603629",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603629",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603629",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603629",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603629",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603629",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603629",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603629",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603629",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603629",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603629",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

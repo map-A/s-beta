@@ -1,0 +1,214 @@
+{
+  "company_code": "688548",
+  "company_name": "广钢气体",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_688548",
+      "name": "广钢气体\n688548",
+      "category": "target",
+      "business": "电子大宗气体（超高纯氮气/氧气/氩气，ppb级）、全球氦气供应链（国内最大内资供应商）、氪氙氖稀有气体、电子特气（氟氮混合气）；10座12英寸晶圆厂认可",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "林德气体\nLIN",
+      "category": "competitor",
+      "business": "全球最大工业气体公司，电子大宗气体/特气全覆盖，年营收>3000亿RMB，电子气体市场市占率最高",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "液化空气\nAI",
+      "category": "competitor",
+      "business": "全球第二大工业气体公司（法国），深耕中国电子气体市场多年，半导体/面板客户群广泛",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "金宏气体\n688106",
+      "category": "competitor",
+      "business": "国内特种气体龙头（高纯气体、混合气体），面向集成电路/光伏/LED客户群，大宗气体业务扩张中",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "杭氧股份\n002430",
+      "category": "competitor",
+      "business": "国内空分设备龙头+工业气体运营，传统大宗气体领域强势，向电子气体领域拓展",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "中船特气\n688146",
+      "category": "competitor",
+      "business": "三氟化氮(NF3)、六氟化钨(WF6)等电子特种气体，半导体刻蚀/沉积关键气体供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "卡塔尔\nRasGas",
+      "category": "upstream",
+      "business": "卡塔尔天然气田伴生氦气供应商，全球最大氦气出口国之一，广钢气体重要气源方",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "北美氦气\n气源",
+      "category": "upstream",
+      "business": "美国BLM联邦氦气储备及私营天然气田氦气资源，全球第二大氦气供应区域",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "空分设备\n供应商",
+      "category": "upstream",
+      "business": "空气分离装置核心部件（压缩机、换热器、精馏塔），公司自研制氮装置降低依赖",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电力\n供应商",
+      "category": "upstream",
+      "business": "空分装置用电大户，电力成本直接影响气体生产毛利率，部分项目由客户承担电费",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "欧洲氦气\n气源",
+      "category": "upstream",
+      "business": "欧洲天然气田伴生氦气资源，多元化气源保障的一部分",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "12英寸\n晶圆厂",
+      "category": "downstream",
+      "business": "集成电路制造企业（中芯国际/华虹/长存等），超高纯电子大宗气体核心需求方，已获10家认可",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华星光电\nTCL",
+      "category": "downstream",
+      "business": "半导体显示面板龙头，与广钢合作15年，t9项目落地AI智能空分应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "商业航天\n发射场",
+      "category": "downstream",
+      "business": "海南商业航天发射场等，火箭燃料贮箱增压、管路吹扫与净化用高纯氦气",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "高端医疗\nMRI设备",
+      "category": "downstream",
+      "business": "MRI超导磁体冷却用液氦，医疗影像设备必需的低温冷却介质",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "光纤通信\n制造商",
+      "category": "downstream",
+      "business": "光纤预制棒制造过程中的氦气保护气氛，5G/数据中心光纤需求拉动",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688548",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688548",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688548",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688548",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688548",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688548",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688548",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688548",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688548",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688548",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688548",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688548",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688548",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688548",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688548",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

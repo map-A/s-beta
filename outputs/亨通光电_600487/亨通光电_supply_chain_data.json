@@ -1,0 +1,190 @@
+{
+  "company_code": "600487",
+  "company_name": "亨通光电",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_600487",
+      "name": "亨通光电\n600487",
+      "category": "target",
+      "business": "光纤预制棒+光纤+光缆+海底光缆/电缆+海洋工程",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长飞光纤\n601869",
+      "category": "competitor",
+      "business": "光纤预制棒+光纤+光缆（国内光棒龙头）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中天科技\n600522",
+      "category": "competitor",
+      "business": "光纤光缆+海缆+新能源储能",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东方电缆\n603606",
+      "category": "competitor",
+      "business": "海底电缆（海缆龙头）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "汉缆股份\n002498",
+      "category": "competitor",
+      "business": "电力电缆+海缆",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯石英供应商",
+      "category": "upstream",
+      "business": "光纤预制棒核心原材料（高纯石英、锗等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜铝供应商",
+      "category": "upstream",
+      "business": "电力电缆原材料（铜杆、铝杆）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光纤设备厂商",
+      "category": "upstream",
+      "business": "光纤拉丝机、光棒沉积设备、海缆生产线",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化学品供应商",
+      "category": "upstream",
+      "business": "光纤涂层材料、护套材料、绝缘材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "电信运营商",
+      "category": "downstream",
+      "business": "中国移动/电信/联通（5G基站+光纤到户+数据中心互联）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "国家电网/南方电网",
+      "category": "downstream",
+      "business": "智能电网+特高压输电+配电网建设",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海上风电开发商",
+      "category": "downstream",
+      "business": "海上风电场海底电力传输（三峡/华能/国电投等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "数据中心运营商",
+      "category": "downstream",
+      "business": "AI数据中心光纤互联（阿里/腾讯/字节等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "海洋通信运营商",
+      "category": "downstream",
+      "business": "跨洋海底通信光缆系统",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600487",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600487",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600487",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600487",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600487",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600487",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600487",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600487",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600487",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600487",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600487",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600487",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600487",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

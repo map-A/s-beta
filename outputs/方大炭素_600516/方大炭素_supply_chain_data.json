@@ -1,0 +1,134 @@
+{
+  "company_code": "600516",
+  "company_name": "方大炭素",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600516",
+      "name": "方大炭素\n600516",
+      "category": "target",
+      "business": "中国最大石墨电极供应商，核石墨/特种石墨/石墨烯/碳负极材料/碳碳复合材料",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "针状焦/石油焦",
+      "category": "upstream",
+      "business": "石墨电极核心原料，公司部分自供（煤系针状焦+低硫煅后石油焦）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "煤沥青",
+      "category": "upstream",
+      "business": "炭素制品粘结剂",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电力供应",
+      "category": "upstream",
+      "business": "石墨化过程高耗能，电价是核心成本因素",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "高纯石墨原料",
+      "category": "upstream",
+      "business": "核石墨/特种石墨生产用高纯原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "石墨化设备",
+      "category": "upstream",
+      "business": "石墨化炉、压型设备等核心生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "SGL Carbon",
+      "category": "competitor",
+      "business": "德国特种石墨/核石墨全球龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "GrafTech",
+      "category": "competitor",
+      "business": "美国全球石墨电极龙头之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "吉林炭素",
+      "category": "competitor",
+      "business": "国内第二大石墨电极企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Showa Denko",
+      "category": "competitor",
+      "business": "日本全球炭素材料综合企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "钢铁企业",
+      "category": "downstream",
+      "business": "电弧炉炼钢用石墨电极，传统主力市场（出口40%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "核电站",
+      "category": "downstream",
+      "business": "高温气冷堆/钍基熔盐堆核石墨堆内构件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "半导体企业",
+      "category": "downstream",
+      "business": "半导体石墨材料，已在头部企业批量供货",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "可控核聚变",
+      "category": "downstream",
+      "business": "聚变能内壳石墨铠甲，前沿方向",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "新能源电池",
+      "category": "downstream",
+      "business": "碳负极材料/固态电解质，实验室阶段",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_600516", "relation": "supply"},
+    {"source": "up_1", "target": "target_600516", "relation": "supply"},
+    {"source": "up_2", "target": "target_600516", "relation": "supply"},
+    {"source": "up_3", "target": "target_600516", "relation": "supply"},
+    {"source": "up_4", "target": "target_600516", "relation": "supply"},
+    {"source": "target_600516", "target": "down_0", "relation": "customer"},
+    {"source": "target_600516", "target": "down_1", "relation": "customer"},
+    {"source": "target_600516", "target": "down_2", "relation": "customer"},
+    {"source": "target_600516", "target": "down_3", "relation": "customer"},
+    {"source": "target_600516", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_600516", "relation": "compete"},
+    {"source": "comp_1", "target": "target_600516", "relation": "compete"},
+    {"source": "comp_2", "target": "target_600516", "relation": "compete"},
+    {"source": "comp_3", "target": "target_600516", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

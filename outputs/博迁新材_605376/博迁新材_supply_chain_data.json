@@ -1,0 +1,178 @@
+{
+  "company_code": "605376",
+  "company_name": "博迁新材",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_605376",
+      "name": "博迁新材\n605376",
+      "category": "target",
+      "business": "全球领先纳米级电子专用高端金属粉体材料企业，核心产品MLCC用纳米镍粉/铜粉/银粉",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "镍金属供应商",
+      "category": "upstream",
+      "business": "镍金属原料（LME镍价为核心成本变量），全球大宗商品采购",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "铜金属供应商",
+      "category": "upstream",
+      "business": "铜金属原料（LME铜价），用于铜粉产品生产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "分级设备供应商",
+      "category": "upstream",
+      "business": "纳米级粉体分级设备（关键技术设备，公司承认与行业领先存在差距）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "银金属供应商",
+      "category": "upstream",
+      "business": "银金属原料，用于银粉产品（正被铜粉替代）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "JFE矿业\n日本",
+      "category": "competitor",
+      "business": "日本MLCC用纳米镍粉主要生产商，全球竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "住友金属矿山\n5713.T",
+      "category": "competitor",
+      "business": "日本MLCC用纳米镍粉生产商，全球竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "昭荣化学工业\n日本",
+      "category": "competitor",
+      "business": "日本MLCC用镍粉/铜粉生产商，全球竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "东邦钛\n5727.T",
+      "category": "competitor",
+      "business": "日本MLCC用镍粉生产商，全球竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "韩国/台湾MLCC厂商",
+      "category": "downstream",
+      "business": "国际MLCC领先企业（村田/三星电机/太阳诱电/国巨等），采购纳米镍粉作为内电极材料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "住矿电子",
+      "category": "downstream",
+      "business": "电子元器件企业，战略合作客户（375吨/年镍粉采购协议）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏电池片厂商",
+      "category": "downstream",
+      "business": "光伏电池企业，采购铜粉替代银粉（替银化趋势）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "内资MLCC厂商",
+      "category": "downstream",
+      "business": "风华高科/三环集团等国内MLCC企业，国产替代受益客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_605376",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_605376",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_605376",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_605376",
+      "relation": "supply"
+    },
+    {
+      "source": "target_605376",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605376",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605376",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605376",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_605376",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_605376",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_605376",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_605376",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "company_code": "002008",
+  "company_name": "大族激光",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002008",
+      "name": "大族激光\n002008",
+      "category": "target",
+      "business": "激光加工设备全系列（切割/焊接/打标）、PCB智能制造装备、半导体设备、新能源设备，产品型号600+种",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华工科技\n000988",
+      "category": "competitor",
+      "business": "激光加工设备、传感器、光通信器件，与大族在激光设备全领域直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "海目星\n688559",
+      "category": "competitor",
+      "business": "激光切割/焊接设备、动力电池激光设备，在电池设备领域与大族竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "帝尔激光\n300776",
+      "category": "competitor",
+      "business": "光伏激光加工设备（SE/掺杂/消融），光伏细分市场龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "联赢激光\n688518",
+      "category": "competitor",
+      "business": "激光焊接设备，在动力电池焊接细分市场与大族竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "锐科激光\n300747",
+      "category": "upstream",
+      "business": "国产光纤激光器龙头，提供中高功率光纤激光光源，大族重要核心器件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "长光华芯\n688048",
+      "category": "upstream",
+      "business": "半导体激光芯片（高功率半导体激光器），激光器核心泵浦源器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "福晶科技\n002222",
+      "category": "upstream",
+      "business": "非线性光学晶体（LBO/BBO/KTP）、精密光学元器件，激光器核心光学组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "金橙子\n688170",
+      "category": "upstream",
+      "business": "振镜控制系统、激光加工控制卡，激光设备精密定位核心组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "柏楚电子\n688188",
+      "category": "upstream",
+      "business": "激光切割控制系统，大功率激光切割设备数控系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "PCB制造商\n深南电路等",
+      "category": "downstream",
+      "business": "高端PCB/HDI板制造，AI服务器/高速交换机驱动PCB设备需求爆发",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "消费电子代工厂\n富士康等",
+      "category": "downstream",
+      "business": "苹果/华为供应链代工，精密激光打标/焊接/切割设备需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "动力电池厂\n宁德时代等",
+      "category": "downstream",
+      "business": "动力电池极片/极耳焊接、电池包组装设备需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体封测厂\n长电科技等",
+      "category": "downstream",
+      "business": "晶圆切割/划片设备需求方，受益于半导体国产化",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "通用工业制造\n汽车/航空等",
+      "category": "downstream",
+      "business": "汽车零部件、航空航天结构件、重工装备等激光切割/焊接终端用户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002008",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002008",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002008",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002008",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002008",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002008",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002008",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002008",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002008",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002008",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002008",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

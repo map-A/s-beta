@@ -1,0 +1,40 @@
+{
+  "company_code": "603690",
+  "company_name": "至纯科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_603690", "name": "至纯科技\n603690", "category": "target", "business": "国内半导体高纯工艺系统龙头，为一线晶圆厂提供特气/化学品输送+湿法清洗设备+电子大宗气体+晶圆再生", "symbolSize": 90},
+    {"id": "comp_0", "name": "盛美上海\n688082", "category": "competitor", "business": "国内半导体清洗设备龙头（SAPS/TEBO差异化技术）", "symbolSize": 45},
+    {"id": "comp_1", "name": "北方华创\n002371", "category": "competitor", "business": "国内半导体设备综合龙头（刻蚀/沉积/清洗等）", "symbolSize": 45},
+    {"id": "comp_2", "name": "SCREEN\n7735.JP", "category": "competitor", "business": "全球湿法清洗设备龙头（日本），全球市占率领先", "symbolSize": 45},
+    {"id": "comp_3", "name": "Tokyo Electron", "category": "competitor", "business": "全球半导体设备龙头（日本），含清洗设备产品线", "symbolSize": 45},
+    {"id": "up_0", "name": "高纯管阀件供应商", "category": "upstream", "business": "特气/化学品输送系统核心零部件", "symbolSize": 40},
+    {"id": "up_1", "name": "电子大宗气体供应商", "category": "upstream", "business": "高纯氮气/氧气/氩气等工业气体", "symbolSize": 40},
+    {"id": "up_2", "name": "精密控制系统供应商", "category": "upstream", "business": "自动化控制系统和传感器", "symbolSize": 40},
+    {"id": "up_3", "name": "特种化学品供应商", "category": "upstream", "business": "半导体级超纯化学品", "symbolSize": 40},
+    {"id": "down_0", "name": "中芯国际", "category": "downstream", "business": "国内晶圆代工龙头，至纯深度客户 [confirmed]", "symbolSize": 50},
+    {"id": "down_1", "name": "华虹公司", "category": "downstream", "business": "功率器件代工全球第一，至纯深度客户 [confirmed]", "symbolSize": 50},
+    {"id": "down_2", "name": "长江存储", "category": "downstream", "business": "国内NAND Flash存储龙头，至纯深度客户 [confirmed]", "symbolSize": 50},
+    {"id": "down_3", "name": "长鑫科技/晶合集成", "category": "downstream", "business": "国内存储/晶圆代工厂，至纯客户 [confirmed]", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_603690", "relation": "supply"},
+    {"source": "up_1", "target": "target_603690", "relation": "supply"},
+    {"source": "up_2", "target": "target_603690", "relation": "supply"},
+    {"source": "up_3", "target": "target_603690", "relation": "supply"},
+    {"source": "target_603690", "target": "down_0", "relation": "customer"},
+    {"source": "target_603690", "target": "down_1", "relation": "customer"},
+    {"source": "target_603690", "target": "down_2", "relation": "customer"},
+    {"source": "target_603690", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_603690", "relation": "compete"},
+    {"source": "comp_1", "target": "target_603690", "relation": "compete"},
+    {"source": "comp_2", "target": "target_603690", "relation": "compete"},
+    {"source": "comp_3", "target": "target_603690", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

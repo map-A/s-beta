@@ -1,0 +1,202 @@
+{
+  "company_code": "002407",
+  "company_name": "多氟多",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002407",
+      "name": "多氟多\n002407",
+      "category": "target",
+      "business": "六氟磷酸锂（全球#2）、电子级氢氟酸、氟化铝、新能源电池、含氟特种气体",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "萤石矿企",
+      "category": "upstream",
+      "business": "氟化钙（萤石）矿产资源，氟化工产业链最上游原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "碳酸锂厂商",
+      "category": "upstream",
+      "business": "电池级碳酸锂/氢氧化锂，六氟磷酸锂核心锂源原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "五氯化磷供应商",
+      "category": "upstream",
+      "business": "五氯化磷，六氟磷酸锂合成所需磷源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "硫酸/发烟硫酸厂商",
+      "category": "upstream",
+      "business": "工业硫酸及发烟硫酸，氟化氢生产原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "设备厂商",
+      "category": "upstream",
+      "business": "化工反应设备、结晶设备、自动化产线设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "天赐材料\n002709",
+      "category": "competitor",
+      "business": "六氟磷酸锂全球#1，电解液一体化龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新宙邦\n300037",
+      "category": "competitor",
+      "business": "电解液+氟化工，六氟磷酸锂国内#3",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "天际股份\n002759",
+      "category": "competitor",
+      "business": "六氟磷酸锂、氟化物",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "永太科技\n002326",
+      "category": "competitor",
+      "business": "氟精细化工、六氟磷酸锂、含氟医药中间体",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "天赐材料\n电解液",
+      "category": "downstream",
+      "business": "全球第一大电解液厂商，六氟磷酸锂核心采购方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新宙邦\n电解液",
+      "category": "downstream",
+      "business": "国内第二大电解液厂商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电池厂",
+      "category": "downstream",
+      "business": "宁德时代/比亚迪等动力电池厂商，电解液终端需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "半导体晶圆厂",
+      "category": "downstream",
+      "business": "电子级氢氟酸终端用户，半导体晶圆清洗/蚀刻",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "储能电站",
+      "category": "downstream",
+      "business": "储能电池终端应用，储能电解液需求方",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002407",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002407",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002407",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002407",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002407",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002407",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002407",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002407",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002407",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002407",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002407",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002407",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002407",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002407",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

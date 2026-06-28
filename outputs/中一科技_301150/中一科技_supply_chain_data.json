@@ -1,0 +1,202 @@
+{
+  "company_code": "301150",
+  "company_name": "中一科技",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_301150",
+      "name": "中一科技\n301150",
+      "category": "target",
+      "business": "高性能电解铜箔（锂电铜箔79.5%+电子电路铜箔20.5%），HVLP高频高速铜箔国产替代",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "诺德股份\n600110",
+      "category": "competitor",
+      "business": "锂电铜箔龙头之一，规模最大，产能覆盖全国",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "嘉元科技\n688388",
+      "category": "competitor",
+      "business": "专注锂电铜箔，技术型选手，6μm极薄铜箔领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "德福科技\n301511",
+      "category": "competitor",
+      "business": "电解铜箔后起之秀，产能快速扩张",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "三井金属\n5706.T",
+      "category": "competitor",
+      "business": "全球HVLP高频高速铜箔龙头（日本），垄断高端市场",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铜材供应商\n（脱敏）",
+      "category": "upstream",
+      "business": "铜球/铜线等铜原材料，占采购26.47%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "化工添加剂供应商\n（脱敏）",
+      "category": "upstream",
+      "business": "电解液添加剂、表面处理剂等化工原料，占采购15.61%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "辅助材料供应商\n（脱敏）",
+      "category": "upstream",
+      "business": "生产辅助材料，占采购14.99%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "湖南湘联电缆",
+      "category": "upstream",
+      "business": "铜材/线材供应商，占采购14.51%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "其他原材料供应商\n（脱敏）",
+      "category": "upstream",
+      "business": "设备配件/耗材等，占采购13.33%",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "宁德时代（推测）\n客户1",
+      "category": "downstream",
+      "business": "全球动力电池龙头，占中一科技营收34.29%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "客户2（脱敏）",
+      "category": "downstream",
+      "business": "电池厂或覆铜板厂，占营收8.26%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "惠州亿纬锂能",
+      "category": "downstream",
+      "business": "动力/储能电池头部企业，占营收6.77%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "覆铜板/PCB厂\n（HVLP客户）",
+      "category": "downstream",
+      "business": "AI服务器/高频通信PCB覆铜板制造商（如生益科技等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "消费电子制造商",
+      "category": "downstream",
+      "business": "HDI板/挠性板等消费电子PCB制造企业",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301150",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301150",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301150",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301150",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_301150",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301150",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301150",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301150",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301150",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301150",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301150",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301150",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301150",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301150",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

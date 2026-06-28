@@ -1,0 +1,44 @@
+{
+  "company_code": "300151",
+  "company_name": "昌红科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_300151", "name": "昌红科技\n300151", "category": "target", "business": "OA设备精密塑料模具龙头，向医疗耗材/半导体精密部件转型，创业板上市", "symbolSize": 90},
+    {"id": "comp_0", "name": "横河精密\n300539", "category": "competitor", "business": "精密注塑模具", "symbolSize": 45},
+    {"id": "comp_1", "name": "天汽模\n002510", "category": "competitor", "business": "汽车覆盖件模具龙头", "symbolSize": 45},
+    {"id": "comp_2", "name": "海泰科\n301022", "category": "competitor", "business": "精密注塑模具", "symbolSize": 45},
+    {"id": "comp_3", "name": "银宝山新\n002786", "category": "competitor", "business": "精密模具/注塑成型", "symbolSize": 45},
+    {"id": "up_0", "name": "模具钢供应商", "category": "upstream", "business": "特种模具钢", "symbolSize": 40},
+    {"id": "up_1", "name": "塑料粒子供应商", "category": "upstream", "business": "工程塑料粒子", "symbolSize": 40},
+    {"id": "up_2", "name": "数控设备供应商", "category": "upstream", "business": "CNC加工中心、注塑机", "symbolSize": 40},
+    {"id": "up_3", "name": "检测设备供应商", "category": "upstream", "business": "精密测量/检测设备", "symbolSize": 40},
+    {"id": "up_4", "name": "表面处理供应商", "category": "upstream", "business": "电镀/喷涂等表面处理", "symbolSize": 40},
+    {"id": "down_0", "name": "OA设备厂商", "category": "downstream", "business": "打印机/复印机精密零部件核心客户", "symbolSize": 50},
+    {"id": "down_1", "name": "医疗器械企业", "category": "downstream", "business": "体外诊断耗材等精密塑胶产品", "symbolSize": 50},
+    {"id": "down_2", "name": "半导体企业", "category": "downstream", "business": "半导体精密部件（概念方向）", "symbolSize": 50},
+    {"id": "down_3", "name": "汽车零部件企业", "category": "downstream", "business": "汽车精密注塑件", "symbolSize": 50},
+    {"id": "down_4", "name": "消费电子企业", "category": "downstream", "business": "消费电子精密塑胶件", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_300151", "relation": "supply"},
+    {"source": "up_1", "target": "target_300151", "relation": "supply"},
+    {"source": "up_2", "target": "target_300151", "relation": "supply"},
+    {"source": "up_3", "target": "target_300151", "relation": "supply"},
+    {"source": "up_4", "target": "target_300151", "relation": "supply"},
+    {"source": "target_300151", "target": "down_0", "relation": "customer"},
+    {"source": "target_300151", "target": "down_1", "relation": "customer"},
+    {"source": "target_300151", "target": "down_2", "relation": "customer"},
+    {"source": "target_300151", "target": "down_3", "relation": "customer"},
+    {"source": "target_300151", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_300151", "relation": "compete"},
+    {"source": "comp_1", "target": "target_300151", "relation": "compete"},
+    {"source": "comp_2", "target": "target_300151", "relation": "compete"},
+    {"source": "comp_3", "target": "target_300151", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

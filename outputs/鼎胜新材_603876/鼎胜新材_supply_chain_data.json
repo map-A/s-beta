@@ -1,0 +1,44 @@
+{
+  "company_code": "603876",
+  "company_name": "鼎胜新材",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_603876", "name": "鼎胜新材\n603876", "category": "target", "business": "国内铝带箔行业龙头，新能源电池铝箔核心供应商，上交所上市", "symbolSize": 90},
+    {"id": "comp_0", "name": "南山铝业\n600219", "category": "competitor", "business": "铝全产业链（铝锭→铝板带箔→深加工）", "symbolSize": 45},
+    {"id": "comp_1", "name": "东阳光\n600673", "category": "competitor", "business": "铝箔+电子元器件", "symbolSize": 45},
+    {"id": "comp_2", "name": "中国忠旺", "category": "competitor", "business": "铝型材/铝压延材", "symbolSize": 45},
+    {"id": "comp_3", "name": "诺贝丽斯", "category": "competitor", "business": "全球铝轧制龙头，印度上市", "symbolSize": 45},
+    {"id": "up_0", "name": "铝锭供应商", "category": "upstream", "business": "铝锭（受LME铝价波动影响）", "symbolSize": 40},
+    {"id": "up_1", "name": "铝合金添加剂", "category": "upstream", "business": "合金元素添加剂", "symbolSize": 40},
+    {"id": "up_2", "name": "能源供应商", "category": "upstream", "business": "电力（铝加工属高耗能行业）", "symbolSize": 40},
+    {"id": "up_3", "name": "设备供应商", "category": "upstream", "business": "铝箔轧机、退火炉等加工设备", "symbolSize": 40},
+    {"id": "up_4", "name": "包装材料供应商", "category": "upstream", "business": "铝箔包装/运输材料", "symbolSize": 40},
+    {"id": "down_0", "name": "宁德时代\n300750", "category": "downstream", "business": "全球动力电池龙头，铝箔集流体核心客户（inferred）", "symbolSize": 50},
+    {"id": "down_1", "name": "比亚迪\n002594", "category": "downstream", "business": "新能源车+电池龙头，铝箔需求（inferred）", "symbolSize": 50},
+    {"id": "down_2", "name": "消费电子企业", "category": "downstream", "business": "电容器铝箔需求", "symbolSize": 50},
+    {"id": "down_3", "name": "包装食品企业", "category": "downstream", "business": "铝箔包装材料需求", "symbolSize": 50},
+    {"id": "down_4", "name": "中创新航等\n电池厂", "category": "downstream", "business": "动力电池厂铝箔集流体需求", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_603876", "relation": "supply"},
+    {"source": "up_1", "target": "target_603876", "relation": "supply"},
+    {"source": "up_2", "target": "target_603876", "relation": "supply"},
+    {"source": "up_3", "target": "target_603876", "relation": "supply"},
+    {"source": "up_4", "target": "target_603876", "relation": "supply"},
+    {"source": "target_603876", "target": "down_0", "relation": "customer"},
+    {"source": "target_603876", "target": "down_1", "relation": "customer"},
+    {"source": "target_603876", "target": "down_2", "relation": "customer"},
+    {"source": "target_603876", "target": "down_3", "relation": "customer"},
+    {"source": "target_603876", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_603876", "relation": "compete"},
+    {"source": "comp_1", "target": "target_603876", "relation": "compete"},
+    {"source": "comp_2", "target": "target_603876", "relation": "compete"},
+    {"source": "comp_3", "target": "target_603876", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

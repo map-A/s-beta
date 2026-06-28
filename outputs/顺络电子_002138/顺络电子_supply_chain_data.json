@@ -1,0 +1,190 @@
+{
+  "company_code": "002138",
+  "company_name": "顺络电子",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002138",
+      "name": "顺络电子\n002138",
+      "category": "target",
+      "business": "国内电感龙头，全球前三，片式电感/一体成型电感/TLVR/LTCC/天线/AI钽电容",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "村田\n（Murata）",
+      "category": "competitor",
+      "business": "全球被动元件龙头，MLCC/电感/滤波器全球第一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "TDK",
+      "category": "competitor",
+      "business": "全球电感/电容/传感器龙头，高端电感领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "太阳诱电\n（Taiyo Yuden）",
+      "category": "competitor",
+      "business": "全球电感/MLCC重要供应商，高端射频电感领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "麦捷科技\n300319",
+      "category": "competitor",
+      "business": "国内电感/滤波器厂商，顺络国内竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "铁氧体粉料\n供应商",
+      "category": "upstream",
+      "business": "电感核心磁性材料，国内有多家供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "金属磁性粉料\n供应商",
+      "category": "upstream",
+      "business": "一体成型电感核心材料，2026Q1涨价影响公司利润",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "陶瓷基板\n供应商",
+      "category": "upstream",
+      "business": "LTCC器件基础材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "银/钯浆料\n供应商",
+      "category": "upstream",
+      "business": "电极材料，影响电感性能和成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI服务器\n厂商",
+      "category": "downstream",
+      "business": "电源管理用TLVR电感、芯片电感（核心增长点）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源车\n厂商",
+      "category": "downstream",
+      "business": "车载电感、BMS/电驱用功率电感（车规级认证）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "智能手机/\nAI眼镜厂商",
+      "category": "downstream",
+      "business": "射频电感、电源管理电感、LTCC、天线",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "通信设备\n厂商",
+      "category": "downstream",
+      "business": "5G基站/光模块用电感、LTCC滤波器（CPO概念）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "储能/光伏\n厂商",
+      "category": "downstream",
+      "business": "逆变器/PCS用功率电感",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002138",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002138",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002138",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002138",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002138",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002138",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002138",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002138",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002138",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002138",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002138",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002138",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002138",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

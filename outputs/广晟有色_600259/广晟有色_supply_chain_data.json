@@ -1,0 +1,178 @@
+{
+  "company_code": "600259",
+  "company_name": "广晟有色",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_600259",
+      "name": "广晟有色\n600259",
+      "category": "target",
+      "business": "广东省唯一合法稀土开采企业，中重稀土龙头，拥有全省全部采矿权证，稀土矿储量12万吨REO，同时布局冶炼分离和钕铁硼磁材",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "北方稀土",
+      "category": "competitor",
+      "business": "600111，全球最大轻稀土生产商（包头白云鄂博矿），稀土行业绝对龙头，市值1200亿+",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中国稀土",
+      "category": "competitor",
+      "business": "000831，中国稀土集团旗下中重稀土整合平台，央企",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "盛和资源",
+      "category": "competitor",
+      "business": "600392，四川稀土冶炼分离龙头，海外矿布局（MP Materials/Ngualla），财政部实控",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "莱纳斯",
+      "category": "competitor",
+      "business": "LYC，中国以外最大稀土生产商（澳大利亚），全球稀土供应多元化标杆",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "矿山开采\n设备商",
+      "category": "upstream",
+      "business": "提供离子型稀土矿开采设备、选矿设备、浸矿系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "选矿药剂\n供应商",
+      "category": "upstream",
+      "business": "提供稀土选矿用化学药剂（浸矿剂、萃取剂、沉淀剂等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电力供应",
+      "category": "upstream",
+      "business": "稀土冶炼分离为高能耗行业，电力成本为主要变动成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "环保治理\n服务商",
+      "category": "upstream",
+      "business": "离子型稀土矿环保治理（放射性治理、高盐废水零排放、绿色矿山建设）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "钕铁硼\n磁材厂",
+      "category": "downstream",
+      "business": "永磁材料制造商，使用氧化镨钕/氧化镝/氧化铽制造高性能磁体，供新能源车电机/风电/消费电子",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "稀土发光/抛光\n材料厂",
+      "category": "downstream",
+      "business": "使用稀土氧化物制造LED荧光粉、光学玻璃/半导体晶圆抛光材料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "硬质合金/钨\n深加工厂",
+      "category": "downstream",
+      "business": "使用钨精矿制造硬质合金刀具、钨丝、钨电极等高端产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "国防军工/\n高端制造",
+      "category": "downstream",
+      "business": "导弹制导系统、雷达、战斗机发动机、工业机器人伺服电机等使用稀土永磁",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600259",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600259",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600259",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600259",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600259",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600259",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600259",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600259",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600259",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600259",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600259",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600259",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

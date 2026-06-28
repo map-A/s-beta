@@ -1,0 +1,202 @@
+{
+  "company_code": "300747",
+  "company_name": "锐科激光",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300747",
+      "name": "锐科激光\n300747",
+      "category": "target",
+      "business": "国产光纤激光器龙头（1kW-220kW全功率段），航天科工旗下",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "IPG\nPhotonics",
+      "category": "competitor",
+      "business": "全球光纤激光器鼻祖，高端市场领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "创鑫激光",
+      "category": "competitor",
+      "business": "国内#2光纤激光器，价格战主力（未上市）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "杰普特\n688025",
+      "category": "competitor",
+      "business": "脉冲光纤激光器+锂电设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "通快\nTrumpf",
+      "category": "competitor",
+      "business": "德国工业激光系统龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "半导体激光\n芯片(自研)",
+      "category": "upstream",
+      "business": "泵浦源核心器件，公司自研推进国产替代",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "特种光纤\n(自产)",
+      "category": "upstream",
+      "business": "增益光纤/传能光纤，公司自产（2025营收7361万元）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "光学器件\n供应商",
+      "category": "upstream",
+      "business": "光纤耦合器、合束器等光学元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电子元器件\n供应商",
+      "category": "upstream",
+      "business": "控制电路、电源模块等电子元件（占采购7.24%的第一大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "稀土材料\n供应商",
+      "category": "upstream",
+      "business": "特种光纤用稀土材料（铒/镱/铥等掺杂剂）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "激光设备\n集成商",
+      "category": "downstream",
+      "business": "大族激光/华工科技等激光设备整机厂商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "钣金/钢结构\n制造",
+      "category": "downstream",
+      "business": "工业激光切割/焊接终端用户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "航天科工\n军工体系",
+      "category": "downstream",
+      "business": "激光武器/激光通信/激光雷达等特种应用（控股股东体系内）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "3C电子/汽车\n新能源",
+      "category": "downstream",
+      "business": "消费电子/新能源汽车精密激光加工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "医疗/科研\n机构",
+      "category": "downstream",
+      "business": "医疗激光（碎石/手术/美容）+ 国家级科研项目",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300747",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300747",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300747",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300747",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300747",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300747",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300747",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "688700",
+  "company_name": "东威科技",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688700",
+      "name": "东威科技\n688700",
+      "category": "target",
+      "business": "PCB垂直连续电镀(VCP)设备、IC载板电镀设备、光伏镀铜设备、复合铜箔设备的研发与生产",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Atotech\n(MK集团)",
+      "category": "competitor",
+      "business": "全球PCB电镀设备及化学品龙头，全系列产品覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "光华科技\n002741",
+      "category": "competitor",
+      "business": "PCB化学品及部分电镀配套设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "天承科技\n688603",
+      "category": "competitor",
+      "business": "PCB化学品及配套设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "电镀电源\n供应商",
+      "category": "upstream",
+      "business": "电镀整流器/电源模块，电镀设备核心部件（占采购7.90%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "机械部件\n供应商",
+      "category": "upstream",
+      "business": "泵阀/管路/不锈钢槽体等机械部件（占采购4.41%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "自动化控制\n供应商",
+      "category": "upstream",
+      "business": "PLC/传感器/自动化控制系统（占采购4.04%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "阳极/材料\n供应商",
+      "category": "upstream",
+      "business": "钛基涂层阳极、耐腐蚀材料（占采购3.64%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "PCB制造商\n(深南/沪电等)",
+      "category": "downstream",
+      "business": "高端PCB制造商，AI服务器/手机/汽车PCB供应商（前5大客户合计27.74%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "IC载板/\n半导体封装",
+      "category": "downstream",
+      "business": "IC载板制造商，半导体先进封装电镀设备客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏/\nHJT电池",
+      "category": "downstream",
+      "business": "HJT光伏电池制造商，光伏镀铜设备客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "锂电池/\n复合铜箔",
+      "category": "downstream",
+      "business": "锂电池复合铜箔制造商，PET镀铜设备客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688700",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688700",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688700",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688700",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688700",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688700",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688700",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688700",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688700",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688700",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688700",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

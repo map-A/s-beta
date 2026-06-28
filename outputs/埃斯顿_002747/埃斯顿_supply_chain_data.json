@@ -1,0 +1,226 @@
+{
+  "company_code": "002747",
+  "company_name": "埃斯顿",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002747",
+      "name": "埃斯顿\n002747",
+      "category": "target",
+      "business": "工业机器人整机（六轴/焊接/协作）+ 伺服驱动/控制器/数控系统",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "绿的谐波\n688017",
+      "category": "upstream",
+      "business": "谐波减速器，机器人关节核心部件，国产龙头",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "纳博特斯克\nNabtesco",
+      "category": "upstream",
+      "business": "RV减速器，全球市占率60%+，日本企业",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "双环传动\n002472",
+      "category": "upstream",
+      "business": "RV减速器及精密齿轮，国产RV减速器供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "稀土永磁材料\n中科三环/正海磁材",
+      "category": "upstream",
+      "business": "钕铁硼稀土永磁材料，伺服电机关键原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "编码器/轴承\nNSK/SKF等",
+      "category": "upstream",
+      "business": "高精度编码器和精密轴承，机器人关键零部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "汇川技术\n300124",
+      "category": "competitor",
+      "business": "伺服系统/变频器/PLC/工业机器人，工控龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "发那科\nFANUC",
+      "category": "competitor",
+      "business": "全球工业机器人/CNC系统/伺服电机，四大家族之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "安川电机\nYaskawa",
+      "category": "competitor",
+      "business": "工业机器人/伺服驱动/变频器，四大家族之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "埃夫特\n688165",
+      "category": "competitor",
+      "business": "工业机器人整机及系统集成，国产机器人厂商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "ABB\nABBN",
+      "category": "competitor",
+      "business": "工业机器人/运动控制/电气化，全球四大家族之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "新能源汽车制造，焊接/搬运机器人需求大户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源设备厂商\n锂电/光伏",
+      "category": "downstream",
+      "business": "锂电池/光伏组件生产线自动化设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "3C电子制造商",
+      "category": "downstream",
+      "business": "消费电子产品组装测试自动化",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车零部件厂商",
+      "category": "downstream",
+      "business": "传统汽车焊接/喷涂/搬运等机器人应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "食品医药企业",
+      "category": "downstream",
+      "business": "包装/码垛/检测等自动化应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "人形机器人\n整机厂商",
+      "category": "downstream",
+      "business": "人形机器人关节驱动用伺服电机+控制器（前瞻市场）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002747",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002747",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002747",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002747",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002747",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002747",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002747",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002747",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002747",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_002747",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "company_code": "600888",
+  "company_name": "新疆众和",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600888",
+      "name": "新疆众和\n600888",
+      "category": "target",
+      "business": "全球最-大高纯铝生产商（7.8万吨），电子铝箔/电极箔/超纯铝靶材坯料，全产业链一体化",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "新疆天池能源",
+      "category": "upstream",
+      "business": "煤炭开采+火力发电（联营企业持股14.22%），保障能源供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "防城港中丝路新材料",
+      "category": "upstream",
+      "business": "氧化铝生产（240万吨在建项目），孙公司持股67%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铝土矿供应商",
+      "category": "upstream",
+      "business": "进口铝土矿（防城港靠近港口，降低运输成本）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电力供应商",
+      "category": "upstream",
+      "business": "新疆低电价（0.25-0.30元/度），铝冶炼核心成本优势来源",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "东阳光\n600673",
+      "category": "competitor",
+      "business": "电子箔/腐蚀箔/化成箔+制冷剂+锂电材料，电极箔主要竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "海星股份\n603115",
+      "category": "competitor",
+      "business": "电极箔（阳极箔/阴极箔）细分龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "神户制钢\n5406.T",
+      "category": "competitor",
+      "business": "日本高纯铝龙头，全球高纯铝/靶材竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "三井金属\n5706.T",
+      "category": "competitor",
+      "business": "日本高纯铝/电子材料企业，全球高纯铝竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "铝电解电容器厂商",
+      "category": "downstream",
+      "business": "采购电子铝箔/电极箔，生产铝电解电容器（新能源/5G/汽车等场景）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "靶材制造商",
+      "category": "downstream",
+      "business": "采购超纯铝靶材坯料，生产半导体/显示溅射靶材（如江丰电子等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "电线电缆企业",
+      "category": "downstream",
+      "business": "采购铝合金导线材料，生产电力传输线缆",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车/航空航天企业",
+      "category": "downstream",
+      "business": "采购高性能铝合金制品，用于轻量化结构件",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600888",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600888",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600888",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600888",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600888",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600888",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600888",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600888",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600888",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600888",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600888",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600888",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "688343",
+  "company_name": "云天励飞",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688343",
+      "name": "云天励飞\n688343",
+      "category": "target",
+      "business": "边缘AI芯片(DeepEdge系列)+视觉AI算法+数字城市/安防/消费级AI解决方案",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "寒武纪\n688256",
+      "category": "competitor",
+      "business": "AI训练/推理芯片，云端+边缘全栈AI芯片",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华为昇腾",
+      "category": "competitor",
+      "business": "AI芯片+Atlas计算平台+CANN软件栈，生态最完整的国产AI平台",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "海康威视\n002415",
+      "category": "competitor",
+      "business": "视频监控+AI视觉解决方案龙头，覆盖安防/交通/城市治理",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "芯片代工厂",
+      "category": "upstream",
+      "business": "AI芯片晶圆代工（14nm全国产化，占采购13.98%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "服务器组件\n供应商",
+      "category": "upstream",
+      "business": "服务器/边缘计算设备硬件组件（占采购6.70%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硬件模组\n供应商",
+      "category": "upstream",
+      "business": "摄像头模组、传感器等硬件组件（占采购6.68%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "云服务/\n数据服务",
+      "category": "upstream",
+      "business": "算法训练数据、云计算资源、开发工具（占采购4.27%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "政府/\n公安客户",
+      "category": "downstream",
+      "business": "数字城市治理、智慧安防、智慧交通项目（第一大客户占36.99%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "企业客户",
+      "category": "downstream",
+      "business": "企业级AI解决方案客户（第二大客户占20.42%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费级\nAI市场",
+      "category": "downstream",
+      "business": "AI玩具、AI眼镜（闪极科技合作）、智能座舱等消费级应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新兴场景\n(低空/机器人)",
+      "category": "downstream",
+      "business": "低空经济（珠海航展集团合作）、具身智能/人形机器人（华为云合作）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688343",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688343",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688343",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688343",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688343",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688343",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688343",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688343",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688343",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688343",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688343",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

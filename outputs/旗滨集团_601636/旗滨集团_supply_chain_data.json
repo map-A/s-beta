@@ -1,0 +1,214 @@
+{
+  "company_code": "601636",
+  "company_name": "旗滨集团",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_601636",
+      "name": "旗滨集团\n601636",
+      "category": "target",
+      "business": "中国规模领先的玻璃制造企业，全产业链纵向一体化（硅砂→原片→深加工），覆盖浮法/光伏/电子/药用四大玻璃板块",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "硅砂矿山\n（自有）",
+      "category": "upstream",
+      "business": "公司自采硅砂资源，储量超2亿吨，自给率高，核心成本优势来源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "纯碱供应商",
+      "category": "upstream",
+      "business": "玻璃制造核心化工原料，国内纯碱行业供应充足",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "天然气供应商",
+      "category": "upstream",
+      "business": "管道天然气直供+长期战略协议，玻璃熔窑核心能源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "耐火材料/\n设备供应商",
+      "category": "upstream",
+      "business": "窑炉用耐火材料、锡槽设备、镀膜设备等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "镀膜靶材/\nPVB膜供应商",
+      "category": "upstream",
+      "business": "Low-E镀膜靶材、PVB夹层膜等深加工辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "信义光能\n00968.HK",
+      "category": "competitor",
+      "business": "全球光伏玻璃龙头之一，浮法+光伏玻璃，旗滨光伏板块主要竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "福莱特\n601865",
+      "category": "competitor",
+      "business": "全球光伏玻璃龙头之一，光伏组件封装玻璃全球领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "南玻A\n000012",
+      "category": "competitor",
+      "business": "浮法+光伏+电子+工程玻璃，产品多元化与旗滨最可比",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "金晶科技\n600586",
+      "category": "competitor",
+      "business": "浮法+光伏+超白玻璃，旗滨浮法板块直接竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "耀皮玻璃\n600819",
+      "category": "competitor",
+      "business": "浮法+建筑节能玻璃，旗滨建筑玻璃板块竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "房地产/\n建筑开发商",
+      "category": "downstream",
+      "business": "浮法玻璃+Low-E节能建筑玻璃终端需求方，当前受房地产下行影响",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏组件企业",
+      "category": "downstream",
+      "business": "隆基/晶科/天合等光伏组件企业，光伏封装玻璃终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车厂商",
+      "category": "downstream",
+      "business": "汽车玻璃原片终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子\n/显示面板",
+      "category": "downstream",
+      "business": "电子盖板玻璃终端客户（触摸屏/车载显示等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "医药企业",
+      "category": "downstream",
+      "business": "中性硼硅药用玻璃终端客户（疫苗/注射剂包装），新业务",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_601636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_601636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_601636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_601636",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_601636",
+      "relation": "supply"
+    },
+    {
+      "source": "target_601636",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601636",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601636",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601636",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_601636",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_601636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_601636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_601636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_601636",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_601636",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

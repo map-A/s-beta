@@ -1,0 +1,202 @@
+{
+  "company_code": "301188",
+  "company_name": "力诺特玻",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_301188",
+      "name": "力诺特玻\n301188",
+      "category": "target",
+      "business": "中硼硅药用玻璃管+制瓶全产业链、高硼硅耐热玻璃、探索玻璃基板半导体封装",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "肖特 SCHOTT\n德国",
+      "category": "competitor",
+      "business": "全球中硼硅药用玻璃垄断者（德国），技术绝对领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "NEG\n日本电气硝子",
+      "category": "competitor",
+      "business": "全球中硼硅药玻+电子玻璃双寡头之一（日本）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "山东药玻\n600529",
+      "category": "competitor",
+      "business": "国内药用玻璃龙头（低硼硅为主，正布局中硼硅），市值~300亿",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "正川股份\n603976",
+      "category": "competitor",
+      "business": "药用玻璃管制瓶企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "硼砂供应商",
+      "category": "upstream",
+      "business": "硼砂等矿物原料，玻璃核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "石英砂供应商",
+      "category": "upstream",
+      "business": "高纯石英砂，玻璃主料之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工辅料供应商",
+      "category": "upstream",
+      "business": "化工原料及辅助材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "能源供应商",
+      "category": "upstream",
+      "business": "天然气/电力，玻璃熔制高能耗工艺所需",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "包装材料供应商",
+      "category": "upstream",
+      "business": "产品包装材料及辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "华润双鹤/齐鲁制药\n（药企客户）",
+      "category": "downstream",
+      "business": "大中型制药企业，采购中硼硅药用玻璃包装",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "疫苗/生物制剂企业",
+      "category": "downstream",
+      "business": "高端注射剂/疫苗企业，需要中硼硅预灌封/西林瓶",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "康宁/双立人/OXO\n（国际品牌）",
+      "category": "downstream",
+      "business": "国际知名日用品品牌，OEM/ODM采购耐热玻璃产品",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "美的/格兰仕\n（国内家电品牌）",
+      "category": "downstream",
+      "business": "国内家电品牌，采购耐热玻璃厨具/餐具",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "芯片封装厂\n（玻璃基板·概念）",
+      "category": "downstream",
+      "business": "半导体先进封装企业（概念阶段，尚未形成业务关系）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301188",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301188",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301188",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301188",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_301188",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301188",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301188",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301188",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301188",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301188",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301188",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301188",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301188",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301188",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "300767",
+  "company_name": "震安科技",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300767",
+      "name": "震安科技\n300767",
+      "category": "target",
+      "business": "国内建筑减隔震龙头：隔震橡胶支座、减震阻尼器，整体解决方案，参与编制行业标准80部",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "天然橡胶/合成橡胶\n供应商",
+      "category": "upstream",
+      "business": "隔震支座核心原材料，价格随大宗商品波动",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "钢材/钢板\n供应商",
+      "category": "upstream",
+      "business": "支座骨架材料、阻尼器壳体等结构材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "胶黏剂/\n化工助剂商",
+      "category": "upstream",
+      "business": "橡胶与钢板粘接用特种胶黏剂",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "高分子材料\n供应商",
+      "category": "upstream",
+      "business": "特殊减震/隔震部件用高分子材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "悍高集团\n001221",
+      "category": "competitor",
+      "business": "建筑五金/隔震产品，可比公司",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "坚朗五金\n002791",
+      "category": "competitor",
+      "business": "建筑五金系统集成，行业龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "隔震科技/\n丰泽股份",
+      "category": "competitor",
+      "business": "建筑隔震支座/减隔震产品，直接竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "学校/医院\n建设方",
+      "category": "downstream",
+      "business": "高烈度设防地区公共建筑，政策强制要求采用减隔震技术",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "房地产\n开发商",
+      "category": "downstream",
+      "business": "商住地产项目，受房地产行业下行影响大",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "核电工程",
+      "category": "downstream",
+      "business": "核级液压阻尼器、核级支吊架，资质壁垒较高",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "重大市政\n工程",
+      "category": "downstream",
+      "business": "北京大兴国际机场、博物馆等标杆项目",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300767",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300767",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300767",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300767",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300767",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300767",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300767",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300767",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300767",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300767",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300767",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

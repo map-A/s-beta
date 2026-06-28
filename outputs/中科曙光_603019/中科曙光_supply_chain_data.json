@@ -1,0 +1,178 @@
+{
+  "company_code": "603019",
+  "company_name": "中科曙光",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603019",
+      "name": "中科曙光\n603019",
+      "category": "target",
+      "business": "中科院旗下国产AI算力平台龙头，高端服务器+存储+液冷+数据中心，与海光信息协同构建算力全链生态",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "海光信息\n688041",
+      "category": "upstream",
+      "business": "国产CPU/DCU芯片（持股约30%关联公司），曙光核心芯片供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "存储芯片供应商",
+      "category": "upstream",
+      "business": "DRAM/NAND存储芯片（长鑫/三星/SK海力士等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "液冷组件供应商",
+      "category": "upstream",
+      "business": "液冷散热系统（冷板/管路/冷却液），AI服务器核心散热方案",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB/电源供应商",
+      "category": "upstream",
+      "business": "PCB主板/电源模块/机箱结构件等标准化组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "浪潮信息\n000977",
+      "category": "competitor",
+      "business": "国内AI服务器龙头，出货量#1",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "紫光股份/新华三\n000938",
+      "category": "competitor",
+      "business": "服务器+网络设备，国内服务器#2-3",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华为",
+      "category": "competitor",
+      "business": "鲲鹏+昇腾生态服务器，国产算力竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Dell/HPE",
+      "category": "competitor",
+      "business": "全球服务器/存储龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "互联网/云计算厂商",
+      "category": "downstream",
+      "business": "字节跳动等互联网企业，大规模AI服务器采购（第一大客户19.36%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "政务/央企客户",
+      "category": "downstream",
+      "business": "政府/央企国产化替代采购（信创/中特估受益）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "金融/运营商",
+      "category": "downstream",
+      "business": "银行/电信运营商数据中心建设",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "科研院所",
+      "category": "downstream",
+      "business": "科学计算/超算中心，高性能计算需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603019",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603019",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603019",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603019",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603019",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603019",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603019",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603019",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603019",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603019",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

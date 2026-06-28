@@ -1,0 +1,202 @@
+{
+  "company_code": "603678",
+  "company_name": "火炬电子",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603678",
+      "name": "火炬电子\n603678",
+      "category": "target",
+      "business": "军用MLCC自产龙头（市占率第2）+CMC特种陶瓷材料+微波元器件+电阻+MOSFET",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "鸿远电子\n603267",
+      "category": "competitor",
+      "business": "军用MLCC代理+自产（市占率最高），电容器代理分销",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "宏达电子\n300726",
+      "category": "competitor",
+      "business": "军用电子元器件（钽电容/MLCC/连接器），军工电子供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "三环集团\n300408",
+      "category": "competitor",
+      "business": "民用MLCC龙头+陶瓷基片+光纤陶瓷插芯",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "风华高科\n000636",
+      "category": "competitor",
+      "business": "国内最大被动元件厂商（MLCC/电阻/电感），民用为主",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "国瓷材料\n300285",
+      "category": "upstream",
+      "business": "国内最大MLCC介质粉体供应商（钛酸钡等陶瓷粉体）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "立亚化学\n（子公司）",
+      "category": "upstream",
+      "business": "PCS聚碳硅烷先驱体自产（CMC原材料，上下游一体化）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "贵研铂业\n600459",
+      "category": "upstream",
+      "business": "贵金属材料（钯/银浆料），MLCC内电极材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "日本堺化学/Ferro",
+      "category": "upstream",
+      "business": "全球高端MLCC陶瓷粉体主要供应商（进口依赖）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "MLCC生产设备商",
+      "category": "upstream",
+      "business": "叠层/烧结/测试设备（部分依赖日本进口）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中国航空工业集团",
+      "category": "downstream",
+      "business": "战斗机/运输机/直升机，军用MLCC核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "航天科技/科工集团",
+      "category": "downstream",
+      "business": "运载火箭/导弹/卫星，高可靠MLCC客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "中国电子科技集团\n（CETC）",
+      "category": "downstream",
+      "business": "雷达/电子对抗/通讯系统，MLCC+微波元器件客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "中国船舶集团",
+      "category": "downstream",
+      "business": "舰船电子系统，军用MLCC客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "民用高端市场",
+      "category": "downstream",
+      "business": "5G通讯/新能源/汽车电子/工业控制，民用MLCC拓展",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603678",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603678",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603678",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603678",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603678",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603678",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603678",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603678",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603678",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603678",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603678",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603678",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603678",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603678",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

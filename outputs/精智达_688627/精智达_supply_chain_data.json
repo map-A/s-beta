@@ -1,0 +1,166 @@
+{
+  "company_code": "688627",
+  "company_name": "精智达",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_688627",
+      "name": "精智达\n688627",
+      "category": "target",
+      "business": "国内半导体存储器测试检测设备领先企业+XR检测设备先行者，产品覆盖老化测试/探针卡/FT测试/AMOLED检测/MicroOLED检测，市值533亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "FPGA/ASIC\n供应商",
+      "category": "upstream",
+      "business": "测试设备核心芯片（FPGA/ASIC）供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "精密光学\n元件供应商",
+      "category": "upstream",
+      "business": "XR检测设备用精密光学系统供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电子元器件\n供应商",
+      "category": "upstream",
+      "business": "标准化电子元器件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "精密机械\n部件供应商",
+      "category": "upstream",
+      "business": "探针卡/治具板等精密机械部件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "长川科技\n300604",
+      "category": "competitor",
+      "business": "国内SoC/存储ATE测试机龙头，精智达主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Advantest",
+      "category": "competitor",
+      "business": "全球存储器ATE测试设备龙头（日本），精智达对标对象",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Teradyne",
+      "category": "competitor",
+      "business": "全球ATE测试设备龙头（美国）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "头部存储\n厂商",
+      "category": "downstream",
+      "business": "推测为长江存储/长鑫存储等，第一大客户占营收53.16%！",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "面板厂商\n（京东方/TCL）",
+      "category": "downstream",
+      "business": "AMOLED检测系统客户，国内面板龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海外AR/VR\n终端厂商",
+      "category": "downstream",
+      "business": "MicroOLED/MicroLED检测设备海外客户，XR检测先行者",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "其他半导体\n厂商",
+      "category": "downstream",
+      "business": "第二/三/四/五大客户（合计占营收40%）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688627",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688627",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688627",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688627",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688627",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688627",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688627",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688627",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688627",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688627",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688627",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

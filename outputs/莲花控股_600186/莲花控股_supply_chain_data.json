@@ -1,0 +1,38 @@
+{
+  "company_code": "600186",
+  "company_name": "莲花控股",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_600186", "name": "莲花控股\n600186", "category": "target", "business": "原莲花味精，主营调味品（味精/鸡精/酱油/料酒等），跨界算力租赁（330台H800服务器）", "symbolSize": 90},
+    {"id": "comp_0", "name": "海天味业\n603288", "category": "competitor", "business": "中国调味品绝对龙头（酱油/蚝油/酱）", "symbolSize": 45},
+    {"id": "comp_1", "name": "梅花生物\n600873", "category": "competitor", "business": "国内味精/氨基酸龙头", "symbolSize": 45},
+    {"id": "comp_2", "name": "千禾味业\n603027", "category": "competitor", "business": "零添加酱油龙头", "symbolSize": 45},
+    {"id": "up_0", "name": "粮食供应商", "category": "upstream", "business": "小麦/玉米等粮食原料", "symbolSize": 40},
+    {"id": "up_1", "name": "新华三信息\n（H800服务器）", "category": "upstream", "business": "供应330台英伟达H800 GPU算力服务器", "symbolSize": 40},
+    {"id": "up_2", "name": "包装材料供应商", "category": "upstream", "business": "食品包装材料", "symbolSize": 40},
+    {"id": "up_3", "name": "调味品原料供应商", "category": "upstream", "business": "谷氨酸钠/食盐/淀粉等调味品原料", "symbolSize": 40},
+    {"id": "down_0", "name": "经销商网络\n（2900+家）", "category": "downstream", "business": "全国2900+家经销商，覆盖全国并出口70+国家", "symbolSize": 50},
+    {"id": "down_1", "name": "餐饮/食品加工企业", "category": "downstream", "business": "B端餐饮和食品加工企业", "symbolSize": 50},
+    {"id": "down_2", "name": "算力服务客户", "category": "downstream", "business": "上海X国企等，签约5.55亿算力服务合同", "symbolSize": 50},
+    {"id": "down_3", "name": "终端消费者", "category": "downstream", "business": "家庭消费者，购买莲花品牌调味品", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_600186", "relation": "supply"},
+    {"source": "up_1", "target": "target_600186", "relation": "supply"},
+    {"source": "up_2", "target": "target_600186", "relation": "supply"},
+    {"source": "up_3", "target": "target_600186", "relation": "supply"},
+    {"source": "target_600186", "target": "down_0", "relation": "customer"},
+    {"source": "target_600186", "target": "down_1", "relation": "customer"},
+    {"source": "target_600186", "target": "down_2", "relation": "customer"},
+    {"source": "target_600186", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_600186", "relation": "compete"},
+    {"source": "comp_1", "target": "target_600186", "relation": "compete"},
+    {"source": "comp_2", "target": "target_600186", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

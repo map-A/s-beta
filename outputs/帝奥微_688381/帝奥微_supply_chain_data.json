@@ -1,0 +1,214 @@
+{
+  "company_code": "688381",
+  "company_name": "帝奥微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688381",
+      "name": "帝奥微\n688381",
+      "category": "target",
+      "business": "高性能模拟芯片设计（信号链+电源管理），Fabless模式",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "圣邦股份\n300661",
+      "category": "competitor",
+      "business": "国内模拟IC龙头，信号链+电源管理全产品线",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "思瑞浦\n688536",
+      "category": "competitor",
+      "business": "高性能信号链芯片，工业/汽车级放大器、数据转换器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "艾为电子\n688798",
+      "category": "competitor",
+      "business": "音频芯片、电源管理IC、射频前端",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "德州仪器(TI)",
+      "category": "competitor",
+      "business": "全球模拟IC龙头，全产品线覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "中芯国际\n688981",
+      "category": "upstream",
+      "business": "晶圆代工，130/180nm BCDMOS工艺（推测为第一大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "长电科技\n600584",
+      "category": "upstream",
+      "business": "芯片封装测试服务（推测为第二大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "华虹半导体\n688347",
+      "category": "upstream",
+      "business": "晶圆代工，BCDMOS/特色工艺平台",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "通富微电\n002156",
+      "category": "upstream",
+      "business": "集成电路封装测试",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "Synopsys/\nCadence",
+      "category": "upstream",
+      "business": "EDA设计工具与IP授权",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "三星电子",
+      "category": "downstream",
+      "business": "手机/消费电子终端，信号链+电源管理芯片客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "比亚迪\n002594",
+      "category": "downstream",
+      "business": "新能源汽车/智能驾驶，车规级模拟芯片客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光迅科技\n002281",
+      "category": "downstream",
+      "business": "光模块/光通信器件，CPO用DCDC/电平转换客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "小米集团",
+      "category": "downstream",
+      "business": "手机/IoT/汽车终端，消费电子+车规级芯片客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "OPPO",
+      "category": "downstream",
+      "business": "智能手机终端，电源管理芯片客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "宇树科技",
+      "category": "downstream",
+      "business": "人形机器人，USB3.2高速接口芯片客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688381",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688381",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688381",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688381",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688381",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688381",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688381",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688381",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688381",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688381",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688381",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688381",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688381",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688381",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688381",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

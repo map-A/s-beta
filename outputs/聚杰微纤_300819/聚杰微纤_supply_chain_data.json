@@ -1,0 +1,190 @@
+{
+  "company_code": "300819",
+  "company_name": "聚杰微纤",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300819",
+      "name": "聚杰微纤\n300819",
+      "category": "target",
+      "business": "国内超细复合纤维面料龙头，向电子布（PCB用）拓展",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "宏和科技\n603256",
+      "category": "competitor",
+      "business": "高端电子级玻璃纤维布",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "菲利华\n300395",
+      "category": "competitor",
+      "business": "石英材料+电子布",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东丽\n3402.JP",
+      "category": "competitor",
+      "business": "日本超细纤维技术先驱",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "华纺股份\n600448",
+      "category": "competitor",
+      "business": "纺织面料生产",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "超细纤维\n原料供应商",
+      "category": "upstream",
+      "business": "涤纶/锦纶复合丝（占采购17.27%的第一大供应商）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "染料助剂\n供应商",
+      "category": "upstream",
+      "business": "纺织染料、助剂化工企业（占采购8.24%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工原料\n供应商",
+      "category": "upstream",
+      "business": "基础化工原料（占采购7.21%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备/辅材\n供应商",
+      "category": "upstream",
+      "business": "纺织设备、辅材供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "客户一\n(47.93%营收)",
+      "category": "downstream",
+      "business": "第一大客户，推测为大型品牌商/贸易商（占营收47.93%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "PCB厂商",
+      "category": "downstream",
+      "business": "电子布下游PCB铜箔基板厂商（新业务方向）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车内饰\n品牌",
+      "category": "downstream",
+      "business": "汽车座椅/内饰用超纤仿皮面料终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费品/\n清洁品牌",
+      "category": "downstream",
+      "business": "擦拭布/清洁巾等消费品品牌商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "工业/半导体\n洁净室",
+      "category": "downstream",
+      "business": "无尘擦拭布终端（半导体/电子制造洁净室）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300819",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300819",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300819",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300819",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300819",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300819",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300819",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300819",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300819",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300819",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300819",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300819",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300819",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

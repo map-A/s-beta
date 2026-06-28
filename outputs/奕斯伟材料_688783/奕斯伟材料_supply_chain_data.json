@@ -1,0 +1,178 @@
+{
+  "company_code": "688783",
+  "company_name": "奕斯伟材料",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_688783",
+      "name": "奕斯伟材料\n688783",
+      "category": "target",
+      "business": "12英寸半导体级抛光片/外延片，中国大陆产能最大，全球第六",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "沪硅产业\n688126",
+      "category": "competitor",
+      "business": "8/12英寸硅片，国内最早12英寸量产，中国第二大硅片厂商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "信越化学\n4063.T",
+      "category": "competitor",
+      "business": "全球第一大硅片厂商（市占率~30%），日本，兼做PVC/有机硅",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "SUMCO\n3436.T",
+      "category": "competitor",
+      "business": "全球第二大硅片厂商（市占率~25%），日本，纯硅片标的",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "立昂微\n605358",
+      "category": "competitor",
+      "business": "8/12英寸硅片+化合物半导体，国内第三梯队",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯多晶硅供应商",
+      "category": "upstream",
+      "business": "11N+纯度电子级多晶硅（Wacker/Hemlock/协鑫等），拉制硅单晶核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "石英坩埚供应商",
+      "category": "upstream",
+      "business": "单晶拉制用石英坩埚，高耗材（TOSOH/信越等），单个成本数十万元",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "单晶炉设备商\n晶盛机电(300316)",
+      "category": "upstream",
+      "business": "CZ法单晶拉制炉，国产替代推进中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电子级化学品供应商",
+      "category": "upstream",
+      "business": "超纯试剂、特殊气体，用于硅片清洗/刻蚀/抛光工艺",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "存储芯片厂\n（推测：长鑫存储）",
+      "category": "downstream",
+      "business": "DRAM存储芯片制造，国产12英寸硅片最大需求方之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "逻辑芯片代工厂\n（推测：中芯国际）",
+      "category": "downstream",
+      "business": "晶圆代工服务，为华为海思/寒武纪等设计公司制造芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "功率器件/IGBT厂",
+      "category": "downstream",
+      "business": "IGBT/MOSFET制造，应用于新能源汽车、光伏逆变器、工业控制",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "图像传感器/显示驱动厂",
+      "category": "downstream",
+      "business": "CIS摄像头芯片、OLED/LCD显示驱动IC制造",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688783",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688783",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688783",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688783",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688783",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688783",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688783",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688783",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688783",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688783",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

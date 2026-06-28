@@ -1,0 +1,190 @@
+{
+  "company_code": "600266",
+  "company_name": "北京城建",
+  "analysis_date": "2026-06-18",
+  "nodes": [
+    {
+      "id": "target_600266",
+      "name": "北京城建\n600266",
+      "category": "target",
+      "business": "房地产开发、商业地产经营、物业管理，北京国资委旗下区域房企",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "首开股份\n600376",
+      "category": "competitor",
+      "business": "北京国资房企，住宅开发为主，土储规模大于北京城建",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "金融街\n000402",
+      "category": "competitor",
+      "business": "北京国资房企，核心商务区商业地产开发",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "万科A\n000002",
+      "category": "competitor",
+      "business": "全国性龙头房企，综合开发，物业管理和物流仓储",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "保利发展\n600048",
+      "category": "competitor",
+      "business": "全国性龙头央企房企，综合实力前三",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "北京城建集团",
+      "category": "upstream",
+      "business": "控股股东，建筑工程施工总承包，占采购38.23%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "城建六建设集团",
+      "category": "upstream",
+      "business": "关联方施工单位，建筑施工总承包，占采购30.66%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "广州鹏烨贸易",
+      "category": "upstream",
+      "business": "建筑材料贸易商，占采购1.98%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "上海上房装饰",
+      "category": "upstream",
+      "business": "建筑装饰装修公司，占采购0.75%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "中利基业建设",
+      "category": "upstream",
+      "business": "建设工程施工，占采购0.75%",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "刚需购房者",
+      "category": "downstream",
+      "business": "首次置业购房群体，北京地区为主",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "改善性购房者",
+      "category": "downstream",
+      "business": "住房升级换代需求群体",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "商业物业租户",
+      "category": "downstream",
+      "business": "办公/商业物业租赁企业客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "政府回迁安置",
+      "category": "downstream",
+      "business": "城市更新项目的政府回迁安置需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600266",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600266",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600266",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600266",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_600266",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600266",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600266",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600266",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600266",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600266",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600266",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600266",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600266",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

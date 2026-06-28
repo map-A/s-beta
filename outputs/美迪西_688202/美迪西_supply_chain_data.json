@@ -1,0 +1,178 @@
+{
+  "company_code": "688202",
+  "company_name": "美迪西",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688202",
+      "name": "美迪西\n688202",
+      "category": "target",
+      "business": "临床前CRO一站式服务（药物发现→药效/毒理/DMPK），700种肿瘤模型",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "药明康德\n603259",
+      "category": "competitor",
+      "business": "全球CRO/CDMO龙头（小分子+生物药全链条）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "康龙化成\n300759",
+      "category": "competitor",
+      "business": "综合CRO龙头（药物化学+生物+DMPK+毒理）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "昭衍新药\n603127",
+      "category": "competitor",
+      "business": "临床前安全性评价（GLP毒理学）龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "IQVIA\nCovance",
+      "category": "competitor",
+      "business": "全球CRO龙头（临床研究+数据+药物研发全流程）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "实验动物\n供应商",
+      "category": "upstream",
+      "business": "比格犬、猴、大小鼠等实验动物模型",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "试剂/耗材\n供应商",
+      "category": "upstream",
+      "business": "生化试剂、色谱柱、培养基、细胞株",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "仪器设备\n供应商",
+      "category": "upstream",
+      "business": "PET-CT、流式细胞仪、质谱仪、HPLC等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "IT/AI平台\n供应商",
+      "category": "upstream",
+      "business": "LIMS系统、数据管理、AI药物发现平台",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "Biotech\n初创企业",
+      "category": "downstream",
+      "business": "早期创新药研发（融资驱动的初创Biotech）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "国内大型\n制药企业",
+      "category": "downstream",
+      "business": "创新药/仿制药研发外包（传统药企）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海外制药\n企业",
+      "category": "downstream",
+      "business": "跨境CRO服务（符合中美申报标准的跨国药企）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "医疗器械/\n合成生物企业",
+      "category": "downstream",
+      "business": "合成生物学、医疗器械相关的安全性评价",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688202",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688202",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688202",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688202",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688202",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688202",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688202",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688202",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688202",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

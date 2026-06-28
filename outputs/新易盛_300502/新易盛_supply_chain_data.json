@@ -1,0 +1,198 @@
+{
+  "company_code": "300502",
+  "company_name": "新易盛",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300502",
+      "name": "新易盛\n300502",
+      "category": "target",
+      "business": "全系列光通信光模块研发/生产/销售，800G/1.6T高速光模块",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中际旭创\n300308",
+      "category": "competitor",
+      "business": "国内光模块龙头，800G市占率最高，客户覆盖北美超大厂",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "光迅科技\n002281",
+      "category": "competitor",
+      "business": "光器件+光模块全品类龙头，国内光通信综合供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Coherent\nCOHR（境外）",
+      "category": "competitor",
+      "business": "美国激光器+光模块龙头，EML激光器卡点+金刚石散热衬底",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Lumentum\nLITE（境外）",
+      "category": "competitor",
+      "business": "EML/VCSEL激光器+光模块，GOOGL TPU供应商，sold out until 2027",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "应用光电\nAAOI（境外）",
+      "category": "competitor",
+      "business": "800G/1.6T光模块+自有激光fab，美国最大800G产能",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "光芯片供应商\n（推测：源杰科技/LITE）",
+      "category": "upstream",
+      "business": "InP基光芯片、DFB/EML激光器芯片，光模块核心上游",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "天孚通信\n300394",
+      "category": "upstream",
+      "business": "FA光纤阵列、透镜、准直器、隔离器，光模块核心无源组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "DSP芯片供应商\n（博通/Marvell）",
+      "category": "upstream",
+      "business": "高速DSP芯片、SerDes IP，光模块数字信号处理核心",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB/PCBA供应商\n（深南电路/沪电股份）",
+      "category": "upstream",
+      "business": "高速PCB板、PCBA加工，光模块电路基板",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "Meta\n（推测第一客户）",
+      "category": "downstream",
+      "business": "AI capex需求源，Llama模型训练集群，全球最大光模块采购方之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "谷歌/微软\n（推测第二/三客户）",
+      "category": "downstream",
+      "business": "GCP/Azure云平台，TPU/AI推理集群，数据中心光互联需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "英伟达生态\n（终端需求驱动）",
+      "category": "downstream",
+      "business": "GPU集群InfiniBand/NVLink网络，800G/1.6T光互联终端需求源",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "国内云厂\n（阿里/腾讯/字节）",
+      "category": "downstream",
+      "business": "国内AI算力基础设施建设，数据中心光模块需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300502",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300502",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300502",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300502",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300502",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300502",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300502",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300502",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300502",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300502",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300502",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300502",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_300502",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ],
+  "_analysis_notes": {
+    "supply_chain_position": "L3 光模块组装层 — 竞争最激烈的环节",
+    "chokepoint_rating": "2/5 — 弱卡点，供应链受益者而非卡点",
+    "key_risk": "前五大客户占72.34%、竞争加剧、估值PE71倍",
+    "valuation": "7654亿市值PE71倍，已充分定价，非Serenity卡点标的",
+    "competitive_landscape": "充分竞争，7家以上主要参与者，无双寡头垄断",
+    "real_chokepoints_upstream": "光芯片（源杰/LITE）、InP衬底（AXTI）、FA组件（天孚）"
+  }
+}

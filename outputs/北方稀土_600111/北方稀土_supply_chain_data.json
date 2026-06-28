@@ -1,0 +1,190 @@
+{
+  "company_code": "600111",
+  "company_name": "北方稀土",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_600111",
+      "name": "北方稀土\n600111",
+      "category": "target",
+      "business": "国内最大轻稀土冶炼分离企业，控制白云鄂博矿约50%国内轻稀土配额，产品含稀土氧化物/金属/盐类/抛光材料/储氢材料",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "厦门钨业\n600549",
+      "category": "competitor",
+      "business": "钨+中重稀土（镝/铽），另有NdFeB磁体业务，六大稀土集团成员，与北方稀土品类差异化",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "盛和资源\n600392",
+      "category": "competitor",
+      "business": "稀土贸易+开采，广泛布局国内外稀土资源端，市值约200-300亿",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Lynas\nASX:LYC",
+      "category": "competitor",
+      "business": "全球最大非中国轻稀土生产商（澳大利亚），年产约15000吨REO，远小于北方稀土",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "广晟有色\n600259",
+      "category": "competitor",
+      "business": "广东省稀土集团旗下，以中重稀土开采为主，六大稀土集团成员",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "包钢股份\n600010",
+      "category": "upstream",
+      "business": "白云鄂博矿钢铁+稀土精矿生产，是北方稀土稀土精矿核心关联供应商（控股方体系内），最关键上游",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "包钢集团\n（控股股东）",
+      "category": "upstream",
+      "business": "实控人，持股38.03%，拥有白云鄂博矿独家开采权，通过包钢股份向北方稀土供应稀土精矿，2025年3月以23元增持",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工试剂\n供应商",
+      "category": "upstream",
+      "business": "萃取剂（P204/P507等）、碳酸氢铵、盐酸等分离冶炼必需化学品，多家分散供应（脱敏）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "内蒙古电网\n（电力）",
+      "category": "upstream",
+      "business": "稀土冶炼高耗能行业，电力成本约占生产成本15-25%，内蒙古电价低是竞争优势之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "金力永磁\n300748",
+      "category": "downstream",
+      "business": "NdFeB永磁材料国内龙头，最近从北方稀土购入稀交所9.24%股权，与北方稀土关系密切，核心Pr-Nd买家",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中科三环\n000970",
+      "category": "downstream",
+      "business": "NdFeB磁体头部企业，产品覆盖EV/风电/消费电子，是国内最大的稀土永磁材料生产商之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "正海磁材\n300224",
+      "category": "downstream",
+      "business": "高性能NdFeB磁体，主攻EV驱动电机市场，随EV渗透率上升受益",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "日本磁材厂\n（信越/TDK等）",
+      "category": "downstream",
+      "business": "全球最重要的Pr-Nd下游，日本磁体厂（信越化学5203.T、TDK6762.T）大量进口中国轻稀土，出口管制后成本大幅上升",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "宁波韵升\n600366",
+      "category": "downstream",
+      "business": "永磁材料+精密零部件，消费电子和EV双线布局，国内稀土永磁头部企业",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600111",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600111",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600111",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600111",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600111",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600111",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600111",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600111",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600111",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600111",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600111",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600111",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600111",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

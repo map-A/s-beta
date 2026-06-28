@@ -1,0 +1,166 @@
+{
+  "company_code": "301123",
+  "company_name": "奕东电子",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_301123",
+      "name": "奕东电子\n301123",
+      "category": "target",
+      "business": "FPC柔性电路板、连接器及零组件、LED背光模组、液冷板/散热模组、锂电池精密结构件",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "鹏鼎控股\n002938",
+      "category": "competitor",
+      "business": "全球FPC第一大制造商，苹果核心FPC供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "东山精密\n002384",
+      "category": "competitor",
+      "business": "FPC+PCB+光模块，全球PCB前五",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "立讯精密\n002475",
+      "category": "competitor",
+      "business": "连接器全球龙头+消费电子代工巨头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "覆铜板/铜箔供应商",
+      "category": "upstream",
+      "business": "柔性覆铜板（FCCL）及铜箔基材，FPC核心原材料（第一大供应商占采购19.43%）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "连接器端子/模具供应商",
+      "category": "upstream",
+      "business": "精密金属端子、塑胶注塑模具",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "LED芯片/光学膜供应商",
+      "category": "upstream",
+      "business": "LED芯片、导光板、扩散膜等背光模组光学组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "铝材/铜材供应商",
+      "category": "upstream",
+      "business": "工业铝材、铜材等金属材料，液冷板/散热模组原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子终端/ODM",
+      "category": "downstream",
+      "business": "智能手机、可穿戴设备、平板电脑、VR-AR终端品牌及ODM厂商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电池/储能集成商",
+      "category": "downstream",
+      "business": "动力电池生产商、储能系统集成商，采购FPC/CCS/精密结构件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "AI服务器/光模块厂商",
+      "category": "downstream",
+      "business": "AI服务器整机厂、光模块厂商，采购高速背板连接器+液冷散热模组",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子Tier1",
+      "category": "downstream",
+      "business": "新能源汽车Tier1供应商及整车厂，采购车载FPC/连接器/背光模组",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301123",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301123",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301123",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301123",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301123",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301123",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301123",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301123",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301123",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301123",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301123",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "company_code": "600026",
+  "company_name": "中远海能",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_600026",
+      "name": "中远海能\n600026",
+      "category": "target",
+      "business": "中国最大的油轮及LNG运输企业，主营原油、成品油、LNG、LPG及化学品海上运输",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "招商轮船\n601872",
+      "category": "competitor",
+      "business": "中国第二大油轮船东+散货运输，VLCC船队规模仅次于中远海能",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Frontline\nFRO",
+      "category": "competitor",
+      "business": "全球最大独立油轮船东之一，VLCC+Suezmax，纽交所上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "DHT Holdings\nDHT",
+      "category": "competitor",
+      "business": "VLCC专业运营商，纽交所上市，专注原油轮市场",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "中远海运集团",
+      "category": "upstream",
+      "business": "控股股东，提供船舶管理、燃料供应等综合服务，2025年采购占比44.14%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "大船重工",
+      "category": "upstream",
+      "business": "大连船舶重工集团，VLCC及LNG船舶建造，6艘VLCC+LNG船订单",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "江南造船",
+      "category": "upstream",
+      "business": "江南造船集团，LNG船舶建造，4艘17.5万方LNG船订单（64.45亿元）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "沪东中华",
+      "category": "upstream",
+      "business": "沪东中华造船集团，中国LNG船建造龙头，历史LNG船订单",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "船用燃料供应商",
+      "category": "upstream",
+      "business": "船用燃油（VLSFO/HSFO）及LNG燃料供应，航运企业最大可变成本之一",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中石化",
+      "category": "downstream",
+      "business": "中国最大炼化企业，原油进口+LNG长约承租方（19+5年期租合同）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中石油",
+      "category": "downstream",
+      "business": "中国最大油气企业，原油进口运输需求+中缅管道项目合作",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "Shell Tankers",
+      "category": "downstream",
+      "business": "壳牌油轮新加坡，LNG船期租承租方（4艘，7年期租合同）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "全球能源贸易商",
+      "category": "downstream",
+      "business": "国际原油/成品油贸易公司，VLCC即期市场和COA合同客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "国内炼厂",
+      "category": "downstream",
+      "business": "中国沿海炼厂，内贸原油及成品油运输需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600026",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600026",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600026",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600026",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_600026",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600026",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600026",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600026",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600026",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600026",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600026",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600026",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600026",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

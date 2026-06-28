@@ -1,0 +1,190 @@
+{
+  "company_code": "688515",
+  "company_name": "裕太微",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_688515",
+      "name": "裕太微\n688515",
+      "category": "target",
+      "business": "以太网PHY芯片、交换芯片、网卡芯片设计（Fabless），国内唯一上市以太网PHY标的",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "晶圆代工厂\n（供应商一）",
+      "category": "upstream",
+      "business": "芯片晶圆代工制造，占采购额53.62%，推测为台积电或华虹半导体",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "封测服务商\n（供应商二）",
+      "category": "upstream",
+      "business": "芯片封装与测试服务，占采购额21.14%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "IP授权商\n（EDA/IP）",
+      "category": "upstream",
+      "business": "芯片设计所需的EDA工具和IP核授权（Synopsys/Cadence等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "光罩/基板\n材料供应商",
+      "category": "upstream",
+      "business": "光罩制造、芯片基板等半导体材料供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Broadcom\n博通",
+      "category": "competitor",
+      "business": "全球以太网PHY芯片龙头，覆盖10G/25G/100G+，数据中心市场主导",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Marvell\n美满电子",
+      "category": "competitor",
+      "business": "全球第二大以太网PHY/交换芯片供应商，数据中心和5G市场",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Realtek\n瑞昱半导体",
+      "category": "competitor",
+      "business": "消费级以太网PHY芯片龙头，PC/路由器市场份额最大，成本优势",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "盛科通信\n688702",
+      "category": "competitor",
+      "business": "国内以太网交换芯片设计公司，网通芯片另一国产替代标的",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "比亚迪\n汽车电子",
+      "category": "downstream",
+      "business": "比亚迪仰望/腾势系列采用裕太微车载以太网PHY芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华为/网络\n设备厂商",
+      "category": "downstream",
+      "business": "网络设备厂商（华为哈勃持股6.97%），网络交换机/路由器等",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "信创设备商\n联想/星网锐捷",
+      "category": "downstream",
+      "business": "国产PC/服务器/网络设备厂商，信创生态已量产采用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业互联网\n设备商",
+      "category": "downstream",
+      "business": "工业自动化、工业互联网设备厂商，工业以太网应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "数据中心\n服务器厂商",
+      "category": "downstream",
+      "business": "数据中心/AI算力基础设施，2.5G/5G/10G PHY为主要增长方向",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688515",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688515",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688515",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688515",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688515",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688515",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688515",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688515",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688515",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688515",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688515",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688515",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688515",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

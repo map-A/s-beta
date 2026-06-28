@@ -1,0 +1,214 @@
+{
+  "company_code": "002156",
+  "company_name": "通富微电",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002156",
+      "name": "通富微电\n002156",
+      "category": "target",
+      "business": "集成电路封装测试服务，先进封装（Chiplet/FC-BGA/2.5D），深度绑定AMD",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "全球前三OSAT企业，SiP/Fan-out/Chiplet封装，客户覆盖广泛",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "华天科技\n002185",
+      "category": "competitor",
+      "business": "国内第三大封测企业，FC/Bumping/SiP封装，侧重中高端",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "晶方科技\n603005",
+      "category": "competitor",
+      "business": "传感器WLCSP封装细分龙头，光学封装领域领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "日月光半导体\n3711.TW",
+      "category": "competitor",
+      "business": "全球最大OSAT企业，全品类封装测试，市占率约25-30%",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "味之素\n(ABF基板)",
+      "category": "upstream",
+      "business": "ABF绝缘膜全球垄断供应商，FC-BGA封装核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "ASMPacific\n00522.HK",
+      "category": "upstream",
+      "business": "半导体封装设备龙头，贴片机、打线机等核心设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "兴森科技\n002436",
+      "category": "upstream",
+      "business": "IC载板/封装基板国产供应商，ABF基板国产化推进",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "深南电路\n002916",
+      "category": "upstream",
+      "business": "高端IC载板/封装基板供应商，PCB及载板双主业",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "长川科技\n300604",
+      "category": "upstream",
+      "business": "集成电路测试设备国产龙头，分选机/探针台",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AMD",
+      "category": "downstream",
+      "business": "全球第二大CPU/GPU设计公司，通富第一大客户（收入占比52.29%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "联发科\n2454.TW",
+      "category": "downstream",
+      "business": "全球最大手机芯片设计公司之一，SoC/5G基带",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长江存储",
+      "category": "downstream",
+      "business": "国产3D NAND存储芯片龙头，通富为其混合键合封装合作伙伴",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "德州仪器\nTI",
+      "category": "downstream",
+      "business": "全球模拟芯片龙头，工业/汽车/消费电子全覆盖",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "兆易创新\n603986",
+      "category": "downstream",
+      "business": "国产存储及MCU设计龙头，NOR Flash+DRAM+MCU",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "恩智浦\nNXP",
+      "category": "downstream",
+      "business": "全球汽车芯片龙头，车载MCU/雷达/网关芯片",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002156",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002156",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002156",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002156",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002156",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002156",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002156",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002156",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002156",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002156",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002156",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002156",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002156",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002156",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002156",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

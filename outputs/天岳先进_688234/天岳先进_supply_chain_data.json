@@ -1,0 +1,218 @@
+{
+  "company_code": "688234",
+  "company_name": "天岳先进",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_688234",
+      "name": "天岳先进\n688234",
+      "category": "target",
+      "business": "碳化硅（SiC）衬底研发与量产，8英寸全球份额>50%，12英寸率先推出",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Wolfspeed\nWOLF",
+      "category": "competitor",
+      "business": "全球最大SiC衬底供应商（曾），2024-2025年深陷财务困境，探索Chapter 11重组",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "Coherent\nCOHR",
+      "category": "competitor",
+      "business": "SiC衬底+激光器件多业务线，积极扩产8英寸SiC衬底",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "天科合达\n三安系",
+      "category": "competitor",
+      "business": "国内第二大SiC衬底供应商，三安光电体系，垂直整合布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "SK Siltron",
+      "category": "competitor",
+      "business": "韩国SiC衬底供应商，背靠SK集团，持续扩产",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "碳化硅粉料\n供应商",
+      "category": "upstream",
+      "business": "高纯硅粉+高纯碳/石墨粉，PVT法SiC长晶核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "北方华创\n002371",
+      "category": "upstream",
+      "business": "半导体设备龙头，提供SiC长晶炉、刻蚀设备等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "晶升装备",
+      "category": "upstream",
+      "business": "碳化硅单晶生长炉专业制造商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "高纯石墨\n坩埚供应商",
+      "category": "upstream",
+      "business": "PVT法长晶用高纯石墨坩埚、保温材料等消耗品",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "英飞凌\nInfineon",
+      "category": "downstream",
+      "business": "全球最大功率半导体公司，SiC MOSFET主要采购商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "意法半导体\nSTMicro",
+      "category": "downstream",
+      "business": "Tesla SiC MOSFET主要供应商，SiC需求量大",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "安森美\nON Semi",
+      "category": "downstream",
+      "business": "SiC二极管/MOSFET供应商，推进SiC垂直整合",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "比亚迪半导体",
+      "category": "downstream",
+      "business": "国内最大车规SiC器件采购商，比亚迪体系",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688234",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688234",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688234",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688234",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688234",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688234",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688234",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688234",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688234",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688234",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688234",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688234",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ],
+  "_template_notes": {
+    "required_fields": [
+      "company_code: 6位股票代码",
+      "company_name: 公司中文名称",
+      "analysis_date: 格式YYYY-MM-DD"
+    ],
+    "node_requirements": {
+      "minimum_counts": {
+        "upstream": 4,
+        "competitor": 3,
+        "downstream": 4,
+        "target": 1
+      },
+      "symbolSize_standards": {
+        "target": 90,
+        "downstream": 50,
+        "competitor": 45,
+        "upstream": 40
+      },
+      "id_conventions": {
+        "target": "target_688234",
+        "upstream": "up_0, up_1, up_2, ...",
+        "competitor": "comp_0, comp_1, comp_2, ...",
+        "downstream": "down_0, down_1, down_2, ..."
+      },
+      "category_values": [
+        "target",
+        "upstream",
+        "competitor",
+        "downstream"
+      ]
+    },
+    "edge_requirements": {
+      "relation_types": {
+        "supply": "上游 → 目标公司",
+        "customer": "目标公司 → 下游",
+        "compete": "竞品 ↔ 目标公司"
+      }
+    }
+  }
+}

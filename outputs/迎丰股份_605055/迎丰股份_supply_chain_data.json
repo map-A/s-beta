@@ -1,0 +1,190 @@
+{
+  "company_code": "605055",
+  "company_name": "迎丰股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_605055",
+      "name": "迎丰股份\n605055",
+      "category": "target",
+      "business": "纺织品印染加工（针织+梭织面料），智能印染工厂，位于绍兴柯桥",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "染料供应商",
+      "category": "upstream",
+      "business": "分散采购染料（含分散染料/活性染料等），大宗采购+临时特殊色采购",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "助剂供应商",
+      "category": "upstream",
+      "business": "印染助剂（柔软剂/防水剂/阻燃剂/抗静电剂等功能助剂）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "能源配套供应商",
+      "category": "upstream",
+      "business": "天然气/电力/蒸汽/水（政府统一规划配套供应）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "坯布供应商",
+      "category": "upstream",
+      "business": "针织坯布/梭织坯布（棉/涤纶/锦纶/氨纶等面料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "印染设备供应商",
+      "category": "upstream",
+      "business": "染色机/定型机/印花机/智能化设备（国际先进印染设备）",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "航民股份\n600987",
+      "category": "competitor",
+      "business": "A股印染龙头，印染+热电联产+水务一体化，产能约为迎丰3-4倍",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三元控股集团",
+      "category": "competitor",
+      "business": "浙江综合印染大企，产品线齐全（未上市）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "浙江乐高实业",
+      "category": "competitor",
+      "business": "中高端印染差异化竞争（未上市）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "鲁泰纺织\n000726",
+      "category": "competitor",
+      "business": "高档色织面料+印染面料，纵向一体化（纺纱-织布-染整-制衣）",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "纺织品面料贸易商",
+      "category": "downstream",
+      "business": "中国轻纺城大量集聚的面料贸易商，采购印染后面料分销",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "服装制成品企业",
+      "category": "downstream",
+      "business": "纺织制成品生产企业（运动/休闲/商务服饰等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "运动服饰品牌供应链",
+      "category": "downstream",
+      "business": "运动服饰品牌及其代工企业，采购功能性面料",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "家纺面料采购商",
+      "category": "downstream",
+      "business": "家用纺织品（床品/窗帘/毛巾等）生产企业",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_605055",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_605055",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_605055",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_605055",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_605055",
+      "relation": "supply"
+    },
+    {
+      "source": "target_605055",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605055",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605055",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605055",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_605055",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_605055",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_605055",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_605055",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

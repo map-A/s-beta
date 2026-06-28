@@ -1,0 +1,214 @@
+{
+  "company_code": "688268",
+  "company_name": "华特气体",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_688268",
+      "name": "华特气体\n688268",
+      "category": "target",
+      "business": "国内电子特种气体龙头，50+种半导体级特气国产化，国内唯一ASML光刻气认证",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "氦气气源\n(卡塔尔/美国)",
+      "category": "upstream",
+      "business": "全球氦气供应高度集中，卡塔尔Ras Laffan占全球30%+，半导体/光纤关键原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "锗原料供应商",
+      "category": "upstream",
+      "business": "锗烷(GeH4)关键原料，中国为全球最大锗生产国，已实施出口管制",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "基础化工原料\n(氟/氯/氢)",
+      "category": "upstream",
+      "business": "氟气、氯气、氢气、氮气等基础工业气体原料，电子特气提纯前体",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "气体提纯设备商",
+      "category": "upstream",
+      "business": "高纯气体提纯设备、分析检测设备、气瓶充装设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "稀有气体\n(氖/氪/氙)",
+      "category": "upstream",
+      "business": "半导体级稀有气体，传统供应受俄乌冲突影响",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "林德集团\n(Linde)",
+      "category": "competitor",
+      "business": "全球最大工业气体公司，半导体级特气全球市占率第一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "南大光电\n300346",
+      "category": "competitor",
+      "business": "MO源全球领导者+前驱体+ArF光刻胶突破+电子特气",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "金宏气体\n688106",
+      "category": "competitor",
+      "business": "特种气体+大宗气体华东龙头，特气品种持续拓展",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中巨芯\n688549",
+      "category": "competitor",
+      "business": "电子湿化学品国内龙头+六氟化钨核心供应商+前驱体",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "广钢气体\n688548",
+      "category": "competitor",
+      "business": "电子大宗气体现场制气+全球氦气供应链布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际\nSMIC",
+      "category": "downstream",
+      "business": "国内最大晶圆代工厂，先进/成熟制程，电子特气核心客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "华虹半导体",
+      "category": "downstream",
+      "business": "国内功率器件/特色工艺代工龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长江存储\nYMTC",
+      "category": "downstream",
+      "business": "国内3D NAND存储芯片龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "京东方\nBOE",
+      "category": "downstream",
+      "business": "全球最大LCD/OLED面板制造商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "国际气体公司\n(Linde/Air Liquide等)",
+      "category": "downstream",
+      "business": "通过转售/代工模式采购华特气体产品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688268",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688268",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688268",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688268",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688268",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688268",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688268",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688268",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688268",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688268",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688268",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688268",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688268",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688268",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688268",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

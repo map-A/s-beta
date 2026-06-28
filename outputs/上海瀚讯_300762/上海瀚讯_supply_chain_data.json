@@ -1,0 +1,178 @@
+{
+  "company_code": "300762",
+  "company_name": "上海瀚讯",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_300762",
+      "name": "上海瀚讯\n300762",
+      "category": "target",
+      "business": "军用宽带移动通信系统全产业链（芯片→模块→终端→基站→系统），千帆星座通信分系统承研单位",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "通信芯片\n供应商",
+      "category": "upstream",
+      "business": "通信基带芯片、FPGA、ADC/DAC等核心元器件（部分自研+部分外购）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "射频前端\n供应商",
+      "category": "upstream",
+      "business": "射频前端模块、功率放大器、滤波器等射频组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "天线组件\n供应商",
+      "category": "upstream",
+      "business": "相控阵天线组件（部分自研）、天线阵面、馈电网络",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "PCB/结构件\n供应商",
+      "category": "upstream",
+      "business": "PCB印刷电路板、结构件、电源模块等基础组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "海格通信\n002465",
+      "category": "competitor",
+      "business": "军用通信+北斗导航，央企背景（中电科54所），产品线更宽",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "七一二\n603712",
+      "category": "competitor",
+      "business": "老牌军用通信设备企业，传统无线通信为主，正向宽带化转型",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "中国电科\n(CETC)",
+      "category": "competitor",
+      "business": "军工电子全产业链国家队，体制内资源最雄厚",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "军方客户\n（陆海空天）",
+      "category": "downstream",
+      "business": "陆军/海军/空军/火箭军等军兵种，宽带通信型号装备列装采购（客户一19.47%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "格思航天\n科技",
+      "category": "downstream",
+      "business": "千帆星座卫星制造，占收入14.32%，采购通信载荷等设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "垣信卫星\n科技",
+      "category": "downstream",
+      "business": "千帆星座主导方（1.5万颗卫星），占收入7.46%，采购信关站/终端等",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "中国星网\n/GW星座",
+      "category": "downstream",
+      "business": "GW星座（1.3万颗卫星），潜在客户，宽带通信设备需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "铁路/城轨\n客户",
+      "category": "downstream",
+      "business": "铁路、城市轨道交通宽带通信系统（新拓展领域）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300762",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300762",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300762",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300762",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300762",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300762",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300762",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300762",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300762",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300762",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300762",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300762",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

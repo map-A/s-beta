@@ -1,0 +1,190 @@
+{
+  "company_code": "605020",
+  "company_name": "永和股份",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_605020",
+      "name": "永和股份\n605020",
+      "category": "target",
+      "business": "国内氟化工产业链最完整企业之一，HFC制冷剂+含氟高分子（FEP/PFA）+萤石资源485万吨",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "萤石矿\n(自有3个采矿权)",
+      "category": "upstream",
+      "business": "氟化钙原料，公司自给485万吨矿石储量，中国战略性矿产",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "液氯/甲醇供应商",
+      "category": "upstream",
+      "business": "基础化工原料，氟化工中间体配套",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电力供应",
+      "category": "upstream",
+      "business": "氟化工为高能耗行业，电力成本是关键变量",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "氟化工设备商",
+      "category": "upstream",
+      "business": "反应釜/精馏塔等氟化工专用设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "萤石外购供应商",
+      "category": "upstream",
+      "business": "外部萤石矿供应补充，受战略性矿产管控影响",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "巨化股份\n600160",
+      "category": "competitor",
+      "business": "国内最大制冷剂企业，R32/R134a产能行业领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三美股份\n603379",
+      "category": "competitor",
+      "business": "制冷剂专业企业，HFCs/R22/TFE全品种覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "东岳集团\n(港股00189)",
+      "category": "competitor",
+      "business": "PTFE/制冷剂龙头，含氟聚合物领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "东阳光\n600673",
+      "category": "competitor",
+      "business": "制冷剂+化成箔+锂电材料多元化",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "空调制造商\n(格力/美的等)",
+      "category": "downstream",
+      "business": "家用空调/中央空调制造，R32/R410a制冷剂核心需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "汽车空调厂商",
+      "category": "downstream",
+      "business": "汽车空调系统，R134a制冷剂需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "数据中心/5G",
+      "category": "downstream",
+      "business": "数据中心液冷系统+5G基站冷却，含氟冷却液新兴需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电缆/半导体厂商",
+      "category": "downstream",
+      "business": "FEP/PFA含氟高分子材料终端应用（电线绝缘/化工设备衬里）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_605020",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_605020",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_605020",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_605020",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_605020",
+      "relation": "supply"
+    },
+    {
+      "source": "target_605020",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605020",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605020",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_605020",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_605020",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_605020",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_605020",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_605020",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "company_code": "603083",
+  "company_name": "剑桥科技",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_603083",
+      "name": "剑桥科技\n603083",
+      "category": "target",
+      "business": "ICT接入终端领先企业+高速光模块，ODM/JDM模式，全球布局（中美日墨德波马），市值790亿",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "光芯片\n供应商",
+      "category": "upstream",
+      "business": "光通信核心芯片供应商，公司与主流供应商同址办公（日本研发中心）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "电子元器件\n供应商",
+      "category": "upstream",
+      "business": "PCB/电阻/电容等标准化电子元器件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "机壳/结构件",
+      "category": "upstream",
+      "business": "设备外壳和精密结构件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "软件/固件\n供应商",
+      "category": "upstream",
+      "business": "网络协议栈/固件等软件供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "中际旭创\n300308",
+      "category": "competitor",
+      "business": "全球数据中心光模块龙头，剑桥科技主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新易盛\n300502",
+      "category": "competitor",
+      "business": "A股光模块龙头之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "光迅科技\n002281",
+      "category": "competitor",
+      "business": "国内光模块+光芯片龙头，央企中国信科控股",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "HTI\n通信设备商",
+      "category": "downstream",
+      "business": "占营收20.13%，推测为大型通信设备商（前5大客户合计86.1%！）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "电信运营商",
+      "category": "downstream",
+      "business": "电信宽带/无线网络终端设备采购方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "超算/\n数据中心",
+      "category": "downstream",
+      "business": "高速光模块终端客户，AI算力基础设施",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "企业网络\n客户",
+      "category": "downstream",
+      "business": "企业级网络设备采购方",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603083",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603083",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603083",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603083",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603083",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603083",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603083",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603083",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603083",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603083",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603083",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

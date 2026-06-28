@@ -1,0 +1,190 @@
+{
+  "company_code": "300408",
+  "company_name": "三环集团",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300408",
+      "name": "三环集团\n300408",
+      "category": "target",
+      "business": "电子陶瓷一体化龙头，MLCC+陶瓷插芯（全球70%+市占）+SOFC，国内唯一粉体到成品一体化",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "村田制作所\n6981.T",
+      "category": "competitor",
+      "business": "全球MLCC龙头（市占率~30%），陶瓷滤波器、传感器，日系被动元件霸主",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三星电机\n009150.KS",
+      "category": "competitor",
+      "business": "全球MLCC第二，MLCC/电感/PCB，韩系综合电子元件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "TDK\n6762.T",
+      "category": "competitor",
+      "business": "日系综合被动元件龙头，MLCC/电感/传感器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "京瓷\n6971.T",
+      "category": "competitor",
+      "business": "日系电子陶瓷龙头，陶瓷封装/切削工具/电子元件",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "陶瓷粉体\n（自产+外购）",
+      "category": "upstream",
+      "business": "钛酸钡(BaTiO3)等MLCC核心粉体材料，部分自产部分依赖国瓷材料/日本进口",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "金属浆料\n供应商",
+      "category": "upstream",
+      "business": "钯银浆料、内电极浆料等MLCC/陶瓷元件关键辅材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "专用设备\n供应商",
+      "category": "upstream",
+      "business": "陶瓷成型、烧结、叠层印刷等MLCC/陶瓷元件生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "特种化学品\n供应商",
+      "category": "upstream",
+      "business": "特种气体、溶剂、抛光材料等制程化学品",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "光通信设备\n厂商",
+      "category": "downstream",
+      "business": "光纤连接器/模块制造商，使用陶瓷插芯/MT插芯/套筒（全球70%+来自三环）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "消费电子\n厂商",
+      "category": "downstream",
+      "business": "手机/PC/平板制造商，使用MLCC和陶瓷外观件（华为、小米等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车电子\n客户",
+      "category": "downstream",
+      "business": "汽车电子系统集成商，使用车规MLCC",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "数据中心/AI\n设备商",
+      "category": "downstream",
+      "business": "400G/800G高速光通信设备制造商，使用高速陶瓷连接器（CPO概念）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "SOFC系统\n集成商",
+      "category": "downstream",
+      "business": "固体氧化物燃料电池系统集成/分布式发电终端用户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300408",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300408",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300408",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300408",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300408",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300408",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300408",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300408",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300408",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300408",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300408",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300408",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300408",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

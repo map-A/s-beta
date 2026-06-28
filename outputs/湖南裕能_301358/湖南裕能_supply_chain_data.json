@@ -1,0 +1,166 @@
+{
+  "company_code": "301358",
+  "company_name": "湖南裕能",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_301358",
+      "name": "湖南裕能\n301358",
+      "category": "target",
+      "business": "国内磷酸铁锂正极材料出货量连续六年第一，市占率约25%，一体化布局磷矿-前驱体-正极材料",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "碳酸锂\n供应商",
+      "category": "upstream",
+      "business": "电池级碳酸锂供应商，LFP正极材料核心原材料，价格波动直接影响成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "磷矿资源\n供应商",
+      "category": "upstream",
+      "business": "磷矿开采企业，公司贵州基地自有黄家坡磷矿（建设中），向一体化延伸",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硫酸/硫磺\n供应商",
+      "category": "upstream",
+      "business": "磷化工生产所需辅材，近期硫磺价格暴涨引发投资者关注",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "正极材料\n设备供应商",
+      "category": "upstream",
+      "business": "正极材料生产线设备供应商，提供窑炉/粉碎/包覆等核心设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "德方纳米",
+      "category": "competitor",
+      "business": "LFP正极材料第二梯队，液相法工艺领先，湖南裕能主要竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "万润新能",
+      "category": "competitor",
+      "business": "磷酸铁锂正极材料生产商，科创板上市，LFP赛道竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "当升科技",
+      "category": "competitor",
+      "business": "三元正极材料龙头，不同技术路线竞争者，全球化布局领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "宁德时代",
+      "category": "downstream",
+      "business": "全球动力电池龙头，推测为湖南裕能第一大客户（占营收29.73%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "比亚迪",
+      "category": "downstream",
+      "business": "全球第二大动力电池厂+新能源车企，持股湖南裕能2235万股",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "亿纬锂能",
+      "category": "downstream",
+      "business": "动力+储能电池制造商，湖南裕能核心客户之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "海辰储能",
+      "category": "downstream",
+      "business": "专注储能电池的新锐企业，储能是LFP电池增长最快的下游市场",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301358",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301358",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301358",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301358",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301358",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301358",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301358",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301358",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301358",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301358",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301358",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

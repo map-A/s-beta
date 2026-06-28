@@ -1,0 +1,190 @@
+{
+  "company_code": "301666",
+  "company_name": "大普微",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_301666",
+      "name": "大普微\n301666",
+      "category": "target",
+      "business": "中国极少数全栈企业级SSD（主控芯片+固件算法+模组），已通过Google/Nvidia/xAI认证，创业板2026年4月上市，客户覆盖字节/腾讯/阿里/百度/Google等",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "佰维存储\n688525",
+      "category": "competitor",
+      "business": "企业级SSD整机（外采控制器芯片，非全栈），国内企业级SSD主要竞争者，但主控非自研",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "联芸科技\n688449",
+      "category": "competitor",
+      "business": "SSD控制器芯片设计（不做整机模组），主攻消费级/工业级，企业级主控竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Marvell\nMRVL.US",
+      "category": "competitor",
+      "business": "全球领先SSD控制器芯片设计商（Bravada系列），大普微自研主控直接竞争对象，美股上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "东芯股份\n688110",
+      "category": "competitor",
+      "business": "NAND Flash+消费/工业级SSD，企业级较弱，部分产品与大普微有重叠",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "世平国际（香港）\n（YMTC NAND渠道）",
+      "category": "upstream",
+      "business": "电子元器件分销商，大普微最大供应商（采购65.54%），推测为长江存储YMTC NAND flash的香港分销渠道",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "长江存储\nYMTC",
+      "category": "upstream",
+      "business": "中国最大NAND Flash制造商，是大普微企业级SSD的核心闪存来源（通过世平国际分发），中国AI存储国产化最重要上游",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铠侠 Kioxia\n（日本）",
+      "category": "upstream",
+      "business": "全球第三大NAND Flash厂，持有大普微0.34%股权（战略背书），可能为备选NAND来源",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "台积电/中芯\n晶圆代工",
+      "category": "upstream",
+      "business": "大普微自研主控芯片的晶圆代工，使用先进制程（推测TSMC N28/N16或SMIC），芯片供应关键节点",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "字节跳动\n（AI云+TikTok）",
+      "category": "downstream",
+      "business": "中国最大AI训练算力投资方之一，大普微官方披露的终端用户，企业级SSD用于大模型训练和推理基础设施",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "腾讯/阿里/百度\n云服务商",
+      "category": "downstream",
+      "business": "国内三大云厂商，大普微官方披露的终端用户，企业级SSD用于云存储和AI训练集群",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "Google\n海外AI云",
+      "category": "downstream",
+      "business": "全球最大云服务商，大普微罕见地实现向海外顶级客户供货，验证产品国际竞争力",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "新华三/超聚变\n服务器OEM",
+      "category": "downstream",
+      "business": "国内头部AI服务器整机厂，将大普微企业级SSD集成到AI服务器产品中，间接服务于算力市场",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "DeepSeek/快手\n小红书等AI厂",
+      "category": "downstream",
+      "business": "国内新兴AI应用厂商，大普微官方披露的终端用户群体，代表AI推理推广阶段的新增需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301666",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301666",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301666",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301666",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301666",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301666",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301666",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301666",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301666",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301666",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301666",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301666",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301666",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

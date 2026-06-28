@@ -1,0 +1,202 @@
+{
+  "company_code": "300308",
+  "company_name": "中际旭创",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300308",
+      "name": "中际旭创\n300308",
+      "category": "target",
+      "business": "800G/1.6T高速光模块、数据中心光互连模块、5G光模块",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Coherent\nCOHR",
+      "category": "competitor",
+      "business": "EML激光器+光模块+金刚石散热衬底（全球光模块巨头）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新易盛\n300502",
+      "category": "competitor",
+      "business": "800G/400G高速光模块（国内竞争者）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "AAOI",
+      "category": "competitor",
+      "business": "800G/1.6T光模块（自有激光fab，美国最大产能）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "光迅科技\n002281",
+      "category": "competitor",
+      "business": "光通信器件+光模块（国内光通信龙头）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "Lumentum\nLITE",
+      "category": "upstream",
+      "business": "EML/VCSEL激光器芯片（光模块核心光源，Serenity核心仓）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "源杰科技\n688498",
+      "category": "upstream",
+      "business": "光芯片（激光器芯片、探测器芯片）国产替代",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "博通\nAVGO",
+      "category": "upstream",
+      "business": "DSP芯片（光模块数字信号处理器）+交换ASIC",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "天孚通信\n300394",
+      "category": "upstream",
+      "business": "光器件（连接器、透镜、准直器、FAU）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "AXTI",
+      "category": "upstream",
+      "business": "InP衬底（光芯片核心材料，双寡头控制40%+全球产能）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "Meta",
+      "category": "downstream",
+      "business": "超大规模数据中心/AI训练集群（推测为客户A，24%收入）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "Google",
+      "category": "downstream",
+      "business": "TPU集群/Google Cloud数据中心",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "Microsoft",
+      "category": "downstream",
+      "business": "Azure AI基础设施/OpenAI算力集群",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "Amazon AWS",
+      "category": "downstream",
+      "business": "AWS数据中心/自研芯片Trainium互联",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "国内云厂商",
+      "category": "downstream",
+      "business": "阿里云/腾讯云/字节跳动/华为云数据中心",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300308",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300308",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300308",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300308",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300308",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300308",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300308",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300308",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300308",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300308",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300308",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

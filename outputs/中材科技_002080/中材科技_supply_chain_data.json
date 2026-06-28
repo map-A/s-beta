@@ -1,0 +1,166 @@
+{
+  "company_code": "002080",
+  "company_name": "中材科技",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002080",
+      "name": "中材科技\n002080",
+      "category": "target",
+      "business": "玻璃纤维（全球第五）+风电叶片（中国第一）+锂电隔膜（中国第三），央企新材料平台",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "中国巨石\n600176",
+      "category": "competitor",
+      "business": "全球第一大玻璃纤维企业（市占率~20%），纯玻纤标的",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "恩捷股份\n002812",
+      "category": "competitor",
+      "business": "全球第一大锂电池湿法隔膜企业（市占率~30%）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "时代新材\n600458",
+      "category": "competitor",
+      "business": "中国第二大风电叶片企业+轨交减振",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "矿石原料供应商",
+      "category": "upstream",
+      "business": "叶蜡石、高岭土、石灰石等玻纤原料矿石",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "能源供应商",
+      "category": "upstream",
+      "business": "天然气/电力，玻纤池窑高耗能行业核心成本",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "化工原料供应商",
+      "category": "upstream",
+      "business": "环氧树脂、聚丙烯等石化原料，用于复合材料和隔膜",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "碳纤维供应商",
+      "category": "upstream",
+      "business": "碳纤维增强材料，用于大型风电叶片和航空复合材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "风电整机商\n（金风/远景等）",
+      "category": "downstream",
+      "business": "采购风电叶片用于风力发电机组装",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "PCB/电子客户",
+      "category": "downstream",
+      "business": "采购特种纤维布用于PCB基板（含英伟达Vera Rubin平台供应链）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "动力电池厂\n（宁德时代/比亚迪）",
+      "category": "downstream",
+      "business": "采购锂电池隔膜用于动力电池制造",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "建筑/汽车/军工客户",
+      "category": "downstream",
+      "business": "采购玻纤增强复合材料/特种纤维复合材料",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002080",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002080",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002080",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002080",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002080",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002080",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002080",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002080",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002080",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002080",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002080",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

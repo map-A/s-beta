@@ -1,0 +1,178 @@
+{
+  "company_code": "002851",
+  "company_name": "麦格米特",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002851",
+      "name": "麦格米特\n002851",
+      "category": "target",
+      "business": "跨领域电气自动化平台：智能家电电控+电源产品（含AI服务器电源）+新能源轨交+工业自动化+智能装备+精密连接",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "台达电子\nDelta",
+      "category": "competitor",
+      "business": "全球电源龙头（服务器/通信/工业），在AI电源领域直接竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "汇川技术\n300124",
+      "category": "competitor",
+      "business": "工业自动化+新能源，在工业自动化领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "和而泰\n002402",
+      "category": "competitor",
+      "business": "智能控制器，在家电电控领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "中恒电气\n002364",
+      "category": "competitor",
+      "business": "电力电源+数据中心电源，在数据中心电源领域竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "功率半导体\n供应商",
+      "category": "upstream",
+      "business": "IGBT/MOSFET等功率器件，电源核心元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "被动元件\n供应商",
+      "category": "upstream",
+      "business": "电容/电感/变压器等被动元件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB/散热\n供应商",
+      "category": "upstream",
+      "business": "PCB板和散热模组",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "结构件/辅料\n供应商",
+      "category": "upstream",
+      "business": "外壳、连接器、线材等辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI数据中心\n/服务器厂商",
+      "category": "downstream",
+      "business": "采购800V供电方案和服务器电源（放量初期）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "宁德时代\n300750",
+      "category": "downstream",
+      "business": "动力电池龙头，采购电池安全信号采集组件（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "家电企业",
+      "category": "downstream",
+      "business": "智能家电电控产品客户（占营收37.85%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "特变电工\n600089",
+      "category": "downstream",
+      "business": "电力设备龙头，采购光伏逆变器核心电路板（confirmed）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002851",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002851",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002851",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002851",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002851",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002851",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002851",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002851",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002851",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002851",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002851",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002851",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

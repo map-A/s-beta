@@ -1,0 +1,166 @@
+{
+  "company_code": "300128",
+  "company_name": "锦富技术",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_300128",
+      "name": "锦富技术\n300128",
+      "category": "target",
+      "business": "光电显示薄膜器件+消费电子+新能源（连续亏损/ST风险）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长信科技\n300088",
+      "category": "competitor",
+      "business": "显示器件薄膜材料龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "激智科技\n300566",
+      "category": "competitor",
+      "business": "光学薄膜龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "双星新材\n002585",
+      "category": "competitor",
+      "business": "聚酯薄膜龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "薄膜/光学材料厂商",
+      "category": "upstream",
+      "business": "薄膜基材、光学材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "化工原料供应商",
+      "category": "upstream",
+      "business": "化学品、涂料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "石墨烯材料商",
+      "category": "upstream",
+      "business": "石墨烯/碳素材料（新业务拓展）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "设备供应商",
+      "category": "upstream",
+      "business": "薄膜加工/涂布设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "消费电子品牌",
+      "category": "downstream",
+      "business": "消费电子产品需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源电池客户",
+      "category": "downstream",
+      "business": "电池零配件需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "显示面板厂商",
+      "category": "downstream",
+      "business": "光电显示薄膜器件需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "汽车热管理/电子需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300128",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300128",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300128",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300128",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300128",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300128",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300128",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300128",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300128",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300128",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300128",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

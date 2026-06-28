@@ -1,0 +1,202 @@
+{
+  "company_code": "600707",
+  "company_name": "彩虹股份",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_600707",
+      "name": "彩虹股份\n600707",
+      "category": "target",
+      "business": "G8.5+基板玻璃+TFT-LCD面板，国内唯一基板玻璃量产企业",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "康宁(Corning)\nGLW",
+      "category": "competitor",
+      "business": "全球基板玻璃龙头，溢流下拉法核心专利持有者，份额50%+",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "AGC(旭硝子)\n5201.JP",
+      "category": "competitor",
+      "business": "全球第二大基板玻璃供应商，份额15-20%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "NEG(日本电气硝子)\n5214.JP",
+      "category": "competitor",
+      "business": "全球第三大基板玻璃供应商，份额10-15%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "凯盛新能\n600876",
+      "category": "competitor",
+      "business": "光伏/电子玻璃，部分基板玻璃业务可比",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯石英砂\n供应商",
+      "category": "upstream",
+      "business": "高纯度硅砂，基板玻璃的核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "硼酸/硼砂\n化工企业",
+      "category": "upstream",
+      "business": "玻璃配方中的关键成分供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铂铑贵金属\n供应商",
+      "category": "upstream",
+      "business": "玻璃熔融坩埚关键贵金属材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "玻璃熔炉\n设备商",
+      "category": "upstream",
+      "business": "浮法/溢流下拉法玻璃成型设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "康宁合营\n技术",
+      "category": "upstream",
+      "business": "咸阳虹宁/成都虹宁合营企业，提供高端工艺支持",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "京东方(BOE)\n000725",
+      "category": "downstream",
+      "business": "全球最大LCD面板供应商，已入股彩虹光电30%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "TCL华星\n(CSOT)",
+      "category": "downstream",
+      "business": "全球第二大LCD面板供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "惠科股份\n001399",
+      "category": "downstream",
+      "business": "国内中大型LCD面板供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "维信诺\n002387",
+      "category": "downstream",
+      "business": "柔性OLED面板为主，部分LCD",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "终端应用\n(电视/IT/车载)",
+      "category": "downstream",
+      "business": "电视、笔记本、车载显示、工控等终端产品",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600707",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600707",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600707",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600707",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_600707",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600707",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600707",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600707",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600707",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600707",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600707",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600707",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600707",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600707",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

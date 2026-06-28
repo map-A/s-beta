@@ -1,0 +1,166 @@
+{
+  "company_code": "688362",
+  "company_name": "甬矽电子",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688362",
+      "name": "甬矽电子\n688362",
+      "category": "target",
+      "business": "集成电路封装测试（OSAT），FC-BGA/2.5D先进封装布局中",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "长电科技\n600584",
+      "category": "competitor",
+      "business": "A股封测龙头，SiP/Chiplet/2.5D全面布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "通富微电\n002156",
+      "category": "competitor",
+      "business": "AMD核心封测供应商，FC-BGA量产",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华天科技\n002185",
+      "category": "competitor",
+      "business": "传统封测+TSV/FC-BGA先进封装",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "深南电路\n002916",
+      "category": "upstream",
+      "business": "IC封装基板（ABF/BT基板）供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "康强电子\n002119",
+      "category": "upstream",
+      "business": "引线框架/键合丝供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "ASM Pacific",
+      "category": "upstream",
+      "business": "半导体封装设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "爱德万/泰瑞达",
+      "category": "upstream",
+      "business": "半导体测试设备供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "联发科(MTK)",
+      "category": "downstream",
+      "business": "AIoT/SoC芯片设计，海外头部客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "MCU/数模混合\n芯片设计公司",
+      "category": "downstream",
+      "business": "消费电子/工业MCU芯片设计",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车电子\n芯片设计公司",
+      "category": "downstream",
+      "business": "车规级芯片封装测试",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "5G/AI芯片\n设计公司",
+      "category": "downstream",
+      "business": "5G通信/AI芯片先进封装需求",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688362",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688362",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688362",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688362",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688362",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688362",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688362",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688362",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688362",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688362",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688362",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

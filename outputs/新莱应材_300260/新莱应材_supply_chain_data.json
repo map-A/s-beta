@@ -1,0 +1,202 @@
+{
+  "company_code": "300260",
+  "company_name": "新莱应材",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_300260",
+      "name": "新莱应材\n300260",
+      "category": "target",
+      "business": "半导体超高纯管阀件/流体系统 + 食品设备 + 医药设备，国内UHP管阀件国产替代先行者",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "高纯度不锈钢\n供应商",
+      "category": "upstream",
+      "business": "半导体级超高纯不锈钢原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "特种合金\n供应商",
+      "category": "upstream",
+      "business": "耐腐蚀特种合金材料（哈氏合金等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密加工设备\n供应商",
+      "category": "upstream",
+      "business": "电解抛光/精密焊接等加工设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "高纯气体\n供应商",
+      "category": "upstream",
+      "business": "超高纯氮气/氩气等工艺气体",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "正帆科技\n688596",
+      "category": "competitor",
+      "business": "半导体超高纯气体输送系统/Gas Box，国产UHP赛道竞品",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "至纯科技\n603690",
+      "category": "competitor",
+      "business": "高纯工艺系统（气体/化学品输送），向UHP零部件拓展",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "Entegris\nENTG",
+      "category": "competitor",
+      "business": "全球半导体UHP材料龙头，美国企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Ultra Clean\nUCTT",
+      "category": "competitor",
+      "business": "半导体UHP管阀件及组件，美国企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "Fujikin\n日本",
+      "category": "competitor",
+      "business": "半导体超高纯阀门，日本企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "美国Top2\n半导体设备厂商",
+      "category": "downstream",
+      "business": "半导体设备制造商，公司一级供应商资格",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "国内晶圆厂\n（中芯/华虹等）",
+      "category": "downstream",
+      "business": "国内主流晶圆代工厂，终端使用UHP管阀件",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "食品饮料\n企业",
+      "category": "downstream",
+      "business": "乳品/饮料/啤酒等食品加工企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "生物制药\n企业",
+      "category": "downstream",
+      "business": "GMP级流体系统需求，制药/生物制药企业",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "数据中心\n运营商",
+      "category": "downstream",
+      "business": "液冷CDU系统需求，AI数据中心新兴客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300260",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300260",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300260",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300260",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300260",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300260",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300260",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300260",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300260",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300260",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_300260",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "company_code": "300820",
+  "company_name": "英杰电气",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_300820",
+      "name": "英杰电气\n300820",
+      "category": "target",
+      "business": "跨行业工业功率控制电源平台：光伏电源、半导体射频电源、充电桩、核电/核聚变电源",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "英飞凌/意法半导体\nIGBT/MOSFET",
+      "category": "upstream",
+      "business": "高端功率半导体器件（IGBT、MOSFET），用于功率控制电源核心变换电路，国产替代中",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "国产功率器件\n斯达半导/宏微科技",
+      "category": "upstream",
+      "business": "国产IGBT/MOSFET功率模块，受益于国产替代加速",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "磁性元件供应商\n变压器/电感",
+      "category": "upstream",
+      "business": "定制化变压器、电感等磁性元件，功率变换电路关键部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "被动元件/结构件\n电容/散热器/钣金",
+      "category": "upstream",
+      "business": "电容器、电阻器等被动元件及散热器、钣金件等定制结构件",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Advanced Energy\nAEIS(美股)",
+      "category": "competitor",
+      "business": "半导体射频电源全球龙头，精密电力解决方案，市值约60亿美元",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "盛弘股份\n300693",
+      "category": "competitor",
+      "business": "电力电子平台型企业：充电桩、储能PCS、电能质量设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "动力源\n600405",
+      "category": "competitor",
+      "business": "通信电源、电力操作电源、光伏逆变器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "AEG Power Solutions\n(德国)",
+      "category": "competitor",
+      "business": "工业电源/多晶硅还原炉电源国际老牌企业，正在被国产替代",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "光伏硅料/硅片\n生产商",
+      "category": "downstream",
+      "business": "多晶硅/单晶硅/电池片生产商（通威、协鑫、大全等），配套还原炉电源，占英杰收入42%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "半导体设备商\n/晶圆厂",
+      "category": "downstream",
+      "business": "半导体设备制造商及晶圆厂，射频电源用于CVD/刻蚀/溅射等制程，占英杰收入22%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新能源汽车\n充电运营商",
+      "category": "downstream",
+      "business": "充电桩/充电站运营，子公司英杰新能源负责，兆瓦级充电堆",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "核工业科研院所\n/核聚变项目",
+      "category": "downstream",
+      "business": "核工业西南物理研究院等，核电核岛调功设备及核聚变实验装置电源配套",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "水电解制氢\n设备商",
+      "category": "downstream",
+      "business": "氢能源产业链上游，水电解制氢设备配套电源",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300820",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300820",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300820",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300820",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300820",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300820",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300820",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300820",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300820",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300820",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300820",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300820",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300820",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

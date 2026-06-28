@@ -1,0 +1,166 @@
+{
+  "company_code": "002254",
+  "company_name": "泰和新材",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002254",
+      "name": "泰和新材\n002254",
+      "category": "target",
+      "business": "国内芳纶产能最大企业：氨纶+间位芳纶+对位芳纶+芳纶纸，国家芳纶工程技术研究中心",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "杜邦\nDuPont",
+      "category": "competitor",
+      "business": "全球芳纶龙头，Kevlar（对位芳纶）+Nomex（间位芳纶），全球市占率~35%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "帝人\nTeijin",
+      "category": "competitor",
+      "business": "全球第二大芳纶生产商，Twaron（对位芳纶），全球市占率~25%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "蓝星新材\n600299",
+      "category": "competitor",
+      "business": "国内间位芳纶生产商，泰和新材国内竞争对手",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "对苯二胺\n(PPD)供应商",
+      "category": "upstream",
+      "business": "对位芳纶核心单体原料，精细化工产品",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "对苯二甲酰氯\n(TPC)供应商",
+      "category": "upstream",
+      "business": "对位芳纶核心单体原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PTMEG/MDI\n供应商",
+      "category": "upstream",
+      "business": "氨纶（spandex）核心原料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "DMAc溶剂\n供应商",
+      "category": "upstream",
+      "business": "芳纶纺丝溶剂（二甲基乙酰胺）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "军工/安防\n企业",
+      "category": "downstream",
+      "business": "防弹衣/防弹头盔/军用防护装备，芳纶核心军事应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光缆企业",
+      "category": "downstream",
+      "business": "光纤光缆增强用芳纶纱，5G/数据中心建设必需",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "锂电池企业\n(芳纶涂覆)",
+      "category": "downstream",
+      "business": "芳纶涂覆隔膜，提升电池安全性的新兴应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "纺织/服装\n企业",
+      "category": "downstream",
+      "business": "氨纶（spandex）用于弹力服装，传统下游",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002254",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002254",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002254",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002254",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002254",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002254",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002254",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002254",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002254",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002254",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002254",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

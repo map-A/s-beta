@@ -1,0 +1,202 @@
+{
+  "company_code": "603989",
+  "company_name": "艾华集团",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603989",
+      "name": "艾华集团\n603989",
+      "category": "target",
+      "business": "铝电解电容器（国内#1）、薄膜电容器、化成箔、MLPC叠层固态电容",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "铝箔/化成箔供应商",
+      "category": "upstream",
+      "business": "阳极箔/阴极箔，铝电解电容器核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "电解液供应商",
+      "category": "upstream",
+      "business": "液态铝电解电容核心功能材料，导电电解质",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "铝壳/封装材料厂商",
+      "category": "upstream",
+      "business": "铝外壳、橡胶塞、引出端子等封装材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "金属化膜厂商",
+      "category": "upstream",
+      "business": "薄膜电容器用金属化聚丙烯薄膜",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "设备厂商",
+      "category": "upstream",
+      "business": "卷绕机、赋能机、老化测试设备等电容器制造设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "江海股份\n002484",
+      "category": "competitor",
+      "business": "铝电解电容器+超级电容器，国内#2",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "贵弥功\nNippon Chemi-Con",
+      "category": "competitor",
+      "business": "全球铝电解电容龙头（日本），市占率~15-18%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "尼吉康\nNichicon",
+      "category": "competitor",
+      "business": "全球铝电解电容第二（日本），市占率~12-15%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Rubycon",
+      "category": "competitor",
+      "business": "全球铝电解电容第三（日本），市占率~10-12%",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "AI服务器/数据中心",
+      "category": "downstream",
+      "business": "服务器电源模块用MLPC叠层固态电容，核心新增长方向",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源汽车",
+      "category": "downstream",
+      "business": "OBC/DC-DC/充电桩用电容",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏/储能逆变器",
+      "category": "downstream",
+      "business": "光伏逆变器/储能PCS滤波用电容",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "LED照明厂商",
+      "category": "downstream",
+      "business": "LED驱动电源用电容，传统主力市场",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "5G/工业自动化",
+      "category": "downstream",
+      "business": "5G基站电源、变频器、UPS用电容",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603989",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603989",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603989",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603989",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603989",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603989",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603989",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603989",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603989",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603989",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603989",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603989",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603989",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603989",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

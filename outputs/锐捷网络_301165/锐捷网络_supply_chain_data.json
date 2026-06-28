@@ -1,0 +1,178 @@
+{
+  "company_code": "301165",
+  "company_name": "锐捷网络",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_301165",
+      "name": "锐捷网络\n301165",
+      "category": "target",
+      "business": "国内以太网交换机#3，以太光网络#1，AI数据中心交换机+光模块",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华为",
+      "category": "competitor",
+      "business": "国内网络设备#1，全ICT解决方案",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "新华三(H3C)\n紫光股份",
+      "category": "competitor",
+      "business": "国内网络设备#2",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "思科\nCisco",
+      "category": "competitor",
+      "business": "全球网络设备#1",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Arista\nANET",
+      "category": "competitor",
+      "business": "全球云数据中心交换机#2",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "Broadcom/\n交换芯片",
+      "category": "upstream",
+      "business": "交换ASIC芯片（Tomahawk/Jericho系列）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "光器件/\n光模块供应",
+      "category": "upstream",
+      "business": "光收发器件、光纤连接器（部分自研LPO光模块）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB/\n电子元器件",
+      "category": "upstream",
+      "business": "印刷电路板、被动元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "散热/\n结构件",
+      "category": "upstream",
+      "business": "液冷散热模组、机箱结构件（NPO液冷交换机用）",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "互联网巨头\n(阿里/字节/腾讯)",
+      "category": "downstream",
+      "business": "AI数据中心交换机+网络设备终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "运营商\n(移动/电信/联通)",
+      "category": "downstream",
+      "business": "通信网络基础设施采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "高校/教育\n机构",
+      "category": "downstream",
+      "business": "校园网络建设（2600+所高校，100%双一流）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "金融机构/\n医院",
+      "category": "downstream",
+      "business": "金融/医疗行业网络建设（1000+金融机构，5000+医院）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_301165",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_301165",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_301165",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_301165",
+      "relation": "supply"
+    },
+    {
+      "source": "target_301165",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301165",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301165",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_301165",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_301165",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_301165",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_301165",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_301165",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

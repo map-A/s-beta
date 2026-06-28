@@ -1,0 +1,190 @@
+{
+  "company_code": "300570",
+  "company_name": "太辰光",
+  "analysis_date": "2026-06-28",
+  "nodes": [
+    {
+      "id": "target_300570",
+      "name": "太辰光\n300570",
+      "category": "target",
+      "business": "全球领先的光密集连接产品制造商，主营MPO/MTP高密度光纤连接器、光纤路由柔性板、PLC/AWG芯片、光模块，深度受益AI数据中心建设",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "天孚通信\n300394",
+      "category": "competitor",
+      "business": "国内光无源器件龙头，主营精密陶瓷套管、光纤适配器、FAU（光纤阵列单元），偏重精密加工",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "光迅科技\n002281",
+      "category": "competitor",
+      "business": "国内光器件综合平台，光无源器件+光模块全覆盖，产品线最全",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "仕佳光子\n688313",
+      "category": "competitor",
+      "business": "AWG芯片和PLC分路器芯片专业厂商，偏重上游光芯片环节",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Lumentum\nLITE",
+      "category": "competitor",
+      "business": "全球光通信器件及激光器龙头，覆盖光芯片、光模块及3D传感",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "长飞光纤\n601869",
+      "category": "upstream",
+      "business": "全球最大光纤预制棒及光纤光缆供应商之一，提供太辰光核心原材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "潮州三环\n300408",
+      "category": "upstream",
+      "business": "精密陶瓷龙头，生产氧化锆陶瓷插芯等光连接器核心零组件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "瑞芯源\n(子公司)",
+      "category": "upstream",
+      "business": "太辰光全资子公司，生产PLC/AWG平面光波导芯片，实现核心光芯片自供",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "景德镇和川\n(子公司)",
+      "category": "upstream",
+      "business": "太辰光控股子公司（81%），生产精密陶瓷粉体材料，实现部分上游原材料自供",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "信越化学\n(日本)",
+      "category": "upstream",
+      "business": "全球高纯石英及光纤预制棒主要供应商，日本化工巨头",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "康宁\nCorning",
+      "category": "downstream",
+      "business": "全球光纤光缆龙头，太辰光第一大客户（2025年收入占比68.48%），数据中心光布线解决方案供应商",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "AWS/Google\n/Meta等",
+      "category": "downstream",
+      "business": "北美超大规模云计算厂商，AI数据中心建设的终端需求方（通过康宁等Tier 1间接供货）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "华为/中兴",
+      "category": "downstream",
+      "business": "国内电信设备商，5G基站/骨干网光连接器件终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "全球数据中心\n系统集成商",
+      "category": "downstream",
+      "business": "数据中心建设/布线系统集成商，采购光连接器件用于数据中心内部光互连",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_300570",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_300570",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_300570",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_300570",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_300570",
+      "relation": "supply"
+    },
+    {
+      "source": "target_300570",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300570",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300570",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_300570",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_300570",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_300570",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_300570",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_300570",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

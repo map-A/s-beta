@@ -1,0 +1,166 @@
+{
+  "company_code": "600018",
+  "company_name": "上港集团",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600018",
+      "name": "上港集团\n600018",
+      "category": "target",
+      "business": "中国最大港口运营商，上海港全球集装箱吞吐量第一，PE8.26倍/PB0.78倍破净",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "宁波港\n601018",
+      "category": "competitor",
+      "business": "宁波舟山港运营，全球货物吞吐量第一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "招商港口\n001872",
+      "category": "competitor",
+      "business": "全球港口投资运营商，招商局集团旗下",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "青岛港\n601298",
+      "category": "competitor",
+      "business": "青岛港运营，北方重要港口",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "港口设备\n供应商",
+      "category": "upstream",
+      "business": "岸桥/场桥等港口装卸设备制造商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "能源供应商",
+      "category": "upstream",
+      "business": "港口运营用电、燃油等能源供应",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "IT/数字化\n供应商",
+      "category": "upstream",
+      "business": "港口管理系统、智能化/数字化平台",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "基建/疏浚\n服务商",
+      "category": "upstream",
+      "business": "码头建设维护、航道疏浚工程",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "航运公司\n（马士基/中远海）",
+      "category": "downstream",
+      "business": "全球航运巨头，在上海港装卸集装箱",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "货代/物流商",
+      "category": "downstream",
+      "business": "货物代理和物流服务商，租用港口仓储物流服务",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "外贸企业",
+      "category": "downstream",
+      "business": "进出口贸易企业，使用上海港进行国际贸易",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车物流企业",
+      "category": "downstream",
+      "business": "安吉物流等汽车滚装物流商",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600018",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600018",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600018",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600018",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600018",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600018",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600018",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600018",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600018",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600018",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600018",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

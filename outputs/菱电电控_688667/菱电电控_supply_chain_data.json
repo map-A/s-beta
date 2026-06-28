@@ -1,0 +1,190 @@
+{
+  "company_code": "688667",
+  "company_name": "菱电电控",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688667",
+      "name": "菱电电控\n688667",
+      "category": "target",
+      "business": "国内唯一自主汽车动力电控系统（EMS/VCU/MCU）企业，发动机管理系统+纯电动车控制器+混动控制器+标定服务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "博世/联合汽车电子",
+      "category": "competitor",
+      "business": "全球EMS龙头，中国EMS市场份额第一，外资垄断者",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "大陆集团",
+      "category": "competitor",
+      "business": "全球汽车EMS/VCU主要供应商，外资巨头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "汇川技术\n300124",
+      "category": "competitor",
+      "business": "新能源车电驱系统（MCU+电机），工控龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "精进电动\n688280",
+      "category": "competitor",
+      "business": "新能源车电驱动系统（电机+电控）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "车规级MCU芯片",
+      "category": "upstream",
+      "business": "英飞凌/恩智浦/瑞萨等车规级微控制器，ECU核心芯片（进口依赖）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "功率半导体厂商",
+      "category": "upstream",
+      "business": "IGBT/SiC功率模块，电机控制器核心部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB/连接器厂商",
+      "category": "upstream",
+      "business": "汽车级PCB、连接器、线束等",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "传感器厂商",
+      "category": "upstream",
+      "business": "温度/压力/位置传感器，发动机标定必需",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "被动元器件厂商",
+      "category": "upstream",
+      "business": "车规级电容/电阻/电感等被动元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "长安汽车",
+      "category": "downstream",
+      "business": "长安跨越/保定长安客车/河北长安，商用车EMS客户（confirmed）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "自主品牌乘用车厂",
+      "category": "downstream",
+      "business": "多家自主品牌乘用车整车厂，EMS+VCU/MCU客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "新能源车企",
+      "category": "downstream",
+      "business": "纯电/混动整车厂，VCU+MCU+多合一控制器客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "摩托车厂商",
+      "category": "downstream",
+      "business": "摩托车整车厂，小排量发动机EMS客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688667",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688667",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688667",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688667",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688667",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688667",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688667",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688667",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688667",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688667",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

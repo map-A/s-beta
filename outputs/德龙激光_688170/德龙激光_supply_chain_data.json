@@ -1,0 +1,166 @@
+{
+  "company_code": "688170",
+  "company_name": "德龙激光",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_688170",
+      "name": "德龙激光\n688170",
+      "category": "target",
+      "business": "精密激光加工设备及超快激光器研发生产，覆盖SiC剥离/半导体隐切/TGV/MicroLED",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "大族激光\n002008",
+      "category": "competitor",
+      "business": "激光全产业链龙头，切割/焊接/打标/PCB/半导体/新能源设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "海目星\n688559",
+      "category": "competitor",
+      "business": "激光+自动化综合方案，动力电池/光伏/3C精密加工",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "华工科技\n000988",
+      "category": "competitor",
+      "business": "激光器及应用设备、光通信器件、传感器，激光行业领军",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "光学晶体供应商",
+      "category": "upstream",
+      "business": "非线性光学晶体（超快激光器核心部件），如KTP/BBO/LBO晶体",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "运动控制平台供应商",
+      "category": "upstream",
+      "business": "高精度伺服电机、直线导轨、运动控制卡（精密定位核心）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "精密光学元件供应商",
+      "category": "upstream",
+      "business": "激光聚焦镜、扩束镜、反射镜、分光镜等光学元件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "激光电源/控制系统供应商",
+      "category": "upstream",
+      "business": "超快激光器驱动电源、脉冲控制模块、冷却系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "SiC衬底厂商",
+      "category": "downstream",
+      "business": "碳化硅衬底制造（晶锭激光剥片/薄化），如三安光电、天岳先进",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "存储芯片厂商",
+      "category": "downstream",
+      "business": "12英寸硅存储芯片晶圆激光隐切加工",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "显示面板厂商",
+      "category": "downstream",
+      "business": "OLED/LCD/MicroLED面板精密激光加工（切割/刻蚀/巨量转移）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "先进封装厂商",
+      "category": "downstream",
+      "business": "TGV玻璃通孔、激光开槽(low-k)、晶圆打标、解键合等先进封装工艺",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688170",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688170",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688170",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688170",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688170",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688170",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688170",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688170",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688170",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688170",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688170",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

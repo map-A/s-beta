@@ -1,0 +1,166 @@
+{
+  "company_code": "600392",
+  "company_name": "盛和资源",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_600392",
+      "name": "盛和资源\n600392",
+      "category": "target",
+      "business": "稀土冶炼分离、矿采选、金属加工、锆钛矿选矿",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "北方稀土\n600111",
+      "category": "competitor",
+      "business": "全球最大轻稀土生产商（白云鄂博矿）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "厦门钨业\n600549",
+      "category": "competitor",
+      "business": "稀土+钨，福建稀土整合平台",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "广晟有色\n600259",
+      "category": "competitor",
+      "business": "中重稀土，广东稀土整合平台",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "四川稀土矿山",
+      "category": "upstream",
+      "business": "国内稀土矿采选（自有矿源）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "MP Materials",
+      "category": "upstream",
+      "business": "美国芒廷帕斯稀土矿（精矿承购合作）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "Ngualla稀土项目",
+      "category": "upstream",
+      "business": "坦桑尼亚稀土矿（海外权益矿，开发中）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化工辅料供应商",
+      "category": "upstream",
+      "business": "冶炼分离所需酸碱等化工辅料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "永磁材料厂",
+      "category": "downstream",
+      "business": "钕铁硼永磁体制造（EV/风电用）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "催化剂厂商",
+      "category": "downstream",
+      "business": "石油裂化/汽车尾气催化剂",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "军工/国防",
+      "category": "downstream",
+      "business": "精确制导、雷达、卫星等军事应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "消费电子",
+      "category": "downstream",
+      "business": "苹果供应链等消费电子稀土应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600392",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600392",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600392",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600392",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600392",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600392",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600392",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600392",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600392",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600392",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600392",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "company_code": "603929",
+  "company_name": "亚翔集成",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_603929",
+      "name": "亚翔集成\n603929",
+      "category": "target",
+      "business": "半导体/光电洁净室工程、机电工程及建筑工程，为IC半导体、光电等高科技电子产业提供洁净厂房建造规划、设计、施工及维护服务",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "柏诚股份\n601133",
+      "category": "competitor",
+      "business": "洁净室工程、机电安装工程，服务于半导体、面板、医药等领域",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "圣晖集成\n603163",
+      "category": "competitor",
+      "business": "洁净室工程系统集成，台资背景，服务于IC半导体、面板等产业",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "至纯科技\n603690",
+      "category": "competitor",
+      "business": "高纯工艺系统、半导体湿法清洗设备及厂务工程服务",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "正帆科技\n688596",
+      "category": "competitor",
+      "business": "高纯介质供应系统、半导体厂务工程、特种气体设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "太极实业\n600667",
+      "category": "competitor",
+      "business": "半导体工程总包、洁净室工程（国企背景，十一科技子公司）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "FFU/过滤器厂商",
+      "category": "upstream",
+      "business": "风机过滤单元（FFU）、HEPA/ULPA高效空气过滤器，洁净室核心净化设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "HVAC设备厂商",
+      "category": "upstream",
+      "business": "空调暖通系统、温湿度控制系统，洁净室环境调控核心设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "自控系统供应商",
+      "category": "upstream",
+      "business": "洁净室自动化控制系统、环境监测仪控产品、BMS楼宇管理系统",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "钢材/铝材供应商",
+      "category": "upstream",
+      "business": "洁净室围护结构材料、铝型材、不锈钢管道、建筑结构钢材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "管道/阀门厂商",
+      "category": "upstream",
+      "business": "高纯气体管路系统、特种化学品管道、不锈钢管阀件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中芯国际",
+      "category": "downstream",
+      "business": "国内最大晶圆代工厂，亚翔重要合作伙伴，承揽其部分项目工程",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "长江存储",
+      "category": "downstream",
+      "business": "3D NAND存储芯片制造商，亚翔承建其国家存储器基地无尘室及机电工程",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长鑫存储",
+      "category": "downstream",
+      "business": "国产DRAM存储芯片龙头，亚翔承建其洁净室工程",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "联电新加坡\n(VSMC)",
+      "category": "downstream",
+      "business": "联华电子新加坡12寸晶圆厂，亚翔承建P3/P4工程及后续机电项目",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "台积电南京",
+      "category": "downstream",
+      "business": "台积电南京12寸晶圆厂，亚翔承建其机电统包安装工程（3.25亿元）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603929",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603929",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603929",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603929",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_603929",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603929",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603929",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603929",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603929",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603929",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603929",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603929",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603929",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603929",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_603929",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

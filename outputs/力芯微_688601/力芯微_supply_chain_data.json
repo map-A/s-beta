@@ -1,0 +1,166 @@
+{
+  "company_code": "688601",
+  "company_name": "力芯微",
+  "analysis_date": "2026-06-16",
+  "nodes": [
+    {
+      "id": "target_688601",
+      "name": "力芯微\n688601",
+      "category": "target",
+      "business": "电源管理及信号链芯片设计（LDO/DC-DC/充电管理IC）",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "圣邦股份\n300661",
+      "category": "competitor",
+      "business": "国内模拟芯片龙头，25大类/3800+型号，全品类覆盖",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "思瑞浦\n688536",
+      "category": "competitor",
+      "business": "信号链+电源管理芯片设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "杰华特\n688141",
+      "category": "competitor",
+      "business": "DC-DC/AC-DC电源管理芯片设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "晶圆代工厂",
+      "category": "upstream",
+      "business": "模拟芯片晶圆代工制造（中芯国际/华虹等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "封装测试厂",
+      "category": "upstream",
+      "business": "芯片封装测试（长电科技/通富微电等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "硅片供应商",
+      "category": "upstream",
+      "business": "硅片（晶圆代工原材料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "EDA/IP供应商",
+      "category": "upstream",
+      "business": "芯片设计EDA工具/IP核",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "小米（推测）",
+      "category": "downstream",
+      "business": "智能手机/可穿戴设备电源管理需求（第一大客户31%）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "OPPO/vivo",
+      "category": "downstream",
+      "business": "智能手机电源管理芯片需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子品牌",
+      "category": "downstream",
+      "business": "IoT/可穿戴/平板等电源管理需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "车规级电源管理芯片需求（拓展中）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688601",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688601",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688601",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688601",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688601",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688601",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688601",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688601",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688601",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688601",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688601",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

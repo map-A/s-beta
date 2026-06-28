@@ -1,0 +1,118 @@
+{
+  "company_code": "002297",
+  "company_name": "博云新材",
+  "analysis_date": "2026-06-20",
+  "nodes": [
+    {
+      "id": "target_002297",
+      "name": "博云新材\n002297",
+      "category": "target",
+      "business": "航空机轮刹车系统+航天碳碳复合材料+硬质合金+稀有金属粉体",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "碳纤维供应商",
+      "category": "upstream",
+      "business": "提供碳碳复合材料所需的碳纤维/碳布原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "航空级原材料商",
+      "category": "upstream",
+      "business": "通过航空材料认证的特种原材料供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "CVI设备供应商",
+      "category": "upstream",
+      "business": "化学气相渗透致密化设备、热压设备等专用生产设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "硬质合金原料商",
+      "category": "upstream",
+      "business": "稀有金属粉末、碳化钨等硬质合金原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "Honeywell",
+      "category": "competitor",
+      "business": "全球航空刹车龙头（博云合资伙伴，持股51%合资公司）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中航高科",
+      "category": "competitor",
+      "business": "航空复合材料龙头，侧重结构复合材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "安泰科技",
+      "category": "competitor",
+      "business": "先进金属材料企业，碳碳复合材料相关",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Safran",
+      "category": "competitor",
+      "business": "全球航空刹车第二（法国），国际市场主要竞争者",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "成飞/沈飞/西飞",
+      "category": "downstream",
+      "business": "军用飞机制造厂，采购航空刹车系统",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "航天科技/科工集团",
+      "category": "downstream",
+      "business": "采购碳碳复合材料用于火箭/飞船热防护",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "中国商飞",
+      "category": "downstream",
+      "business": "C919/ARJ21等国产大飞机刹车系统",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "硬质合金终端用户",
+      "category": "downstream",
+      "business": "切削工具、矿山工具等工业应用",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_002297", "relation": "supply"},
+    {"source": "up_1", "target": "target_002297", "relation": "supply"},
+    {"source": "up_2", "target": "target_002297", "relation": "supply"},
+    {"source": "up_3", "target": "target_002297", "relation": "supply"},
+    {"source": "target_002297", "target": "down_0", "relation": "customer"},
+    {"source": "target_002297", "target": "down_1", "relation": "customer"},
+    {"source": "target_002297", "target": "down_2", "relation": "customer"},
+    {"source": "target_002297", "target": "down_3", "relation": "customer"},
+    {"source": "comp_0", "target": "target_002297", "relation": "compete"},
+    {"source": "comp_1", "target": "target_002297", "relation": "compete"},
+    {"source": "comp_2", "target": "target_002297", "relation": "compete"},
+    {"source": "comp_3", "target": "target_002297", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

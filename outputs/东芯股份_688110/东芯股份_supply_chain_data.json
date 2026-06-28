@@ -1,0 +1,190 @@
+{
+  "company_code": "688110",
+  "company_name": "东芯股份",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_688110",
+      "name": "东芯股份\n688110",
+      "category": "target",
+      "business": "国内存储芯片Fabless设计公司，NAND/NOR/DRAM全覆盖，战略投资砺算科技GPU",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "兆易创新\n603986",
+      "category": "competitor",
+      "business": "国内NOR Flash龙头+MCU+DRAM，存储芯片设计龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "普冉股份\n688766",
+      "category": "competitor",
+      "business": "NOR Flash+EEPROM存储芯片设计",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "美光科技\nMU",
+      "category": "competitor",
+      "business": "全球DRAM/NAND存储三巨头之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "佰维存储\n688525",
+      "category": "competitor",
+      "business": "存储模组+封测，国内存储领域参与者",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "晶圆代工厂（第一大）",
+      "category": "upstream",
+      "business": "存储芯片晶圆代工，2025年采购占比35.75%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "晶圆代工厂（第二大）",
+      "category": "upstream",
+      "business": "2025年采购占比25.35%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "封测厂",
+      "category": "upstream",
+      "business": "存储芯片封装测试服务提供商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "IP/EDA供应商",
+      "category": "upstream",
+      "business": "存储芯片设计所需的IP核和EDA工具",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "第一大客户（脱敏）",
+      "category": "downstream",
+      "business": "2025年采购2.12亿元，占营收23.0%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "第二大客户（脱敏）",
+      "category": "downstream",
+      "business": "2025年采购1.59亿元，占营收17.2%",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "汽车电子客户",
+      "category": "downstream",
+      "business": "车规级存储芯片，已通过多家整车厂白名单导入",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "5G基站/工业客户",
+      "category": "downstream",
+      "business": "5G基站、工业控制、监控安防用存储芯片",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "消费电子客户",
+      "category": "downstream",
+      "business": "TWS耳机、智能手环/手表、物联网设备用存储",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688110",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688110",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688110",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688110",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688110",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688110",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688110",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688110",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688110",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688110",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688110",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688110",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688110",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

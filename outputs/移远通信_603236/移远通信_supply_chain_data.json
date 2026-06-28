@@ -1,0 +1,178 @@
+{
+  "company_code": "603236",
+  "company_name": "移远通信",
+  "analysis_date": "2026-06-15",
+  "nodes": [
+    {
+      "id": "target_603236",
+      "name": "移远通信\n603236",
+      "category": "target",
+      "business": "全球#1蜂窝物联网模组供应商，提供2G-5G全制式无线通信模组及解决方案，覆盖车载/工业/消费电子等IoT场景",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "广和通\n300638",
+      "category": "competitor",
+      "business": "蜂窝物联网模组全球Top3，车载/PC模组强势，毛利率~22%高于移远",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "美格智能\n002881",
+      "category": "competitor",
+      "business": "5G智能模组、车载模组，全球Top5，高算力模组差异化定位",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "u-blox\nUBXN.SW",
+      "category": "competitor",
+      "business": "瑞士GNSS+蜂窝模组供应商，高毛利率(~45%)定位，欧美市场强势",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "日海智能\n002313",
+      "category": "competitor",
+      "business": "物联网模组+解决方案，国内市场，中移物联子公司芯讯通关联",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高通\nQCOM",
+      "category": "upstream",
+      "business": "5G/4G基带+射频SoC芯片，移远通信最核心上游，占模组成本50-70%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "联发科\n2454.TW",
+      "category": "upstream",
+      "business": "4G/Cat.1/5G RedCap基带芯片，性价比路线，物联网模组重要芯片供应商",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "紫光展锐\nUNISOC",
+      "category": "upstream",
+      "business": "国产物联网基带芯片，中低端替代方案，国产化趋势受益",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "瑞昱半导体\n2379.TW",
+      "category": "upstream",
+      "business": "Wi-Fi/BLE/以太网芯片，物联网模组无线连接辅助芯片",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "长安汽车\n000625",
+      "category": "downstream",
+      "business": "智能座舱、T-Box、C-V2X车载模组终端集成，移远车载模组重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "智能表计厂商",
+      "category": "downstream",
+      "business": "智能电表/水表/气表终端，NB-IoT/4G模组集成，工业物联网典型场景",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "AI眼镜/机器人终端",
+      "category": "downstream",
+      "business": "AR+AI智能眼镜、具身智能机器人，移远提供通信模组+端侧AI方案",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业物联网厂商",
+      "category": "downstream",
+      "business": "FWA固定无线接入、工业路由器、智能制造终端，5G模组高ASP应用场景",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_603236",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_603236",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_603236",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_603236",
+      "relation": "supply"
+    },
+    {
+      "source": "target_603236",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603236",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603236",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_603236",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_603236",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_603236",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_603236",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_603236",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

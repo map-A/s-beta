@@ -1,0 +1,214 @@
+{
+  "company_code": "688396",
+  "company_name": "华润微",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688396",
+      "name": "华润微\n688396",
+      "category": "target",
+      "business": "中国大陆最大功率半导体IDM企业（央企），6/8/12英寸产线，MOSFET/IGBT/SiC/GaN，晶圆代工+封测，科创板上市",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "英飞凌",
+      "category": "competitor",
+      "business": "全球功率半导体第一（市占率~20%），IGBT/SiC技术领先，德国上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "士兰微\n600460",
+      "category": "competitor",
+      "business": "国内功率半导体IDM第二梯队，MOSFET/IGBT/LED驱动，A股上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "斯达半导\n603290",
+      "category": "competitor",
+      "business": "IGBT模块设计龙头，新能源车电驱模块核心供应商，A股上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "时代电气\n688187",
+      "category": "competitor",
+      "business": "中车旗下，轨交+功率IGBT/SiC MOSFET，科创板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "安森美",
+      "category": "competitor",
+      "business": "全球功率半导体第二梯队，SiC MOSFET领先供应商，美股上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "半导体硅片\n供应商",
+      "category": "upstream",
+      "business": "6/8/12英寸硅片（沪硅产业、信越化学等），晶圆制造核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "半导体设备\n供应商",
+      "category": "upstream",
+      "business": "光刻机、刻蚀机、离子注入机等晶圆制造设备",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "电子化学品\n供应商",
+      "category": "upstream",
+      "business": "光刻胶、电子特气、靶材、CMP抛光液等制程材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "封装材料\n供应商",
+      "category": "upstream",
+      "business": "引线框架、塑封料、键合线等封装测试用材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "SiC衬底\n供应商",
+      "category": "upstream",
+      "business": "碳化硅衬底材料（天岳先进、天科合达等），第三代半导体关键材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "新能源车\n电驱厂商",
+      "category": "downstream",
+      "business": "电动车电驱系统（IGBT/SiC模块），新能源车渗透率提升核心驱动力",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光伏/储能\n逆变器",
+      "category": "downstream",
+      "business": "光伏逆变器和储能PCS，功率器件核心应用场景之一",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "AI服务器\n电源厂商",
+      "category": "downstream",
+      "business": "AI服务器电源管理，华润微PoP封装技术切入的新赛道",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "工业控制\n厂商",
+      "category": "downstream",
+      "business": "变频器、伺服驱动、UPS等工业电力电子设备",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "智能电网",
+      "category": "downstream",
+      "business": "电网设备（MOSFET/IGBT/PIM），特高压和配电网升级",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688396",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688396",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688396",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688396",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688396",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688396",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688396",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688396",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688396",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688396",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688396",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688396",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688396",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688396",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_688396",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

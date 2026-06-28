@@ -1,0 +1,178 @@
+{
+  "company_code": "600330",
+  "company_name": "天通股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_600330",
+      "name": "天通股份\n600330",
+      "category": "target",
+      "business": "8英寸铌酸锂晶圆(国内唯一量产)+软磁材料+蓝宝石+晶体生长装备",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "信越化学\n4063.JP",
+      "category": "competitor",
+      "business": "全球铌酸锂晶圆主要供应商",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "大地熊\n688077",
+      "category": "competitor",
+      "business": "稀土永磁材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "晶盛机电\n300316",
+      "category": "competitor",
+      "business": "蓝宝石晶体+晶体生长设备",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "宁波韵升\n600366",
+      "category": "competitor",
+      "business": "稀土永磁材料",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯铌/钽\n原料供应商",
+      "category": "upstream",
+      "business": "稀有金属原料（铌酸锂/钽酸锂晶体核心原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "碳酸锂/\n氢氧化锂",
+      "category": "upstream",
+      "business": "高纯锂化合物（铌酸锂晶体原料）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "石墨坩埚/\n耗材供应",
+      "category": "upstream",
+      "business": "晶体生长炉配套耗材",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电子元器件\n供应商",
+      "category": "upstream",
+      "business": "装备制造所需电子元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "5G/6G通信\n(SAW滤波器)",
+      "category": "downstream",
+      "business": "铌酸锂→SAW滤波器→5G手机/基站终端",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "光通信/\n光子芯片",
+      "category": "downstream",
+      "business": "铌酸锂→电光调制器→数据中心光互联",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "LED厂商",
+      "category": "downstream",
+      "business": "蓝宝石→LED外延衬底",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子/\n无线充电",
+      "category": "downstream",
+      "business": "软磁材料→电感/变压器/无线充电线圈",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600330",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600330",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600330",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600330",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600330",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600330",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600330",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600330",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600330",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600330",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600330",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600330",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

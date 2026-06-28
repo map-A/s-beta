@@ -1,0 +1,214 @@
+{
+  "company_code": "688233",
+  "company_name": "神工股份",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_688233",
+      "name": "神工股份\n688233",
+      "category": "target",
+      "business": "半导体刻蚀用大直径硅材料、硅零部件、8英寸半导体硅片研发生产",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "Silfex\n(Lam子公司)",
+      "category": "competitor",
+      "business": "全球刻蚀用大直径硅材料/硅零部件龙头",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三菱材料\n5711.T",
+      "category": "competitor",
+      "business": "日本高纯硅材料及半导体零部件",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "CoorsTek",
+      "category": "competitor",
+      "business": "美国先进陶瓷/硅零部件（半导体设备用）",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "有研硅\n688432",
+      "category": "competitor",
+      "business": "半导体硅片（8英寸/12英寸）",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯多晶硅料\n供应商",
+      "category": "upstream",
+      "business": "半导体级高纯多晶硅料（信越化学、瓦克化学等）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "石英坩埚\n供应商",
+      "category": "upstream",
+      "business": "单晶硅拉制用高纯石英坩埚",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "石墨热场\n供应商",
+      "category": "upstream",
+      "business": "单晶炉热场用高纯石墨材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "石墨/陶瓷\n加工供应商",
+      "category": "upstream",
+      "business": "硅零部件加工配套石墨件、陶瓷件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "特种气体\n供应商",
+      "category": "upstream",
+      "business": "单晶硅生长及加工所需特种气体",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "日韩硅零部件\n厂商",
+      "category": "downstream",
+      "business": "刻蚀用硅零部件加工，供应Lam/TEL等设备厂",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中微公司\n688012",
+      "category": "downstream",
+      "business": "中国本土等离子刻蚀设备龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "长江存储",
+      "category": "downstream",
+      "business": "中国NAND Flash存储芯片制造龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "长鑫存储",
+      "category": "downstream",
+      "business": "中国DRAM存储芯片制造龙头",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "中芯国际\n688981",
+      "category": "downstream",
+      "business": "中国晶圆代工龙头（硅片认证中）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "泛林集团\n(Lam Research)",
+      "category": "downstream",
+      "business": "全球刻蚀设备龙头（间接终端客户）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688233",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688233",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688233",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688233",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_688233",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688233",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688233",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688233",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688233",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688233",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688233",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688233",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688233",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688233",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_688233",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

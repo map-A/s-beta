@@ -1,0 +1,44 @@
+{
+  "company_code": "605111",
+  "company_name": "新洁能",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {"id": "target_605111", "name": "新洁能\n605111", "category": "target", "business": "国内MOSFET/IGBT设计龙头，四大产品平台+SiC/GaN，4000+款产品，比亚迪大批量供应", "symbolSize": 90},
+    {"id": "comp_0", "name": "英飞凌\nIFX", "category": "competitor", "business": "全球功率半导体龙头（~25%份额），IGBT/SiC全球领先", "symbolSize": 45},
+    {"id": "comp_1", "name": "士兰微\n600460", "category": "competitor", "business": "国内IDM功率半导体龙头（IGBT/MOSFET/IPM）", "symbolSize": 45},
+    {"id": "comp_2", "name": "斯达半导\n603290", "category": "competitor", "business": "IGBT模块龙头，车规级核心供应商", "symbolSize": 45},
+    {"id": "comp_3", "name": "华润微\n688396", "category": "competitor", "business": "IDM功率半导体+传感器，央企背景", "symbolSize": 45},
+    {"id": "up_0", "name": "华虹半导体\n688347", "category": "upstream", "business": "功率半导体代工龙头，12寸BCD工艺", "symbolSize": 40},
+    {"id": "up_1", "name": "中芯国际\n688981", "category": "upstream", "business": "国内最大晶圆代工厂，成熟制程代工", "symbolSize": 40},
+    {"id": "up_2", "name": "电基集成\n（子公司）", "category": "upstream", "business": "自建先进封测产线，部分芯片自主封测", "symbolSize": 40},
+    {"id": "up_3", "name": "金兰半导体\n（子公司）", "category": "upstream", "business": "先进功率模块生产线（光伏/汽车）", "symbolSize": 40},
+    {"id": "up_4", "name": "硅片/外延片", "category": "upstream", "business": "功率芯片核心材料（硅片/碳化硅衬底）", "symbolSize": 40},
+    {"id": "down_0", "name": "比亚迪\n002594", "category": "downstream", "business": "新能源汽车龙头，十几款产品大批量供应", "symbolSize": 50},
+    {"id": "down_1", "name": "光伏储能企业", "category": "downstream", "business": "逆变器/储能系统功率器件需求", "symbolSize": 50},
+    {"id": "down_2", "name": "AI服务器/数据中心", "category": "downstream", "business": "服务器电源管理功率器件", "symbolSize": 50},
+    {"id": "down_3", "name": "工控/机器人", "category": "downstream", "business": "工业自动化/智能机器人功率器件", "symbolSize": 50},
+    {"id": "down_4", "name": "消费电子/无人机", "category": "downstream", "business": "手机/平板/无人机/低空经济功率器件", "symbolSize": 50}
+  ],
+  "edges": [
+    {"source": "up_0", "target": "target_605111", "relation": "supply"},
+    {"source": "up_1", "target": "target_605111", "relation": "supply"},
+    {"source": "up_2", "target": "target_605111", "relation": "supply"},
+    {"source": "up_3", "target": "target_605111", "relation": "supply"},
+    {"source": "up_4", "target": "target_605111", "relation": "supply"},
+    {"source": "target_605111", "target": "down_0", "relation": "customer"},
+    {"source": "target_605111", "target": "down_1", "relation": "customer"},
+    {"source": "target_605111", "target": "down_2", "relation": "customer"},
+    {"source": "target_605111", "target": "down_3", "relation": "customer"},
+    {"source": "target_605111", "target": "down_4", "relation": "customer"},
+    {"source": "comp_0", "target": "target_605111", "relation": "compete"},
+    {"source": "comp_1", "target": "target_605111", "relation": "compete"},
+    {"source": "comp_2", "target": "target_605111", "relation": "compete"},
+    {"source": "comp_3", "target": "target_605111", "relation": "compete"}
+  ],
+  "categories": [
+    {"name": "upstream", "label": "上游供应商"},
+    {"name": "competitor", "label": "竞品公司"},
+    {"name": "target", "label": "目标公司"},
+    {"name": "downstream", "label": "下游客户"}
+  ]
+}

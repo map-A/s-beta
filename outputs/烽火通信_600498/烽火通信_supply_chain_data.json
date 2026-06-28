@@ -1,0 +1,226 @@
+{
+  "company_code": "600498",
+  "company_name": "烽火通信",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_600498",
+      "name": "烽火通信\n600498",
+      "category": "target",
+      "business": "光通信系统设备+光纤光缆+海洋通信+算力服务器，中国信科集团旗下央企",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "华为",
+      "category": "competitor",
+      "business": "全球第一大光通信设备商（OTN/PON/光模块），同时布局光纤光缆",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "中兴通讯\n000063",
+      "category": "competitor",
+      "business": "光通信系统设备+5G基站+服务器，全球光通信设备前四",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "长飞光纤\n601869",
+      "category": "competitor",
+      "business": "全球最大光纤预制棒/光纤/光缆供应商，国内市占率20-25%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "亨通光电\n600487",
+      "category": "competitor",
+      "business": "光纤光缆+海底光缆+海洋工程+新能源，海缆领域国内领先",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_4",
+      "name": "中天科技\n600522",
+      "category": "competitor",
+      "business": "光纤光缆+电力线缆+储能+海缆，多元化布局",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "光迅科技\n002281",
+      "category": "upstream",
+      "business": "光芯片、光模块、光放大器等有源光器件，同属中国信科集团",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "特种气体供应商",
+      "category": "upstream",
+      "business": "高纯四氯化硅、四氯化锗、氟气等光纤预制棒核心原料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "PCB/电子元器件厂商",
+      "category": "upstream",
+      "business": "通信设备用PCB板、芯片、连接器、电容电阻等基础元器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "通鼎互联\n002491",
+      "category": "upstream",
+      "business": "光纤光缆辅助材料、室内光缆、通信电缆",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "四川天邑康和",
+      "category": "upstream",
+      "business": "光分路器、光纤连接器等无源光器件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中国移动",
+      "category": "downstream",
+      "business": "全球最大移动运营商，光纤光缆+光通信设备集采最大买家",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "中国电信",
+      "category": "downstream",
+      "business": "固网宽带龙头，光通信设备和光纤光缆重要客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "中国联通",
+      "category": "downstream",
+      "business": "三大运营商之一，光通信基础设施建设需求方",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "互联网云厂商",
+      "category": "downstream",
+      "business": "字节跳动、阿里、腾讯等AI算力数据中心高速光互连需求",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "金融/政府客户",
+      "category": "downstream",
+      "business": "银行/保险/政府专网通信，算力服务器和光通信设备采购",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_5",
+      "name": "海外电信运营商",
+      "category": "downstream",
+      "business": "覆盖100+国家和地区，3个海外生产基地，含海底光缆客户",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_600498",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_600498",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_600498",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_600498",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_600498",
+      "relation": "supply"
+    },
+    {
+      "source": "target_600498",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600498",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600498",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600498",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600498",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "target_600498",
+      "target": "down_5",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_600498",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_600498",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_600498",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_600498",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_4",
+      "target": "target_600498",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

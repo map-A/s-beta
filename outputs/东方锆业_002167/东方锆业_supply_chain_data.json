@@ -1,0 +1,178 @@
+{
+  "company_code": "002167",
+  "company_name": "东方锆业",
+  "analysis_date": "2026-06-25",
+  "nodes": [
+    {
+      "id": "target_002167",
+      "name": "东方锆业\n002167",
+      "category": "target",
+      "business": "国内锆行业龙头，全产业链：核级海绵锆+氧化锆+氧氯化锆+陶瓷制品",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "国核宝钛\n锆业(未上市)",
+      "category": "competitor",
+      "business": "核级锆材全产业链，国内核级海绵锆市占率最高(30-40%)",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "三祥新材\n603663",
+      "category": "competitor",
+      "business": "锆制品/铸造材料/氧化锆，规模较小",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "盛和资源\n600392",
+      "category": "competitor",
+      "business": "稀土+锆制品综合矿业企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "龙佰集团\n002601",
+      "category": "upstream",
+      "business": "控股股东，钛白粉+钛锆矿龙头，供应占比51.85%",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "澳大利亚\n锆英砂矿",
+      "category": "upstream",
+      "business": "全球锆英砂主要产区(Iluka等)，中国高度依赖进口",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "南非\n锆英砂矿",
+      "category": "upstream",
+      "business": "全球锆英砂重要产区(RBM等)，供应中国进口",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "化工原料\n供应商",
+      "category": "upstream",
+      "business": "碱、酸等化工辅料，锆制品生产必需",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "中核集团\n体系",
+      "category": "downstream",
+      "business": "核电燃料加工企业，核级海绵锆终端客户",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "陶瓷/耐火\n材料企业",
+      "category": "downstream",
+      "business": "建筑陶瓷/耐火材料，传统氧化锆/硅酸锆主要下游",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "先进陶瓷\n制造商",
+      "category": "downstream",
+      "business": "氧化锆陶瓷刀具/人工关节/传感器，高附加值应用",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "固态电池\n企业(前瞻)",
+      "category": "downstream",
+      "business": "固态电池用氧化锆电解质，前沿布局阶段",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "钢铁冶金\n企业",
+      "category": "downstream",
+      "business": "锆质耐火材料用于钢铁冶炼，传统下游",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002167",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002167",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002167",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002167",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002167",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002167",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002167",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002167",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002167",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002167",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002167",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002167",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

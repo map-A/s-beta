@@ -1,0 +1,190 @@
+{
+  "company_code": "002202",
+  "company_name": "金风科技",
+  "analysis_date": "2026-06-26",
+  "nodes": [
+    {
+      "id": "target_002202",
+      "name": "金风科技\n002202",
+      "category": "target",
+      "business": "风电整机龙头，永磁直驱技术，国内新增装机连续15年第一，全球连续4年第一",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "明阳智能\n601615",
+      "category": "competitor",
+      "business": "海上风电强势，半直驱技术，国内风电整机前三",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "运达股份\n300772",
+      "category": "competitor",
+      "business": "风电整机，增速快，国内市场份额快速提升",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "三一重能\n688349",
+      "category": "competitor",
+      "business": "三一集团风电平台，大兆瓦机组",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "Vestas\nVWS(丹麦)",
+      "category": "competitor",
+      "business": "全球风电整机龙头之一，丹麦企业",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "稀土永磁\n供应商",
+      "category": "upstream",
+      "business": "钕铁硼永磁体，永磁直驱风机核心材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "风电叶片\n供应商",
+      "category": "upstream",
+      "business": "碳纤维/玻纤复合材料叶片",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "大型主轴承\n供应商",
+      "category": "upstream",
+      "business": "风电主轴承（SKF/舍弗勒/NSK等），潜在瓶颈环节",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "钢材/铸件\n供应商",
+      "category": "upstream",
+      "business": "塔筒、铸件等风电结构件",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "变流器/发电机\n供应商",
+      "category": "upstream",
+      "business": "风电电气系统核心部件",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "五大发电集团",
+      "category": "downstream",
+      "business": "华能/大唐/华电/国电投/国家能源集团，风电场开发主力",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "地方能源集团",
+      "category": "downstream",
+      "business": "各省能源投资集团，风电场开发",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "海外风电开发商",
+      "category": "downstream",
+      "business": "国际收入占比24.76%（澳大利亚/土耳其/摩洛哥等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "电网/消纳",
+      "category": "downstream",
+      "business": "风电上网消纳，电网调度",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002202",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002202",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002202",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002202",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002202",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002202",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002202",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002202",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002202",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002202",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "company_code": "002484",
+  "company_name": "江海股份",
+  "analysis_date": "2026-06-17",
+  "nodes": [
+    {
+      "id": "target_002484",
+      "name": "江海股份\n002484",
+      "category": "target",
+      "business": "铝电解电容、薄膜电容、超级电容三大品类全覆盖，国内唯一，产业链最完整",
+      "symbolSize": 90
+    },
+    {
+      "id": "comp_0",
+      "name": "法拉电子\n600563",
+      "category": "competitor",
+      "business": "薄膜电容器国内龙头，深度受益新能源车（比亚迪）和光伏逆变器",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "艾华集团\n603989",
+      "category": "competitor",
+      "business": "铝电解电容器，消费/工业级龙头，上游铝箔自产一体化",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "日本贵弥功\nNCC",
+      "category": "competitor",
+      "business": "全球铝电解电容龙头，高端市场主导，江海技术合作方之一",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_3",
+      "name": "鸿远电子\n603267",
+      "category": "competitor",
+      "business": "陶瓷电容器（MLCC），军工级，与江海在服务器电源领域有交叉竞争",
+      "symbolSize": 45
+    },
+    {
+      "id": "up_0",
+      "name": "高纯铝箔\n供应商",
+      "category": "upstream",
+      "business": "阳极/阴极铝箔，铝电解电容核心材料，江海部分自产（子公司化成箔）",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "聚丙烯薄膜\n供应商",
+      "category": "upstream",
+      "business": "金属化聚丙烯薄膜，薄膜电容核心材料，日本/欧洲厂商主导高端",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "活性炭/碳\n材料供应商",
+      "category": "upstream",
+      "business": "超级电容电极用活性炭、碳纳米管等高性能碳材料",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "电解液\n供应商",
+      "category": "upstream",
+      "business": "铝电解电容/超级电容用电解液，影响电容器寿命和性能",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_4",
+      "name": "日本技术\n合作方",
+      "category": "upstream",
+      "business": "与NCC、KEMET等日/美企业在高压铝电解、车载电容等领域战略合作",
+      "symbolSize": 40
+    },
+    {
+      "id": "down_0",
+      "name": "AI服务器\n厂商",
+      "category": "downstream",
+      "business": "AI训练/推理服务器电源系统，使用MLPC固态铝电解和超级电容",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "新能源车\n厂商",
+      "category": "downstream",
+      "business": "车载薄膜电容模组、车载铝电解电容（电驱/充电桩等应用）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "光伏/风电\n逆变器厂商",
+      "category": "downstream",
+      "business": "逆变器用高压大容量铝电解电容、薄膜电容（阳光电源等）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "人形机器人\n厂商",
+      "category": "downstream",
+      "business": "关节驱动瞬时功率补充/能量回收用超级电容（早期应用阶段）",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_4",
+      "name": "储能系统\n集成商",
+      "category": "downstream",
+      "business": "储能PCS薄膜电容、电网调频超级电容（规模化应用中）",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_002484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_002484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_002484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_002484",
+      "relation": "supply"
+    },
+    {
+      "source": "up_4",
+      "target": "target_002484",
+      "relation": "supply"
+    },
+    {
+      "source": "target_002484",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002484",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002484",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002484",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "target_002484",
+      "target": "down_4",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_002484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_002484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_002484",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_3",
+      "target": "target_002484",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}

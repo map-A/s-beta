@@ -1,0 +1,166 @@
+{
+  "company_code": "688521",
+  "company_name": "芯原微电子",
+  "analysis_date": "2026-06-22",
+  "nodes": [
+    {
+      "id": "target_688521",
+      "name": "芯原微电子\n688521",
+      "category": "target",
+      "business": "半导体IP授权服务与AI ASIC一站式芯片定制服务（SiPaaS模式），覆盖GPU/NPU/ISP/VPU/DSP等6大类处理器IP",
+      "symbolSize": 90
+    },
+    {
+      "id": "up_0",
+      "name": "Synopsys新思科技",
+      "category": "upstream",
+      "business": "全球领先EDA工具与半导体IP供应商，提供芯片设计自动化工具和IP核",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_1",
+      "name": "Cadence铿腾电子",
+      "category": "upstream",
+      "business": "EDA工具与模拟/接口IP供应商，提供芯片验证和签核工具",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_2",
+      "name": "华大九天",
+      "category": "upstream",
+      "business": "中国本土EDA工具龙头，提供数字/模拟芯片设计工具",
+      "symbolSize": 40
+    },
+    {
+      "id": "up_3",
+      "name": "台积电/中芯国际",
+      "category": "upstream",
+      "business": "晶圆代工厂，提供工艺PDK和流片验证服务，是IP核在先进工艺上验证的基础",
+      "symbolSize": 40
+    },
+    {
+      "id": "comp_0",
+      "name": "ARM Holdings",
+      "category": "competitor",
+      "business": "全球CPU/移动端IP霸主，RISC架构IP授权，占全球IP市场份额超40%",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_1",
+      "name": "CEVA",
+      "category": "competitor",
+      "business": "专注于DSP/无线连接/传感融合IP的授权公司，纳斯达克上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "comp_2",
+      "name": "寒武纪",
+      "category": "competitor",
+      "business": "中国AI芯片龙头，同时提供AI处理器IP与AI芯片产品，科创板上市",
+      "symbolSize": 45
+    },
+    {
+      "id": "down_0",
+      "name": "芯片设计公司\n（fabless）",
+      "category": "downstream",
+      "business": "无晶圆厂芯片设计企业，采购IP核用于SoC设计，缩短研发周期和降低成本",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_1",
+      "name": "互联网/云厂商",
+      "category": "downstream",
+      "business": "大型互联网和云计算公司（如百度、阿里、腾讯），自研AI芯片需采购NPU/GPU等处理器IP",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_2",
+      "name": "消费电子厂商",
+      "category": "downstream",
+      "business": "智能手机、可穿戴设备、AI眼镜等终端品牌，需ISP/NPU IP用于端侧AI处理",
+      "symbolSize": 50
+    },
+    {
+      "id": "down_3",
+      "name": "汽车电子厂商",
+      "category": "downstream",
+      "business": "汽车电子/自动驾驶Tier1供应商，需车规级AI处理IP用于ADAS和智能座舱",
+      "symbolSize": 50
+    }
+  ],
+  "edges": [
+    {
+      "source": "up_0",
+      "target": "target_688521",
+      "relation": "supply"
+    },
+    {
+      "source": "up_1",
+      "target": "target_688521",
+      "relation": "supply"
+    },
+    {
+      "source": "up_2",
+      "target": "target_688521",
+      "relation": "supply"
+    },
+    {
+      "source": "up_3",
+      "target": "target_688521",
+      "relation": "supply"
+    },
+    {
+      "source": "target_688521",
+      "target": "down_0",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688521",
+      "target": "down_1",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688521",
+      "target": "down_2",
+      "relation": "customer"
+    },
+    {
+      "source": "target_688521",
+      "target": "down_3",
+      "relation": "customer"
+    },
+    {
+      "source": "comp_0",
+      "target": "target_688521",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_1",
+      "target": "target_688521",
+      "relation": "compete"
+    },
+    {
+      "source": "comp_2",
+      "target": "target_688521",
+      "relation": "compete"
+    }
+  ],
+  "categories": [
+    {
+      "name": "upstream",
+      "label": "上游供应商"
+    },
+    {
+      "name": "competitor",
+      "label": "竞品公司"
+    },
+    {
+      "name": "target",
+      "label": "目标公司"
+    },
+    {
+      "name": "downstream",
+      "label": "下游客户"
+    }
+  ]
+}
